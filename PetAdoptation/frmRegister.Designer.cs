@@ -81,7 +81,7 @@
             createAccount_Btn.FlatStyle = FlatStyle.Flat;
             createAccount_Btn.Font = new Font("Yu Gothic UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
             createAccount_Btn.ForeColor = SystemColors.ControlText;
-            createAccount_Btn.Location = new Point(320, 365);
+            createAccount_Btn.Location = new Point(324, 320);
             createAccount_Btn.Margin = new Padding(2, 1, 2, 1);
             createAccount_Btn.Name = "createAccount_Btn";
             createAccount_Btn.Size = new Size(168, 38);
