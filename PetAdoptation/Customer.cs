@@ -8,8 +8,8 @@ namespace PetAdoptation
 {
     public class Customer : User
     {
-        private List<string> petsID;
-        private string assignedStaff_ID;
+        private List<string> petsID = new List<string>();
+        private string assignedStaff_ID = "null";
 
         //  PUBLIC Functions
 
@@ -40,8 +40,6 @@ namespace PetAdoptation
             this.PhoneNo = phoneNo;
             this.Email = email;
             this.Address = address;
-
-            assignedStaff_ID = "null";
         }
 
         //
