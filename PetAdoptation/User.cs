@@ -9,7 +9,7 @@ namespace PetAdoptation
     public abstract class User
     {
         //  PRIVATE Fields
-        private string ID;
+        private string id;
         private string password;
         private string name;
         private string phoneNo;
@@ -23,10 +23,10 @@ namespace PetAdoptation
         //
         // GETTERs & SETTERs
         //
-        public string UserID
+        public string ID
         {
-            get { return ID; }
-            set { ID = value; }
+            get { return id; }
+            set { id = value; }
         }
 
         public string Password
@@ -67,6 +67,11 @@ namespace PetAdoptation
             PhoneNo = phoneNo;
             Email = email;
             Address = address;
+        }
+
+        public void ViewProfile()
+        {
+
         }
 
     }

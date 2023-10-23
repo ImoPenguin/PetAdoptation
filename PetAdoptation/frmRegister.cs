@@ -26,8 +26,8 @@ namespace PetAdoptation
             }
             else
             {
-                PolicyCheckBox.BackColor = Color.FloralWhite;
-                PolicyCheckBox.ForeColor = Color.DarkGray;
+                PolicyCheckBox.BackColor = Color.Transparent;
+                PolicyCheckBox.ForeColor = Color.Gray;
             }
         }
 
