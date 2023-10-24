@@ -120,7 +120,7 @@
             loginButton1.TabIndex = 7;
             loginButton1.Text = "LOGIN";
             loginButton1.UseVisualStyleBackColor = false;
-            loginButton1.Click += button1_Click;
+            loginButton1.Click += bLogin_Click;
             // 
             // bRegistered
             // 
