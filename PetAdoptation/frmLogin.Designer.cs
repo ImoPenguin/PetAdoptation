@@ -147,7 +147,7 @@
             txtUserID.BorderStyle = BorderStyle.None;
             txtUserID.Font = new Font("Yu Gothic UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserID.ForeColor = Color.DimGray;
-            txtUserID.Location = new Point(641, 271);
+            txtUserID.Location = new Point(641, 270);
             txtUserID.Margin = new Padding(1);
             txtUserID.Name = "txtUserID";
             txtUserID.PlaceholderText = "User ID";
