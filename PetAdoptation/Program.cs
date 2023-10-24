@@ -12,7 +12,7 @@ namespace PetAdoptation
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new frmLogin);
-            Application.Run(new frmLogin());
+            Application.Run(new frmMainScreen());
         }
     }
 }

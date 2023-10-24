@@ -63,6 +63,26 @@ namespace PetAdoptation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button {
+            get {
+                object obj = ResourceManager.GetObject("button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button1 {
+            get {
+                object obj = ResourceManager.GetObject("button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meow {
             get {
                 object obj = ResourceManager.GetObject("meow", resourceCulture);
@@ -116,6 +136,46 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap PetMatch_4 {
             get {
                 object obj = ResourceManager.GetObject("PetMatch-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Picked_Main_Screen_ {
+            get {
+                object obj = ResourceManager.GetObject("Picked Main Screen ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Picked_Main_Screen_1 {
+            get {
+                object obj = ResourceManager.GetObject("Picked Main Screen 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rabbit {
+            get {
+                object obj = ResourceManager.GetObject("Rabbit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roundedCat {
+            get {
+                object obj = ResourceManager.GetObject("roundedCat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
