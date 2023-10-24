@@ -71,6 +71,7 @@
             createAccount_Btn.TabIndex = 8;
             createAccount_Btn.Text = "CREATE ACCOUNT";
             createAccount_Btn.UseVisualStyleBackColor = false;
+            createAccount_Btn.Click += createAccount_Btn_Click;
             // 
             // PolicyCheckBox
             // 
