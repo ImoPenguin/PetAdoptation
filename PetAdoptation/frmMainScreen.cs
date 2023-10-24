@@ -17,11 +17,6 @@ namespace PetAdoptation
             InitializeComponent();
         }
 
-        private void frmMainScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -39,7 +34,17 @@ namespace PetAdoptation
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit(); 
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void adoptBtn_MouseHover(object sender, MouseEventArgs e)
+        {
+            adoptBtn.BackColor = Color.DarkSeaGreen;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
