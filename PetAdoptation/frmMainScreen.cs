@@ -36,5 +36,10 @@ namespace PetAdoptation
         {
 
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit(); 
+        }
     }
 }

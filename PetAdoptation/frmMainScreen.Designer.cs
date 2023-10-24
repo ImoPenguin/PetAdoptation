@@ -246,6 +246,7 @@
             closeButton.TabIndex = 22;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
+            closeButton.Click += closeButton_Click;
             // 
             // frmMainScreen
             // 
