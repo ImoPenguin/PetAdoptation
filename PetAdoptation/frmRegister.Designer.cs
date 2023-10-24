@@ -28,45 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             createAccount_Btn = new Button();
             PolicyCheckBox = new CheckBox();
             txtpwd4 = new PictureBox();
-            lbUserID = new Label();
-            label1 = new Label();
-            label2 = new Label();
             txtUserID = new TextBox();
             textBox1 = new TextBox();
-            newPwd_TextBox = new TextBox();
             pictureBox5 = new PictureBox();
             closeButton = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            txtPwd = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtpwd4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.PetMatch_4;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(2, 1, 2, 1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(837, 428);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.Image = Properties.Resources.meow;
-            pictureBox2.Location = new Point(206, 122);
+            pictureBox2.Location = new Point(235, 163);
             pictureBox2.Margin = new Padding(2, 1, 2, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(414, 45);
+            pictureBox2.Size = new Size(473, 60);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -81,10 +64,10 @@
             createAccount_Btn.FlatStyle = FlatStyle.Flat;
             createAccount_Btn.Font = new Font("Yu Gothic UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
             createAccount_Btn.ForeColor = SystemColors.ControlText;
-            createAccount_Btn.Location = new Point(329, 363);
+            createAccount_Btn.Location = new Point(376, 484);
             createAccount_Btn.Margin = new Padding(2, 1, 2, 1);
             createAccount_Btn.Name = "createAccount_Btn";
-            createAccount_Btn.Size = new Size(168, 38);
+            createAccount_Btn.Size = new Size(192, 51);
             createAccount_Btn.TabIndex = 8;
             createAccount_Btn.Text = "CREATE ACCOUNT";
             createAccount_Btn.UseVisualStyleBackColor = false;
@@ -98,11 +81,11 @@
             PolicyCheckBox.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
             PolicyCheckBox.ForeColor = Color.Gray;
             PolicyCheckBox.ImageAlign = ContentAlignment.TopCenter;
-            PolicyCheckBox.Location = new Point(261, 320);
+            PolicyCheckBox.Location = new Point(298, 427);
             PolicyCheckBox.Margin = new Padding(2, 1, 2, 1);
             PolicyCheckBox.Name = "PolicyCheckBox";
-            PolicyCheckBox.Padding = new Padding(5, 0, 3, 0);
-            PolicyCheckBox.Size = new Size(284, 24);
+            PolicyCheckBox.Padding = new Padding(6, 0, 3, 0);
+            PolicyCheckBox.Size = new Size(351, 29);
             PolicyCheckBox.TabIndex = 9;
             PolicyCheckBox.Text = "I have read and agree Privacy Policy";
             PolicyCheckBox.UseVisualStyleBackColor = false;
@@ -112,57 +95,14 @@
             // 
             txtpwd4.Anchor = AnchorStyles.Top;
             txtpwd4.Image = Properties.Resources.meow;
-            txtpwd4.Location = new Point(206, 259);
+            txtpwd4.Location = new Point(235, 345);
             txtpwd4.Margin = new Padding(2, 1, 2, 1);
             txtpwd4.Name = "txtpwd4";
-            txtpwd4.Size = new Size(415, 45);
+            txtpwd4.Size = new Size(474, 60);
             txtpwd4.SizeMode = PictureBoxSizeMode.StretchImage;
             txtpwd4.TabIndex = 11;
             txtpwd4.TabStop = false;
             txtpwd4.Click += txtpwd4_Click;
-            // 
-            // lbUserID
-            // 
-            lbUserID.Anchor = AnchorStyles.Top;
-            lbUserID.AutoSize = true;
-            lbUserID.BackColor = Color.Transparent;
-            lbUserID.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lbUserID.ForeColor = Color.DarkGray;
-            lbUserID.Location = new Point(226, 137);
-            lbUserID.Margin = new Padding(2, 0, 2, 0);
-            lbUserID.Name = "lbUserID";
-            lbUserID.Size = new Size(43, 17);
-            lbUserID.TabIndex = 14;
-            lbUserID.Text = "Name";
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Yu Gothic UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.DarkGray;
-            label1.Location = new Point(226, 272);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(67, 19);
-            label1.TabIndex = 15;
-            label1.Text = "Password";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Yu Gothic UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.DarkGray;
-            label2.Location = new Point(226, 204);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(41, 19);
-            label2.TabIndex = 16;
-            label2.Text = "Email";
-            label2.Click += label2_Click_1;
             // 
             // txtUserID
             // 
@@ -171,12 +111,14 @@
             txtUserID.BorderStyle = BorderStyle.None;
             txtUserID.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserID.ForeColor = Color.Gray;
-            txtUserID.Location = new Point(307, 134);
+            txtUserID.Location = new Point(263, 177);
             txtUserID.Margin = new Padding(2, 1, 2, 1);
             txtUserID.Multiline = true;
             txtUserID.Name = "txtUserID";
-            txtUserID.Size = new Size(288, 21);
+            txtUserID.PlaceholderText = "Name";
+            txtUserID.Size = new Size(417, 31);
             txtUserID.TabIndex = 17;
+            txtUserID.TextChanged += txtUserID_TextChanged;
             // 
             // textBox1
             // 
@@ -185,81 +127,81 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.Gray;
-            textBox1.Location = new Point(307, 204);
+            textBox1.Location = new Point(263, 268);
             textBox1.Margin = new Padding(2, 1, 2, 1);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(288, 21);
+            textBox1.PlaceholderText = "Email";
+            textBox1.Size = new Size(417, 36);
             textBox1.TabIndex = 18;
-            // 
-            // newPwd_TextBox
-            // 
-            newPwd_TextBox.Anchor = AnchorStyles.Top;
-            newPwd_TextBox.BackColor = SystemColors.ButtonFace;
-            newPwd_TextBox.BorderStyle = BorderStyle.None;
-            newPwd_TextBox.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            newPwd_TextBox.ForeColor = Color.Gray;
-            newPwd_TextBox.Location = new Point(307, 271);
-            newPwd_TextBox.Margin = new Padding(2, 1, 2, 1);
-            newPwd_TextBox.Multiline = true;
-            newPwd_TextBox.Name = "newPwd_TextBox";
-            newPwd_TextBox.Size = new Size(288, 20);
-            newPwd_TextBox.TabIndex = 19;
-            newPwd_TextBox.TextChanged += textBox2_TextChanged;
             // 
             // pictureBox5
             // 
             pictureBox5.Anchor = AnchorStyles.Top;
             pictureBox5.Image = Properties.Resources.meow;
-            pictureBox5.Location = new Point(206, 190);
+            pictureBox5.Location = new Point(235, 253);
             pictureBox5.Margin = new Padding(2, 1, 2, 1);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(414, 48);
+            pictureBox5.Size = new Size(473, 64);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 20;
             pictureBox5.TabStop = false;
             // 
             // closeButton
             // 
-            closeButton.BackColor = Color.IndianRed;
+            closeButton.BackColor = Color.LightYellow;
             closeButton.Cursor = Cursors.Hand;
             closeButton.FlatAppearance.BorderSize = 0;
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(803, 9);
+            closeButton.ForeColor = Color.DarkSlateGray;
+            closeButton.Location = new Point(22, 19);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(25, 25);
+            closeButton.Size = new Size(90, 33);
             closeButton.TabIndex = 21;
-            closeButton.Text = "X";
+            closeButton.Text = "⮜ BACK ";
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
             // 
+            // txtPwd
+            // 
+            txtPwd.Anchor = AnchorStyles.Right;
+            txtPwd.BackColor = SystemColors.ButtonFace;
+            txtPwd.BorderStyle = BorderStyle.None;
+            txtPwd.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPwd.ForeColor = Color.DimGray;
+            txtPwd.Location = new Point(263, 359);
+            txtPwd.Margin = new Padding(1);
+            txtPwd.Multiline = true;
+            txtPwd.Name = "txtPwd";
+            txtPwd.PasswordChar = '●';
+            txtPwd.PlaceholderText = "Password";
+            txtPwd.Size = new Size(417, 32);
+            txtPwd.TabIndex = 22;
+            // 
             // frmRegister
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(837, 428);
+            BackgroundImage = Properties.Resources.PetMatch_41;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(957, 571);
+            Controls.Add(txtPwd);
             Controls.Add(closeButton);
             Controls.Add(textBox1);
-            Controls.Add(label2);
             Controls.Add(pictureBox5);
-            Controls.Add(newPwd_TextBox);
             Controls.Add(txtUserID);
-            Controls.Add(label1);
-            Controls.Add(lbUserID);
             Controls.Add(txtpwd4);
             Controls.Add(PolicyCheckBox);
             Controls.Add(createAccount_Btn);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);
             Name = "frmRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmRegister";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtpwd4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -268,19 +210,14 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button createAccount_Btn;
-        private Label lbUserID;
-        private Label label1;
-        private Label label2;
         private TextBox txtUserID;
         private TextBox textBox1;
-        private TextBox newPwd_TextBox;
         private PictureBox pictureBox5;
         private PictureBox txtpwd4;
         private CheckBox PolicyCheckBox;
         private Button closeButton;
+        private TextBox txtPwd;
     }
 }
