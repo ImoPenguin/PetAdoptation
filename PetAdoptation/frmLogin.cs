@@ -42,9 +42,10 @@ namespace PetAdoptation
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bLogin_Click(object sender, EventArgs e)
         {
-
+            frmMainScreen mainScreen = new frmMainScreen();
+            mainScreen.Show();
         }
 
         private void lbUserID_Click(object sender, EventArgs e)
