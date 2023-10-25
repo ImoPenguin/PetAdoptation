@@ -147,7 +147,7 @@
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(103, 44);
             closeButton.TabIndex = 21;
-            closeButton.Text = "⮜ BACK ";
+            closeButton.Text = "❮ BACK ";
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
             // 
