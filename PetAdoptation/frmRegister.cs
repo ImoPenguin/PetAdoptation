@@ -46,11 +46,6 @@ namespace PetAdoptation
 
         }
 
-        private void createAccount_Btn_MouseHover(object sender, MouseEventArgs e)
-        {
-            createAccount_Btn.BackColor = Color.DarkSeaGreen;
-        }
-
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -59,6 +54,16 @@ namespace PetAdoptation
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createAccount_Btn_Click(object sender, EventArgs e)
         {
 
         }
