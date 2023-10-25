@@ -46,5 +46,12 @@ namespace PetAdoptation
         {
 
         }
+
+        private void adoptBtn_Click(object sender, EventArgs e)
+        {
+            frmAdoption adoptionForm = new frmAdoption();
+            adoptionForm.Show();
+            this.Hide(); 
+        }
     }
 }

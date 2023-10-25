@@ -63,6 +63,16 @@ namespace PetAdoptation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adopt {
+            get {
+                object obj = ResourceManager.GetObject("Adopt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bOptionMainScreen {
             get {
                 object obj = ResourceManager.GetObject("bOptionMainScreen", resourceCulture);
@@ -86,6 +96,26 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap button1 {
             get {
                 object obj = ResourceManager.GetObject("button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ComboBox {
+            get {
+                object obj = ResourceManager.GetObject("ComboBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ComboBox1 {
+            get {
+                object obj = ResourceManager.GetObject("ComboBox1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,16 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap PetMatch1 {
             get {
                 object obj = ResourceManager.GetObject("PetMatch1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PetMatch2 {
+            get {
+                object obj = ResourceManager.GetObject("PetMatch2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

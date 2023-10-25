@@ -67,5 +67,10 @@ namespace PetAdoptation
         {
 
         }
+
+        private void txtPwd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
