@@ -57,5 +57,15 @@ namespace PetAdoptation
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createAccount_Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
