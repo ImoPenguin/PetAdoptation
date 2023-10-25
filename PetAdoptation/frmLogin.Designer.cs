@@ -80,7 +80,7 @@
             checkBox1.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
             checkBox1.ForeColor = SystemColors.ControlLight;
             checkBox1.ImageAlign = ContentAlignment.TopCenter;
-            checkBox1.Location = new Point(670, 405);
+            checkBox1.Location = new Point(673, 412);
             checkBox1.Margin = new Padding(1);
             checkBox1.Name = "checkBox1";
             checkBox1.Padding = new Padding(6, 0, 3, 0);
@@ -96,7 +96,7 @@
             loginButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             loginButton1.BackColor = Color.AntiqueWhite;
             loginButton1.Cursor = Cursors.Hand;
-            loginButton1.Font = new Font("Yu Gothic UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            loginButton1.Font = new Font("Yu Gothic UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             loginButton1.ForeColor = SystemColors.WindowFrame;
             loginButton1.Location = new Point(614, 471);
             loginButton1.Margin = new Padding(1);
@@ -114,13 +114,13 @@
             bRegistered.BackColor = Color.DarkSeaGreen;
             bRegistered.Cursor = Cursors.Hand;
             bRegistered.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
-            bRegistered.ForeColor = Color.AntiqueWhite;
+            bRegistered.ForeColor = Color.SeaShell;
             bRegistered.Location = new Point(790, 471);
             bRegistered.Margin = new Padding(1);
             bRegistered.Name = "bRegistered";
             bRegistered.Size = new Size(123, 44);
             bRegistered.TabIndex = 10;
-            bRegistered.Text = "Register";
+            bRegistered.Text = "SIGN UP";
             bRegistered.UseVisualStyleBackColor = false;
             bRegistered.Click += bRegistered_Click_1;
             // 
