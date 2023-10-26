@@ -44,8 +44,21 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
-            button8 = new Button();
+            sideMenuButton = new Button();
             closeButton = new Button();
+            sideMenuPanel = new Panel();
+            staffButton = new Panel();
+            staffLabel = new Label();
+            staffIcon = new PictureBox();
+            profileButton = new Panel();
+            profileLabel = new Label();
+            profileIcon = new PictureBox();
+            homeButton = new Panel();
+            homeLabel = new Label();
+            homeIcon = new PictureBox();
+            backButton = new Label();
+            panel1 = new Panel();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             catPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -53,6 +66,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             otherPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            sideMenuPanel.SuspendLayout();
+            staffButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)staffIcon).BeginInit();
+            profileButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)profileIcon).BeginInit();
+            homeButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)homeIcon).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -238,23 +259,23 @@
             button7.TabIndex = 7;
             button7.Text = "Return Pet";
             button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
             // 
-            // button8
+            // sideMenuButton
             // 
-            button8.BackColor = Color.LightYellow;
-            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
-            button8.BackgroundImageLayout = ImageLayout.Zoom;
-            button8.Cursor = Cursors.Hand;
-            button8.FlatAppearance.MouseDownBackColor = Color.LightYellow;
-            button8.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.Location = new Point(13, 45);
-            button8.Name = "button8";
-            button8.Size = new Size(77, 47);
-            button8.TabIndex = 8;
-            button8.UseVisualStyleBackColor = false;
+            sideMenuButton.BackColor = Color.LightYellow;
+            sideMenuButton.BackgroundImage = (Image)resources.GetObject("sideMenuButton.BackgroundImage");
+            sideMenuButton.BackgroundImageLayout = ImageLayout.Zoom;
+            sideMenuButton.Cursor = Cursors.Hand;
+            sideMenuButton.FlatAppearance.MouseDownBackColor = Color.LightYellow;
+            sideMenuButton.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            sideMenuButton.FlatStyle = FlatStyle.Flat;
+            sideMenuButton.Font = new Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            sideMenuButton.Location = new Point(13, 45);
+            sideMenuButton.Name = "sideMenuButton";
+            sideMenuButton.Size = new Size(77, 47);
+            sideMenuButton.TabIndex = 8;
+            sideMenuButton.UseVisualStyleBackColor = false;
+            sideMenuButton.Click += SideMenuButton_Click;
             // 
             // closeButton
             // 
@@ -273,6 +294,174 @@
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
             // 
+            // sideMenuPanel
+            // 
+            sideMenuPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            sideMenuPanel.BackColor = Color.FromArgb(203, 199, 183);
+            sideMenuPanel.Controls.Add(panel1);
+            sideMenuPanel.Controls.Add(staffButton);
+            sideMenuPanel.Controls.Add(profileButton);
+            sideMenuPanel.Controls.Add(homeButton);
+            sideMenuPanel.Controls.Add(backButton);
+            sideMenuPanel.Cursor = Cursors.Hand;
+            sideMenuPanel.Location = new Point(0, 0);
+            sideMenuPanel.Name = "sideMenuPanel";
+            sideMenuPanel.Size = new Size(314, 800);
+            sideMenuPanel.TabIndex = 23;
+            sideMenuPanel.Visible = false;
+            // 
+            // staffButton
+            // 
+            staffButton.Controls.Add(staffLabel);
+            staffButton.Controls.Add(staffIcon);
+            staffButton.Cursor = Cursors.Hand;
+            staffButton.Location = new Point(0, 340);
+            staffButton.Name = "staffButton";
+            staffButton.Size = new Size(314, 98);
+            staffButton.TabIndex = 7;
+            staffButton.MouseLeave += staffButton_MouseOff;
+            staffButton.MouseHover += staffButton_MouseHover;
+            // 
+            // staffLabel
+            // 
+            staffLabel.BackColor = Color.Transparent;
+            staffLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            staffLabel.Location = new Point(112, 29);
+            staffLabel.Name = "staffLabel";
+            staffLabel.Size = new Size(202, 44);
+            staffLabel.TabIndex = 7;
+            staffLabel.Text = "STAFF";
+            staffLabel.TextAlign = ContentAlignment.MiddleLeft;
+            staffLabel.MouseLeave += staffButton_MouseOff;
+            staffLabel.MouseHover += staffButton_MouseHover;
+            // 
+            // staffIcon
+            // 
+            staffIcon.BackColor = Color.Transparent;
+            staffIcon.BackgroundImage = (Image)resources.GetObject("staffIcon.BackgroundImage");
+            staffIcon.BackgroundImageLayout = ImageLayout.Stretch;
+            staffIcon.Location = new Point(40, 29);
+            staffIcon.Name = "staffIcon";
+            staffIcon.Size = new Size(55, 44);
+            staffIcon.TabIndex = 6;
+            staffIcon.TabStop = false;
+            staffIcon.MouseLeave += staffButton_MouseOff;
+            staffIcon.MouseHover += staffButton_MouseHover;
+            // 
+            // profileButton
+            // 
+            profileButton.Controls.Add(profileLabel);
+            profileButton.Controls.Add(profileIcon);
+            profileButton.Cursor = Cursors.Hand;
+            profileButton.Location = new Point(0, 241);
+            profileButton.Name = "profileButton";
+            profileButton.Size = new Size(314, 98);
+            profileButton.TabIndex = 6;
+            profileButton.MouseLeave += profileButton_MouseOff;
+            profileButton.MouseHover += profileButton_MouseHover;
+            // 
+            // profileLabel
+            // 
+            profileLabel.BackColor = Color.Transparent;
+            profileLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            profileLabel.Location = new Point(112, 31);
+            profileLabel.Name = "profileLabel";
+            profileLabel.Size = new Size(202, 44);
+            profileLabel.TabIndex = 6;
+            profileLabel.Text = "PROFILE";
+            profileLabel.TextAlign = ContentAlignment.MiddleLeft;
+            profileLabel.MouseLeave += profileButton_MouseOff;
+            profileLabel.MouseHover += profileButton_MouseHover;
+            // 
+            // profileIcon
+            // 
+            profileIcon.BackColor = Color.Transparent;
+            profileIcon.BackgroundImage = (Image)resources.GetObject("profileIcon.BackgroundImage");
+            profileIcon.BackgroundImageLayout = ImageLayout.Stretch;
+            profileIcon.Location = new Point(40, 31);
+            profileIcon.Name = "profileIcon";
+            profileIcon.Size = new Size(55, 44);
+            profileIcon.TabIndex = 5;
+            profileIcon.TabStop = false;
+            profileIcon.MouseLeave += profileButton_MouseOff;
+            profileIcon.MouseHover += profileButton_MouseHover;
+            // 
+            // homeButton
+            // 
+            homeButton.Controls.Add(homeLabel);
+            homeButton.Controls.Add(homeIcon);
+            homeButton.Cursor = Cursors.Hand;
+            homeButton.Location = new Point(0, 142);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(314, 98);
+            homeButton.TabIndex = 7;
+            homeButton.MouseLeave += homeButton_MouseOff;
+            homeButton.MouseHover += homeButton_MouseHover;
+            // 
+            // homeLabel
+            // 
+            homeLabel.BackColor = Color.Transparent;
+            homeLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            homeLabel.Location = new Point(112, 28);
+            homeLabel.Name = "homeLabel";
+            homeLabel.Size = new Size(202, 44);
+            homeLabel.TabIndex = 5;
+            homeLabel.Text = "HOME";
+            homeLabel.TextAlign = ContentAlignment.MiddleLeft;
+            homeLabel.MouseLeave += homeButton_MouseOff;
+            homeLabel.MouseHover += homeButton_MouseHover;
+            // 
+            // homeIcon
+            // 
+            homeIcon.BackColor = Color.Transparent;
+            homeIcon.BackgroundImage = (Image)resources.GetObject("homeIcon.BackgroundImage");
+            homeIcon.BackgroundImageLayout = ImageLayout.Stretch;
+            homeIcon.Location = new Point(40, 28);
+            homeIcon.Name = "homeIcon";
+            homeIcon.Size = new Size(55, 44);
+            homeIcon.TabIndex = 4;
+            homeIcon.TabStop = false;
+            homeIcon.MouseLeave += homeButton_MouseOff;
+            homeIcon.MouseHover += homeButton_MouseHover;
+            // 
+            // backButton
+            // 
+            backButton.AutoSize = true;
+            backButton.BackColor = Color.Transparent;
+            backButton.Cursor = Cursors.Hand;
+            backButton.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            backButton.ForeColor = Color.White;
+            backButton.Location = new Point(20, 20);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(38, 46);
+            backButton.TabIndex = 0;
+            backButton.Text = "❮";
+            backButton.Click += backButton_Click;
+            backButton.MouseLeave += backButton_MouseLeave;
+            backButton.MouseHover += backButton_MouseHover;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(button4);
+            panel1.Location = new Point(0, 709);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(314, 91);
+            panel1.TabIndex = 10;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(248, 123, 110);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.Cornsilk;
+            button4.Location = new Point(0, 25);
+            button4.Name = "button4";
+            button4.Size = new Size(314, 66);
+            button4.TabIndex = 0;
+            button4.Text = "Log Out";
+            button4.UseVisualStyleBackColor = false;
+            // 
             // frmMainScreen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -281,8 +470,9 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1371, 800);
+            Controls.Add(sideMenuPanel);
             Controls.Add(closeButton);
-            Controls.Add(button8);
+            Controls.Add(sideMenuButton);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -304,8 +494,52 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             otherPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            sideMenuPanel.ResumeLayout(false);
+            sideMenuPanel.PerformLayout();
+            staffButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)staffIcon).EndInit();
+            profileButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)profileIcon).EndInit();
+            homeButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)homeIcon).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void SideMenuButton_Click(object sender, EventArgs e)
+        {
+            sideMenuPanel.Visible = true;
+        }
+
+        private void BackButton_MouseLeave(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BackButton_MouseHover(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void StaffButton_MouseLeave(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ProfileButton_MouseLeave(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void StaffButton_MouseHover(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ProfileButton_MouseHover(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -325,7 +559,20 @@
         private Button button5;
         private Button button6;
         private Button button7;
-        private Button button8;
+        private Button sideMenuButton;
         private Button closeButton;
+        private Panel sideMenuPanel;
+        private Label backButton;
+        private PictureBox homeIcon;
+        private PictureBox profileIcon;
+        private PictureBox staffIcon;
+        private Panel homeButton;
+        private Label homeLabel;
+        private Panel profileButton;
+        private Panel staffButton;
+        private Label staffLabel;
+        private Label profileLabel;
+        private Panel panel1;
+        private Button button4;
     }
 }
