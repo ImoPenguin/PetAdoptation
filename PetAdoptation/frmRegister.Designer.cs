@@ -181,6 +181,7 @@
             txtPwd.PlaceholderText = "Password";
             txtPwd.Size = new Size(422, 30);
             txtPwd.TabIndex = 23;
+            txtPwd.TextChanged += txtPwd_TextChanged;
             // 
             // frmRegister
             // 

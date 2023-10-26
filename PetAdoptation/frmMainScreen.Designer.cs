@@ -223,6 +223,7 @@
             adoptBtn.TabIndex = 5;
             adoptBtn.Text = "ADOPT NOW";
             adoptBtn.UseVisualStyleBackColor = false;
+            adoptBtn.Click += adoptBtn_Click;
             // 
             // button5
             // 
