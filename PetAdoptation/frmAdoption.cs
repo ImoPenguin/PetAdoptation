@@ -30,7 +30,7 @@ namespace PetAdoptation
             {
                 advancedPanel.Visible = true;
                 searchMode_Btn.Text = "Standard search  ▲";
-                SearchPet_Panel.Location = new Point(477, 636);
+                SearchPet_Panel.Location = new Point(425, 477);
             }
 
 
