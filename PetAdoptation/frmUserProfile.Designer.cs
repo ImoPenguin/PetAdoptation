@@ -33,21 +33,20 @@
             ID_lbn = new Label();
             panel3 = new Panel();
             panel7 = new Panel();
-            textBox4 = new TextBox();
+            txtPwdUp = new TextBox();
             label11 = new Label();
             panel6 = new Panel();
-            textBox3 = new TextBox();
+            txtAddress = new TextBox();
             label9 = new Label();
             panel5 = new Panel();
-            textBox2 = new TextBox();
+            txtEmail = new TextBox();
             label7 = new Label();
             panel4 = new Panel();
-            textBox1 = new TextBox();
+            txtPhone = new TextBox();
             label5 = new Label();
             label3 = new Label();
             panel2 = new Panel();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
+            txtName = new TextBox();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -96,6 +95,7 @@
             bEdit.TabIndex = 5;
             bEdit.Text = "EDIT";
             bEdit.UseVisualStyleBackColor = false;
+            bEdit.Click += bEdit_Click;
             // 
             // ID_lbn
             // 
@@ -123,24 +123,25 @@
             // panel7
             // 
             panel7.BackColor = Color.Transparent;
-            panel7.Controls.Add(textBox4);
+            panel7.Controls.Add(txtPwdUp);
             panel7.Controls.Add(label11);
             panel7.Location = new Point(16, 287);
             panel7.Name = "panel7";
             panel7.Size = new Size(864, 69);
             panel7.TabIndex = 6;
             // 
-            // textBox4
+            // txtPwdUp
             // 
-            textBox4.BackColor = Color.FromArgb(229, 215, 200);
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox4.Location = new Point(351, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(497, 54);
-            textBox4.TabIndex = 4;
-            textBox4.Text = "AntartiCas Pengu";
+            txtPwdUp.BackColor = Color.FromArgb(229, 215, 200);
+            txtPwdUp.BorderStyle = BorderStyle.None;
+            txtPwdUp.Enabled = false;
+            txtPwdUp.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPwdUp.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPwdUp.Location = new Point(351, 4);
+            txtPwdUp.Name = "txtPwdUp";
+            txtPwdUp.Size = new Size(497, 54);
+            txtPwdUp.TabIndex = 4;
+            txtPwdUp.Text = "AntartiCas Pengu";
             // 
             // label11
             // 
@@ -156,24 +157,25 @@
             // panel6
             // 
             panel6.BackColor = Color.Transparent;
-            panel6.Controls.Add(textBox3);
+            panel6.Controls.Add(txtAddress);
             panel6.Controls.Add(label9);
             panel6.Location = new Point(16, 195);
             panel6.Name = "panel6";
             panel6.Size = new Size(864, 69);
             panel6.TabIndex = 6;
             // 
-            // textBox3
+            // txtAddress
             // 
-            textBox3.BackColor = Color.FromArgb(229, 215, 200);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox3.Location = new Point(351, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(497, 54);
-            textBox3.TabIndex = 3;
-            textBox3.Text = "Noi Chi Co Tinh yeu ♥";
+            txtAddress.BackColor = Color.FromArgb(229, 215, 200);
+            txtAddress.BorderStyle = BorderStyle.None;
+            txtAddress.Enabled = false;
+            txtAddress.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress.ForeColor = Color.FromArgb(81, 60, 41);
+            txtAddress.Location = new Point(351, 4);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(497, 54);
+            txtAddress.TabIndex = 3;
+            txtAddress.Text = "Noi Chi Co Tinh yeu ♥";
             // 
             // label9
             // 
@@ -189,24 +191,25 @@
             // panel5
             // 
             panel5.BackColor = Color.Transparent;
-            panel5.Controls.Add(textBox2);
+            panel5.Controls.Add(txtEmail);
             panel5.Controls.Add(label7);
             panel5.Location = new Point(16, 103);
             panel5.Name = "panel5";
             panel5.Size = new Size(864, 69);
             panel5.TabIndex = 5;
             // 
-            // textBox2
+            // txtEmail
             // 
-            textBox2.BackColor = Color.FromArgb(229, 215, 200);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox2.Location = new Point(351, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(497, 54);
-            textBox2.TabIndex = 2;
-            textBox2.Text = "HiUser@gmail.com";
+            txtEmail.BackColor = Color.FromArgb(229, 215, 200);
+            txtEmail.BorderStyle = BorderStyle.None;
+            txtEmail.Enabled = false;
+            txtEmail.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.ForeColor = Color.FromArgb(81, 60, 41);
+            txtEmail.Location = new Point(351, 4);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(497, 54);
+            txtEmail.TabIndex = 2;
+            txtEmail.Text = "HiUser@gmail.com";
             // 
             // label7
             // 
@@ -222,24 +225,25 @@
             // panel4
             // 
             panel4.BackColor = Color.Transparent;
-            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(txtPhone);
             panel4.Controls.Add(label5);
             panel4.Location = new Point(16, 16);
             panel4.Name = "panel4";
             panel4.Size = new Size(864, 69);
             panel4.TabIndex = 4;
             // 
-            // textBox1
+            // txtPhone
             // 
-            textBox1.BackColor = Color.FromArgb(229, 215, 200);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox1.Location = new Point(351, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(497, 54);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "04569608998";
+            txtPhone.BackColor = Color.FromArgb(229, 215, 200);
+            txtPhone.BorderStyle = BorderStyle.None;
+            txtPhone.Enabled = false;
+            txtPhone.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPhone.Location = new Point(351, 4);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(497, 54);
+            txtPhone.TabIndex = 1;
+            txtPhone.Text = "04569608998";
             // 
             // label5
             // 
@@ -267,37 +271,26 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(255, 246, 229);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(txtName);
             panel2.Controls.Add(label1);
             panel2.Location = new Point(390, 32);
             panel2.Name = "panel2";
             panel2.Size = new Size(864, 69);
             panel2.TabIndex = 3;
             // 
-            // textBox6
+            // txtName
             // 
-            textBox6.BackColor = Color.FromArgb(255, 246, 229);
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Yu Gothic UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox6.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox6.Location = new Point(367, 4);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(497, 54);
-            textBox6.TabIndex = 3;
-            textBox6.Text = "Blah Blah";
-            // 
-            // textBox5
-            // 
-            textBox5.BackColor = Color.FromArgb(255, 246, 229);
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Yu Gothic UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox5.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox5.Location = new Point(364, 4);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(497, 54);
-            textBox5.TabIndex = 2;
-            textBox5.Text = "Blah Blah";
+            txtName.BackColor = Color.FromArgb(255, 246, 229);
+            txtName.BorderStyle = BorderStyle.None;
+            txtName.Enabled = false;
+            txtName.Font = new Font("Yu Gothic UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.ForeColor = Color.FromArgb(81, 60, 41);
+            txtName.Location = new Point(364, 4);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(497, 54);
+            txtName.TabIndex = 3;
+            txtName.Text = "Blah Blah";
+            txtName.TextChanged += txtName_TextChanged;
             // 
             // label1
             // 
@@ -421,13 +414,12 @@
         private Label label3;
         private Panel panel7;
         private Label label11;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtEmail;
+        private TextBox txtPhone;
         private Label ID_lbn;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox6;
-        private TextBox textBox5;
+        private TextBox txtPwdUp;
+        private TextBox txtAddress;
+        private TextBox txtName;
         private Button bEdit;
         private Button closeButton;
         private Button backButton;
