@@ -19,17 +19,31 @@ namespace PetAdoptation
 
         private void advanceSearch_Btn_Click(object sender, EventArgs e)
         {
+            if (advancedPanel.Visible)
+            {
+                advancedPanel.Visible = false;
+                SearchPet_Panel.Location = new Point(SearchPet_Panel.Location.X, SearchPet_Panel.Location.Y - advancedPanel.Height);
+                searchMode_Btn.Text = "Advanced search ▼";
+               
+            }
+            else
+            {
+                advancedPanel.Visible = true;
+                searchMode_Btn.Text = "Standard search  ▲";
+                //SearchPet_Panel.Location = new Point(SearchPet_Panel.Location.X, SearchPet_Panel.Location.Y + advancedPanel.Height);
+            }
+                
 
         }
 
         private void advanceSearch_Btn_MouseHover(object sender, EventArgs e)
         {
-            advanceSearch_Btn.ForeColor = Color.FromArgb(132, 109, 97);
+            searchMode_Btn.ForeColor = Color.FromArgb(132, 109, 97);
         }
 
         private void advanceSearch_Btn_MouseLeave(object sender, EventArgs e)
         {
-            advanceSearch_Btn.ForeColor = Color.FromArgb(81, 60, 41);
+            searchMode_Btn.ForeColor = Color.FromArgb(81, 60, 41);
         }
 
         private void txtLocation_TextChanged(object sender, EventArgs e)
@@ -41,7 +55,7 @@ namespace PetAdoptation
         {
             this.Hide();
             frmMainScreen mainScreen = new frmMainScreen();
-            mainScreen.Show(); 
+            mainScreen.Show();
         }
         private void backButton_MouseHover(object sender, EventArgs e)
         {
@@ -51,6 +65,21 @@ namespace PetAdoptation
         private void backButton_MouseLeave(object sender, EventArgs e)
         {
             backButton.ForeColor = Color.Honeydew;
+        }
+
+        private void txtPetId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAdoption_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchPet_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
