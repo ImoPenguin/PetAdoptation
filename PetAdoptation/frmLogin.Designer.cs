@@ -177,10 +177,10 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(918, 12);
+            closeButton.Location = new Point(913, 9);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(29, 33);
+            closeButton.Size = new Size(35, 35);
             closeButton.TabIndex = 14;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
