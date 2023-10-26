@@ -37,12 +37,52 @@ namespace PetAdoptation
             System.Windows.Forms.Application.Exit();
         }
 
-        private void adoptBtn_MouseHover(object sender, MouseEventArgs e)
+        private void homeButton_MouseHover(object sender, EventArgs e)
         {
-            adoptBtn.BackColor = Color.DarkSeaGreen;
+            homeButton.BackColor = Color.FromArgb(255, 246, 229);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void homeButton_MouseOff(object sender, EventArgs e)
+        {
+            homeButton.BackColor = Color.FromArgb(203, 199, 183);
+        }
+
+        private void profileButton_MouseHover(Object sender, EventArgs e)
+        {
+            profileButton.BackColor = Color.FromArgb(255, 246, 229);
+        }
+
+        private void profileButton_MouseOff(Object sender, EventArgs e)
+        {
+            profileButton.BackColor = Color.FromArgb(203, 199, 183);
+        }
+
+        private void staffButton_MouseHover(Object sender, EventArgs e)
+        {
+            staffButton.BackColor = Color.FromArgb(255, 246, 229);
+        }
+
+        private void staffButton_MouseOff(Object sender, EventArgs e)
+        {
+            staffButton.BackColor = Color.FromArgb(203, 199, 183);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            sideMenuPanel.Visible = false;
+        }
+
+        private void backButton_MouseHover(object sender, EventArgs e)
+        {
+            backButton.ForeColor = Color.FromArgb(81, 60, 41);
+        }
+
+        private void backButton_MouseLeave(object sender, EventArgs e)
+        {
+            backButton.ForeColor = Color.White;
+        }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
 
         }
