@@ -47,6 +47,8 @@
             sideMenuButton = new Button();
             closeButton = new Button();
             sideMenuPanel = new Panel();
+            panel1 = new Panel();
+            logOut_btn = new Button();
             staffButton = new Panel();
             staffLabel = new Label();
             staffIcon = new PictureBox();
@@ -57,8 +59,6 @@
             homeLabel = new Label();
             homeIcon = new PictureBox();
             backButton = new Label();
-            panel1 = new Panel();
-            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             catPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -67,13 +67,13 @@
             otherPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             sideMenuPanel.SuspendLayout();
+            panel1.SuspendLayout();
             staffButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)staffIcon).BeginInit();
             profileButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)profileIcon).BeginInit();
             homeButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)homeIcon).BeginInit();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -311,6 +311,29 @@
             sideMenuPanel.TabIndex = 23;
             sideMenuPanel.Visible = false;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(logOut_btn);
+            panel1.Location = new Point(0, 709);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(314, 91);
+            panel1.TabIndex = 10;
+            // 
+            // logOut_btn
+            // 
+            logOut_btn.BackColor = Color.FromArgb(248, 123, 110);
+            logOut_btn.FlatAppearance.BorderSize = 0;
+            logOut_btn.FlatStyle = FlatStyle.Flat;
+            logOut_btn.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            logOut_btn.ForeColor = Color.Cornsilk;
+            logOut_btn.Location = new Point(0, 25);
+            logOut_btn.Name = "logOut_btn";
+            logOut_btn.Size = new Size(314, 66);
+            logOut_btn.TabIndex = 0;
+            logOut_btn.Text = "Log Out";
+            logOut_btn.UseVisualStyleBackColor = false;
+            logOut_btn.Click += logOut_btn_Click;
+            // 
             // staffButton
             // 
             staffButton.Controls.Add(staffLabel);
@@ -358,6 +381,7 @@
             profileButton.Name = "profileButton";
             profileButton.Size = new Size(314, 98);
             profileButton.TabIndex = 6;
+            profileButton.Click += profileButton_Click;
             profileButton.MouseLeave += profileButton_MouseOff;
             profileButton.MouseHover += profileButton_MouseHover;
             // 
@@ -371,6 +395,7 @@
             profileLabel.TabIndex = 6;
             profileLabel.Text = "PROFILE";
             profileLabel.TextAlign = ContentAlignment.MiddleLeft;
+            profileLabel.Click += profileLabel_Click;
             profileLabel.MouseLeave += profileButton_MouseOff;
             profileLabel.MouseHover += profileButton_MouseHover;
             // 
@@ -384,6 +409,7 @@
             profileIcon.Size = new Size(55, 44);
             profileIcon.TabIndex = 5;
             profileIcon.TabStop = false;
+            profileIcon.Click += profileIcon_Click;
             profileIcon.MouseLeave += profileButton_MouseOff;
             profileIcon.MouseHover += profileButton_MouseHover;
             // 
@@ -441,28 +467,6 @@
             backButton.MouseLeave += backButton_MouseLeave;
             backButton.MouseHover += backButton_MouseHover;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(button4);
-            panel1.Location = new Point(0, 709);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(314, 91);
-            panel1.TabIndex = 10;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(248, 123, 110);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.Cornsilk;
-            button4.Location = new Point(0, 25);
-            button4.Name = "button4";
-            button4.Size = new Size(314, 66);
-            button4.TabIndex = 0;
-            button4.Text = "Log Out";
-            button4.UseVisualStyleBackColor = false;
-            // 
             // frmMainScreen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -497,13 +501,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             sideMenuPanel.ResumeLayout(false);
             sideMenuPanel.PerformLayout();
+            panel1.ResumeLayout(false);
             staffButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)staffIcon).EndInit();
             profileButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)profileIcon).EndInit();
             homeButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)homeIcon).EndInit();
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -574,6 +578,6 @@
         private Label staffLabel;
         private Label profileLabel;
         private Panel panel1;
-        private Button button4;
+        private Button logOut_btn;
     }
 }

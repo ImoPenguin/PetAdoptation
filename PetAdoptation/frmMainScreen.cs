@@ -91,7 +91,35 @@ namespace PetAdoptation
         {
             frmAdoption adoptionForm = new frmAdoption();
             adoptionForm.Show();
-            this.Hide(); 
+            this.Hide();
+        }
+
+        private void profileLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmUserProfile profileForm = new frmUserProfile();
+            profileForm.Show();
+        }
+
+        private void profileButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmUserProfile profileForm = new frmUserProfile();
+            profileForm.Show();
+        }
+
+        private void profileIcon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmUserProfile profileForm = new frmUserProfile();
+            profileForm.Show();
+        }
+
+        private void logOut_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin loginForm = new frmLogin();
+            loginForm.Show(); 
         }
     }
 }
