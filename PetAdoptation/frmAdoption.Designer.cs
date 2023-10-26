@@ -147,7 +147,7 @@
             PetType_Combobx.Items.AddRange(new object[] { "Cat ", "Dog ", "Other " });
             PetType_Combobx.Location = new Point(105, 26);
             PetType_Combobx.Name = "PetType_Combobx";
-            PetType_Combobx.Size = new Size(354, 45);
+            PetType_Combobx.Size = new Size(373, 45);
             PetType_Combobx.TabIndex = 3;
             PetType_Combobx.Text = "Choose an animal type ";
             // 
@@ -233,7 +233,7 @@
             SearchPet_Panel.BackColor = Color.Transparent;
             SearchPet_Panel.Controls.Add(bSearch_For_A_Pet);
             SearchPet_Panel.Controls.Add(searchMode_Btn);
-            SearchPet_Panel.Location = new Point(477, 636);
+            SearchPet_Panel.Location = new Point(477, 420);
             SearchPet_Panel.Name = "SearchPet_Panel";
             SearchPet_Panel.Size = new Size(399, 152);
             SearchPet_Panel.TabIndex = 3;

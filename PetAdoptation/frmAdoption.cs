@@ -24,15 +24,15 @@ namespace PetAdoptation
                 advancedPanel.Visible = false;
                 SearchPet_Panel.Location = new Point(SearchPet_Panel.Location.X, SearchPet_Panel.Location.Y - advancedPanel.Height);
                 searchMode_Btn.Text = "Advanced search ▼";
-               
+
             }
             else
             {
                 advancedPanel.Visible = true;
                 searchMode_Btn.Text = "Standard search  ▲";
-                //SearchPet_Panel.Location = new Point(SearchPet_Panel.Location.X, SearchPet_Panel.Location.Y + advancedPanel.Height);
+                SearchPet_Panel.Location = new Point(477, 636);
             }
-                
+
 
         }
 
