@@ -123,6 +123,56 @@ namespace PetAdoptation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ID {
+            get {
+                object obj = ResourceManager.GetObject("ID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ID1 {
+            get {
+                object obj = ResourceManager.GetObject("ID1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ID2 {
+            get {
+                object obj = ResourceManager.GetObject("ID2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ID3 {
+            get {
+                object obj = ResourceManager.GetObject("ID3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Location {
+            get {
+                object obj = ResourceManager.GetObject("Location", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meow {
             get {
                 object obj = ResourceManager.GetObject("meow", resourceCulture);
@@ -276,6 +326,16 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap Screenshot_2023_10_20_at_11_38_07_am {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2023-10-20 at 11.38.07 am", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SiameseCat {
+            get {
+                object obj = ResourceManager.GetObject("SiameseCat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

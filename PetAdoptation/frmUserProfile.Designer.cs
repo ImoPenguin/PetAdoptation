@@ -275,7 +275,7 @@
             panel2.Controls.Add(label1);
             panel2.Location = new Point(390, 32);
             panel2.Name = "panel2";
-            panel2.Size = new Size(864, 69);
+            panel2.Size = new Size(880, 69);
             panel2.TabIndex = 3;
             // 
             // txtName
@@ -401,8 +401,6 @@
         private Panel panel1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Panel panel2;
-        private Label label1;
         private PictureBox pictureBox3;
         private Panel panel3;
         private Panel panel6;
@@ -419,9 +417,11 @@
         private Label ID_lbn;
         private TextBox txtPwdUp;
         private TextBox txtAddress;
-        private TextBox txtName;
         private Button bEdit;
         private Button closeButton;
+        private Panel panel2;
+        private TextBox txtName;
+        private Label label1;
         private Button backButton;
     }
 }
