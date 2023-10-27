@@ -46,6 +46,7 @@
             petButton_1 = new Button();
             petPicture_1 = new PictureBox();
             backButton = new Button();
+            closeButton = new Button();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             allPet_panel.SuspendLayout();
             petPanel_4.SuspendLayout();
@@ -71,6 +72,7 @@
             allPet_panel.Name = "allPet_panel";
             allPet_panel.Size = new Size(1311, 606);
             allPet_panel.TabIndex = 1;
+            allPet_panel.Paint += allPet_panel_Paint;
             // 
             // petPanel_4
             // 
@@ -182,7 +184,7 @@
             Adopt_lb.AutoSize = true;
             Adopt_lb.Font = new Font("Yu Gothic UI", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
-            Adopt_lb.Location = new Point(321, 16);
+            Adopt_lb.Location = new Point(321, 9);
             Adopt_lb.Name = "Adopt_lb";
             Adopt_lb.Size = new Size(704, 72);
             Adopt_lb.TabIndex = 4;
@@ -244,6 +246,23 @@
             backButton.UseVisualStyleBackColor = false;
             backButton.Click += backButton_Click;
             // 
+            // closeButton
+            // 
+            closeButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            closeButton.BackColor = Color.IndianRed;
+            closeButton.Cursor = Cursors.Hand;
+            closeButton.FlatAppearance.BorderSize = 0;
+            closeButton.FlatStyle = FlatStyle.Popup;
+            closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            closeButton.ForeColor = Color.White;
+            closeButton.Location = new Point(1327, 9);
+            closeButton.Margin = new Padding(0);
+            closeButton.Name = "closeButton";
+            closeButton.Size = new Size(35, 35);
+            closeButton.TabIndex = 15;
+            closeButton.Text = "X";
+            closeButton.UseVisualStyleBackColor = false;
+            // 
             // frmAllPets
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -251,6 +270,7 @@
             BackgroundImage = Properties.Resources.PetMatch5;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1371, 800);
+            Controls.Add(closeButton);
             Controls.Add(backButton);
             Controls.Add(allPet_panel);
             DoubleBuffered = true;
@@ -292,5 +312,6 @@
         private Button petButton_4;
         private PictureBox petPicture_4;
         private Button backButton;
+        private Button closeButton;
     }
 }

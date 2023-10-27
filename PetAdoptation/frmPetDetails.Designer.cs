@@ -195,7 +195,7 @@
             wormed_Label.AutoSize = true;
             wormed_Label.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             wormed_Label.ForeColor = Color.FromArgb(81, 60, 41);
-            wormed_Label.Location = new Point(12, 95);
+            wormed_Label.Location = new Point(5, 95);
             wormed_Label.Name = "wormed_Label";
             wormed_Label.Size = new Size(150, 41);
             wormed_Label.TabIndex = 5;
@@ -206,7 +206,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(46, 14);
+            pictureBox4.Location = new Point(42, 14);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(76, 78);
             pictureBox4.TabIndex = 10;
@@ -289,7 +289,7 @@
             desexed_Label.AutoSize = true;
             desexed_Label.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             desexed_Label.ForeColor = Color.FromArgb(81, 60, 41);
-            desexed_Label.Location = new Point(12, 95);
+            desexed_Label.Location = new Point(17, 95);
             desexed_Label.Name = "desexed_Label";
             desexed_Label.Size = new Size(139, 41);
             desexed_Label.TabIndex = 5;
@@ -338,7 +338,7 @@
             textBox2.ForeColor = Color.FromArgb(81, 60, 41);
             textBox2.Location = new Point(245, 5);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(226, 40);
+            textBox2.Size = new Size(223, 40);
             textBox2.TabIndex = 7;
             textBox2.Text = "Black/White";
             // 
@@ -404,7 +404,7 @@
             textBox1.ForeColor = Color.FromArgb(81, 60, 41);
             textBox1.Location = new Point(245, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 40);
+            textBox1.Size = new Size(223, 40);
             textBox1.TabIndex = 7;
             textBox1.Text = "Cat";
             // 
@@ -470,7 +470,7 @@
             txtPetSize.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetSize.Location = new Point(245, 5);
             txtPetSize.Name = "txtPetSize";
-            txtPetSize.Size = new Size(231, 40);
+            txtPetSize.Size = new Size(223, 40);
             txtPetSize.TabIndex = 7;
             txtPetSize.Text = "Medium";
             // 
@@ -503,7 +503,7 @@
             txtPetSex.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetSex.Location = new Point(245, 5);
             txtPetSex.Name = "txtPetSex";
-            txtPetSex.Size = new Size(231, 40);
+            txtPetSex.Size = new Size(223, 40);
             txtPetSex.TabIndex = 6;
             txtPetSex.Text = "Male ";
             // 

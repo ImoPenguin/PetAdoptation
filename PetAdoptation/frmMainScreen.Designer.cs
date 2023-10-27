@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainScreen));
             pictureBox1 = new PictureBox();
             catPanel = new Panel();
-            button1 = new Button();
+            cat_Btn = new Button();
             pictureBox3 = new PictureBox();
             categoriesLabel = new Label();
             dogPanel = new Panel();
@@ -87,7 +87,7 @@
             // catPanel
             // 
             catPanel.BackColor = Color.BlanchedAlmond;
-            catPanel.Controls.Add(button1);
+            catPanel.Controls.Add(cat_Btn);
             catPanel.Controls.Add(pictureBox3);
             catPanel.Location = new Point(309, 531);
             catPanel.Name = "catPanel";
@@ -95,20 +95,21 @@
             catPanel.TabIndex = 0;
             catPanel.Paint += panel2_Paint;
             // 
-            // button1
+            // cat_Btn
             // 
-            button1.BackColor = Color.LightYellow;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.MouseDownBackColor = Color.LightYellow;
-            button1.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(29, 145);
-            button1.Name = "button1";
-            button1.Size = new Size(137, 41);
-            button1.TabIndex = 3;
-            button1.Text = "Cat";
-            button1.UseVisualStyleBackColor = false;
+            cat_Btn.BackColor = Color.LightYellow;
+            cat_Btn.Cursor = Cursors.Hand;
+            cat_Btn.FlatAppearance.MouseDownBackColor = Color.LightYellow;
+            cat_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            cat_Btn.FlatStyle = FlatStyle.Flat;
+            cat_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cat_Btn.Location = new Point(29, 145);
+            cat_Btn.Name = "cat_Btn";
+            cat_Btn.Size = new Size(137, 41);
+            cat_Btn.TabIndex = 3;
+            cat_Btn.Text = "Cat";
+            cat_Btn.UseVisualStyleBackColor = false;
+            cat_Btn.Click += cat_Btn_Click;
             // 
             // pictureBox3
             // 
@@ -557,7 +558,7 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
-        private Button button1;
+        private Button cat_Btn;
         private Button button2;
         private Button button3;
         private Button adoptBtn;

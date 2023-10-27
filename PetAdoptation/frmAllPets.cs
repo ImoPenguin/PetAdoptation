@@ -28,7 +28,12 @@ namespace PetAdoptation
         {
             this.Hide();
             frmPetDetails petDetailsForm = new frmPetDetails();
-            petDetailsForm.Show(); 
+            petDetailsForm.Show();
+        }
+
+        private void allPet_panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -126,7 +126,14 @@ namespace PetAdoptation
         {
             this.Hide();
             frmAllPets allPetsForm = new frmAllPets();
-            allPetsForm.Show(); 
+            allPetsForm.Show();
+        }
+
+        private void cat_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCats catForm = new frmCats();
+            catForm.Show(); 
         }
     }
 }
