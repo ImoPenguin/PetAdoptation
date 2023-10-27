@@ -119,7 +119,7 @@ namespace PetAdoptation
         {
             this.Hide();
             frmLogin loginForm = new frmLogin();
-            loginForm.Show(); 
+            loginForm.Show();
         }
     }
 }
