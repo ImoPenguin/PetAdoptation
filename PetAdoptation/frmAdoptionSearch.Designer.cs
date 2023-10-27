@@ -53,7 +53,7 @@
             panel6 = new Panel();
             sex_Combobx = new ComboBox();
             pictureBox3 = new PictureBox();
-            panel7 = new Panel();
+            panel7 = new Panel();https://github.com/ImoPenguin/PetAdoptation/pull/36/conflict?name=PetAdoptation%252FfrmAdoptionSearch.Designer.cs&base_oid=1352383ada9efc70f630419c83f6dac9676e68dc&head_oid=d1e7f47c80e8f20d454b0e2535b847c254e633a5
             age_Combobx = new ComboBox();
             pictureBox4 = new PictureBox();
             Main_panel.SuspendLayout();

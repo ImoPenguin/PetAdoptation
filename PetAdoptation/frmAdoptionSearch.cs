@@ -14,7 +14,7 @@ namespace PetAdoptation
     {
         public frmAdoptionSearch()
         {
-            InitializeComponent();
+            InitializeComponenthttps://github.com/ImoPenguin/PetAdoptation/pull/36/conflict?name=PetAdoptation%252FfrmAdoptionSearch.Designer.cs&base_oid=1352383ada9efc70f630419c83f6dac9676e68dc&head_oid=d1e7f47c80e8f20d454b0e2535b847c254e633a5();
         }
 
         private void advanceSearch_Btn_Click(object sender, EventArgs e)
@@ -97,4 +97,3 @@ namespace PetAdoptation
 
     }
 }
- 
