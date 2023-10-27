@@ -1,6 +1,6 @@
 ﻿namespace PetAdoptation
 {
-    partial class frmAdoption
+    partial class frmAdoptionSearch
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdoption));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdoptionSearch));
             Main_panel = new Panel();
             panel1 = new Panel();
             Location_panel = new Panel();

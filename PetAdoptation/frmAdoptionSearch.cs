@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PetAdoptation
 {
-    public partial class frmAdoption : Form
+    public partial class frmAdoptionSearch : Form
     {
-        public frmAdoption()
+        public frmAdoptionSearch()
         {
             InitializeComponent();
         }
