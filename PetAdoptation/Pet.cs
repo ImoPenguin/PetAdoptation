@@ -20,6 +20,9 @@ namespace PetAdoptation
         private bool microchip;
         private string description;
         private string age;
+        private bool adopted;
+
+        private string ownerID;
 
         //
         //  GETTERs & SETTERs
@@ -90,9 +93,21 @@ namespace PetAdoptation
             set { age = value; }
         }
 
+        public bool Adopted
+        {
+            get { return adopted; }
+            set { adopted = value; }
+        }
+
+        public string OwnerID
+        {
+            get { return ownerID; }
+            set { ownerID = value; }
+        }
+
 
         // Constructor
-        public Pet(string storeID, string ID, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, string description, string age)
+        public Pet(string storeID, string ID, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, string description, string age, string ownerID)
         {
             this.storeID = storeID;
             this.ID = ID;
@@ -105,6 +120,16 @@ namespace PetAdoptation
             this.microchip = microchip;
             this.description = description;
             this.age = age;
+            this.ownerID = ownerID;
+
+            if(ownerID == "")
+            {
+                adopted = false;
+            }
+            else
+            {
+                adopted = true;
+            }
         }
 
         // PUBLIC Functions
