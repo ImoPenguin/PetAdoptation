@@ -31,7 +31,14 @@ namespace PetAdoptation
         {
             this.Hide();
             frmAdoptionSearch adoptionSearchForm = new frmAdoptionSearch();
-            adoptionSearchForm.Show(); 
+            adoptionSearchForm.Show();
+        }
+
+        private void bAdopt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAdoption adoptionForm = new frmAdoption();
+            adoptionForm.Show();
         }
     }
 }

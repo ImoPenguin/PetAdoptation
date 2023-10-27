@@ -183,6 +183,16 @@ namespace PetAdoptation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PetID {
+            get {
+                object obj = ResourceManager.GetObject("PetID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PetMatch {
             get {
                 object obj = ResourceManager.GetObject("PetMatch", resourceCulture);
@@ -246,6 +256,36 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap PetMatch2 {
             get {
                 object obj = ResourceManager.GetObject("PetMatch2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PetMatch3 {
+            get {
+                object obj = ResourceManager.GetObject("PetMatch3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PetMatch4 {
+            get {
+                object obj = ResourceManager.GetObject("PetMatch4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PetMatch5 {
+            get {
+                object obj = ResourceManager.GetObject("PetMatch5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +376,36 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap SiameseCat {
             get {
                 object obj = ResourceManager.GetObject("SiameseCat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SiameseCat1 {
+            get {
+                object obj = ResourceManager.GetObject("SiameseCat1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SiameseCat2 {
+            get {
+                object obj = ResourceManager.GetObject("SiameseCat2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SiameseCat3 {
+            get {
+                object obj = ResourceManager.GetObject("SiameseCat3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -134,6 +134,7 @@
             bAdopt.TabIndex = 11;
             bAdopt.Text = "ADOPT";
             bAdopt.UseVisualStyleBackColor = false;
+            bAdopt.Click += bAdopt_Click;
             // 
             // label4
             // 
@@ -636,7 +637,7 @@
             backButton.FlatStyle = FlatStyle.Flat;
             backButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             backButton.ForeColor = Color.Honeydew;
-            backButton.Location = new Point(28, 41);
+            backButton.Location = new Point(44, 40);
             backButton.Margin = new Padding(0);
             backButton.Name = "backButton";
             backButton.Size = new Size(145, 62);

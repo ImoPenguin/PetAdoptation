@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
             // label1
@@ -42,14 +43,24 @@
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
-            // Form1
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(62, 55);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ScrollBars = RichTextBoxScrollBars.ForcedVertical;
+            richTextBox1.Size = new Size(315, 303);
+            richTextBox1.TabIndex = 1;
+            richTextBox1.Text = "";
+            // 
+            // draftFrm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(richTextBox1);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "draftFrm";
             Text = "Form1";
             ResumeLayout(false);
         }
@@ -57,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private RichTextBox richTextBox1;
     }
 }
