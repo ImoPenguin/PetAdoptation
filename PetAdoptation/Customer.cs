@@ -42,10 +42,21 @@ namespace PetAdoptation
             this.Address = address;
         }
 
+        public Customer(string ID, string password, string name, string phoneNo, string email, string address, string assignedStaff)
+        {
+            this.ID = ID;
+            this.Password = password;
+            this.Name = name;
+            this.PhoneNo = phoneNo;
+            this.Email = email;
+            this.Address = address;
+            this.AssignedStaff_ID = assignedStaff;
+        }
+
         //
         //  Other Functions
         //
-        
+
         //  ADOPT Pets Function
         public void adoptPet(string petID)
         {
