@@ -121,5 +121,33 @@ namespace PetAdoptation
             frmLogin loginForm = new frmLogin();
             loginForm.Show();
         }
+
+        private void showAll_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAllPets allPetsForm = new frmAllPets();
+            allPetsForm.Show();
+        }
+
+        private void cat_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCats catForm = new frmCats();
+            catForm.Show();
+        }
+
+        private void dog_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDogs dogForm = new frmDogs();
+            dogForm.Show();
+        }
+
+        private void other_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmOtherPets otherPetsForm = new frmOtherPets();
+            otherPetsForm.Show(); 
+        }
     }
 }
