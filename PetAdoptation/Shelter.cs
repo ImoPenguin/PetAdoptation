@@ -11,8 +11,6 @@ namespace PetAdoptation
         //  PRIVATE Fields
         private string storeID;
         private string address;
-        private List<string> staffRoster;
-        private List<string> petList;
 
         //
         //  PUBLIC Functions
@@ -31,46 +29,11 @@ namespace PetAdoptation
             set { address = value; }
         }
 
-        public List<string> StaffList
-        {
-            get { return staffRoster; }
-            set { staffRoster = value; }
-        }
-
-        public List<string> PetList
-        {
-            get { return petList; }
-            set { petList = value; }
-        }
-
         //  CONSTRUCTORS
-        public Shelter(string storeID, string address, List<string> staffList, List<string> petList)
+        public Shelter(string storeID, string address)
         {
             StoreID = storeID;
             Address = address;
-            StaffList = staffList;
-            PetList = petList;
-        }
-
-        //  OTHER Functions
-        public void addStaff(string staffID)
-        {
-            StaffList.Add(staffID);
-        }
-
-        public void removeStaff(string staffID)
-        {
-            StaffList.Remove(staffID);
-        }
-
-        public void addPet(string petID)
-        {
-            PetList.Add(petID);
-        }
-
-        public void removePet(string petID)
-        {
-            PetList.Remove(petID);
         }
     }
 }
