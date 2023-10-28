@@ -36,9 +36,9 @@
             petPanel_3 = new Panel();
             petButton_3 = new Button();
             petPicture_3 = new PictureBox();
-            petPanel_2 = new Panel();
-            petButton_2 = new Button();
-            petPicture_2 = new PictureBox();
+            petPanel_5 = new Panel();
+            petButton_5 = new Button();
+            petPicture_5 = new PictureBox();
             Adopt_lb = new Label();
             petPanel_1 = new Panel();
             petButton_1 = new Button();
@@ -50,8 +50,8 @@
             ((System.ComponentModel.ISupportInitialize)petPicture_4).BeginInit();
             petPanel_3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)petPicture_3).BeginInit();
-            petPanel_2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)petPicture_2).BeginInit();
+            petPanel_5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)petPicture_5).BeginInit();
             petPanel_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)petPicture_1).BeginInit();
             SuspendLayout();
@@ -62,21 +62,23 @@
             allPet_panel.BackColor = Color.FromArgb(229, 215, 200);
             allPet_panel.Controls.Add(petPanel_4);
             allPet_panel.Controls.Add(petPanel_3);
-            allPet_panel.Controls.Add(petPanel_2);
+            allPet_panel.Controls.Add(petPanel_5);
             allPet_panel.Controls.Add(Adopt_lb);
             allPet_panel.Controls.Add(petPanel_1);
-            allPet_panel.Location = new Point(30, 164);
+            allPet_panel.Location = new Point(49, 262);
+            allPet_panel.Margin = new Padding(5);
             allPet_panel.Name = "allPet_panel";
-            allPet_panel.Size = new Size(1311, 606);
+            allPet_panel.Size = new Size(2130, 970);
             allPet_panel.TabIndex = 3;
             // 
             // petPanel_4
             // 
             petPanel_4.Controls.Add(petButton_4);
             petPanel_4.Controls.Add(petPicture_4);
-            petPanel_4.Location = new Point(26, 91);
+            petPanel_4.Location = new Point(42, 146);
+            petPanel_4.Margin = new Padding(5);
             petPanel_4.Name = "petPanel_4";
-            petPanel_4.Size = new Size(371, 476);
+            petPanel_4.Size = new Size(603, 762);
             petPanel_4.TabIndex = 8;
             // 
             // petButton_4
@@ -88,9 +90,10 @@
             petButton_4.FlatStyle = FlatStyle.Flat;
             petButton_4.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_4.ForeColor = Color.FromArgb(255, 246, 229);
-            petButton_4.Location = new Point(91, 412);
+            petButton_4.Location = new Point(148, 659);
+            petButton_4.Margin = new Padding(5);
             petButton_4.Name = "petButton_4";
-            petButton_4.Size = new Size(185, 50);
+            petButton_4.Size = new Size(301, 80);
             petButton_4.TabIndex = 7;
             petButton_4.Text = "COCO";
             petButton_4.UseVisualStyleBackColor = false;
@@ -99,9 +102,10 @@
             // 
             petPicture_4.BackgroundImage = (Image)resources.GetObject("petPicture_4.BackgroundImage");
             petPicture_4.BackgroundImageLayout = ImageLayout.Stretch;
-            petPicture_4.Location = new Point(30, 3);
+            petPicture_4.Location = new Point(49, -8);
+            petPicture_4.Margin = new Padding(5);
             petPicture_4.Name = "petPicture_4";
-            petPicture_4.Size = new Size(313, 392);
+            petPicture_4.Size = new Size(509, 669);
             petPicture_4.TabIndex = 0;
             petPicture_4.TabStop = false;
             // 
@@ -109,9 +113,10 @@
             // 
             petPanel_3.Controls.Add(petButton_3);
             petPanel_3.Controls.Add(petPicture_3);
-            petPanel_3.Location = new Point(910, 91);
+            petPanel_3.Location = new Point(1479, 146);
+            petPanel_3.Margin = new Padding(5);
             petPanel_3.Name = "petPanel_3";
-            petPanel_3.Size = new Size(371, 476);
+            petPanel_3.Size = new Size(603, 762);
             petPanel_3.TabIndex = 8;
             // 
             // petButton_3
@@ -123,11 +128,12 @@
             petButton_3.FlatStyle = FlatStyle.Flat;
             petButton_3.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_3.ForeColor = Color.FromArgb(255, 246, 229);
-            petButton_3.Location = new Point(91, 412);
+            petButton_3.Location = new Point(148, 659);
+            petButton_3.Margin = new Padding(5);
             petButton_3.Name = "petButton_3";
-            petButton_3.Size = new Size(185, 50);
+            petButton_3.Size = new Size(301, 80);
             petButton_3.TabIndex = 7;
-            petButton_3.Text = "BISCUIT";
+            petButton_3.Text = "DOBER";
             petButton_3.UseVisualStyleBackColor = true;
             // 
             // petPicture_3
@@ -135,55 +141,60 @@
             petPicture_3.BackgroundImage = (Image)resources.GetObject("petPicture_3.BackgroundImage");
             petPicture_3.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture_3.InitialImage = null;
-            petPicture_3.Location = new Point(42, 0);
+            petPicture_3.Location = new Point(68, 0);
+            petPicture_3.Margin = new Padding(5);
             petPicture_3.Name = "petPicture_3";
-            petPicture_3.Size = new Size(286, 395);
+            petPicture_3.Size = new Size(465, 650);
             petPicture_3.TabIndex = 0;
             petPicture_3.TabStop = false;
             // 
-            // petPanel_2
+            // petPanel_5
             // 
-            petPanel_2.Controls.Add(petButton_2);
-            petPanel_2.Controls.Add(petPicture_2);
-            petPanel_2.Location = new Point(26, 591);
-            petPanel_2.Name = "petPanel_2";
-            petPanel_2.Size = new Size(371, 476);
-            petPanel_2.TabIndex = 8;
+            petPanel_5.Controls.Add(petButton_5);
+            petPanel_5.Controls.Add(petPicture_5);
+            petPanel_5.Location = new Point(42, 946);
+            petPanel_5.Margin = new Padding(5);
+            petPanel_5.Name = "petPanel_5";
+            petPanel_5.Size = new Size(603, 762);
+            petPanel_5.TabIndex = 8;
             // 
-            // petButton_2
+            // petButton_5
             // 
-            petButton_2.BackColor = Color.FromArgb(111, 138, 129);
-            petButton_2.Cursor = Cursors.Hand;
-            petButton_2.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
-            petButton_2.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
-            petButton_2.FlatStyle = FlatStyle.Flat;
-            petButton_2.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            petButton_2.ForeColor = Color.FromArgb(255, 246, 229);
-            petButton_2.Location = new Point(91, 412);
-            petButton_2.Name = "petButton_2";
-            petButton_2.Size = new Size(185, 50);
-            petButton_2.TabIndex = 7;
-            petButton_2.Text = "FLUMPY";
-            petButton_2.UseVisualStyleBackColor = false;
+            petButton_5.BackColor = Color.FromArgb(111, 138, 129);
+            petButton_5.Cursor = Cursors.Hand;
+            petButton_5.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
+            petButton_5.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            petButton_5.FlatStyle = FlatStyle.Flat;
+            petButton_5.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            petButton_5.ForeColor = Color.FromArgb(255, 246, 229);
+            petButton_5.Location = new Point(148, 659);
+            petButton_5.Margin = new Padding(5);
+            petButton_5.Name = "petButton_5";
+            petButton_5.Size = new Size(301, 80);
+            petButton_5.TabIndex = 7;
+            petButton_5.Text = "DOTTIE";
+            petButton_5.UseVisualStyleBackColor = false;
             // 
-            // petPicture_2
+            // petPicture_5
             // 
-            petPicture_2.BackgroundImage = (Image)resources.GetObject("petPicture_2.BackgroundImage");
-            petPicture_2.BackgroundImageLayout = ImageLayout.Stretch;
-            petPicture_2.Location = new Point(42, 0);
-            petPicture_2.Name = "petPicture_2";
-            petPicture_2.Size = new Size(286, 395);
-            petPicture_2.TabIndex = 0;
-            petPicture_2.TabStop = false;
+            petPicture_5.BackgroundImage = (Image)resources.GetObject("petPicture_5.BackgroundImage");
+            petPicture_5.BackgroundImageLayout = ImageLayout.Stretch;
+            petPicture_5.Location = new Point(68, 0);
+            petPicture_5.Margin = new Padding(5);
+            petPicture_5.Name = "petPicture_5";
+            petPicture_5.Size = new Size(465, 632);
+            petPicture_5.TabIndex = 0;
+            petPicture_5.TabStop = false;
             // 
             // Adopt_lb
             // 
             Adopt_lb.AutoSize = true;
             Adopt_lb.Font = new Font("Segoe UI", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
-            Adopt_lb.Location = new Point(554, 10);
+            Adopt_lb.Location = new Point(900, 16);
+            Adopt_lb.Margin = new Padding(5, 0, 5, 0);
             Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(224, 72);
+            Adopt_lb.Size = new Size(352, 113);
             Adopt_lb.TabIndex = 4;
             Adopt_lb.Text = "D O G S";
             Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
@@ -192,9 +203,10 @@
             // 
             petPanel_1.Controls.Add(petButton_1);
             petPanel_1.Controls.Add(petPicture_1);
-            petPanel_1.Location = new Point(472, 91);
+            petPanel_1.Location = new Point(767, 146);
+            petPanel_1.Margin = new Padding(5);
             petPanel_1.Name = "petPanel_1";
-            petPanel_1.Size = new Size(371, 476);
+            petPanel_1.Size = new Size(603, 762);
             petPanel_1.TabIndex = 1;
             // 
             // petButton_1
@@ -206,9 +218,10 @@
             petButton_1.FlatStyle = FlatStyle.Flat;
             petButton_1.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_1.ForeColor = Color.FromArgb(255, 246, 229);
-            petButton_1.Location = new Point(91, 412);
+            petButton_1.Location = new Point(148, 659);
+            petButton_1.Margin = new Padding(5);
             petButton_1.Name = "petButton_1";
-            petButton_1.Size = new Size(185, 50);
+            petButton_1.Size = new Size(301, 80);
             petButton_1.TabIndex = 7;
             petButton_1.Text = "SNOW";
             petButton_1.UseVisualStyleBackColor = false;
@@ -217,9 +230,10 @@
             // 
             petPicture_1.BackgroundImage = (Image)resources.GetObject("petPicture_1.BackgroundImage");
             petPicture_1.BackgroundImageLayout = ImageLayout.Stretch;
-            petPicture_1.Location = new Point(30, 0);
+            petPicture_1.Location = new Point(49, 0);
+            petPicture_1.Margin = new Padding(5);
             petPicture_1.Name = "petPicture_1";
-            petPicture_1.Size = new Size(313, 406);
+            petPicture_1.Size = new Size(509, 650);
             petPicture_1.TabIndex = 0;
             petPicture_1.TabStop = false;
             // 
@@ -233,13 +247,14 @@
             backButton.FlatStyle = FlatStyle.Flat;
             backButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             backButton.ForeColor = Color.Honeydew;
-            backButton.Location = new Point(30, 33);
+            backButton.Location = new Point(49, 53);
             backButton.Margin = new Padding(0);
             backButton.Name = "backButton";
-            backButton.Size = new Size(145, 62);
+            backButton.Size = new Size(236, 99);
             backButton.TabIndex = 26;
             backButton.Text = "❮ BACK";
             backButton.UseVisualStyleBackColor = false;
+            backButton.Click += backButton_Click;
             // 
             // closeButton
             // 
@@ -250,26 +265,28 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1306, 9);
+            closeButton.Location = new Point(2122, 14);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(35, 35);
+            closeButton.Size = new Size(57, 56);
             closeButton.TabIndex = 27;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
+            closeButton.Click += closeButton_Click;
             // 
             // frmDogs
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PetMatch8;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1353, 753);
+            ClientSize = new Size(2199, 1205);
             Controls.Add(closeButton);
             Controls.Add(backButton);
             Controls.Add(allPet_panel);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(5);
             Name = "frmDogs";
             Text = "frmDogs";
             allPet_panel.ResumeLayout(false);
@@ -278,8 +295,8 @@
             ((System.ComponentModel.ISupportInitialize)petPicture_4).EndInit();
             petPanel_3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)petPicture_3).EndInit();
-            petPanel_2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)petPicture_2).EndInit();
+            petPanel_5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)petPicture_5).EndInit();
             petPanel_1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)petPicture_1).EndInit();
             ResumeLayout(false);
@@ -294,9 +311,9 @@
         private Panel petPanel_3;
         private Button petButton_3;
         private PictureBox petPicture_3;
-        private Panel petPanel_2;
-        private Button petButton_2;
-        private PictureBox petPicture_2;
+        private Panel petPanel_5;
+        private Button petButton_5;
+        private PictureBox petPicture_5;
         private Label Adopt_lb;
         private Panel petPanel_1;
         private Button petButton_1;

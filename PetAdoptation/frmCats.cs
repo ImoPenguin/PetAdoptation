@@ -16,5 +16,24 @@ namespace PetAdoptation
         {
             InitializeComponent();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMainScreen mainScreen = new frmMainScreen();
+            mainScreen.Show();
+        }
+
+        private void petButton_2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPetDetails petDetailsForm = new frmPetDetails();
+            petDetailsForm.Show(); 
+        }
     }
 }
