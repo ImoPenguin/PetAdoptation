@@ -36,9 +36,9 @@ namespace PetAdoptation
             List<Pet> catList = petList.Where(pet => pet.Type == "Cat").ToList();
 
             //  LIST all Pet in Pet list
-            for (int i = 0; i < catList.Count; i++)
+            foreach(Pet p in catList)
             {
-                Console.WriteLine(catList[i].Type);
+                Console.WriteLine(p.Type);
 
                 // Create a Panel for each cell
                 Panel petPanel = new Panel();
@@ -48,7 +48,7 @@ namespace PetAdoptation
 
                 //  GET Corresponding Images
                 PictureBox petPicture = new PictureBox();
-                string filePath = String.Format("Image\\Pet Image\\{0}.png", catList[i].ID);
+                string filePath = String.Format("Image\\Pet Image\\{0}.png", p.ID);
 
                 //  CHECK if image existed, else, GET placeholder image
                 try
@@ -66,7 +66,7 @@ namespace PetAdoptation
 
                 //  CREATE Adopt Button
                 Button petButton = new Button();
-                petButton.Text = catList[i].Name;
+                petButton.Text = p.Name;
                 petButton.Size = new Size(162, 38);
                 petButton.Location = new Point(80, 306);
                 petButton.BackColor = Color.FromArgb(111, 138, 129);
@@ -78,7 +78,7 @@ namespace PetAdoptation
                 petButton.ForeColor = Color.FromArgb(255, 246, 229);
                 petButton.Margin = new Padding(5);
                 petButton.TabIndex = 7;
-                petButton.Name = catList[i].ID;
+                petButton.Name = p.ID;
                 petButton.Click += (s, ea) => petButton_Click(petButton.Name);
 
                 // Add controls to the Panel

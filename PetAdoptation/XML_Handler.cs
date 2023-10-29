@@ -14,8 +14,10 @@ namespace PetAdoptation
         public static List<Customer> readCustomerData()
         {
             //  Load XML File
-            XDocument xmlDoc = XDocument.Load("User.xml");
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "User.xml");
+            XDocument xmlDoc = XDocument.Load(filePath);
             List<Customer> userList = new List<Customer>();
+            Console.WriteLine(xmlDoc.ToString());
 
             //  Get all USER data
             var Customers = from cus in xmlDoc.Descendants("customer")
