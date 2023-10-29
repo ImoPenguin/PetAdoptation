@@ -15,8 +15,6 @@ namespace PetAdoptation
         public frmLogin()
         {
             InitializeComponent();
-
-            Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
         }
 
         private void label1_Click(object sender, EventArgs e)

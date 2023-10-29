@@ -46,6 +46,7 @@ namespace PetAdoptation
                 //  GET Corresponding Images
                 PictureBox petPicture = new PictureBox();
                 string filePath = String.Format("Image\\Pet Image\\{0}.png", p.ID);
+                filePath = Path.Combine(XML_Handler.getSolutionFolder(), filePath);
 
                 //  CHECK if image existed, else, GET placeholder image
                 try

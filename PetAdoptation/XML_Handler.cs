@@ -8,6 +8,21 @@ namespace PetAdoptation
 {
     public static class XML_Handler
     {
+        public static string getSolutionFolder()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            return solutionFolderPath;
+        }
+
         public static string getUserFilePath()
         {
             //  FIND Solution File Path
