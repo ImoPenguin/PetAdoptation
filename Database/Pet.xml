@@ -11,83 +11,10 @@
     <size>Medium</size>
     <vaccinated>true</vaccinated>
     <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
     <description>Description for Pet1</description>
     <age>9 Months</age>
     <ownerID></ownerID>
-  </pet>
-  <pet>
-    <storeID>S1</storeID>
-    <id>P102</id>
-    <type>Cat</type>
-    <name>Pet2</name>
-    <color>Beige/Brown</color>
-    <sex>Male</sex>
-    <breed>Breed2</breed>
-    <size>Small</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <description>Description for Pet2</description>
-    <age>1</age>
-    <ownerID>U1</ownerID>
-  </pet>
-  <pet>
-    <storeID>S1</storeID>
-    <id>P103</id>
-    <type>Cat</type>
-    <name>Pet3</name>
-    <color>Red</color>
-    <sex>Male</sex>
-    <breed>Breed2</breed>
-    <size>Small</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <description>Description for Pet3</description>
-    <age>1</age>
-    <ownerID></ownerID>
-  </pet>
-  <pet>
-    <storeID>S1</storeID>
-    <id>P104</id>
-    <type>Cat</type>
-    <name>Pet4</name>
-    <color>Red</color>
-    <sex>Male</sex>
-    <breed>Breed2</breed>
-    <size>Small</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <description>Description for Pet4</description>
-    <age>1</age>
-    <ownerID></ownerID>
-  </pet>
-  <pet>
-    <storeID>S1</storeID>
-    <id>P105</id>
-    <type>Dog</type>
-    <name>Pet5</name>
-    <color>Black</color>
-    <sex>Male</sex>
-    <breed>Breed1</breed>
-    <size>Big</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <description>Description for Pet5</description>
-    <age>1</age>
-    <ownerID>U1</ownerID>
-  </pet>
-  <pet>
-    <storeID>S1</storeID>
-    <id>P106</id>
-    <type>Dog</type>
-    <name>Pet6</name>
-    <color>White</color>
-    <sex>Male</sex>
-    <breed>Breed2</breed>
-    <size>Medium</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <description>Description for Pet6</description>
-    <age>1</age>
-    <ownerID>U1</ownerID>
   </pet>
 </root>
