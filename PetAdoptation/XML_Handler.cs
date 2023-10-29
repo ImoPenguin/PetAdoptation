@@ -35,7 +35,7 @@ namespace PetAdoptation
             {
                 userList.Add(new Customer(c.ID, c.Password, c.Name, c.phoneNo, c.Email, c.Address, c.assignedStaff_ID));
             }
-                        
+            
             return userList;
         }
     
@@ -60,6 +60,25 @@ namespace PetAdoptation
             xmlDoc.Save("User.xml");
         }
 
+        public static void editCustomerData(Customer newData)
+        {
+            XDocument xmlDoc = XDocument.Load("User.xml");
+            XElement customerElement = xmlDoc.Descendants("customer")
+                .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
+
+            if(customerElement != null)
+            {
+                //  UPDATE customer new DATA
+                customerElement.Element("id").Value = newData.ID;
+                customerElement.Element("password").Value = newData.Password;
+                customerElement.Element("name").Value = newData.Name;
+                customerElement.Element("phoneNo").Value = newData.PhoneNo;
+                customerElement.Element("email").Value = newData.Email;
+                customerElement.Element("address").Value = newData.Address;
+                customerElement.Element("assignedStaff").Value = newData.AssignedStaff_ID;
+                xmlDoc.Save("User.xml");
+            }
+        }
 
         /////////////////////////////////
         //  HANDLING Staff XML Files  //
@@ -191,38 +210,40 @@ namespace PetAdoptation
             return shelterList;
         }
 
+        ///////////////////////////////
+        //  HANDLING Pet XML Files  //
+        /////////////////////////////
+
         public static List<Pet> readPetData()
         {
-            //  LOAD XML Files
-            List<Pet> petsList = new List<Pet>();
+            // Load the XML data from a file
             XDocument xmlDoc = XDocument.Load("Pet.xml");
+            List<Pet> petsList = new List<Pet>();
 
-            //  GET Data from XML Files
             var pets = from pet in xmlDoc.Descendants("pet")
-                select new
-                {
-                    StoreID = pet.Element("storeID").Value,
-                    ID = pet.Element("id").Value,
-                    Name = pet.Element("name").Value,
-                    Color = pet.Element("color").Value,
-                    Sex = pet.Element("sex").Value,
-                    Breed = pet.Element("breed").Value,
-                    Size = pet.Element("size").Value,
-                    Vaccinated = Convert.ToBoolean(pet.Element("vaccinated").Value),
-                    Microchip = Convert.ToBoolean(pet.Element("microchip").Value),
-                    Description = pet.Element("description").Value,
-                    Age = pet.Element("age").Value,
-                    OwnerID = pet.Element("ownerID").Value
-                };
+                       select new
+                       {
+                           StoreID = pet.Element("storeID").Value,
+                           ID = pet.Element("id").Value,
+                           Type = pet.Element("type").Value,
+                           Name = pet.Element("name").Value,
+                           Color = pet.Element("color").Value,
+                           Sex = pet.Element("sex").Value,
+                           Breed = pet.Element("breed").Value,
+                           Size = pet.Element("size").Value,
+                           Vaccinated = bool.Parse(pet.Element("vaccinated").Value),
+                           Microchip = bool.Parse(pet.Element("microchip").Value),
+                           Description = pet.Element("description").Value,
+                           Age = pet.Element("age").Value,
+                           OwnerID = pet.Element("ownerID").Value
+                       };
 
-            //  ADD Pets to Pet List
-            foreach(var pet in petsList)
+            Console.WriteLine("Testing");
+
+            foreach (var pet in pets)
             {
-                petsList.Add(new Pet(pet.StoreID, pet.ID, pet.Name, pet.Color, pet.Sex, pet.Breed, pet.Size, 
-                        Convert.ToBoolean(pet.Vaccinated),
-                        Convert.ToBoolean(pet.Microchip),
-                        pet.Description, pet.Age, pet.OwnerID
-                        ));
+                petsList.Add(new Pet(pet.StoreID, pet.ID, pet.Type, pet.Name, pet.Color, pet.Sex, pet.Breed, pet.Size,
+                                    pet.Vaccinated, pet.Microchip, pet.Description, pet.Age, pet.OwnerID));
             }
 
             return petsList;
@@ -252,5 +273,74 @@ namespace PetAdoptation
             xmlDoc.Root.Add(newPet);
             xmlDoc.Save("Pet.xml");
         }
+
+        public static Pet findPetData(string findID)
+        {
+            List<Pet> petList = readPetData();
+
+            //  FIND Pet with same ID
+            foreach(Pet p in petList)
+            {
+                if(p.ID == findID)
+                {
+                    return p;
+                }
+            }
+
+            //  ELSE Return null
+            return null;
+        }
+
+
+        //  FUNCTION to find USERS
+        public static Customer findCustomerAccount(string findID, string findPassword)
+        {
+            //  READ all CUSTOMERS DATA
+            List<Customer> customers = readCustomerData();
+
+            //  FIND Customers with same ID and PWD
+            foreach(Customer c in customers)
+            {
+                if(c.ID == findID && c.Password == findPassword)
+                {
+                    return c;
+                }
+            }
+
+            return null;
+        }
+
+        public static Staff findStaffAccount(string findID, string findPassword)
+        {
+            //  READ all STAFFS DATA
+            List<Staff> staffs = readStaffData();
+
+            //  FIND Staff with same ID and PWD
+            foreach(Staff s in staffs)
+            {
+                if(s.ID == findID && s.Password == findPassword)
+                {
+                    return s;
+                }
+            }
+
+            return null;
+        }
+
+        public static Manager findManagerAccount(string findID, string findPassword)
+        {
+            //  READ all MANAGERS DATA
+            List<Manager> managers = readManagerData();
+
+            //  FIND Manager with same ID and PWD
+            foreach(Manager m in managers)
+            {
+                if(m.ID ==  findID && m.Password == findPassword) { return m; }
+            }
+
+            return null;
+        }
+    
+        
     }
 }

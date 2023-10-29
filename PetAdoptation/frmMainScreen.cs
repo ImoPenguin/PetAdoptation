@@ -147,7 +147,7 @@ namespace PetAdoptation
         {
             this.Hide();
             frmOtherPets otherPetsForm = new frmOtherPets();
-            otherPetsForm.Show(); 
+            otherPetsForm.Show();
         }
     }
 }

@@ -5,6 +5,8 @@ namespace PetAdoptation
         public draftFrm()
         {
             InitializeComponent();
+
+            label1.Text = Cart.chosenPet.Name;
         }
 
         private void label1_Click(object sender, EventArgs e)
