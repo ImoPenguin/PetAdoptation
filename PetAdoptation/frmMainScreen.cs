@@ -149,5 +149,12 @@ namespace PetAdoptation
             frmOtherPets otherPetsForm = new frmOtherPets();
             otherPetsForm.Show();
         }
+
+        //  Nhớ làm lại function này
+        private void staffLabel_Click(object sender, EventArgs e)
+        {
+            frmAdmin staffForm = new frmAdmin();
+            staffForm.Show();
+        }
     }
 }
