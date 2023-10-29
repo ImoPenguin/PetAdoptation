@@ -172,7 +172,7 @@ namespace PetAdoptation
             staffForm.Show();
         }
 
-        private void staffButton_Paint(object sender, PaintEventArgs e)
+        private void staffButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmAssignedStaff assignedStaffForm = new frmAssignedStaff();
