@@ -44,8 +44,34 @@ namespace PetAdoptation
 
         private void bLogin_Click(object sender, EventArgs e)
         {
-            frmMainScreen mainScreen = new frmMainScreen();
-            mainScreen.Show();
+            LoginAccount.currentCustomer = XML_Handler.findCustomerAccount(txtUserID.Text, txtPwd.Text);
+            LoginAccount.currentStaff = XML_Handler.findStaffAccount(txtUserID.Text, txtPwd.Text);
+            LoginAccount.currentManager = XML_Handler.findManagerAccount(txtUserID.Text, txtPwd.Text);
+
+            if (LoginAccount.currentCustomer != null)
+            {
+                frmMainScreen mainScreen = new frmMainScreen();
+                mainScreen.Show();
+            }
+            //  DISPLAY Staff Screen
+            else if (LoginAccount.currentStaff != null)
+            {
+
+            }
+            //  DISPLAY Staff Screen
+            else if (LoginAccount.currentManager != null)
+            {
+
+            }
+            //  DISPLAY Error Warning
+            else
+            {
+                txtUserID.Text = "";
+                txtPwd.Text = "";
+                wrongLoginLbl.Visible = true;
+                Console.WriteLine("Error !");
+            }
+
         }
 
         private void lbUserID_Click(object sender, EventArgs e)
@@ -72,12 +98,12 @@ namespace PetAdoptation
 
         private void txtUserID_TextChanged(object sender, EventArgs e)
         {
-
+            wrongLoginLbl.Visible = false;
         }
 
         private void txtPwd_TextChanged(object sender, EventArgs e)
         {
-
+            wrongLoginLbl.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

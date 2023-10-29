@@ -11,6 +11,7 @@ namespace PetAdoptation
         // Fields
         private string storeID;
         private string id;
+        private string type;
         private string name;
         private string color;
         private string sex;
@@ -37,6 +38,12 @@ namespace PetAdoptation
         {
             get { return id; }
             set { id = value; }
+        }
+
+        public string Type
+        {
+            get { return type; }
+            set { type = value; }
         }
 
         public string Name
@@ -107,10 +114,11 @@ namespace PetAdoptation
 
 
         // Constructor
-        public Pet(string storeID, string ID, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, string description, string age, string ownerID)
+        public Pet(string storeID, string ID, string type, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, string description, string age, string ownerID)
         {
             this.storeID = storeID;
             this.ID = ID;
+            this.type = type;
             this.name = name;
             this.color = color;
             this.sex = sex;

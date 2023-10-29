@@ -44,6 +44,15 @@ namespace PetAdoptation
                 txtEmail.Enabled = false;
                 txtAddress.Enabled = false;
                 txtPwdUp.Enabled = false;
+
+                //  UPDATE new DATA
+                LoginAccount.currentCustomer.Name = txtName.Text;
+                LoginAccount.currentCustomer.PhoneNo = txtPhone.Text;
+                LoginAccount.currentCustomer.Email = txtEmail.Text;
+                LoginAccount.currentCustomer.Address = txtAddress.Text;
+                LoginAccount.currentCustomer.Password = txtPwdUp.Text;
+
+                XML_Handler.editCustomerData(LoginAccount.currentCustomer);
             }
             else
             {
@@ -59,6 +68,16 @@ namespace PetAdoptation
         private void txtName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            ID_lbl.Text = LoginAccount.currentCustomer.ID;
+            txtName.Text = LoginAccount.currentCustomer.Name;
+            txtPhone.Text = LoginAccount.currentCustomer.PhoneNo;
+            txtEmail.Text = LoginAccount.currentCustomer.Email;
+            txtAddress.Text = LoginAccount.currentCustomer.Address;
+            txtPwdUp.Text = LoginAccount.currentCustomer.Password;
         }
     }
 }
