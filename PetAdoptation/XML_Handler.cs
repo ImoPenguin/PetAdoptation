@@ -287,6 +287,8 @@ namespace PetAdoptation
                            Size = pet.Element("size").Value,
                            Vaccinated = bool.Parse(pet.Element("vaccinated").Value),
                            Microchip = bool.Parse(pet.Element("microchip").Value),
+                           Desexed = bool.Parse(pet.Element("desexed").Value),
+                           Wormed = bool.Parse(pet.Element("wormed").Value),
                            Description = pet.Element("description").Value,
                            Age = pet.Element("age").Value,
                            OwnerID = pet.Element("ownerID").Value
@@ -297,7 +299,7 @@ namespace PetAdoptation
             foreach (var pet in pets)
             {
                 petsList.Add(new Pet(pet.StoreID, pet.ID, pet.Type, pet.Name, pet.Color, pet.Sex, pet.Breed, pet.Size,
-                                    pet.Vaccinated, pet.Microchip, pet.Description, pet.Age, pet.OwnerID));
+                                    pet.Vaccinated, pet.Microchip, pet.Desexed, pet.Wormed, pet.Description, pet.Age, pet.OwnerID));
             }
 
             return petsList;
@@ -318,6 +320,8 @@ namespace PetAdoptation
                 new XElement("size", pet.Size),
                 new XElement("vaccinated", pet.Vaccinated),
                 new XElement("microchip", pet.Microchip),
+                new XElement("desexed", pet.Desexed),
+                new XElement("wormed", pet.Wormed),
                 new XElement("description", pet.Description),
                 new XElement("age", pet.Age),
                 new XElement("adopted", pet.Adopted),
