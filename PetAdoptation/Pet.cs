@@ -19,6 +19,8 @@ namespace PetAdoptation
         private string size;
         private bool vaccinated;
         private bool microchip;
+        private bool desexed;
+        private bool wormed;
         private string description;
         private string age;
         private bool adopted;
@@ -88,6 +90,18 @@ namespace PetAdoptation
             set { microchip = value; }
         }
 
+        public bool Desexed
+        {
+            get { return desexed; }
+            set { desexed = value; }
+        }
+
+        public bool Wormed
+        {
+            get { return wormed; }
+            set { wormed = value; }
+        }
+
         public string Description
         {
             get { return description; }
@@ -114,7 +128,7 @@ namespace PetAdoptation
 
 
         // Constructor
-        public Pet(string storeID, string ID, string type, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, string description, string age, string ownerID)
+        public Pet(string storeID, string ID, string type, string name, string color, string sex, string breed, string size, bool vaccinated, bool microchip, bool desexed, bool wormed, string description, string age, string ownerID)
         {
             this.storeID = storeID;
             this.ID = ID;
@@ -126,6 +140,8 @@ namespace PetAdoptation
             this.size = size;
             this.vaccinated = vaccinated;
             this.microchip = microchip;
+            this.desexed = desexed;
+            this.wormed = wormed;
             this.description = description;
             this.age = age;
             this.ownerID = ownerID;

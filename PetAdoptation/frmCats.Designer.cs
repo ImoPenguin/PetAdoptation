@@ -43,10 +43,10 @@
             backButton.FlatStyle = FlatStyle.Flat;
             backButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             backButton.ForeColor = Color.Honeydew;
-            backButton.Location = new Point(26, 25);
+            backButton.Location = new Point(28, 23);
             backButton.Margin = new Padding(0);
             backButton.Name = "backButton";
-            backButton.Size = new Size(127, 46);
+            backButton.Size = new Size(139, 44);
             backButton.TabIndex = 25;
             backButton.Text = "❮ BACK";
             backButton.UseVisualStyleBackColor = false;
@@ -61,10 +61,10 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1161, 7);
+            closeButton.Location = new Point(1158, 7);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(31, 26);
+            closeButton.Size = new Size(34, 24);
             closeButton.TabIndex = 26;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
@@ -76,10 +76,11 @@
             titleLabel.Font = new Font("Yu Gothic UI", 30.75F, FontStyle.Bold, GraphicsUnit.Point);
             titleLabel.ForeColor = Color.FromArgb(91, 66, 18);
             titleLabel.Location = new Point(26, 103);
+            titleLabel.Margin = new Padding(4, 0, 4, 0);
             titleLabel.Name = "titleLabel";
             titleLabel.Size = new Size(1147, 92);
             titleLabel.TabIndex = 27;
-            titleLabel.Text = "Cats";
+            titleLabel.Text = "CATS";
             titleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmCats
@@ -94,7 +95,7 @@
             Controls.Add(backButton);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 2, 4, 2);
             Name = "frmCats";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmCat";

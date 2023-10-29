@@ -52,10 +52,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Yu Gothic UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(1112, 286);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(599, 134);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(278, 81);
+            label1.Size = new Size(139, 41);
             label1.TabIndex = 1;
             label1.Text = "Get Start";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -65,10 +65,10 @@
             // 
             txtIcon2.Anchor = AnchorStyles.Right;
             txtIcon2.Image = Properties.Resources.Screenshot_2023_10_19_at_4_20_52_pm;
-            txtIcon2.Location = new Point(997, 529);
-            txtIcon2.Margin = new Padding(2);
+            txtIcon2.Location = new Point(537, 248);
+            txtIcon2.Margin = new Padding(1, 1, 1, 1);
             txtIcon2.Name = "txtIcon2";
-            txtIcon2.Size = new Size(487, 96);
+            txtIcon2.Size = new Size(262, 45);
             txtIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
             txtIcon2.TabIndex = 3;
             txtIcon2.TabStop = false;
@@ -83,11 +83,11 @@
             checkBox1.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
             checkBox1.ForeColor = SystemColors.ControlLight;
             checkBox1.ImageAlign = ContentAlignment.TopCenter;
-            checkBox1.Location = new Point(1110, 629);
-            checkBox1.Margin = new Padding(2);
+            checkBox1.Location = new Point(600, 295);
+            checkBox1.Margin = new Padding(1, 1, 1, 1);
             checkBox1.Name = "checkBox1";
-            checkBox1.Padding = new Padding(9, 0, 6, 0);
-            checkBox1.Size = new Size(260, 44);
+            checkBox1.Padding = new Padding(5, 0, 3, 0);
+            checkBox1.Size = new Size(138, 24);
             checkBox1.TabIndex = 6;
             checkBox1.Text = "Keep Me Login";
             checkBox1.UseVisualStyleBackColor = false;
@@ -101,10 +101,10 @@
             loginButton1.Cursor = Cursors.Hand;
             loginButton1.Font = new Font("Yu Gothic UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             loginButton1.ForeColor = SystemColors.WindowFrame;
-            loginButton1.Location = new Point(997, 753);
-            loginButton1.Margin = new Padding(2);
+            loginButton1.Location = new Point(537, 353);
+            loginButton1.Margin = new Padding(1, 1, 1, 1);
             loginButton1.Name = "loginButton1";
-            loginButton1.Size = new Size(201, 70);
+            loginButton1.Size = new Size(108, 33);
             loginButton1.TabIndex = 7;
             loginButton1.Text = "LOGIN";
             loginButton1.UseVisualStyleBackColor = false;
@@ -118,10 +118,10 @@
             bRegistered.Cursor = Cursors.Hand;
             bRegistered.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
             bRegistered.ForeColor = Color.SeaShell;
-            bRegistered.Location = new Point(1283, 753);
-            bRegistered.Margin = new Padding(2);
+            bRegistered.Location = new Point(691, 353);
+            bRegistered.Margin = new Padding(1, 1, 1, 1);
             bRegistered.Name = "bRegistered";
-            bRegistered.Size = new Size(201, 70);
+            bRegistered.Size = new Size(108, 33);
             bRegistered.TabIndex = 10;
             bRegistered.Text = "SIGN UP";
             bRegistered.UseVisualStyleBackColor = false;
@@ -134,11 +134,11 @@
             txtPwd.BorderStyle = BorderStyle.None;
             txtPwd.Font = new Font("Yu Gothic UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             txtPwd.ForeColor = Color.DimGray;
-            txtPwd.Location = new Point(1042, 557);
-            txtPwd.Margin = new Padding(2);
+            txtPwd.Location = new Point(561, 261);
+            txtPwd.Margin = new Padding(1, 1, 1, 1);
             txtPwd.Name = "txtPwd";
             txtPwd.PlaceholderText = "Password";
-            txtPwd.Size = new Size(348, 40);
+            txtPwd.Size = new Size(187, 20);
             txtPwd.TabIndex = 12;
             txtPwd.UseSystemPasswordChar = true;
             txtPwd.TextChanged += txtPwd_TextChanged;
@@ -150,11 +150,11 @@
             txtUserID.BorderStyle = BorderStyle.None;
             txtUserID.Font = new Font("Yu Gothic UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserID.ForeColor = Color.DimGray;
-            txtUserID.Location = new Point(1042, 431);
-            txtUserID.Margin = new Padding(2);
+            txtUserID.Location = new Point(561, 202);
+            txtUserID.Margin = new Padding(1, 1, 1, 1);
             txtUserID.Name = "txtUserID";
             txtUserID.PlaceholderText = "User ID";
-            txtUserID.Size = new Size(399, 40);
+            txtUserID.Size = new Size(215, 20);
             txtUserID.TabIndex = 12;
             txtUserID.TextChanged += txtUserID_TextChanged;
             // 
@@ -162,10 +162,10 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Right;
             pictureBox2.Image = Properties.Resources.Screenshot_2023_10_19_at_4_20_52_pm;
-            pictureBox2.Location = new Point(997, 403);
-            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Location = new Point(537, 189);
+            pictureBox2.Margin = new Padding(1, 1, 1, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(487, 96);
+            pictureBox2.Size = new Size(262, 45);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
@@ -180,10 +180,10 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1484, 15);
+            closeButton.Location = new Point(799, 7);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(58, 55);
+            closeButton.Size = new Size(31, 26);
             closeButton.TabIndex = 14;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
@@ -194,10 +194,9 @@
             wrongLoginLbl.BackColor = Color.Transparent;
             wrongLoginLbl.Font = new Font("Yu Gothic UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             wrongLoginLbl.ForeColor = Color.FromArgb(200, 37, 37);
-            wrongLoginLbl.Location = new Point(997, 683);
-            wrongLoginLbl.Margin = new Padding(6, 0, 6, 0);
+            wrongLoginLbl.Location = new Point(537, 320);
             wrongLoginLbl.Name = "wrongLoginLbl";
-            wrongLoginLbl.Size = new Size(487, 45);
+            wrongLoginLbl.Size = new Size(262, 21);
             wrongLoginLbl.TabIndex = 15;
             wrongLoginLbl.Text = "Login Credential is incorrect";
             wrongLoginLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -208,9 +207,10 @@
             psw_pic.BackgroundImage = Properties.Resources.pswIcon;
             psw_pic.BackgroundImageLayout = ImageLayout.Stretch;
             psw_pic.Cursor = Cursors.Hand;
-            psw_pic.Location = new Point(1406, 560);
+            psw_pic.Location = new Point(757, 262);
+            psw_pic.Margin = new Padding(2, 1, 2, 1);
             psw_pic.Name = "psw_pic";
-            psw_pic.Size = new Size(46, 40);
+            psw_pic.Size = new Size(25, 19);
             psw_pic.TabIndex = 16;
             psw_pic.TabStop = false;
             psw_pic.Click += psw_pic_Click;
@@ -219,11 +219,11 @@
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1554, 913);
+            ClientSize = new Size(837, 428);
             Controls.Add(psw_pic);
             Controls.Add(wrongLoginLbl);
             Controls.Add(closeButton);
@@ -237,7 +237,7 @@
             Controls.Add(label1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLogin";

@@ -36,7 +36,7 @@ namespace PetAdoptation
             List<Pet> catList = petList.Where(pet => pet.Type == "Cat").ToList();
 
             //  LIST all Pet in Pet list
-            foreach(Pet p in catList)
+            foreach (Pet p in catList)
             {
                 Console.WriteLine(p.Type);
 
@@ -55,7 +55,7 @@ namespace PetAdoptation
                 {
                     petPicture.Image = new System.Drawing.Bitmap(filePath);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     petPicture.Image = new System.Drawing.Bitmap(XML_Handler.getSolutionFolder() + "Image\\Pet Image\\placeholder.jpg");
                 }
@@ -100,13 +100,6 @@ namespace PetAdoptation
             scrollablePanel.Controls.Add(allPets_Panel);
 
             this.Controls.Add(scrollablePanel);
-
-
-        }
-
-        private void petButton_Click(object? sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
