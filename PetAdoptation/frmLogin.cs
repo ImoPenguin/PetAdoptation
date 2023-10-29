@@ -120,5 +120,20 @@ namespace PetAdoptation
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void psw_pic_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPwd.UseSystemPasswordChar = false;
+        }
+
+        private void psw_pic_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPwd.UseSystemPasswordChar = true;
+        }
+
+        private void psw_pic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

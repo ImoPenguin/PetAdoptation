@@ -65,12 +65,24 @@ namespace PetAdoptation
 
         private void createAccount_Btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmAdmin adminScreen = new frmAdmin();
+            adminScreen.Show();
         }
 
         private void txtPwd_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void psw_pic_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPwd.UseSystemPasswordChar = false;
+        }
+
+        private void psw_pic_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPwd.UseSystemPasswordChar = true;
         }
     }
 }
