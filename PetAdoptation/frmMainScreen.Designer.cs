@@ -268,16 +268,16 @@
             // 
             // returnPet_Btn
             // 
-            button7.Anchor = AnchorStyles.Right;
-            button7.BackColor = Color.LightYellow;
-            button7.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(1052, 452);
-            button7.Margin = new Padding(3, 2, 3, 2);
-            button7.Name = "button7";
-            button7.Size = new Size(136, 40);
-            button7.TabIndex = 7;
-            button7.Text = "Return Pet";
-            button7.UseVisualStyleBackColor = false;
+            returnPet_Btn.Anchor = AnchorStyles.Right;
+            returnPet_Btn.BackColor = Color.LightYellow;
+            returnPet_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            returnPet_Btn.Location = new Point(1052, 452);
+            returnPet_Btn.Margin = new Padding(3, 2, 3, 2);
+            returnPet_Btn.Name = "button7";
+            returnPet_Btn.Size = new Size(136, 40);
+            returnPet_Btn.TabIndex = 7;
+            returnPet_Btn.Text = "Return Pet";
+            returnPet_Btn.UseVisualStyleBackColor = false;
             // 
             // sideMenuButton
             // 
@@ -449,7 +449,6 @@
             homeButton.Name = "homeButton";
             homeButton.Size = new Size(275, 74);
             homeButton.TabIndex = 7;
-            homeButton.Paint += homeButton_Paint;
             homeButton.MouseLeave += homeButton_MouseOff;
             homeButton.MouseHover += homeButton_MouseHover;
             // 
@@ -463,7 +462,7 @@
             homeLabel.TabIndex = 5;
             homeLabel.Text = "HOME";
             homeLabel.TextAlign = ContentAlignment.MiddleLeft;
-            homeLabel.Click += homeLabel_Click;
+            homeLabel.Click += backButton_Click;
             homeLabel.MouseLeave += homeButton_MouseOff;
             homeLabel.MouseHover += homeButton_MouseHover;
             // 
