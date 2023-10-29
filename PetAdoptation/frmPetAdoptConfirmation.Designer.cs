@@ -45,7 +45,7 @@
             panel1.Controls.Add(bDone);
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(49, 262);
-            panel1.Margin = new Padding(5, 5, 5, 5);
+            panel1.Margin = new Padding(5);
             panel1.Name = "panel1";
             panel1.Size = new Size(2130, 970);
             panel1.TabIndex = 0;
@@ -60,7 +60,7 @@
             bDone.Font = new Font("Yu Gothic UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             bDone.ForeColor = Color.FromArgb(255, 246, 229);
             bDone.Location = new Point(894, 813);
-            bDone.Margin = new Padding(5, 5, 5, 5);
+            bDone.Margin = new Padding(5);
             bDone.Name = "bDone";
             bDone.Size = new Size(317, 107);
             bDone.TabIndex = 6;
@@ -74,7 +74,7 @@
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(Adopt_lb);
             panel2.Location = new Point(49, 42);
-            panel2.Margin = new Padding(5, 5, 5, 5);
+            panel2.Margin = new Padding(5);
             panel2.Name = "panel2";
             panel2.Size = new Size(2062, 758);
             panel2.TabIndex = 4;
@@ -87,7 +87,7 @@
             textBox1.Font = new Font("Yu Gothic UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(81, 60, 41);
             textBox1.Location = new Point(112, 210);
-            textBox1.Margin = new Padding(5, 5, 5, 5);
+            textBox1.Margin = new Padding(5);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(1872, 488);
@@ -98,12 +98,12 @@
             // Adopt_lb
             // 
             Adopt_lb.AutoSize = true;
-            Adopt_lb.Font = new Font("Yu Gothic UI", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            Adopt_lb.Font = new Font("Segoe UI", 31.875F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
             Adopt_lb.Location = new Point(468, 37);
             Adopt_lb.Margin = new Padding(5, 0, 5, 0);
             Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(1094, 113);
+            Adopt_lb.Size = new Size(1130, 113);
             Adopt_lb.TabIndex = 3;
             Adopt_lb.Text = "Thank you for choosing us!";
             Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
@@ -136,7 +136,7 @@
             Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "frmPetAdoptConfirmation";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPetAdoptConfirmation";
