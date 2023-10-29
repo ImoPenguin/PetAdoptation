@@ -367,7 +367,7 @@
             staffButton.Name = "staffButton";
             staffButton.Size = new Size(511, 158);
             staffButton.TabIndex = 7;
-            staffButton.Paint += staffButton_Paint;
+            staffButton.Click += staffButton_Click;
             staffButton.MouseLeave += staffButton_MouseOff;
             staffButton.MouseHover += staffButton_MouseHover;
             // 
