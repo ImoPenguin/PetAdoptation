@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <customer>
+    <id>U1001</id>
+    <password>password1</password>
+    <name>Daniel Vu Tran</name>
+    <phoneNo>123-723-202</phoneNo>
+    <email>john.doe@example.com</email>
+    <address>123 Main St, Anytown, USA</address>
+    <assignedStaff>U2</assignedStaff>
+  </customer>
+</root>
