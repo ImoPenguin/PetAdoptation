@@ -43,7 +43,7 @@
             adoptBtn = new Button();
             showAll_Btn = new Button();
             button6 = new Button();
-            button7 = new Button();
+            returnPet_Btn = new Button();
             sideMenuButton = new Button();
             closeButton = new Button();
             sideMenuPanel = new Panel();
@@ -266,7 +266,7 @@
             button6.Text = "Search ID";
             button6.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // returnPet_Btn
             // 
             button7.Anchor = AnchorStyles.Right;
             button7.BackColor = Color.LightYellow;
@@ -378,6 +378,7 @@
             staffLabel.TabIndex = 7;
             staffLabel.Text = "STAFF";
             staffLabel.TextAlign = ContentAlignment.MiddleLeft;
+            staffLabel.Click += staffLabel_Click;
             staffLabel.MouseLeave += staffButton_MouseOff;
             staffLabel.MouseHover += staffButton_MouseHover;
             // 
@@ -448,6 +449,7 @@
             homeButton.Name = "homeButton";
             homeButton.Size = new Size(275, 74);
             homeButton.TabIndex = 7;
+            homeButton.Paint += homeButton_Paint;
             homeButton.MouseLeave += homeButton_MouseOff;
             homeButton.MouseHover += homeButton_MouseHover;
             // 
@@ -461,6 +463,7 @@
             homeLabel.TabIndex = 5;
             homeLabel.Text = "HOME";
             homeLabel.TextAlign = ContentAlignment.MiddleLeft;
+            homeLabel.Click += homeLabel_Click;
             homeLabel.MouseLeave += homeButton_MouseOff;
             homeLabel.MouseHover += homeButton_MouseHover;
             // 
@@ -505,7 +508,7 @@
             Controls.Add(sideMenuPanel);
             Controls.Add(closeButton);
             Controls.Add(sideMenuButton);
-            Controls.Add(button7);
+            Controls.Add(returnPet_Btn);
             Controls.Add(button6);
             Controls.Add(showAll_Btn);
             Controls.Add(adoptBtn);
@@ -591,7 +594,7 @@
         private Button adoptBtn;
         private Button showAll_Btn;
         private Button button6;
-        private Button button7;
+        private Button returnPet_Btn;
         private Button sideMenuButton;
         private Button closeButton;
         private Panel sideMenuPanel;

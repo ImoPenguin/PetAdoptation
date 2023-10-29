@@ -63,6 +63,16 @@ namespace PetAdoptation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Admin__Just_Screen {
+            get {
+                object obj = ResourceManager.GetObject("Admin  Just Screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Adopt {
             get {
                 object obj = ResourceManager.GetObject("Adopt", resourceCulture);
@@ -176,6 +186,16 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap meow {
             get {
                 object obj = ResourceManager.GetObject("meow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Namesymbol {
+            get {
+                object obj = ResourceManager.GetObject("Namesymbol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +386,16 @@ namespace PetAdoptation.Properties {
         internal static System.Drawing.Bitmap Rabbit {
             get {
                 object obj = ResourceManager.GetObject("Rabbit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reason_to_return_3 {
+            get {
+                object obj = ResourceManager.GetObject("Reason to return-3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
