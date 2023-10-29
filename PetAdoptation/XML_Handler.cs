@@ -8,14 +8,66 @@ namespace PetAdoptation
 {
     public static class XML_Handler
     {
+        public static string getSolutionFolder()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            return solutionFolderPath;
+        }
+
+        public static string getUserFilePath()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            //  Load XML File
+            string filePath = Path.Combine(solutionFolderPath, "Database\\User.xml");
+
+            return filePath;
+        }
+
+        public static string getPetFilePath()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            //  Load XML File
+            string filePath = Path.Combine(solutionFolderPath, "Database\\Pet.xml");
+
+            return filePath;
+        }
+
         ////////////////////////////////////
         //  HANDLING Customer XML Files  //
         //////////////////////////////////
         public static List<Customer> readCustomerData()
         {
-            //  Load XML File
-            XDocument xmlDoc = XDocument.Load("User.xml");
+            //  LOAD XML File
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
             List<Customer> userList = new List<Customer>();
+            Console.WriteLine(xmlDoc.ToString());
 
             //  Get all USER data
             var Customers = from cus in xmlDoc.Descendants("customer")
@@ -42,7 +94,7 @@ namespace PetAdoptation
         public static void addCustomerData(Customer newCus)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument("User.xml");
+            XDocument xmlDoc = new XDocument(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("customer",
@@ -57,12 +109,12 @@ namespace PetAdoptation
 
             //  ADD new Customer to XML File
             xmlDoc.Root.Add(newUser);
-            xmlDoc.Save("User.xml");
+            xmlDoc.Save(getUserFilePath());
         }
 
         public static void editCustomerData(Customer newData)
         {
-            XDocument xmlDoc = XDocument.Load("User.xml");
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
             XElement customerElement = xmlDoc.Descendants("customer")
                 .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
 
@@ -76,7 +128,7 @@ namespace PetAdoptation
                 customerElement.Element("email").Value = newData.Email;
                 customerElement.Element("address").Value = newData.Address;
                 customerElement.Element("assignedStaff").Value = newData.AssignedStaff_ID;
-                xmlDoc.Save("User.xml");
+                xmlDoc.Save(getUserFilePath());
             }
         }
 
@@ -86,7 +138,7 @@ namespace PetAdoptation
         public static List<Staff> readStaffData()
         {
             //  LOAD XML Files
-            XDocument xmlDoc = XDocument.Load("User.xml");
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
             List<Staff> userList = new List<Staff>();
 
             //  GET all USER data
@@ -115,7 +167,7 @@ namespace PetAdoptation
         public static void addStaffData(Staff newStaff)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument("User.xml");
+            XDocument xmlDoc = new XDocument(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("staff",
@@ -131,7 +183,7 @@ namespace PetAdoptation
 
             //  ADD new Customer to XML File
             xmlDoc.Root.Add(newUser);
-            xmlDoc.Save("User.xml");
+            xmlDoc.Save(getUserFilePath());
         }
 
 
@@ -141,7 +193,7 @@ namespace PetAdoptation
         public static List<Manager> readManagerData()
         {
             //  LOAD XML Files
-            XDocument xmlDoc = XDocument.Load("User.xml");
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
             List<Manager> userList = new List<Manager>();
 
             //  GET all USER data
@@ -169,7 +221,7 @@ namespace PetAdoptation
         public static void addManagerData(Manager newManager)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument("User.xml");
+            XDocument xmlDoc = new XDocument(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("manager",
@@ -184,7 +236,7 @@ namespace PetAdoptation
 
             //  ADD new Customer to XML File
             xmlDoc.Root.Add(newUser);
-            xmlDoc.Save("User.xml");
+            xmlDoc.Save(getUserFilePath());
         }
     
         public static List<Shelter> readShelterData()
@@ -210,6 +262,8 @@ namespace PetAdoptation
             return shelterList;
         }
 
+
+
         ///////////////////////////////
         //  HANDLING Pet XML Files  //
         /////////////////////////////
@@ -217,7 +271,7 @@ namespace PetAdoptation
         public static List<Pet> readPetData()
         {
             // Load the XML data from a file
-            XDocument xmlDoc = XDocument.Load("Pet.xml");
+            XDocument xmlDoc = XDocument.Load(getPetFilePath());
             List<Pet> petsList = new List<Pet>();
 
             var pets = from pet in xmlDoc.Descendants("pet")
@@ -251,7 +305,7 @@ namespace PetAdoptation
     
         public static void addPetData(Pet pet)
         {
-            XDocument xmlDoc = XDocument.Load("Pet.xml");
+            XDocument xmlDoc = XDocument.Load(getPetFilePath());
 
             // Create a new pet element and add it to the XML
             XElement newPet = new XElement("pet",
@@ -271,7 +325,7 @@ namespace PetAdoptation
             );
 
             xmlDoc.Root.Add(newPet);
-            xmlDoc.Save("Pet.xml");
+            xmlDoc.Save(getPetFilePath());
         }
 
         public static Pet findPetData(string findID)
