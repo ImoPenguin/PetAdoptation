@@ -91,7 +91,7 @@ namespace PetAdoptation
         {
             this.Hide();
             frmPetDetails petDetailsForm = new frmPetDetails();
-            petDetailsForm.Show(); 
+            petDetailsForm.Show();
         }
 
 

@@ -79,7 +79,7 @@
             // pictureBox1
             // 
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(5);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(0, 0);
             pictureBox1.TabIndex = 0;
@@ -90,10 +90,10 @@
             catPanel.BackColor = Color.BlanchedAlmond;
             catPanel.Controls.Add(cat_Btn);
             catPanel.Controls.Add(pictureBox3);
-            catPanel.Location = new Point(502, 850);
-            catPanel.Margin = new Padding(5);
+            catPanel.Location = new Point(270, 398);
+            catPanel.Margin = new Padding(3, 2, 3, 2);
             catPanel.Name = "catPanel";
-            catPanel.Size = new Size(315, 315);
+            catPanel.Size = new Size(170, 148);
             catPanel.TabIndex = 0;
             catPanel.Paint += panel2_Paint;
             // 
@@ -105,10 +105,10 @@
             cat_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
             cat_Btn.FlatStyle = FlatStyle.Flat;
             cat_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            cat_Btn.Location = new Point(47, 232);
-            cat_Btn.Margin = new Padding(5);
+            cat_Btn.Location = new Point(25, 109);
+            cat_Btn.Margin = new Padding(3, 2, 3, 2);
             cat_Btn.Name = "cat_Btn";
-            cat_Btn.Size = new Size(223, 66);
+            cat_Btn.Size = new Size(120, 31);
             cat_Btn.TabIndex = 3;
             cat_Btn.Text = "Cat";
             cat_Btn.UseVisualStyleBackColor = false;
@@ -119,10 +119,10 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(65, -18);
-            pictureBox3.Margin = new Padding(5);
+            pictureBox3.Location = new Point(35, -8);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(185, 235);
+            pictureBox3.Size = new Size(100, 110);
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
             // 
@@ -133,9 +133,10 @@
             categoriesLabel.BackColor = Color.Transparent;
             categoriesLabel.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             categoriesLabel.ForeColor = Color.SaddleBrown;
-            categoriesLabel.Location = new Point(21, 725);
+            categoriesLabel.Location = new Point(11, 340);
+            categoriesLabel.Margin = new Padding(2, 0, 2, 0);
             categoriesLabel.Name = "categoriesLabel";
-            categoriesLabel.Size = new Size(237, 60);
+            categoriesLabel.Size = new Size(119, 30);
             categoriesLabel.TabIndex = 2;
             categoriesLabel.Text = "Categories";
             categoriesLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -145,10 +146,10 @@
             dogPanel.BackColor = Color.BlanchedAlmond;
             dogPanel.Controls.Add(dog_Btn);
             dogPanel.Controls.Add(pictureBox2);
-            dogPanel.Location = new Point(965, 850);
-            dogPanel.Margin = new Padding(5);
+            dogPanel.Location = new Point(520, 398);
+            dogPanel.Margin = new Padding(3, 2, 3, 2);
             dogPanel.Name = "dogPanel";
-            dogPanel.Size = new Size(315, 315);
+            dogPanel.Size = new Size(170, 148);
             dogPanel.TabIndex = 1;
             // 
             // dog_Btn
@@ -159,10 +160,10 @@
             dog_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
             dog_Btn.FlatStyle = FlatStyle.Flat;
             dog_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dog_Btn.Location = new Point(47, 232);
-            dog_Btn.Margin = new Padding(5);
+            dog_Btn.Location = new Point(25, 109);
+            dog_Btn.Margin = new Padding(3, 2, 3, 2);
             dog_Btn.Name = "dog_Btn";
-            dog_Btn.Size = new Size(223, 66);
+            dog_Btn.Size = new Size(120, 31);
             dog_Btn.TabIndex = 4;
             dog_Btn.Text = "Dog";
             dog_Btn.UseVisualStyleBackColor = false;
@@ -173,10 +174,10 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(65, -21);
-            pictureBox2.Margin = new Padding(5);
+            pictureBox2.Location = new Point(35, -10);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(185, 235);
+            pictureBox2.Size = new Size(100, 110);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -185,10 +186,10 @@
             otherPanel.BackColor = Color.BlanchedAlmond;
             otherPanel.Controls.Add(other_Btn);
             otherPanel.Controls.Add(pictureBox4);
-            otherPanel.Location = new Point(1430, 850);
-            otherPanel.Margin = new Padding(5);
+            otherPanel.Location = new Point(770, 398);
+            otherPanel.Margin = new Padding(3, 2, 3, 2);
             otherPanel.Name = "otherPanel";
-            otherPanel.Size = new Size(315, 315);
+            otherPanel.Size = new Size(170, 148);
             otherPanel.TabIndex = 1;
             // 
             // other_Btn
@@ -199,10 +200,10 @@
             other_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
             other_Btn.FlatStyle = FlatStyle.Flat;
             other_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            other_Btn.Location = new Point(47, 232);
-            other_Btn.Margin = new Padding(5);
+            other_Btn.Location = new Point(25, 109);
+            other_Btn.Margin = new Padding(3, 2, 3, 2);
             other_Btn.Name = "other_Btn";
-            other_Btn.Size = new Size(223, 66);
+            other_Btn.Size = new Size(120, 31);
             other_Btn.TabIndex = 5;
             other_Btn.Text = "Other";
             other_Btn.UseVisualStyleBackColor = false;
@@ -213,10 +214,10 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(65, -21);
-            pictureBox4.Margin = new Padding(5);
+            pictureBox4.Location = new Point(35, -10);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(185, 235);
+            pictureBox4.Size = new Size(100, 110);
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
@@ -229,10 +230,10 @@
             adoptBtn.FlatStyle = FlatStyle.Flat;
             adoptBtn.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             adoptBtn.ForeColor = SystemColors.ControlText;
-            adoptBtn.Location = new Point(1412, 314);
-            adoptBtn.Margin = new Padding(5);
+            adoptBtn.Location = new Point(760, 147);
+            adoptBtn.Margin = new Padding(3, 2, 3, 2);
             adoptBtn.Name = "adoptBtn";
-            adoptBtn.Size = new Size(335, 115);
+            adoptBtn.Size = new Size(180, 54);
             adoptBtn.TabIndex = 5;
             adoptBtn.Text = "ADOPT NOW";
             adoptBtn.UseVisualStyleBackColor = false;
@@ -243,10 +244,10 @@
             showAll_Btn.Anchor = AnchorStyles.Right;
             showAll_Btn.BackColor = Color.LightYellow;
             showAll_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            showAll_Btn.Location = new Point(1953, 850);
-            showAll_Btn.Margin = new Padding(5);
+            showAll_Btn.Location = new Point(1052, 398);
+            showAll_Btn.Margin = new Padding(3, 2, 3, 2);
             showAll_Btn.Name = "showAll_Btn";
-            showAll_Btn.Size = new Size(252, 85);
+            showAll_Btn.Size = new Size(136, 40);
             showAll_Btn.TabIndex = 5;
             showAll_Btn.Text = "Show All";
             showAll_Btn.UseVisualStyleBackColor = false;
@@ -257,27 +258,26 @@
             button6.Anchor = AnchorStyles.Right;
             button6.BackColor = Color.LightYellow;
             button6.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.Location = new Point(1953, 1082);
-            button6.Margin = new Padding(5);
+            button6.Location = new Point(1052, 507);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(252, 85);
+            button6.Size = new Size(136, 40);
             button6.TabIndex = 6;
             button6.Text = "Search ID";
             button6.UseVisualStyleBackColor = false;
             // 
             // returnPet_Btn
             // 
-            returnPet_Btn.Anchor = AnchorStyles.Right;
-            returnPet_Btn.BackColor = Color.LightYellow;
-            returnPet_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            returnPet_Btn.Location = new Point(1953, 965);
-            returnPet_Btn.Margin = new Padding(5);
-            returnPet_Btn.Name = "returnPet_Btn";
-            returnPet_Btn.Size = new Size(252, 85);
-            returnPet_Btn.TabIndex = 7;
-            returnPet_Btn.Text = "Return Pet";
-            returnPet_Btn.UseVisualStyleBackColor = false;
-            returnPet_Btn.Click += returnPet_Btn_Click;
+            button7.Anchor = AnchorStyles.Right;
+            button7.BackColor = Color.LightYellow;
+            button7.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button7.Location = new Point(1052, 452);
+            button7.Margin = new Padding(3, 2, 3, 2);
+            button7.Name = "button7";
+            button7.Size = new Size(136, 40);
+            button7.TabIndex = 7;
+            button7.Text = "Return Pet";
+            button7.UseVisualStyleBackColor = false;
             // 
             // sideMenuButton
             // 
@@ -289,10 +289,10 @@
             sideMenuButton.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
             sideMenuButton.FlatStyle = FlatStyle.Flat;
             sideMenuButton.Font = new Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            sideMenuButton.Location = new Point(21, 72);
-            sideMenuButton.Margin = new Padding(5);
+            sideMenuButton.Location = new Point(11, 34);
+            sideMenuButton.Margin = new Padding(3, 2, 3, 2);
             sideMenuButton.Name = "sideMenuButton";
-            sideMenuButton.Size = new Size(125, 75);
+            sideMenuButton.Size = new Size(67, 35);
             sideMenuButton.TabIndex = 8;
             sideMenuButton.UseVisualStyleBackColor = false;
             sideMenuButton.Click += SideMenuButton_Click;
@@ -305,10 +305,10 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(2156, 19);
+            closeButton.Location = new Point(1161, 9);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(57, 56);
+            closeButton.Size = new Size(31, 26);
             closeButton.TabIndex = 22;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
@@ -324,19 +324,19 @@
             sideMenuPanel.Controls.Add(homeButton);
             sideMenuPanel.Controls.Add(backButton);
             sideMenuPanel.Location = new Point(0, 0);
-            sideMenuPanel.Margin = new Padding(5);
+            sideMenuPanel.Margin = new Padding(3, 2, 3, 2);
             sideMenuPanel.Name = "sideMenuPanel";
-            sideMenuPanel.Size = new Size(510, 1280);
+            sideMenuPanel.Size = new Size(275, 600);
             sideMenuPanel.TabIndex = 23;
             sideMenuPanel.Visible = false;
             // 
             // panel1
             // 
             panel1.Controls.Add(logOut_btn);
-            panel1.Location = new Point(0, 1134);
-            panel1.Margin = new Padding(5);
+            panel1.Location = new Point(0, 532);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(510, 146);
+            panel1.Size = new Size(275, 68);
             panel1.TabIndex = 10;
             // 
             // logOut_btn
@@ -346,10 +346,10 @@
             logOut_btn.FlatStyle = FlatStyle.Flat;
             logOut_btn.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
             logOut_btn.ForeColor = Color.Cornsilk;
-            logOut_btn.Location = new Point(0, 40);
-            logOut_btn.Margin = new Padding(5);
+            logOut_btn.Location = new Point(0, 19);
+            logOut_btn.Margin = new Padding(3, 2, 3, 2);
             logOut_btn.Name = "logOut_btn";
-            logOut_btn.Size = new Size(510, 107);
+            logOut_btn.Size = new Size(275, 50);
             logOut_btn.TabIndex = 0;
             logOut_btn.Text = "Log Out";
             logOut_btn.UseVisualStyleBackColor = false;
@@ -360,10 +360,10 @@
             staffButton.Controls.Add(staffLabel);
             staffButton.Controls.Add(staffIcon);
             staffButton.Cursor = Cursors.Hand;
-            staffButton.Location = new Point(0, 544);
-            staffButton.Margin = new Padding(5);
+            staffButton.Location = new Point(0, 256);
+            staffButton.Margin = new Padding(3, 2, 3, 2);
             staffButton.Name = "staffButton";
-            staffButton.Size = new Size(510, 158);
+            staffButton.Size = new Size(275, 74);
             staffButton.TabIndex = 7;
             staffButton.MouseLeave += staffButton_MouseOff;
             staffButton.MouseHover += staffButton_MouseHover;
@@ -372,11 +372,9 @@
             // 
             staffLabel.BackColor = Color.Transparent;
             staffLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            staffLabel.ForeColor = Color.FromArgb(81, 60, 41);
-            staffLabel.Location = new Point(182, 46);
-            staffLabel.Margin = new Padding(5, 0, 5, 0);
+            staffLabel.Location = new Point(98, 22);
             staffLabel.Name = "staffLabel";
-            staffLabel.Size = new Size(328, 70);
+            staffLabel.Size = new Size(177, 33);
             staffLabel.TabIndex = 7;
             staffLabel.Text = "STAFF";
             staffLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -389,10 +387,10 @@
             staffIcon.BackColor = Color.Transparent;
             staffIcon.BackgroundImage = (Image)resources.GetObject("staffIcon.BackgroundImage");
             staffIcon.BackgroundImageLayout = ImageLayout.Stretch;
-            staffIcon.Location = new Point(65, 46);
-            staffIcon.Margin = new Padding(5);
+            staffIcon.Location = new Point(35, 22);
+            staffIcon.Margin = new Padding(3, 2, 3, 2);
             staffIcon.Name = "staffIcon";
-            staffIcon.Size = new Size(89, 70);
+            staffIcon.Size = new Size(48, 33);
             staffIcon.TabIndex = 6;
             staffIcon.TabStop = false;
             staffIcon.MouseLeave += staffButton_MouseOff;
@@ -403,10 +401,10 @@
             profileButton.Controls.Add(profileLabel);
             profileButton.Controls.Add(profileIcon);
             profileButton.Cursor = Cursors.Hand;
-            profileButton.Location = new Point(0, 386);
-            profileButton.Margin = new Padding(5);
+            profileButton.Location = new Point(0, 181);
+            profileButton.Margin = new Padding(3, 2, 3, 2);
             profileButton.Name = "profileButton";
-            profileButton.Size = new Size(510, 158);
+            profileButton.Size = new Size(275, 74);
             profileButton.TabIndex = 6;
             profileButton.Click += profileButton_Click;
             profileButton.MouseLeave += profileButton_MouseOff;
@@ -416,11 +414,9 @@
             // 
             profileLabel.BackColor = Color.Transparent;
             profileLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            profileLabel.ForeColor = Color.FromArgb(81, 60, 41);
-            profileLabel.Location = new Point(182, 50);
-            profileLabel.Margin = new Padding(5, 0, 5, 0);
+            profileLabel.Location = new Point(98, 23);
             profileLabel.Name = "profileLabel";
-            profileLabel.Size = new Size(328, 70);
+            profileLabel.Size = new Size(177, 33);
             profileLabel.TabIndex = 6;
             profileLabel.Text = "PROFILE";
             profileLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -433,10 +429,10 @@
             profileIcon.BackColor = Color.Transparent;
             profileIcon.BackgroundImage = (Image)resources.GetObject("profileIcon.BackgroundImage");
             profileIcon.BackgroundImageLayout = ImageLayout.Stretch;
-            profileIcon.Location = new Point(65, 50);
-            profileIcon.Margin = new Padding(5);
+            profileIcon.Location = new Point(35, 23);
+            profileIcon.Margin = new Padding(3, 2, 3, 2);
             profileIcon.Name = "profileIcon";
-            profileIcon.Size = new Size(89, 70);
+            profileIcon.Size = new Size(48, 33);
             profileIcon.TabIndex = 5;
             profileIcon.TabStop = false;
             profileIcon.Click += profileIcon_Click;
@@ -448,10 +444,10 @@
             homeButton.Controls.Add(homeLabel);
             homeButton.Controls.Add(homeIcon);
             homeButton.Cursor = Cursors.Hand;
-            homeButton.Location = new Point(0, 226);
-            homeButton.Margin = new Padding(5);
+            homeButton.Location = new Point(0, 106);
+            homeButton.Margin = new Padding(3, 2, 3, 2);
             homeButton.Name = "homeButton";
-            homeButton.Size = new Size(510, 158);
+            homeButton.Size = new Size(275, 74);
             homeButton.TabIndex = 7;
             homeButton.Paint += homeButton_Paint;
             homeButton.MouseLeave += homeButton_MouseOff;
@@ -461,11 +457,9 @@
             // 
             homeLabel.BackColor = Color.Transparent;
             homeLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            homeLabel.ForeColor = Color.FromArgb(81, 60, 41);
-            homeLabel.Location = new Point(182, 45);
-            homeLabel.Margin = new Padding(5, 0, 5, 0);
+            homeLabel.Location = new Point(98, 21);
             homeLabel.Name = "homeLabel";
-            homeLabel.Size = new Size(328, 70);
+            homeLabel.Size = new Size(177, 33);
             homeLabel.TabIndex = 5;
             homeLabel.Text = "HOME";
             homeLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -478,10 +472,10 @@
             homeIcon.BackColor = Color.Transparent;
             homeIcon.BackgroundImage = (Image)resources.GetObject("homeIcon.BackgroundImage");
             homeIcon.BackgroundImageLayout = ImageLayout.Stretch;
-            homeIcon.Location = new Point(65, 45);
-            homeIcon.Margin = new Padding(5);
+            homeIcon.Location = new Point(35, 21);
+            homeIcon.Margin = new Padding(3, 2, 3, 2);
             homeIcon.Name = "homeIcon";
-            homeIcon.Size = new Size(89, 70);
+            homeIcon.Size = new Size(48, 33);
             homeIcon.TabIndex = 4;
             homeIcon.TabStop = false;
             homeIcon.MouseLeave += homeButton_MouseOff;
@@ -494,10 +488,9 @@
             backButton.Cursor = Cursors.Hand;
             backButton.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold, GraphicsUnit.Point);
             backButton.ForeColor = Color.White;
-            backButton.Location = new Point(34, 32);
-            backButton.Margin = new Padding(5, 0, 5, 0);
+            backButton.Location = new Point(18, 15);
             backButton.Name = "backButton";
-            backButton.Size = new Size(59, 72);
+            backButton.Size = new Size(32, 37);
             backButton.TabIndex = 0;
             backButton.Text = "❮";
             backButton.Click += backButton_Click;
@@ -506,12 +499,12 @@
             // 
             // frmMainScreen
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.BlanchedAlmond;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(2228, 1280);
+            ClientSize = new Size(1200, 600);
             Controls.Add(sideMenuPanel);
             Controls.Add(closeButton);
             Controls.Add(sideMenuButton);
@@ -526,7 +519,7 @@
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(5);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmMainScreen";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmMainScreen";
