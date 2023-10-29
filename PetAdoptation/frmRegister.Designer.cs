@@ -173,6 +173,7 @@
             // 
             psw_pic.BackgroundImage = Properties.Resources.pswIcon;
             psw_pic.BackgroundImageLayout = ImageLayout.Stretch;
+            psw_pic.Cursor = Cursors.Hand;
             psw_pic.Location = new Point(1074, 583);
             psw_pic.Name = "psw_pic";
             psw_pic.Size = new Size(46, 40);
