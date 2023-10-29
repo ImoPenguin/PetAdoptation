@@ -2,7 +2,7 @@
 <root>
   <customer>
     <id>U1001</id>
-    <password>password1</password>
+    <password>khongcochi</password>
     <name>Daniel Vu Tran</name>
     <phoneNo>123-723-202</phoneNo>
     <email>john.doe@example.com</email>

@@ -150,11 +150,33 @@ namespace PetAdoptation
             otherPetsForm.Show();
         }
 
-        //  Nhớ làm lại function này
         private void staffLabel_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            frmAssignedStaff assignedStaffForm = new frmAssignedStaff();
+            assignedStaffForm.Show();
+        }
+
+        private void returnPet_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmReturnPets returnPetsForm = new frmReturnPets();
+            returnPetsForm.Show();
+        }
+
+        //  Nhớ làm lại function này
+        private void searchID_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
             frmAdmin staffForm = new frmAdmin();
             staffForm.Show();
+        }
+
+        private void staffButton_Paint(object sender, PaintEventArgs e)
+        {
+            this.Hide();
+            frmAssignedStaff assignedStaffForm = new frmAssignedStaff();
+            assignedStaffForm.Show();
         }
     }
 }
