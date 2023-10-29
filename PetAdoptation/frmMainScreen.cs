@@ -147,7 +147,31 @@ namespace PetAdoptation
         {
             this.Hide();
             frmOtherPets otherPetsForm = new frmOtherPets();
-            otherPetsForm.Show(); 
+            otherPetsForm.Show();
+        }
+
+        private void returnPet_Btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmReturnPets returnPetForm = new frmReturnPets();
+            returnPetForm.Show();
+        }
+
+        private void homeButton_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void staffLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAdmin adminScreen = new frmAdmin();
+            adminScreen.Show();
+        }
+
+        private void homeLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

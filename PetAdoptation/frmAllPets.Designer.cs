@@ -69,7 +69,7 @@
             allPet_panel.Controls.Add(Adopt_lb);
             allPet_panel.Controls.Add(petPanel_1);
             allPet_panel.Location = new Point(49, 262);
-            allPet_panel.Margin = new Padding(5, 5, 5, 5);
+            allPet_panel.Margin = new Padding(5);
             allPet_panel.Name = "allPet_panel";
             allPet_panel.Size = new Size(2130, 970);
             allPet_panel.TabIndex = 1;
@@ -80,7 +80,7 @@
             petPanel_4.Controls.Add(petButton_4);
             petPanel_4.Controls.Add(petPicture_4);
             petPanel_4.Location = new Point(42, 917);
-            petPanel_4.Margin = new Padding(5, 5, 5, 5);
+            petPanel_4.Margin = new Padding(5);
             petPanel_4.Name = "petPanel_4";
             petPanel_4.Size = new Size(603, 762);
             petPanel_4.TabIndex = 8;
@@ -95,7 +95,7 @@
             petButton_4.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_4.ForeColor = Color.FromArgb(255, 246, 229);
             petButton_4.Location = new Point(148, 659);
-            petButton_4.Margin = new Padding(5, 5, 5, 5);
+            petButton_4.Margin = new Padding(5);
             petButton_4.Name = "petButton_4";
             petButton_4.Size = new Size(301, 80);
             petButton_4.TabIndex = 7;
@@ -107,7 +107,7 @@
             petPicture_4.BackgroundImage = (Image)resources.GetObject("petPicture_4.BackgroundImage");
             petPicture_4.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture_4.Location = new Point(49, 0);
-            petPicture_4.Margin = new Padding(5, 5, 5, 5);
+            petPicture_4.Margin = new Padding(5);
             petPicture_4.Name = "petPicture_4";
             petPicture_4.Size = new Size(509, 650);
             petPicture_4.TabIndex = 0;
@@ -118,7 +118,7 @@
             petPanel_3.Controls.Add(petButton_3);
             petPanel_3.Controls.Add(petPicture_3);
             petPanel_3.Location = new Point(1479, 146);
-            petPanel_3.Margin = new Padding(5, 5, 5, 5);
+            petPanel_3.Margin = new Padding(5);
             petPanel_3.Name = "petPanel_3";
             petPanel_3.Size = new Size(603, 762);
             petPanel_3.TabIndex = 8;
@@ -133,7 +133,7 @@
             petButton_3.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_3.ForeColor = Color.FromArgb(255, 246, 229);
             petButton_3.Location = new Point(148, 659);
-            petButton_3.Margin = new Padding(5, 5, 5, 5);
+            petButton_3.Margin = new Padding(5);
             petButton_3.Name = "petButton_3";
             petButton_3.Size = new Size(301, 80);
             petButton_3.TabIndex = 7;
@@ -145,7 +145,7 @@
             petPicture_3.BackgroundImage = (Image)resources.GetObject("petPicture_3.BackgroundImage");
             petPicture_3.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture_3.Location = new Point(49, 0);
-            petPicture_3.Margin = new Padding(5, 5, 5, 5);
+            petPicture_3.Margin = new Padding(5);
             petPicture_3.Name = "petPicture_3";
             petPicture_3.Size = new Size(509, 650);
             petPicture_3.TabIndex = 0;
@@ -156,7 +156,7 @@
             petPanel_2.Controls.Add(petButton_2);
             petPanel_2.Controls.Add(petPicture_2);
             petPanel_2.Location = new Point(767, 146);
-            petPanel_2.Margin = new Padding(5, 5, 5, 5);
+            petPanel_2.Margin = new Padding(5);
             petPanel_2.Name = "petPanel_2";
             petPanel_2.Size = new Size(603, 762);
             petPanel_2.TabIndex = 8;
@@ -171,7 +171,7 @@
             petButton_2.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_2.ForeColor = Color.FromArgb(255, 246, 229);
             petButton_2.Location = new Point(148, 659);
-            petButton_2.Margin = new Padding(5, 5, 5, 5);
+            petButton_2.Margin = new Padding(5);
             petButton_2.Name = "petButton_2";
             petButton_2.Size = new Size(301, 80);
             petButton_2.TabIndex = 7;
@@ -183,7 +183,7 @@
             petPicture_2.BackgroundImage = (Image)resources.GetObject("petPicture_2.BackgroundImage");
             petPicture_2.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture_2.Location = new Point(49, 0);
-            petPicture_2.Margin = new Padding(5, 5, 5, 5);
+            petPicture_2.Margin = new Padding(5);
             petPicture_2.Name = "petPicture_2";
             petPicture_2.Size = new Size(509, 650);
             petPicture_2.TabIndex = 0;
@@ -192,12 +192,12 @@
             // Adopt_lb
             // 
             Adopt_lb.AutoSize = true;
-            Adopt_lb.Font = new Font("Yu Gothic UI", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            Adopt_lb.Font = new Font("Segoe UI", 31.875F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
             Adopt_lb.Location = new Point(522, 14);
             Adopt_lb.Margin = new Padding(5, 0, 5, 0);
             Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(1102, 113);
+            Adopt_lb.Size = new Size(1136, 113);
             Adopt_lb.TabIndex = 4;
             Adopt_lb.Text = "Meet Some Of Our Animals";
             Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
@@ -207,7 +207,7 @@
             petPanel_1.Controls.Add(petButton_1);
             petPanel_1.Controls.Add(petPicture_1);
             petPanel_1.Location = new Point(42, 146);
-            petPanel_1.Margin = new Padding(5, 5, 5, 5);
+            petPanel_1.Margin = new Padding(5);
             petPanel_1.Name = "petPanel_1";
             petPanel_1.Size = new Size(603, 762);
             petPanel_1.TabIndex = 1;
@@ -222,7 +222,7 @@
             petButton_1.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             petButton_1.ForeColor = Color.FromArgb(255, 246, 229);
             petButton_1.Location = new Point(148, 659);
-            petButton_1.Margin = new Padding(5, 5, 5, 5);
+            petButton_1.Margin = new Padding(5);
             petButton_1.Name = "petButton_1";
             petButton_1.Size = new Size(301, 80);
             petButton_1.TabIndex = 7;
@@ -235,7 +235,7 @@
             petPicture_1.BackgroundImage = Properties.Resources.SiameseCat3;
             petPicture_1.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture_1.Location = new Point(49, 0);
-            petPicture_1.Margin = new Padding(5, 5, 5, 5);
+            petPicture_1.Margin = new Padding(5);
             petPicture_1.Name = "petPicture_1";
             petPicture_1.Size = new Size(509, 650);
             petPicture_1.TabIndex = 0;
@@ -289,7 +289,7 @@
             Controls.Add(allPet_panel);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "frmAllPets";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAllPets";

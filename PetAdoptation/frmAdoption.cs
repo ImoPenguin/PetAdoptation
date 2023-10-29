@@ -69,5 +69,10 @@ namespace PetAdoptation
             frmPetAdoptConfirmation petAdoptConfirmation_form = new frmPetAdoptConfirmation();
             petAdoptConfirmation_form.Show();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit(); 
+        }
     }
 }

@@ -43,7 +43,7 @@
             adoptBtn = new Button();
             showAll_Btn = new Button();
             button6 = new Button();
-            button7 = new Button();
+            returnPet_Btn = new Button();
             sideMenuButton = new Button();
             closeButton = new Button();
             sideMenuPanel = new Panel();
@@ -265,18 +265,19 @@
             button6.Text = "Search ID";
             button6.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // returnPet_Btn
             // 
-            button7.Anchor = AnchorStyles.Right;
-            button7.BackColor = Color.LightYellow;
-            button7.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(1953, 965);
-            button7.Margin = new Padding(5);
-            button7.Name = "button7";
-            button7.Size = new Size(252, 85);
-            button7.TabIndex = 7;
-            button7.Text = "Return Pet";
-            button7.UseVisualStyleBackColor = false;
+            returnPet_Btn.Anchor = AnchorStyles.Right;
+            returnPet_Btn.BackColor = Color.LightYellow;
+            returnPet_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            returnPet_Btn.Location = new Point(1953, 965);
+            returnPet_Btn.Margin = new Padding(5);
+            returnPet_Btn.Name = "returnPet_Btn";
+            returnPet_Btn.Size = new Size(252, 85);
+            returnPet_Btn.TabIndex = 7;
+            returnPet_Btn.Text = "Return Pet";
+            returnPet_Btn.UseVisualStyleBackColor = false;
+            returnPet_Btn.Click += returnPet_Btn_Click;
             // 
             // sideMenuButton
             // 
@@ -371,6 +372,7 @@
             // 
             staffLabel.BackColor = Color.Transparent;
             staffLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            staffLabel.ForeColor = Color.FromArgb(81, 60, 41);
             staffLabel.Location = new Point(182, 46);
             staffLabel.Margin = new Padding(5, 0, 5, 0);
             staffLabel.Name = "staffLabel";
@@ -378,6 +380,7 @@
             staffLabel.TabIndex = 7;
             staffLabel.Text = "STAFF";
             staffLabel.TextAlign = ContentAlignment.MiddleLeft;
+            staffLabel.Click += staffLabel_Click;
             staffLabel.MouseLeave += staffButton_MouseOff;
             staffLabel.MouseHover += staffButton_MouseHover;
             // 
@@ -413,6 +416,7 @@
             // 
             profileLabel.BackColor = Color.Transparent;
             profileLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            profileLabel.ForeColor = Color.FromArgb(81, 60, 41);
             profileLabel.Location = new Point(182, 50);
             profileLabel.Margin = new Padding(5, 0, 5, 0);
             profileLabel.Name = "profileLabel";
@@ -449,6 +453,7 @@
             homeButton.Name = "homeButton";
             homeButton.Size = new Size(510, 158);
             homeButton.TabIndex = 7;
+            homeButton.Paint += homeButton_Paint;
             homeButton.MouseLeave += homeButton_MouseOff;
             homeButton.MouseHover += homeButton_MouseHover;
             // 
@@ -456,6 +461,7 @@
             // 
             homeLabel.BackColor = Color.Transparent;
             homeLabel.Font = new Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            homeLabel.ForeColor = Color.FromArgb(81, 60, 41);
             homeLabel.Location = new Point(182, 45);
             homeLabel.Margin = new Padding(5, 0, 5, 0);
             homeLabel.Name = "homeLabel";
@@ -463,6 +469,7 @@
             homeLabel.TabIndex = 5;
             homeLabel.Text = "HOME";
             homeLabel.TextAlign = ContentAlignment.MiddleLeft;
+            homeLabel.Click += homeLabel_Click;
             homeLabel.MouseLeave += homeButton_MouseOff;
             homeLabel.MouseHover += homeButton_MouseHover;
             // 
@@ -508,7 +515,7 @@
             Controls.Add(sideMenuPanel);
             Controls.Add(closeButton);
             Controls.Add(sideMenuButton);
-            Controls.Add(button7);
+            Controls.Add(returnPet_Btn);
             Controls.Add(button6);
             Controls.Add(showAll_Btn);
             Controls.Add(adoptBtn);
@@ -594,7 +601,7 @@
         private Button adoptBtn;
         private Button showAll_Btn;
         private Button button6;
-        private Button button7;
+        private Button returnPet_Btn;
         private Button sideMenuButton;
         private Button closeButton;
         private Panel sideMenuPanel;
