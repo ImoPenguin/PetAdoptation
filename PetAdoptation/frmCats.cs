@@ -130,6 +130,9 @@ namespace PetAdoptation
         {
             Cart.chosenPet = XML_Handler.findPetData(ID);
             Console.WriteLine(ID);
+            this.Close();
+            frmPetDetails petDetailScreen = new frmPetDetails();
+            petDetailScreen.Show();
         }
     }
 }
