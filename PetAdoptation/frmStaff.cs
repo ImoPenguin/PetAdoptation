@@ -137,6 +137,11 @@ namespace PetAdoptation
 
         private void bEdit_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bEdit_Click_1(object sender, EventArgs e)
+        {
             if (txtPhone_view.Enabled)
             {
                 bEdit.Text = "EDIT";
@@ -144,21 +149,26 @@ namespace PetAdoptation
                 txtPhone_view.Enabled = false;
                 txtEmail_view.Enabled = false;
                 txtAddress_view.Enabled = false;
-                txtPwdUp_view.Enabled = false;
                 txtWorkingStore_view.Enabled = false;
-                txtManagerName_view.Enabled = false;
+                txtManager_view.Enabled = false;
+                txtPwdUp_view.Enabled = false;
             }
             else
             {
-                bEdit.Text = "SAVED";
+                bEdit.Text = "SAVE";
                 txtName_view.Enabled = true;
                 txtPhone_view.Enabled = true;
                 txtEmail_view.Enabled = true;
                 txtAddress_view.Enabled = true;
-                txtPwdUp_view.Enabled = true;
                 txtWorkingStore_view.Enabled = true;
-                txtManagerName_view.Enabled = true;
+                txtManager_view.Enabled = true;
+                txtPwdUp_view.Enabled = true;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
