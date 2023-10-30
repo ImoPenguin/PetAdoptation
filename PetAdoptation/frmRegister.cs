@@ -66,8 +66,8 @@ namespace PetAdoptation
         private void createAccount_Btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmAdmin adminScreen = new frmAdmin();
-            adminScreen.Show();
+            frmStaff staffForm = new frmStaff();
+            staffForm.Show(); 
         }
 
         private void txtPwd_TextChanged(object sender, EventArgs e)
