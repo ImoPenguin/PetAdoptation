@@ -181,8 +181,8 @@
   <data name="PetMatch-31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PetMatch-31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SiameseCat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SiameseCat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PetMatch7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PetMatch7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="roundedCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roundedCat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +190,11 @@
   <data name="PetMatch5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PetMatch5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PetMatch10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PetMatch12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Reason to return-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reason to return-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Namesymbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Namesymbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ID2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ID2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +220,8 @@
   <data name="meow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Namesymbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Namesymbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SiameseCat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SiameseCat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Admin  Just Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin  Just Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,13 +250,13 @@
   <data name="PetMatch9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PetMatch9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PetMatch7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PetMatch7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PetMatch10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PetMatch13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ID3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ID3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PetMatch10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PetMatch13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Staff Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Staff Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

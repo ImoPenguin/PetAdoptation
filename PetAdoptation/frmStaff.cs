@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PetAdoptation
 {
-    public partial class frmAdmin : Form
+    public partial class frmStaff : Form
     {
-        public frmAdmin()
+        public frmStaff()
         {
             InitializeComponent();
         }
@@ -21,12 +21,10 @@ namespace PetAdoptation
         {
             customerButton.BackColor = Color.FromArgb(255, 246, 229);
         }
-
         private void customerButton_MouseLeave(object sender, EventArgs e)
         {
             customerButton.BackColor = Color.FromArgb(229, 215, 200);
         }
-
         private void customerButton_Click(object sender, EventArgs e)
         {
             customer_tabControl.Visible = true;
@@ -35,7 +33,6 @@ namespace PetAdoptation
             staff_tabControl.Visible = false;
             customer_tabControl.SelectedTab = viewCustomers_tabPage;
         }
-
         private void customerLabel_Click(object sender, EventArgs e)
         {
             customer_tabControl.Visible = true;
@@ -99,6 +96,7 @@ namespace PetAdoptation
             staff_tabControl.Visible = false;
             viewDetails_tabControl.SelectedTab = checkID_tabPage;
         }
+
         private void staffButton_MouseHover(object sender, EventArgs e)
         {
             staffButton.BackColor = Color.FromArgb(255, 246, 229);
@@ -124,17 +122,17 @@ namespace PetAdoptation
             staff_tabControl.SelectedTab = viewStaffs_tabPage;
         }
 
-        private void logOut_btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmLogin loginForm = new frmLogin();
-            loginForm.Show();
-        }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
 
+        private void logOut_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin loginForm = new frmLogin();
+            loginForm.Show();
+        }
     }
 }
