@@ -172,14 +172,14 @@
             // 
             // Adopt_lb
             // 
-            Adopt_lb.AutoSize = true;
             Adopt_lb.Font = new Font("Yu Gothic UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
-            Adopt_lb.Location = new Point(122, 15);
+            Adopt_lb.Location = new Point(0, 15);
             Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(809, 51);
+            Adopt_lb.Size = new Size(1124, 51);
             Adopt_lb.TabIndex = 1;
             Adopt_lb.Text = "Adopt and shine with your Rescuoodle today!";
+            Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // searchPet_Btn
             // 
@@ -272,7 +272,7 @@
             panel5.Location = new Point(19, 8);
             panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1312, 101);
+            panel5.Size = new Size(1094, 101);
             panel5.TabIndex = 5;
             // 
             // panel9
@@ -293,6 +293,7 @@
             txtPetId.ForeColor = Color.FromArgb(203, 199, 183);
             txtPetId.Location = new Point(24, 16);
             txtPetId.Margin = new Padding(3, 2, 3, 2);
+            txtPetId.MaxLength = 5;
             txtPetId.Multiline = true;
             txtPetId.Name = "txtPetId";
             txtPetId.PlaceholderText = "Pet ID";
@@ -442,7 +443,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAdoption";
             Main_panel.ResumeLayout(false);
-            Main_panel.PerformLayout();
             panel1.ResumeLayout(false);
             Location_panel.ResumeLayout(false);
             Location_panel.PerformLayout();

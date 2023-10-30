@@ -6,7 +6,7 @@
     <name>Daniel Vu Tran</name>
     <phoneNo>123-723-202</phoneNo>
     <email>john.doe@example.com</email>
-    <address>123 Main St, Anytown, USA</address>
-    <assignedStaff>U2</assignedStaff>
+    <address>123 Main St;Anytown;NSW;2000</address>
+    <assignedStaff>U1002</assignedStaff>
   </customer>
 </root>
