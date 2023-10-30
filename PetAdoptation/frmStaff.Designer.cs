@@ -142,6 +142,35 @@
             viewDetails_tabPage = new TabPage();
             staff_tabControl = new TabControl();
             viewStaffs_tabPage = new TabPage();
+            panel21 = new Panel();
+            bEdit = new Button();
+            ID_lbl = new Label();
+            panel25 = new Panel();
+            panel32 = new Panel();
+            txtPwdUp_view = new TextBox();
+            label17 = new Label();
+            panel26 = new Panel();
+            txtAddress_view = new TextBox();
+            label9 = new Label();
+            panel27 = new Panel();
+            txtManagerName_view = new TextBox();
+            label11 = new Label();
+            panel28 = new Panel();
+            txtWorkingStore_view = new TextBox();
+            label12 = new Label();
+            panel29 = new Panel();
+            txtEmail_view = new TextBox();
+            label13 = new Label();
+            panel30 = new Panel();
+            txtPhone_view = new TextBox();
+            label14 = new Label();
+            label15 = new Label();
+            panel31 = new Panel();
+            txtName_view = new TextBox();
+            label16 = new Label();
+            pictureBox36 = new PictureBox();
+            pictureBox37 = new PictureBox();
+            pictureBox38 = new PictureBox();
             label10 = new Label();
             addStaff_tabPage = new TabPage();
             addStaff_panel = new Panel();
@@ -243,6 +272,18 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             staff_tabControl.SuspendLayout();
             viewStaffs_tabPage.SuspendLayout();
+            panel21.SuspendLayout();
+            panel25.SuspendLayout();
+            panel32.SuspendLayout();
+            panel26.SuspendLayout();
+            panel27.SuspendLayout();
+            panel28.SuspendLayout();
+            panel29.SuspendLayout();
+            panel30.SuspendLayout();
+            panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox36).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox37).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox38).BeginInit();
             addStaff_tabPage.SuspendLayout();
             addStaff_panel.SuspendLayout();
             panel22.SuspendLayout();
@@ -1724,6 +1765,7 @@
             // 
             viewStaffs_tabPage.AutoScroll = true;
             viewStaffs_tabPage.BackColor = Color.FromArgb(229, 215, 200);
+            viewStaffs_tabPage.Controls.Add(panel21);
             viewStaffs_tabPage.Controls.Add(label10);
             viewStaffs_tabPage.Location = new Point(8, 46);
             viewStaffs_tabPage.Name = "viewStaffs_tabPage";
@@ -1731,6 +1773,377 @@
             viewStaffs_tabPage.Size = new Size(1644, 980);
             viewStaffs_tabPage.TabIndex = 0;
             viewStaffs_tabPage.Text = "View";
+            // 
+            // panel21
+            // 
+            panel21.BackColor = Color.FromArgb(229, 215, 200);
+            panel21.Controls.Add(bEdit);
+            panel21.Controls.Add(ID_lbl);
+            panel21.Controls.Add(panel25);
+            panel21.Controls.Add(label15);
+            panel21.Controls.Add(panel31);
+            panel21.Controls.Add(pictureBox36);
+            panel21.Controls.Add(pictureBox37);
+            panel21.Controls.Add(pictureBox38);
+            panel21.Location = new Point(9, 7);
+            panel21.Margin = new Padding(6, 4, 6, 4);
+            panel21.Name = "panel21";
+            panel21.Size = new Size(1899, 1033);
+            panel21.TabIndex = 35;
+            // 
+            // bEdit
+            // 
+            bEdit.BackColor = Color.FromArgb(111, 138, 129);
+            bEdit.Cursor = Cursors.Hand;
+            bEdit.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
+            bEdit.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            bEdit.FlatStyle = FlatStyle.Flat;
+            bEdit.Font = new Font("Yu Gothic UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            bEdit.ForeColor = Color.FromArgb(255, 246, 229);
+            bEdit.Location = new Point(137, 872);
+            bEdit.Margin = new Padding(6, 4, 6, 4);
+            bEdit.Name = "bEdit";
+            bEdit.Size = new Size(318, 107);
+            bEdit.TabIndex = 6;
+            bEdit.Text = "EDIT";
+            bEdit.UseVisualStyleBackColor = false;
+            bEdit.Click += bEdit_Click;
+            // 
+            // ID_lbl
+            // 
+            ID_lbl.AutoSize = true;
+            ID_lbl.BackColor = Color.FromArgb(255, 246, 229);
+            ID_lbl.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Bold, GraphicsUnit.Point);
+            ID_lbl.ForeColor = Color.FromArgb(81, 60, 41);
+            ID_lbl.Location = new Point(266, 57);
+            ID_lbl.Margin = new Padding(6, 0, 6, 0);
+            ID_lbl.Name = "ID_lbl";
+            ID_lbl.Size = new Size(175, 71);
+            ID_lbl.TabIndex = 4;
+            ID_lbl.Text = "U1002";
+            // 
+            // panel25
+            // 
+            panel25.Controls.Add(panel32);
+            panel25.Controls.Add(panel26);
+            panel25.Controls.Add(panel27);
+            panel25.Controls.Add(panel28);
+            panel25.Controls.Add(panel29);
+            panel25.Controls.Add(panel30);
+            panel25.Location = new Point(591, 197);
+            panel25.Margin = new Padding(6, 4, 6, 4);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(1275, 802);
+            panel25.TabIndex = 2;
+            // 
+            // panel32
+            // 
+            panel32.BackColor = Color.Transparent;
+            panel32.Controls.Add(txtPwdUp_view);
+            panel32.Controls.Add(label17);
+            panel32.Location = new Point(26, 699);
+            panel32.Margin = new Padding(6, 4, 6, 4);
+            panel32.Name = "panel32";
+            panel32.Size = new Size(1227, 83);
+            panel32.TabIndex = 8;
+            // 
+            // txtPwdUp_view
+            // 
+            txtPwdUp_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtPwdUp_view.BorderStyle = BorderStyle.None;
+            txtPwdUp_view.Enabled = false;
+            txtPwdUp_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPwdUp_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPwdUp_view.Location = new Point(570, 6);
+            txtPwdUp_view.Margin = new Padding(6, 4, 6, 4);
+            txtPwdUp_view.Name = "txtPwdUp_view";
+            txtPwdUp_view.Size = new Size(639, 71);
+            txtPwdUp_view.TabIndex = 4;
+            txtPwdUp_view.Text = "AntartiCas ";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.ForeColor = Color.FromArgb(81, 60, 41);
+            label17.Location = new Point(26, 6);
+            label17.Margin = new Padding(6, 0, 6, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(274, 71);
+            label17.TabIndex = 0;
+            label17.Text = "Password :";
+            // 
+            // panel26
+            // 
+            panel26.BackColor = Color.Transparent;
+            panel26.Controls.Add(txtAddress_view);
+            panel26.Controls.Add(label9);
+            panel26.Location = new Point(26, 294);
+            panel26.Margin = new Padding(6, 4, 6, 4);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(1227, 111);
+            panel26.TabIndex = 7;
+            // 
+            // txtAddress_view
+            // 
+            txtAddress_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtAddress_view.BorderStyle = BorderStyle.None;
+            txtAddress_view.Enabled = false;
+            txtAddress_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtAddress_view.Location = new Point(570, 6);
+            txtAddress_view.Margin = new Padding(6, 4, 6, 4);
+            txtAddress_view.Name = "txtAddress_view";
+            txtAddress_view.Size = new Size(639, 71);
+            txtAddress_view.TabIndex = 3;
+            txtAddress_view.Text = "Noi co nang va gio♥";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.FromArgb(81, 60, 41);
+            label9.Location = new Point(26, 6);
+            label9.Margin = new Padding(6, 0, 6, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(242, 71);
+            label9.TabIndex = 0;
+            label9.Text = "Address :";
+            // 
+            // panel27
+            // 
+            panel27.BackColor = Color.Transparent;
+            panel27.Controls.Add(txtManagerName_view);
+            panel27.Controls.Add(label11);
+            panel27.Location = new Point(26, 565);
+            panel27.Margin = new Padding(6, 4, 6, 4);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(1227, 111);
+            panel27.TabIndex = 7;
+            // 
+            // txtManagerName_view
+            // 
+            txtManagerName_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtManagerName_view.BorderStyle = BorderStyle.None;
+            txtManagerName_view.Enabled = false;
+            txtManagerName_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtManagerName_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtManagerName_view.Location = new Point(570, 6);
+            txtManagerName_view.Margin = new Padding(6, 4, 6, 4);
+            txtManagerName_view.Name = "txtManagerName_view";
+            txtManagerName_view.Size = new Size(639, 71);
+            txtManagerName_view.TabIndex = 4;
+            txtManagerName_view.Text = "Bossy";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.FromArgb(81, 60, 41);
+            label11.Location = new Point(26, 6);
+            label11.Margin = new Padding(6, 0, 6, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(421, 71);
+            label11.TabIndex = 0;
+            label11.Text = "Manager Name :";
+            // 
+            // panel28
+            // 
+            panel28.BackColor = Color.Transparent;
+            panel28.Controls.Add(txtWorkingStore_view);
+            panel28.Controls.Add(label12);
+            panel28.Location = new Point(26, 425);
+            panel28.Margin = new Padding(6, 4, 6, 4);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(1227, 111);
+            panel28.TabIndex = 6;
+            // 
+            // txtWorkingStore_view
+            // 
+            txtWorkingStore_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtWorkingStore_view.BorderStyle = BorderStyle.None;
+            txtWorkingStore_view.Enabled = false;
+            txtWorkingStore_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtWorkingStore_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtWorkingStore_view.Location = new Point(570, 6);
+            txtWorkingStore_view.Margin = new Padding(6, 4, 6, 4);
+            txtWorkingStore_view.Name = "txtWorkingStore_view";
+            txtWorkingStore_view.Size = new Size(639, 71);
+            txtWorkingStore_view.TabIndex = 4;
+            txtWorkingStore_view.Text = "CasShelter𓆝 𓆟 𓆞 𓆝 𓆟 ";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.FromArgb(81, 60, 41);
+            label12.Location = new Point(26, 6);
+            label12.Margin = new Padding(6, 0, 6, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(391, 71);
+            label12.TabIndex = 0;
+            label12.Text = "Working Store :";
+            // 
+            // panel29
+            // 
+            panel29.BackColor = Color.Transparent;
+            panel29.Controls.Add(txtEmail_view);
+            panel29.Controls.Add(label13);
+            panel29.Location = new Point(26, 164);
+            panel29.Margin = new Padding(6, 4, 6, 4);
+            panel29.Name = "panel29";
+            panel29.Size = new Size(1227, 111);
+            panel29.TabIndex = 5;
+            // 
+            // txtEmail_view
+            // 
+            txtEmail_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtEmail_view.BorderStyle = BorderStyle.None;
+            txtEmail_view.Enabled = false;
+            txtEmail_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtEmail_view.Location = new Point(570, 6);
+            txtEmail_view.Margin = new Padding(6, 4, 6, 4);
+            txtEmail_view.Name = "txtEmail_view";
+            txtEmail_view.Size = new Size(639, 71);
+            txtEmail_view.TabIndex = 2;
+            txtEmail_view.Text = "HiUser@gmail.com";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.ForeColor = Color.FromArgb(81, 60, 41);
+            label13.Location = new Point(26, 6);
+            label13.Margin = new Padding(6, 0, 6, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(182, 71);
+            label13.TabIndex = 0;
+            label13.Text = "Email :";
+            // 
+            // panel30
+            // 
+            panel30.BackColor = Color.Transparent;
+            panel30.Controls.Add(txtPhone_view);
+            panel30.Controls.Add(label14);
+            panel30.Location = new Point(26, 26);
+            panel30.Margin = new Padding(6, 4, 6, 4);
+            panel30.Name = "panel30";
+            panel30.Size = new Size(1227, 111);
+            panel30.TabIndex = 4;
+            // 
+            // txtPhone_view
+            // 
+            txtPhone_view.BackColor = Color.FromArgb(229, 215, 200);
+            txtPhone_view.BorderStyle = BorderStyle.None;
+            txtPhone_view.Enabled = false;
+            txtPhone_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhone_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPhone_view.Location = new Point(570, 6);
+            txtPhone_view.Margin = new Padding(6, 4, 6, 4);
+            txtPhone_view.Name = "txtPhone_view";
+            txtPhone_view.Size = new Size(639, 71);
+            txtPhone_view.TabIndex = 1;
+            txtPhone_view.Text = "0456-960-899";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.ForeColor = Color.FromArgb(81, 60, 41);
+            label14.Location = new Point(26, 6);
+            label14.Margin = new Padding(6, 0, 6, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(220, 71);
+            label14.TabIndex = 0;
+            label14.Text = "Phone : ";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.FromArgb(255, 246, 229);
+            label15.Font = new Font("Yu Gothic UI", 22.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = Color.FromArgb(81, 60, 41);
+            label15.Location = new Point(137, 51);
+            label15.Margin = new Padding(6, 0, 6, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(92, 78);
+            label15.TabIndex = 2;
+            label15.Text = "ID";
+            // 
+            // panel31
+            // 
+            panel31.BackColor = Color.FromArgb(255, 246, 229);
+            panel31.Controls.Add(txtName_view);
+            panel31.Controls.Add(label16);
+            panel31.Location = new Point(617, 51);
+            panel31.Margin = new Padding(6, 4, 6, 4);
+            panel31.Name = "panel31";
+            panel31.Size = new Size(1172, 86);
+            panel31.TabIndex = 3;
+            // 
+            // txtName_view
+            // 
+            txtName_view.BackColor = Color.FromArgb(255, 246, 229);
+            txtName_view.BorderStyle = BorderStyle.None;
+            txtName_view.Enabled = false;
+            txtName_view.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName_view.ForeColor = Color.FromArgb(81, 60, 41);
+            txtName_view.Location = new Point(571, 6);
+            txtName_view.Margin = new Padding(6, 4, 6, 4);
+            txtName_view.Name = "txtName_view";
+            txtName_view.Size = new Size(550, 71);
+            txtName_view.TabIndex = 3;
+            txtName_view.Text = "Blah Blah";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.FromArgb(81, 60, 41);
+            label16.Location = new Point(19, 7);
+            label16.Margin = new Padding(6, 0, 6, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(217, 71);
+            label16.TabIndex = 0;
+            label16.Text = "Name : ";
+            // 
+            // pictureBox36
+            // 
+            pictureBox36.BackColor = Color.Transparent;
+            pictureBox36.BackgroundImage = (Image)resources.GetObject("pictureBox36.BackgroundImage");
+            pictureBox36.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox36.Location = new Point(26, 197);
+            pictureBox36.Margin = new Padding(6, 4, 6, 4);
+            pictureBox36.Name = "pictureBox36";
+            pictureBox36.Size = new Size(553, 802);
+            pictureBox36.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox36.TabIndex = 1;
+            pictureBox36.TabStop = false;
+            // 
+            // pictureBox37
+            // 
+            pictureBox37.BackColor = Color.Transparent;
+            pictureBox37.Image = Properties.Resources.bOptionMainScreen;
+            pictureBox37.Location = new Point(553, 27);
+            pictureBox37.Margin = new Padding(6, 4, 6, 4);
+            pictureBox37.Name = "pictureBox37";
+            pictureBox37.Size = new Size(1313, 137);
+            pictureBox37.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox37.TabIndex = 0;
+            pictureBox37.TabStop = false;
+            // 
+            // pictureBox38
+            // 
+            pictureBox38.BackColor = Color.Transparent;
+            pictureBox38.BackgroundImage = Properties.Resources.UserID;
+            pictureBox38.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox38.Location = new Point(52, -188);
+            pictureBox38.Margin = new Padding(6, 4, 6, 4);
+            pictureBox38.Name = "pictureBox38";
+            pictureBox38.Size = new Size(492, 565);
+            pictureBox38.TabIndex = 2;
+            pictureBox38.TabStop = false;
             // 
             // label10
             // 
@@ -1740,9 +2153,8 @@
             label10.Location = new Point(681, 402);
             label10.Margin = new Padding(5, 0, 5, 0);
             label10.Name = "label10";
-            label10.Size = new Size(402, 100);
+            label10.Size = new Size(0, 100);
             label10.TabIndex = 3;
-            label10.Text = "View Staff";
             // 
             // addStaff_tabPage
             // 
@@ -2263,6 +2675,26 @@
             staff_tabControl.ResumeLayout(false);
             viewStaffs_tabPage.ResumeLayout(false);
             viewStaffs_tabPage.PerformLayout();
+            panel21.ResumeLayout(false);
+            panel21.PerformLayout();
+            panel25.ResumeLayout(false);
+            panel32.ResumeLayout(false);
+            panel32.PerformLayout();
+            panel26.ResumeLayout(false);
+            panel26.PerformLayout();
+            panel27.ResumeLayout(false);
+            panel27.PerformLayout();
+            panel28.ResumeLayout(false);
+            panel28.PerformLayout();
+            panel29.ResumeLayout(false);
+            panel29.PerformLayout();
+            panel30.ResumeLayout(false);
+            panel30.PerformLayout();
+            panel31.ResumeLayout(false);
+            panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox36).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox37).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox38).EndInit();
             addStaff_tabPage.ResumeLayout(false);
             addStaff_panel.ResumeLayout(false);
             addStaff_panel.PerformLayout();
@@ -2441,5 +2873,34 @@
         private PictureBox pictureBox34;
         private PictureBox pictureBox35;
         private Label newStaff_label;
+        private Panel panel21;
+        private Label ID_lbl;
+        private Panel panel25;
+        private Panel panel26;
+        private TextBox txtAddress_view;
+        private Label label9;
+        private Panel panel27;
+        private TextBox txtManagerName_view;
+        private Label label11;
+        private Panel panel28;
+        private TextBox txtWorkingStore_view;
+        private Label label12;
+        private Panel panel29;
+        private TextBox txtEmail_view;
+        private Label label13;
+        private Panel panel30;
+        private TextBox txtPhone_view;
+        private Label label14;
+        private Label label15;
+        private Panel panel31;
+        private TextBox txtName_view;
+        private Label label16;
+        private PictureBox pictureBox36;
+        private PictureBox pictureBox37;
+        private PictureBox pictureBox38;
+        private Panel panel32;
+        private TextBox txtPwdUp_view;
+        private Label label17;
+        private Button bEdit;
     }
 }
