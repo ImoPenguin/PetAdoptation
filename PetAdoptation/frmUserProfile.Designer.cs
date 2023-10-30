@@ -142,10 +142,10 @@
             txtPwdUp.Enabled = false;
             txtPwdUp.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtPwdUp.ForeColor = Color.FromArgb(81, 60, 41);
-            txtPwdUp.Location = new Point(307, 3);
+            txtPwdUp.Location = new Point(223, 3);
             txtPwdUp.Margin = new Padding(3, 2, 3, 2);
             txtPwdUp.Name = "txtPwdUp";
-            txtPwdUp.Size = new Size(435, 43);
+            txtPwdUp.Size = new Size(530, 43);
             txtPwdUp.TabIndex = 4;
             txtPwdUp.Text = "AntartiCas Pengu";
             // 
@@ -178,10 +178,10 @@
             txtAddress.Enabled = false;
             txtAddress.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtAddress.ForeColor = Color.FromArgb(81, 60, 41);
-            txtAddress.Location = new Point(307, 3);
+            txtAddress.Location = new Point(223, 3);
             txtAddress.Margin = new Padding(3, 2, 3, 2);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(435, 43);
+            txtAddress.Size = new Size(530, 43);
             txtAddress.TabIndex = 3;
             txtAddress.Text = "Noi Chi Co Tinh yeu ♥";
             // 
@@ -214,10 +214,10 @@
             txtEmail.Enabled = false;
             txtEmail.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.ForeColor = Color.FromArgb(81, 60, 41);
-            txtEmail.Location = new Point(307, 3);
+            txtEmail.Location = new Point(223, 3);
             txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(435, 43);
+            txtEmail.Size = new Size(530, 43);
             txtEmail.TabIndex = 2;
             txtEmail.Text = "HiUser@gmail.com";
             // 
@@ -250,10 +250,10 @@
             txtPhone.Enabled = false;
             txtPhone.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtPhone.ForeColor = Color.FromArgb(81, 60, 41);
-            txtPhone.Location = new Point(307, 3);
+            txtPhone.Location = new Point(223, 3);
             txtPhone.Margin = new Padding(3, 2, 3, 2);
             txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(435, 43);
+            txtPhone.Size = new Size(530, 43);
             txtPhone.TabIndex = 1;
             txtPhone.Text = "04569608998";
             // 

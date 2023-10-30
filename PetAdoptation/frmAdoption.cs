@@ -74,5 +74,14 @@ namespace PetAdoptation
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void frmAdoption_Load(object sender, EventArgs e)
+        {
+            if (Cart.chosenPet != null)
+            {
+                txtpetID.Text = Cart.chosenPet.ID;
+                petType_label.Text = Cart.chosenPet.Type;
+            }
+        }
     }
 }

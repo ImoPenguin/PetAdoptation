@@ -29,8 +29,8 @@ namespace PetAdoptation
             else
             {
                 advancedPanel.Visible = true;
-                searchMode_Btn.Text = "Standard search  ▲";
-                SearchPet_Panel.Location = new Point(477, 636);
+                searchMode_Btn.Text = "Standard search ▲";
+                SearchPet_Panel.Location = new Point(SearchPet_Panel.Location.X, SearchPet_Panel.Location.Y + advancedPanel.Height);
             }
 
 

@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPetDetails));
             panel1 = new Panel();
             bAdopt = new Button();
-            label4 = new Label();
+            ID_label = new Label();
             label2 = new Label();
             panel4 = new Panel();
             petHealth_panel = new Panel();
-            panel12 = new Panel();
+            wormed_Panel = new Panel();
             wormed_Label = new Label();
-            pictureBox4 = new PictureBox();
+            wormed_Picbx = new PictureBox();
             microchipped_panel = new Panel();
             microchipped_label = new Label();
             microchipped_Picbx = new PictureBox();
@@ -49,13 +49,13 @@
             desexed_Picbox = new PictureBox();
             petDetails_panel = new Panel();
             panel10 = new Panel();
-            textBox2 = new TextBox();
+            txtPetColour = new TextBox();
             Colour_label = new Label();
             panel8 = new Panel();
             txtBreed = new TextBox();
             breed_Label = new Label();
             panel9 = new Panel();
-            textBox1 = new TextBox();
+            txtPetType = new TextBox();
             Type_label = new Label();
             panel5 = new Panel();
             txtPetAge = new TextBox();
@@ -74,15 +74,15 @@
             txtName = new TextBox();
             Name_label = new Label();
             pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            petPicture = new PictureBox();
             pictureBox1 = new PictureBox();
             backButton = new Button();
             closeButton = new Button();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             petHealth_panel.SuspendLayout();
-            panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            wormed_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)wormed_Picbx).BeginInit();
             microchipped_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)microchipped_Picbx).BeginInit();
             vaccinated_panel.SuspendLayout();
@@ -101,7 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)petPicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -109,11 +109,11 @@
             // 
             panel1.BackColor = Color.FromArgb(229, 215, 200);
             panel1.Controls.Add(bAdopt);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(ID_label);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel2);
-            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(petPicture);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(25, 119);
             panel1.Margin = new Padding(3, 2, 3, 2);
@@ -139,17 +139,17 @@
             bAdopt.UseVisualStyleBackColor = false;
             bAdopt.Click += bAdopt_Click;
             // 
-            // label4
+            // ID_label
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.FromArgb(255, 246, 229);
-            label4.Font = new Font("Yu Gothic UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(81, 60, 41);
-            label4.Location = new Point(141, 16);
-            label4.Name = "label4";
-            label4.Size = new Size(88, 45);
-            label4.TabIndex = 6;
-            label4.Text = "P001";
+            ID_label.AutoSize = true;
+            ID_label.BackColor = Color.FromArgb(255, 246, 229);
+            ID_label.Font = new Font("Yu Gothic UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            ID_label.ForeColor = Color.FromArgb(81, 60, 41);
+            ID_label.Location = new Point(141, 16);
+            ID_label.Name = "ID_label";
+            ID_label.Size = new Size(88, 45);
+            ID_label.TabIndex = 6;
+            ID_label.Text = "P001";
             // 
             // label2
             // 
@@ -176,7 +176,7 @@
             // petHealth_panel
             // 
             petHealth_panel.BackColor = Color.Transparent;
-            petHealth_panel.Controls.Add(panel12);
+            petHealth_panel.Controls.Add(wormed_Panel);
             petHealth_panel.Controls.Add(microchipped_panel);
             petHealth_panel.Controls.Add(vaccinated_panel);
             petHealth_panel.Controls.Add(desexed_Panel);
@@ -186,15 +186,15 @@
             petHealth_panel.Size = new Size(358, 287);
             petHealth_panel.TabIndex = 10;
             // 
-            // panel12
+            // wormed_Panel
             // 
-            panel12.Controls.Add(wormed_Label);
-            panel12.Controls.Add(pictureBox4);
-            panel12.Location = new Point(3, 145);
-            panel12.Margin = new Padding(3, 2, 3, 2);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(138, 110);
-            panel12.TabIndex = 13;
+            wormed_Panel.Controls.Add(wormed_Label);
+            wormed_Panel.Controls.Add(wormed_Picbx);
+            wormed_Panel.Location = new Point(3, 145);
+            wormed_Panel.Margin = new Padding(3, 2, 3, 2);
+            wormed_Panel.Name = "wormed_Panel";
+            wormed_Panel.Size = new Size(138, 110);
+            wormed_Panel.TabIndex = 13;
             // 
             // wormed_Label
             // 
@@ -207,17 +207,17 @@
             wormed_Label.TabIndex = 5;
             wormed_Label.Text = "WORMED";
             // 
-            // pictureBox4
+            // wormed_Picbx
             // 
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(37, 10);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(67, 59);
-            pictureBox4.TabIndex = 10;
-            pictureBox4.TabStop = false;
+            wormed_Picbx.BackColor = Color.Transparent;
+            wormed_Picbx.BackgroundImage = (Image)resources.GetObject("wormed_Picbx.BackgroundImage");
+            wormed_Picbx.BackgroundImageLayout = ImageLayout.Stretch;
+            wormed_Picbx.Location = new Point(37, 10);
+            wormed_Picbx.Margin = new Padding(3, 2, 3, 2);
+            wormed_Picbx.Name = "wormed_Picbx";
+            wormed_Picbx.Size = new Size(67, 59);
+            wormed_Picbx.TabIndex = 10;
+            wormed_Picbx.TabStop = false;
             // 
             // microchipped_panel
             // 
@@ -337,7 +337,7 @@
             // panel10
             // 
             panel10.BackColor = Color.Transparent;
-            panel10.Controls.Add(textBox2);
+            panel10.Controls.Add(txtPetColour);
             panel10.Controls.Add(Colour_label);
             panel10.Location = new Point(20, 230);
             panel10.Margin = new Padding(3, 2, 3, 2);
@@ -345,18 +345,19 @@
             panel10.Size = new Size(417, 40);
             panel10.TabIndex = 8;
             // 
-            // textBox2
+            // txtPetColour
             // 
-            textBox2.BackColor = Color.FromArgb(229, 215, 200);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox2.Location = new Point(214, 4);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(195, 32);
-            textBox2.TabIndex = 7;
-            textBox2.Text = "Black/White";
+            txtPetColour.BackColor = Color.FromArgb(229, 215, 200);
+            txtPetColour.BorderStyle = BorderStyle.None;
+            txtPetColour.Enabled = false;
+            txtPetColour.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPetColour.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPetColour.Location = new Point(214, 4);
+            txtPetColour.Margin = new Padding(3, 2, 3, 2);
+            txtPetColour.Name = "txtPetColour";
+            txtPetColour.Size = new Size(195, 32);
+            txtPetColour.TabIndex = 7;
+            txtPetColour.Text = "Black/White";
             // 
             // Colour_label
             // 
@@ -384,6 +385,7 @@
             // 
             txtBreed.BackColor = Color.FromArgb(229, 215, 200);
             txtBreed.BorderStyle = BorderStyle.None;
+            txtBreed.Enabled = false;
             txtBreed.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtBreed.ForeColor = Color.FromArgb(81, 60, 41);
             txtBreed.Location = new Point(214, 4);
@@ -407,7 +409,7 @@
             // panel9
             // 
             panel9.BackColor = Color.Transparent;
-            panel9.Controls.Add(textBox1);
+            panel9.Controls.Add(txtPetType);
             panel9.Controls.Add(Type_label);
             panel9.Location = new Point(20, 186);
             panel9.Margin = new Padding(3, 2, 3, 2);
@@ -415,18 +417,19 @@
             panel9.Size = new Size(417, 40);
             panel9.TabIndex = 8;
             // 
-            // textBox1
+            // txtPetType
             // 
-            textBox1.BackColor = Color.FromArgb(229, 215, 200);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox1.Location = new Point(214, 4);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(195, 32);
-            textBox1.TabIndex = 7;
-            textBox1.Text = "Cat";
+            txtPetType.BackColor = Color.FromArgb(229, 215, 200);
+            txtPetType.BorderStyle = BorderStyle.None;
+            txtPetType.Enabled = false;
+            txtPetType.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPetType.ForeColor = Color.FromArgb(81, 60, 41);
+            txtPetType.Location = new Point(214, 4);
+            txtPetType.Margin = new Padding(3, 2, 3, 2);
+            txtPetType.Name = "txtPetType";
+            txtPetType.Size = new Size(195, 32);
+            txtPetType.TabIndex = 7;
+            txtPetType.Text = "Cat";
             // 
             // Type_label
             // 
@@ -454,6 +457,7 @@
             // 
             txtPetAge.BackColor = Color.FromArgb(229, 215, 200);
             txtPetAge.BorderStyle = BorderStyle.None;
+            txtPetAge.Enabled = false;
             txtPetAge.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtPetAge.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetAge.Location = new Point(214, 4);
@@ -489,6 +493,7 @@
             // 
             txtPetSize.BackColor = Color.FromArgb(229, 215, 200);
             txtPetSize.BorderStyle = BorderStyle.None;
+            txtPetSize.Enabled = false;
             txtPetSize.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtPetSize.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetSize.Location = new Point(214, 4);
@@ -524,6 +529,7 @@
             // 
             txtPetSex.BackColor = Color.FromArgb(229, 215, 200);
             txtPetSex.BorderStyle = BorderStyle.None;
+            txtPetSex.Enabled = false;
             txtPetSex.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtPetSex.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetSex.Location = new Point(214, 4);
@@ -571,6 +577,7 @@
             // 
             txtPetLocation.BackColor = Color.FromArgb(255, 246, 229);
             txtPetLocation.BorderStyle = BorderStyle.None;
+            txtPetLocation.Enabled = false;
             txtPetLocation.Font = new Font("Yu Gothic UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
             txtPetLocation.ForeColor = Color.FromArgb(81, 60, 41);
             txtPetLocation.Location = new Point(61, 7);
@@ -579,6 +586,7 @@
             txtPetLocation.Size = new Size(346, 32);
             txtPetLocation.TabIndex = 5;
             txtPetLocation.Text = "Coffs Shelter, Vic";
+            txtPetLocation.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox5
             // 
@@ -606,14 +614,16 @@
             // 
             txtName.BackColor = Color.FromArgb(255, 246, 229);
             txtName.BorderStyle = BorderStyle.None;
+            txtName.Enabled = false;
             txtName.Font = new Font("Yu Gothic UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
             txtName.ForeColor = Color.FromArgb(81, 60, 41);
-            txtName.Location = new Point(162, 7);
+            txtName.Location = new Point(141, 7);
             txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(147, 43);
+            txtName.Size = new Size(179, 43);
             txtName.TabIndex = 3;
             txtName.Text = "Blah Blah";
+            txtName.TextAlign = HorizontalAlignment.Center;
             // 
             // Name_label
             // 
@@ -638,17 +648,17 @@
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // petPicture
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources.SiameseCat;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(17, 70);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(284, 368);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            petPicture.BackColor = Color.Transparent;
+            petPicture.BackgroundImage = Properties.Resources.SiameseCat;
+            petPicture.BackgroundImageLayout = ImageLayout.Stretch;
+            petPicture.Location = new Point(17, 70);
+            petPicture.Margin = new Padding(3, 2, 3, 2);
+            petPicture.Name = "petPicture";
+            petPicture.Size = new Size(284, 368);
+            petPicture.TabIndex = 1;
+            petPicture.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -720,9 +730,9 @@
             panel1.PerformLayout();
             panel4.ResumeLayout(false);
             petHealth_panel.ResumeLayout(false);
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            wormed_Panel.ResumeLayout(false);
+            wormed_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)wormed_Picbx).EndInit();
             microchipped_panel.ResumeLayout(false);
             microchipped_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)microchipped_Picbx).EndInit();
@@ -752,7 +762,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)petPicture).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -760,7 +770,7 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox2;
+        private PictureBox petPicture;
         private PictureBox pictureBox1;
         private Panel panel2;
         private PictureBox pictureBox3;
@@ -775,7 +785,7 @@
         private Panel panel5;
         private Label age_Label;
         private Panel panel8;
-        private Label label4;
+        private Label ID_label;
         private Label label2;
         private Label breed_Label;
         private TextBox txtBreed;
@@ -785,22 +795,22 @@
         private Panel petHealth_panel;
         private Panel petDetails_panel;
         private Panel panel10;
-        private TextBox textBox2;
+        private TextBox txtPetColour;
         private Label Colour_label;
         private Panel panel9;
-        private TextBox textBox1;
+        private TextBox txtPetType;
         private Label Type_label;
         private Panel desexed_Panel;
         private Label desexed_Label;
         private PictureBox desexed_Picbox;
-        private PictureBox pictureBox4;
+        private PictureBox wormed_Picbx;
         private PictureBox vaccinated_Picbx;
         private PictureBox microchipped_Picbx;
         private Panel microchipped_panel;
         private Label microchipped_label;
         private Panel vaccinated_panel;
         private Label Vaccinated_label;
-        private Panel panel12;
+        private Panel wormed_Panel;
         private Label wormed_Label;
         private Button bAdopt;
         private Panel panel11;

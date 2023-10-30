@@ -170,13 +170,12 @@
             // 
             // petType_label
             // 
-            petType_label.AutoSize = true;
             petType_label.BackColor = Color.FromArgb(253, 252, 245);
             petType_label.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             petType_label.ForeColor = Color.FromArgb(132, 109, 97);
-            petType_label.Location = new Point(67, 49);
+            petType_label.Location = new Point(20, 49);
             petType_label.Name = "petType_label";
-            petType_label.Size = new Size(84, 25);
+            petType_label.Size = new Size(184, 25);
             petType_label.TabIndex = 11;
             petType_label.Text = "Pet Type";
             petType_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -230,9 +229,10 @@
             // 
             txtpetID.BackColor = Color.FromArgb(253, 252, 245);
             txtpetID.BorderStyle = BorderStyle.None;
+            txtpetID.Enabled = false;
             txtpetID.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtpetID.ForeColor = Color.FromArgb(132, 109, 97);
-            txtpetID.Location = new Point(31, 49);
+            txtpetID.Location = new Point(29, 49);
             txtpetID.Margin = new Padding(3, 2, 3, 2);
             txtpetID.Name = "txtpetID";
             txtpetID.PlaceholderText = "Pet ID";
@@ -693,6 +693,7 @@
             Name = "frmAdoption";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAdoption";
+            Load += frmAdoption_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

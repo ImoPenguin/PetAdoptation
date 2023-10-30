@@ -49,7 +49,10 @@ namespace PetAdoptation
                 LoginAccount.currentCustomer.Name = txtName.Text;
                 LoginAccount.currentCustomer.PhoneNo = txtPhone.Text;
                 LoginAccount.currentCustomer.Email = txtEmail.Text;
-                LoginAccount.currentCustomer.Address = txtAddress.Text;
+
+                string addressData = String.Join(";", txtAddress.Text.Split(", "));
+
+                LoginAccount.currentCustomer.Address = addressData;
                 LoginAccount.currentCustomer.Password = txtPwdUp.Text;
 
                 XML_Handler.editCustomerData(LoginAccount.currentCustomer);
@@ -76,7 +79,10 @@ namespace PetAdoptation
             txtName.Text = LoginAccount.currentCustomer.Name;
             txtPhone.Text = LoginAccount.currentCustomer.PhoneNo;
             txtEmail.Text = LoginAccount.currentCustomer.Email;
-            txtAddress.Text = LoginAccount.currentCustomer.Address;
+
+            string addressData = String.Join(", ", LoginAccount.currentCustomer.Address.Split(';'));
+
+            txtAddress.Text = addressData;
             txtPwdUp.Text = LoginAccount.currentCustomer.Password;
         }
     }
