@@ -44,10 +44,10 @@
             panel1.BackColor = Color.FromArgb(229, 215, 200);
             panel1.Controls.Add(bDone);
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(36, 225);
-            panel1.Margin = new Padding(5);
+            panel1.Location = new Point(25, 125);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(2130, 970);
+            panel1.Size = new Size(1147, 455);
             panel1.TabIndex = 1;
             // 
             // bDone
@@ -59,10 +59,10 @@
             bDone.FlatStyle = FlatStyle.Flat;
             bDone.Font = new Font("Yu Gothic UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             bDone.ForeColor = Color.FromArgb(255, 246, 229);
-            bDone.Location = new Point(898, 813);
-            bDone.Margin = new Padding(5);
+            bDone.Location = new Point(484, 381);
+            bDone.Margin = new Padding(3, 2, 3, 2);
             bDone.Name = "bDone";
-            bDone.Size = new Size(317, 107);
+            bDone.Size = new Size(171, 50);
             bDone.TabIndex = 6;
             bDone.Text = "DONE";
             bDone.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(Adopt_lb);
-            panel2.Location = new Point(49, 42);
-            panel2.Margin = new Padding(5);
+            panel2.Location = new Point(26, 20);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(2062, 758);
+            panel2.Size = new Size(1110, 355);
             panel2.TabIndex = 4;
             // 
             // textBox1
@@ -86,11 +86,11 @@
             textBox1.Enabled = false;
             textBox1.Font = new Font("Yu Gothic UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox1.Location = new Point(110, 203);
-            textBox1.Margin = new Padding(5);
+            textBox1.Location = new Point(59, 95);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1872, 488);
+            textBox1.Size = new Size(1008, 229);
             textBox1.TabIndex = 4;
             textBox1.Text = resources.GetString("textBox1.Text");
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -100,10 +100,9 @@
             Adopt_lb.AutoSize = true;
             Adopt_lb.Font = new Font("Segoe UI", 31.875F, FontStyle.Bold, GraphicsUnit.Point);
             Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
-            Adopt_lb.Location = new Point(468, 37);
-            Adopt_lb.Margin = new Padding(5, 0, 5, 0);
+            Adopt_lb.Location = new Point(252, 17);
             Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(1247, 113);
+            Adopt_lb.Size = new Size(632, 59);
             Adopt_lb.TabIndex = 3;
             Adopt_lb.Text = "Thank you for letting us know";
             Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
@@ -116,10 +115,10 @@
             closeButton.FlatStyle = FlatStyle.Popup;
             closeButton.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(2136, 9);
+            closeButton.Location = new Point(1150, 4);
             closeButton.Margin = new Padding(0);
             closeButton.Name = "closeButton";
-            closeButton.Size = new Size(57, 56);
+            closeButton.Size = new Size(31, 26);
             closeButton.TabIndex = 24;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
@@ -127,15 +126,16 @@
             // 
             // frmPetReturnConfirm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PetMatch10;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(2202, 1209);
+            ClientSize = new Size(1200, 600);
             Controls.Add(closeButton);
             Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 1, 2, 1);
             Name = "frmPetReturnConfirm";
             Text = "frmPetReturnConfirm";
             panel1.ResumeLayout(false);
