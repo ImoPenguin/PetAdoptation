@@ -133,7 +133,7 @@
             categoriesLabel.BackColor = Color.Transparent;
             categoriesLabel.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             categoriesLabel.ForeColor = Color.SaddleBrown;
-            categoriesLabel.Location = new Point(166, 382);
+            categoriesLabel.Location = new Point(11, 338);
             categoriesLabel.Margin = new Padding(2, 0, 2, 0);
             categoriesLabel.Name = "categoriesLabel";
             categoriesLabel.Size = new Size(119, 30);
@@ -244,7 +244,7 @@
             showAll_Btn.Anchor = AnchorStyles.Right;
             showAll_Btn.BackColor = Color.LightYellow;
             showAll_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            showAll_Btn.Location = new Point(1207, 440);
+            showAll_Btn.Location = new Point(1052, 396);
             showAll_Btn.Margin = new Padding(3, 2, 3, 2);
             showAll_Btn.Name = "showAll_Btn";
             showAll_Btn.Size = new Size(136, 40);
@@ -258,7 +258,7 @@
             searchID_Btn.Anchor = AnchorStyles.Right;
             searchID_Btn.BackColor = Color.LightYellow;
             searchID_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            searchID_Btn.Location = new Point(1207, 549);
+            searchID_Btn.Location = new Point(1052, 505);
             searchID_Btn.Margin = new Padding(3, 2, 3, 2);
             searchID_Btn.Name = "searchID_Btn";
             searchID_Btn.Size = new Size(136, 40);
@@ -272,7 +272,7 @@
             returnPet_Btn.Anchor = AnchorStyles.Right;
             returnPet_Btn.BackColor = Color.LightYellow;
             returnPet_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            returnPet_Btn.Location = new Point(1207, 494);
+            returnPet_Btn.Location = new Point(1052, 450);
             returnPet_Btn.Margin = new Padding(3, 2, 3, 2);
             returnPet_Btn.Name = "returnPet_Btn";
             returnPet_Btn.Size = new Size(136, 40);
@@ -328,7 +328,7 @@
             sideMenuPanel.Location = new Point(0, 0);
             sideMenuPanel.Margin = new Padding(3, 2, 3, 2);
             sideMenuPanel.Name = "sideMenuPanel";
-            sideMenuPanel.Size = new Size(275, 684);
+            sideMenuPanel.Size = new Size(275, 600);
             sideMenuPanel.TabIndex = 23;
             sideMenuPanel.Visible = false;
             // 
