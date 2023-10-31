@@ -17,7 +17,6 @@
     <age>9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S1</storeID>
     <id>P102</id>
@@ -35,7 +34,6 @@
     <age>1 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-  
   <pet>
     <storeID>S1</storeID>
     <id>P103</id>
@@ -53,7 +51,6 @@
     <age>9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S2</storeID>
     <id>P104</id>
@@ -71,7 +68,6 @@
     <age>2 Years 9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S2</storeID>
     <id>P105</id>
@@ -89,7 +85,6 @@
     <age>1 Years</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S2</storeID>
     <id>P106</id>
@@ -107,7 +102,6 @@
     <age>2 Years 9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S3</storeID>
     <id>P107</id>
@@ -125,7 +119,6 @@
     <age>1 Years 9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S3</storeID>
     <id>P108</id>
@@ -143,7 +136,6 @@
     <age>2 Years 9 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S3</storeID>
     <id>P109</id>
@@ -161,7 +153,6 @@
     <age>6 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S4</storeID>
     <id>P110</id>
@@ -179,7 +170,6 @@
     <age>1 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S4</storeID>
     <id>P111</id>
@@ -197,7 +187,6 @@
     <age>1 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S4</storeID>
     <id>P112</id>
@@ -215,7 +204,6 @@
     <age>1 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S5</storeID>
     <id>P113</id>
@@ -233,7 +221,6 @@
     <age>3 Years 8 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S5</storeID>
     <id>P114</id>
@@ -249,9 +236,8 @@
     <wormed>true</wormed>
     <description>Description for Pet</description> 
     <age>2 Years</age>
-    <ownerID></ownerID> <!-- Kept blank as requested -->
+    <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S6</storeID>
     <id>P115</id>
@@ -269,7 +255,6 @@
     <age>1 Year 4 Months</age>
     <ownerID></ownerID> 
   </pet>
-
   <pet>
     <storeID>S6</storeID>
     <id>P116</id>
@@ -333,13 +318,12 @@
     <sex>Male</sex>
     <breed>Koi Carp</breed>
     <size>Medium</size>
-    <vaccinated>N/A</vaccinated>
+    <vaccinated>false</vaccinated>
     <microchip>false</microchip>
-    <desexed>N/A</desexed>
+    <desexed>false</desexed>
     <wormed>false</wormed>
     <description>Description for Pet</description> 
     <age>2 Years</age>
     <ownerID></ownerID> 
-  </pet
-
+  </pet>
 </root>
