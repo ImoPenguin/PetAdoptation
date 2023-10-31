@@ -82,27 +82,6 @@ namespace PetAdoptation
                 txtpetID.Text = Cart.chosenPet.ID;
                 petType_label.Text = Cart.chosenPet.Type;
             }
-
-            if (LoginAccount.currentCustomer != null)
-            {
-                txtFullName.Text = LoginAccount.currentCustomer.Name;
-                txtEmail.Text = LoginAccount.currentCustomer.Email;
-                txtPhoneNum.Text = LoginAccount.currentCustomer.PhoneNo;
-
-                //  Separate Address data to string array
-                /*
-                 * [0]: Street addres
-                 * [1]: City
-                 * [2]: State
-                 * [3]: Postcode
-                 */
-                string[] addressData = LoginAccount.currentCustomer.Address.Split(';');
-
-                txtStreetAddress.Text = addressData[0];
-                txtCity.Text = addressData[1];
-                txtState.Text = addressData[2];
-                txtPostalCode.Text = addressData[3];
-            }
         }
     }
 }

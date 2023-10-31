@@ -53,12 +53,9 @@ namespace PetAdoptation
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            //  RESET Search Data
-            SearchData.resetSearchData();
-
+            this.Hide();
             frmMainScreen mainScreen = new frmMainScreen();
             mainScreen.Show();
-            this.Close();
         }
         private void backButton_MouseHover(object sender, EventArgs e)
         {
@@ -92,57 +89,9 @@ namespace PetAdoptation
 
         private void searchPet_Btn_Click(object sender, EventArgs e)
         {
-            //  GET Search Data
-            //  Pet Type Data
-            if (PetType_Combobx.SelectedIndex <= 0)
-            {
-                SearchData.animalType = String.Empty;
-            }
-            else
-            {
-                SearchData.animalType = PetType_Combobx.Text;
-            }
-
-            //  Pet Age Data
-            if (age_Combobx.SelectedIndex <= 0)
-            {
-                SearchData.animalAge = String.Empty;
-            }
-            else
-            {
-                SearchData.animalAge = age_Combobx.Text;
-            }
-
-            //  Pet Gender Data
-            if (sex_Combobx.SelectedIndex <= 0)
-            {
-                SearchData.animalGender = String.Empty;
-            }
-            else
-            {
-                SearchData.animalGender = sex_Combobx.Text;
-            }
-
-            //  Pet Vaccinated Data
-            if (vaccinated_Combobx.SelectedIndex <= 0)
-            {
-                SearchData.vaccinated = String.Empty;
-            }
-            else
-            {
-                SearchData.vaccinated = vaccinated_Combobx.Text;
-            }
-
-            //  GET Data from Text Box
-            SearchData.animalLocation = txtLocation.Text;
-            SearchData.petID = txtPetId.Text;
-
-            //titleLabel.Text = SearchData.animalType + SearchData.animalAge + SearchData.animalGender + SearchData.animalLocation + SearchData.vaccinated + SearchData.petID;
-
-            this.Close();
-            frmSearchResult searchResultscreen = new frmSearchResult();
-            searchResultscreen.Show();
-
+            this.Hide();
+            frmPetDetails petDetailsForm = new frmPetDetails();
+            petDetailsForm.Show();
         }
 
 

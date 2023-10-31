@@ -1,4 +1,4 @@
-﻿namespace PetAdoptation
+namespace PetAdoptation
 {
     partial class frmStaff
     {
