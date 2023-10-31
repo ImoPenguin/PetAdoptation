@@ -91,92 +91,92 @@ namespace PetAdoptation
         {
             frmAdoptionSearch adoptionForm = new frmAdoptionSearch();
             adoptionForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void profileLabel_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmUserProfile profileForm = new frmUserProfile();
             profileForm.Show();
+            this.Close();
         }
 
         private void profileButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmUserProfile profileForm = new frmUserProfile();
             profileForm.Show();
+            this.Close();
         }
 
         private void profileIcon_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmUserProfile profileForm = new frmUserProfile();
             profileForm.Show();
+            this.Close();
         }
 
         private void logOut_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmLogin loginForm = new frmLogin();
             loginForm.Show();
+            this.Close();
         }
 
         private void showAll_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmAllPets allPetsForm = new frmAllPets();
             allPetsForm.Show();
+            this.Close();
         }
 
         private void cat_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmCats catForm = new frmCats();
             catForm.Show();
+            this.Close();
         }
 
         private void dog_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmDogs dogForm = new frmDogs();
             dogForm.Show();
+            this.Close();
         }
 
         private void other_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmOtherPets otherPetsForm = new frmOtherPets();
             otherPetsForm.Show();
+            this.Close();
         }
 
         private void staffLabel_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmAssignedStaff assignedStaffForm = new frmAssignedStaff();
             assignedStaffForm.Show();
+            this.Close();
         }
 
         private void returnPet_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmReturnPets returnPetsForm = new frmReturnPets();
             returnPetsForm.Show();
+            this.Close();
         }
 
         //  Nhớ làm lại function này
         private void searchID_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmAdmin staffForm = new frmAdmin();
             staffForm.Show();
+            this.Close();
         }
 
         private void staffButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmAssignedStaff assignedStaffForm = new frmAssignedStaff();
             assignedStaffForm.Show();
+            this.Close();
         }
     }
 }
