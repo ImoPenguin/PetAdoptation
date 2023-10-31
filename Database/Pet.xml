@@ -4,7 +4,7 @@
     <storeID>S1</storeID>
     <id>P101</id>
     <type>Cat</type>
-    <name>Alfie</name>
+    <name>Oreo</name>
     <color>Black/White</color>
     <sex>Male</sex>
     <breed>Ragdoll</breed>
@@ -17,4 +17,329 @@
     <age>9 Months</age>
     <ownerID></ownerID>
   </pet>
+
+  <pet>
+    <storeID>S1</storeID>
+    <id>P102</id>
+    <type>Cat</type>
+    <name>Taco</name>
+    <color>Brown/White</color>
+    <sex>Female</sex>
+    <breed>Siamese</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+  
+  <pet>
+    <storeID>S1</storeID>
+    <id>P103</id>
+    <type>Cat</type>
+    <name>Stupi</name>
+    <color>Brown/White</color>
+    <sex>Female</sex>
+    <breed>Golden</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>9 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S2</storeID>
+    <id>P104</id>
+    <type>Cat</type>
+    <name>Tiger</name>
+    <color>Light Gold</color>
+    <sex>Female</sex>
+    <breed>Exotic Shorthair</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>2 Years 9 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S2</storeID>
+    <id>P105</id>
+    <type>Dog</type>
+    <name>Dobbie</name>
+    <color>Dark Brown/Yellow</color>
+    <sex>Male</sex>
+    <breed>Doberman Pinscher</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S2</storeID>
+    <id>P106</id>
+    <type>Dog</type>
+    <name>Snow</name>
+    <color>White</color>
+    <sex>Male</sex>
+    <breed>American Eskiemo</breed>
+    <size>Large</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>2 Years 9 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S3</storeID>
+    <id>P107</id>
+    <type>Other</type>
+    <name>Nhan</name>
+    <color>White</color>
+    <sex>Male</sex>
+    <breed>Embden Goose</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years 9 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S3</storeID>
+    <id>P108</id>
+    <type>Cat</type>
+    <name>Keo Keo</name>
+    <color>Black/Grey Tabby</color>
+    <sex>Male</sex>
+    <breed>Tabby</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>2 Years 9 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S3</storeID>
+    <id>P109</id>
+    <type>Dog</type>
+    <name>Coco</name>
+    <color>Reddish Coat</color>
+    <sex>Male</sex>
+    <breed>Toller Retriever</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>6 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S4</storeID>
+    <id>P110</id>
+    <type>Other</type>
+    <name>Tien Anh</name>
+    <color>Brown</color>
+    <sex>Male</sex>
+    <breed>Alpaca</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S4</storeID>
+    <id>P111</id>
+    <type>Other</type>
+    <name>Pengu</name>
+    <color>Black/White</color>
+    <sex>Male</sex>
+    <breed>Emperor Penguin</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S4</storeID>
+    <id>P112</id>
+    <type>Cat</type>
+    <name>Poro</name>
+    <color>Black/Orange/White</color>
+    <sex>Male</sex>
+    <breed>tortoiseshell/Torties</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>1 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S5</storeID>
+    <id>P113</id>
+    <type>Cat</type>
+    <name>Candie</name>
+    <color>Grey/White Coat</color>
+    <sex>Female</sex>
+    <breed>Scottish Fold</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet1</description>
+    <age>3 Years 8 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S5</storeID>
+    <id>P114</id>
+    <type>Other</type>
+    <name>Red Bull</name>
+    <color>Orange/Green Coat</color>
+    <sex>Male</sex>
+    <breed>Sun Conure</breed>
+    <size>Small</size>
+    <vaccinated>true</vaccinated>
+    <microchip>false</microchip>
+    <desexed>false</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet</description> 
+    <age>2 Years</age>
+    <ownerID></ownerID> <!-- Kept blank as requested -->
+  </pet>
+
+  <pet>
+    <storeID>S6</storeID>
+    <id>P115</id>
+    <type>Other</type>
+    <name>Muffin</name>
+    <color>Brown/White Coat</color>
+    <sex>Female</sex>
+    <breed>Holland Lop</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>false</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet</description> 
+    <age>1 Year 4 Months</age>
+    <ownerID></ownerID> 
+  </pet>
+
+  <pet>
+    <storeID>S6</storeID>
+    <id>P116</id>
+    <type>Cat</type>
+    <name>Luna</name>
+    <color>Grey Striped</color>
+    <sex>Female</sex>
+    <breed>Domestic Shorthair</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet</description> 
+    <age>2 Years 6 Months</age>
+    <ownerID></ownerID> 
+  </pet>
+
+  <pet>
+    <storeID>S6</storeID>
+    <id>P117</id>
+    <type>Cat</type>
+    <name>Baddie</name>
+    <color>White</color>
+    <sex>Female</sex>
+    <breed>Domestic Shorthair</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet</description>
+    <age>3 Years 2 Months</age>
+    <ownerID></ownerID> 
+  </pet>
+
+  <pet>
+    <storeID>S7</storeID>
+    <id>P118</id>
+    <type>Dog</type>
+    <name>Spot</name>
+    <color>White with Black Spots</color>
+    <sex>Male</sex>
+    <breed>Dalmatian</breed>
+    <size>Medium (Will grow to Large)</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>true</wormed>
+    <description>Description for Pet</description> 
+    <age>3 Months</age>
+    <ownerID></ownerID>
+  </pet>
+
+  <pet>
+    <storeID>S7</storeID>
+    <id>P119</id>
+    <type>Fish</type>
+    <name>Cas</name>
+    <color>Golden with White patches</color>
+    <sex>Male</sex>
+    <breed>Koi Carp</breed>
+    <size>Medium</size>
+    <vaccinated>N/A</vaccinated>
+    <microchip>false</microchip>
+    <desexed>N/A</desexed>
+    <wormed>false</wormed>
+    <description>Description for Pet</description> 
+    <age>2 Years</age>
+    <ownerID></ownerID> 
+  </pet
+
 </root>
