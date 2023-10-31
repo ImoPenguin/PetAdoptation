@@ -55,7 +55,7 @@ namespace PetAdoptation
         {
             //  RESET Search Data
             SearchData.resetSearchData();
-            
+
             frmMainScreen mainScreen = new frmMainScreen();
             mainScreen.Show();
             this.Close();

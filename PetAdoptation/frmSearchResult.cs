@@ -31,7 +31,7 @@ namespace PetAdoptation
             List<Pet> searchResult = new List<Pet>();
 
             bool vaccinatedSearch = false;
-            if(SearchData.vaccinated == "Yes")
+            if (SearchData.vaccinated == "Yes")
             {
                 vaccinatedSearch = true;
             }

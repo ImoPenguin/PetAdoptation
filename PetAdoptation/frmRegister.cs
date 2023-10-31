@@ -96,7 +96,7 @@ namespace PetAdoptation
             }
             else
             {
-                if(txtUserName.Text == "")
+                if (txtUserName.Text == "")
                 {
                     txtName_Warn.Visible = true;
                 }
@@ -104,8 +104,8 @@ namespace PetAdoptation
                 {
                     txtName_Warn.Visible = false;
                 }
-                
-                if(txtUserEmail.Text == "")
+
+                if (txtUserEmail.Text == "")
                 {
                     txtEmail_Warn.Visible = true;
                 }
@@ -113,8 +113,8 @@ namespace PetAdoptation
                 {
                     txtEmail_Warn.Visible = false;
                 }
-                
-                if(txtUserPwd.Text == "")
+
+                if (txtUserPwd.Text == "")
                 {
                     txtPwd_Warn.Visible = true;
                 }

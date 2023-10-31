@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <customer>
     <id>U1001</id>
@@ -12,7 +12,7 @@
   <customer>
     <id>U1002</id>
     <password>password1</password>
-    <name>txtUserName</name>
+    <name>Felixa Ngo</name>
     <phoneNo></phoneNo>
     <email>minhdang.chanel@gmail.com</email>
     <address></address>
