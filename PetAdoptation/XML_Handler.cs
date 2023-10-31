@@ -72,29 +72,29 @@ namespace PetAdoptation
             //  Get all USER data
             var Customers = from cus in xmlDoc.Descendants("customer")
                             select new
-                        {
-                            ID = cus.Element("id").Value,
-                            Password = cus.Element("password").Value,
-                            Name = cus.Element("name").Value,
-                            phoneNo = cus.Element("phoneNo").Value,
-                            Email = cus.Element("email").Value,
-                            Address = cus.Element("address").Value,
-                            assignedStaff_ID = cus.Element("assignedStaff").Value
-                        };
+                            {
+                                ID = cus.Element("id").Value,
+                                Password = cus.Element("password").Value,
+                                Name = cus.Element("name").Value,
+                                phoneNo = cus.Element("phoneNo").Value,
+                                Email = cus.Element("email").Value,
+                                Address = cus.Element("address").Value,
+                                assignedStaff_ID = cus.Element("assignedStaff").Value
+                            };
 
             //  ADD data to customers List
-            foreach(var c in Customers)
+            foreach (var c in Customers)
             {
                 userList.Add(new Customer(c.ID, c.Password, c.Name, c.phoneNo, c.Email, c.Address, c.assignedStaff_ID));
             }
-            
+
             return userList;
         }
-    
+
         public static void addCustomerData(Customer newCus)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("customer",
@@ -118,7 +118,7 @@ namespace PetAdoptation
             XElement customerElement = xmlDoc.Descendants("customer")
                 .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
 
-            if(customerElement != null)
+            if (customerElement != null)
             {
                 //  UPDATE customer new DATA
                 customerElement.Element("id").Value = newData.ID;
@@ -156,11 +156,11 @@ namespace PetAdoptation
                          };
 
             //  ADD Staffs Info to Staff List
-            foreach ( var s in staffs )
+            foreach (var s in staffs)
             {
                 userList.Add(new Staff(s.ID, s.Password, s.Name, s.phoneNo, s.Email, s.Address, s.workingStore, s.managerID));
             }
-            
+
             return userList;
         }
 
@@ -198,16 +198,16 @@ namespace PetAdoptation
 
             //  GET all USER data
             var managers = from manager in xmlDoc.Descendants("manager")
-                         select new
-                         {
-                             ID = manager.Element("id").Value,
-                             Password = manager.Element("password").Value,
-                             Name = manager.Element("name").Value,
-                             phoneNo = manager.Element("phoneNo").Value,
-                             Email = manager.Element("email").Value,
-                             Address = manager.Element("address").Value,
-                             workingStore = manager.Element("workingStore").Value,
-                         };
+                           select new
+                           {
+                               ID = manager.Element("id").Value,
+                               Password = manager.Element("password").Value,
+                               Name = manager.Element("name").Value,
+                               phoneNo = manager.Element("phoneNo").Value,
+                               Email = manager.Element("email").Value,
+                               Address = manager.Element("address").Value,
+                               workingStore = manager.Element("workingStore").Value,
+                           };
 
             //  ADD Staffs Info to Staff List
             foreach (var m in managers)
@@ -238,7 +238,7 @@ namespace PetAdoptation
             xmlDoc.Root.Add(newUser);
             xmlDoc.Save(getUserFilePath());
         }
-    
+
         public static List<Shelter> readShelterData()
         {
             //  LOAD XML Data
@@ -254,7 +254,7 @@ namespace PetAdoptation
                            };
 
             //  ADD Shelters to Shelter List
-            foreach(var s in shelters)
+            foreach (var s in shelters)
             {
                 shelterList.Add(new Shelter(s.ID, s.Address));
             }
@@ -304,7 +304,7 @@ namespace PetAdoptation
 
             return petsList;
         }
-    
+
         public static void addPetData(Pet pet)
         {
             XDocument xmlDoc = XDocument.Load(getPetFilePath());
@@ -337,9 +337,9 @@ namespace PetAdoptation
             List<Pet> petList = readPetData();
 
             //  FIND Pet with same ID
-            foreach(Pet p in petList)
+            foreach (Pet p in petList)
             {
-                if(p.ID == findID)
+                if (p.ID == findID)
                 {
                     return p;
                 }
@@ -357,9 +357,9 @@ namespace PetAdoptation
             List<Customer> customers = readCustomerData();
 
             //  FIND Customers with same ID and PWD
-            foreach(Customer c in customers)
+            foreach (Customer c in customers)
             {
-                if(c.ID == findID && c.Password == findPassword)
+                if (c.ID == findID && c.Password == findPassword)
                 {
                     return c;
                 }
@@ -374,9 +374,9 @@ namespace PetAdoptation
             List<Staff> staffs = readStaffData();
 
             //  FIND Staff with same ID and PWD
-            foreach(Staff s in staffs)
+            foreach (Staff s in staffs)
             {
-                if(s.ID == findID && s.Password == findPassword)
+                if (s.ID == findID && s.Password == findPassword)
                 {
                     return s;
                 }
@@ -391,14 +391,14 @@ namespace PetAdoptation
             List<Manager> managers = readManagerData();
 
             //  FIND Manager with same ID and PWD
-            foreach(Manager m in managers)
+            foreach (Manager m in managers)
             {
-                if(m.ID ==  findID && m.Password == findPassword) { return m; }
+                if (m.ID == findID && m.Password == findPassword) { return m; }
             }
 
             return null;
         }
-    
-        
+
+
     }
 }

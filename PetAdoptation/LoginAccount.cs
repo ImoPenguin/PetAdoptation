@@ -11,5 +11,12 @@ namespace PetAdoptation
         public static Customer currentCustomer = null;
         public static Staff currentStaff = null;
         public static Manager currentManager = null;
+
+        public static void SignOut()
+        {
+            currentCustomer = null;
+            currentStaff = null;
+            currentManager = null;
+        }
     }
 }
