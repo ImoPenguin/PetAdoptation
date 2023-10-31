@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAssignedStaff));
-            panel1 = new Panel();
+            infoPanel = new Panel();
             ID_lbl = new Label();
             panel3 = new Panel();
             panel8 = new Panel();
-            textBox1 = new TextBox();
+            managerName_lbl = new TextBox();
             label2 = new Label();
             panel7 = new Panel();
             txtWorkingStore = new TextBox();
@@ -53,7 +53,8 @@
             pictureBox3 = new PictureBox();
             backButton = new Button();
             closeButton = new Button();
-            panel1.SuspendLayout();
+            noStaff_lbl = new Label();
+            infoPanel.SuspendLayout();
             panel3.SuspendLayout();
             panel8.SuspendLayout();
             panel7.SuspendLayout();
@@ -65,21 +66,21 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // infoPanel
             // 
-            panel1.BackColor = Color.FromArgb(229, 215, 200);
-            panel1.Controls.Add(ID_lbl);
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Location = new Point(22, 124);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 459);
-            panel1.TabIndex = 1;
+            infoPanel.BackColor = Color.FromArgb(229, 215, 200);
+            infoPanel.Controls.Add(ID_lbl);
+            infoPanel.Controls.Add(panel3);
+            infoPanel.Controls.Add(label3);
+            infoPanel.Controls.Add(panel2);
+            infoPanel.Controls.Add(pictureBox2);
+            infoPanel.Controls.Add(pictureBox1);
+            infoPanel.Controls.Add(pictureBox3);
+            infoPanel.Location = new Point(22, 124);
+            infoPanel.Margin = new Padding(3, 2, 3, 2);
+            infoPanel.Name = "infoPanel";
+            infoPanel.Size = new Size(1152, 459);
+            infoPanel.TabIndex = 1;
             // 
             // ID_lbl
             // 
@@ -92,6 +93,7 @@
             ID_lbl.Size = new Size(110, 45);
             ID_lbl.TabIndex = 4;
             ID_lbl.Text = "U1002";
+            ID_lbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -108,7 +110,7 @@
             // panel8
             // 
             panel8.BackColor = Color.Transparent;
-            panel8.Controls.Add(textBox1);
+            panel8.Controls.Add(managerName_lbl);
             panel8.Controls.Add(label2);
             panel8.Location = new Point(14, 204);
             panel8.Margin = new Padding(3, 2, 3, 2);
@@ -116,19 +118,19 @@
             panel8.Size = new Size(756, 52);
             panel8.TabIndex = 7;
             // 
-            // textBox1
+            // managerName_lbl
             // 
-            textBox1.BackColor = Color.FromArgb(229, 215, 200);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(81, 60, 41);
-            textBox1.Location = new Point(307, 3);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(435, 43);
-            textBox1.TabIndex = 4;
-            textBox1.Text = "U1003 - Bossy";
+            managerName_lbl.BackColor = Color.FromArgb(229, 215, 200);
+            managerName_lbl.BorderStyle = BorderStyle.None;
+            managerName_lbl.Enabled = false;
+            managerName_lbl.Font = new Font("Yu Gothic UI Semilight", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            managerName_lbl.ForeColor = Color.FromArgb(81, 60, 41);
+            managerName_lbl.Location = new Point(307, 3);
+            managerName_lbl.Margin = new Padding(3, 2, 3, 2);
+            managerName_lbl.Name = "managerName_lbl";
+            managerName_lbl.Size = new Size(435, 43);
+            managerName_lbl.TabIndex = 4;
+            managerName_lbl.Text = "U1003 - Bossy";
             // 
             // label2
             // 
@@ -371,6 +373,19 @@
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
             // 
+            // noStaff_lbl
+            // 
+            noStaff_lbl.BackColor = Color.Transparent;
+            noStaff_lbl.Font = new Font("Yu Gothic UI Semibold", 22F, FontStyle.Bold, GraphicsUnit.Point);
+            noStaff_lbl.ForeColor = Color.IndianRed;
+            noStaff_lbl.Location = new Point(22, 124);
+            noStaff_lbl.Name = "noStaff_lbl";
+            noStaff_lbl.Size = new Size(1152, 459);
+            noStaff_lbl.TabIndex = 5;
+            noStaff_lbl.Text = "You are not assigned to any staff yet";
+            noStaff_lbl.TextAlign = ContentAlignment.MiddleCenter;
+            noStaff_lbl.Visible = false;
+            // 
             // frmAssignedStaff
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -380,15 +395,17 @@
             ClientSize = new Size(1200, 600);
             Controls.Add(closeButton);
             Controls.Add(backButton);
-            Controls.Add(panel1);
+            Controls.Add(infoPanel);
+            Controls.Add(noStaff_lbl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);
             Name = "frmAssignedStaff";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAssignedStaff";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            Load += frmAssignedStaff_Load;
+            infoPanel.ResumeLayout(false);
+            infoPanel.PerformLayout();
             panel3.ResumeLayout(false);
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
@@ -408,7 +425,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel infoPanel;
         private Label ID_lbl;
         private Panel panel3;
         private Panel panel7;
@@ -428,9 +445,10 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private Panel panel8;
-        private TextBox textBox1;
+        private TextBox managerName_lbl;
         private Label label2;
         private Button backButton;
         private Button closeButton;
+        private Label noStaff_lbl;
     }
 }

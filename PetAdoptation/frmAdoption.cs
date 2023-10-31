@@ -54,9 +54,10 @@ namespace PetAdoptation
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             frmPetDetails petDetailsForm = new frmPetDetails();
             petDetailsForm.Show();
+            this.Close();
         }
 
         private void txtpetID_TextChanged(object sender, EventArgs e)
@@ -66,6 +67,11 @@ namespace PetAdoptation
 
         private void submit_Btn_Click(object sender, EventArgs e)
         {
+            Cart.chosenPet.Adopted = true;
+            Cart.chosenPet.OwnerID = LoginAccount.currentCustomer.ID;
+            XML_Handler.editPetData(Cart.chosenPet);
+            Cart.chosenPet = null;
+
             frmPetAdoptConfirmation petAdoptConfirmation_form = new frmPetAdoptConfirmation();
             petAdoptConfirmation_form.Show();
         }
