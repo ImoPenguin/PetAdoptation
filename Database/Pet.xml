@@ -312,7 +312,7 @@
   <pet>
     <storeID>S7</storeID>
     <id>P119</id>
-    <type>Fish</type>
+    <type>Other</type>
     <name>Cas</name>
     <color>Golden with White patches</color>
     <sex>Male</sex>
