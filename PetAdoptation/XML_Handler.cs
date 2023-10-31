@@ -94,7 +94,7 @@ namespace PetAdoptation
         public static void addCustomerData(Customer newCus)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("customer",

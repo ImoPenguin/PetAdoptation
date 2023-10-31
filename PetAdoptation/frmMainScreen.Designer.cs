@@ -243,6 +243,11 @@
             // 
             showAll_Btn.Anchor = AnchorStyles.Right;
             showAll_Btn.BackColor = Color.LightYellow;
+            showAll_Btn.Cursor = Cursors.Hand;
+            showAll_Btn.FlatAppearance.BorderColor = Color.Silver;
+            showAll_Btn.FlatAppearance.BorderSize = 2;
+            showAll_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            showAll_Btn.FlatStyle = FlatStyle.Flat;
             showAll_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             showAll_Btn.Location = new Point(1052, 396);
             showAll_Btn.Margin = new Padding(3, 2, 3, 2);
@@ -257,6 +262,11 @@
             // 
             searchID_Btn.Anchor = AnchorStyles.Right;
             searchID_Btn.BackColor = Color.LightYellow;
+            searchID_Btn.Cursor = Cursors.Hand;
+            searchID_Btn.FlatAppearance.BorderColor = Color.Silver;
+            searchID_Btn.FlatAppearance.BorderSize = 2;
+            searchID_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            searchID_Btn.FlatStyle = FlatStyle.Flat;
             searchID_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             searchID_Btn.Location = new Point(1052, 505);
             searchID_Btn.Margin = new Padding(3, 2, 3, 2);
@@ -271,6 +281,11 @@
             // 
             returnPet_Btn.Anchor = AnchorStyles.Right;
             returnPet_Btn.BackColor = Color.LightYellow;
+            returnPet_Btn.Cursor = Cursors.Hand;
+            returnPet_Btn.FlatAppearance.BorderColor = Color.Silver;
+            returnPet_Btn.FlatAppearance.BorderSize = 2;
+            returnPet_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            returnPet_Btn.FlatStyle = FlatStyle.Flat;
             returnPet_Btn.Font = new Font("Yu Gothic UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             returnPet_Btn.Location = new Point(1052, 450);
             returnPet_Btn.Margin = new Padding(3, 2, 3, 2);
@@ -318,7 +333,6 @@
             // 
             // sideMenuPanel
             // 
-            sideMenuPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             sideMenuPanel.BackColor = Color.FromArgb(203, 199, 183);
             sideMenuPanel.Controls.Add(panel1);
             sideMenuPanel.Controls.Add(staffButton);
