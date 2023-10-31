@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <customer>
     <id>U1001</id>
@@ -8,5 +8,14 @@
     <email>john.doe@example.com</email>
     <address>123 Main St;Anytown;NSW;2000</address>
     <assignedStaff>U1002</assignedStaff>
+  </customer>
+  <customer>
+    <id>U1002</id>
+    <password>password1</password>
+    <name>txtUserName</name>
+    <phoneNo></phoneNo>
+    <email>minhdang.chanel@gmail.com</email>
+    <address></address>
+    <assignedStaff></assignedStaff>
   </customer>
 </root>

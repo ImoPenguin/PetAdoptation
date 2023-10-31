@@ -37,7 +37,7 @@
             panel2 = new Panel();
             PetType_Combobx = new ComboBox();
             pictureBox2 = new PictureBox();
-            Adopt_lb = new Label();
+            titleLabel = new Label();
             searchPet_Btn = new Button();
             searchMode_Btn = new Button();
             backButton = new Button();
@@ -79,7 +79,7 @@
             // 
             Main_panel.BackColor = Color.FromArgb(229, 215, 200);
             Main_panel.Controls.Add(panel1);
-            Main_panel.Controls.Add(Adopt_lb);
+            Main_panel.Controls.Add(titleLabel);
             Main_panel.Location = new Point(38, 122);
             Main_panel.Margin = new Padding(3, 2, 3, 2);
             Main_panel.Name = "Main_panel";
@@ -120,6 +120,7 @@
             txtLocation.RightToLeft = RightToLeft.No;
             txtLocation.Size = new Size(326, 34);
             txtLocation.TabIndex = 3;
+            txtLocation.TextAlign = HorizontalAlignment.Center;
             txtLocation.TextChanged += txtLocation_TextChanged;
             // 
             // pictureBox1
@@ -150,13 +151,13 @@
             PetType_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             PetType_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
             PetType_Combobx.FormattingEnabled = true;
-            PetType_Combobx.Items.AddRange(new object[] { "Cat ", "Dog ", "Other " });
+            PetType_Combobx.Items.AddRange(new object[] { "Choose an animal type", "Cat", "Dog", "Other" });
             PetType_Combobx.Location = new Point(92, 18);
             PetType_Combobx.Margin = new Padding(3, 2, 3, 2);
             PetType_Combobx.Name = "PetType_Combobx";
             PetType_Combobx.Size = new Size(327, 38);
             PetType_Combobx.TabIndex = 3;
-            PetType_Combobx.Text = "Choose an animal type ";
+            PetType_Combobx.Text = "Choose an animal type";
             PetType_Combobx.SelectedIndexChanged += PetType_Combobx_SelectedIndexChanged;
             // 
             // pictureBox2
@@ -170,16 +171,16 @@
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // Adopt_lb
+            // titleLabel
             // 
-            Adopt_lb.Font = new Font("Yu Gothic UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
-            Adopt_lb.ForeColor = Color.FromArgb(81, 60, 41);
-            Adopt_lb.Location = new Point(0, 15);
-            Adopt_lb.Name = "Adopt_lb";
-            Adopt_lb.Size = new Size(1124, 51);
-            Adopt_lb.TabIndex = 1;
-            Adopt_lb.Text = "Adopt and shine with your Rescuoodle today!";
-            Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
+            titleLabel.Font = new Font("Yu Gothic UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
+            titleLabel.ForeColor = Color.FromArgb(81, 60, 41);
+            titleLabel.Location = new Point(0, 15);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(1124, 51);
+            titleLabel.TabIndex = 1;
+            titleLabel.Text = "Adopt and shine with your Rescuoodle today!";
+            titleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // searchPet_Btn
             // 
@@ -202,6 +203,7 @@
             // searchMode_Btn
             // 
             searchMode_Btn.BackColor = Color.Transparent;
+            searchMode_Btn.Cursor = Cursors.Hand;
             searchMode_Btn.FlatAppearance.BorderSize = 0;
             searchMode_Btn.FlatAppearance.MouseDownBackColor = Color.Transparent;
             searchMode_Btn.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -331,7 +333,7 @@
             vaccinated_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             vaccinated_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
             vaccinated_Combobx.FormattingEnabled = true;
-            vaccinated_Combobx.Items.AddRange(new object[] { "Yes", "No" });
+            vaccinated_Combobx.Items.AddRange(new object[] { "Vaccinated", "Yes", "No" });
             vaccinated_Combobx.Location = new Point(76, 14);
             vaccinated_Combobx.Margin = new Padding(3, 2, 3, 2);
             vaccinated_Combobx.Name = "vaccinated_Combobx";
@@ -368,7 +370,7 @@
             sex_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             sex_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
             sex_Combobx.FormattingEnabled = true;
-            sex_Combobx.Items.AddRange(new object[] { "Male ", "Female " });
+            sex_Combobx.Items.AddRange(new object[] { "Sex", "Male", "Female" });
             sex_Combobx.Location = new Point(88, 14);
             sex_Combobx.Margin = new Padding(3, 2, 3, 2);
             sex_Combobx.Name = "sex_Combobx";
@@ -405,7 +407,7 @@
             age_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             age_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
             age_Combobx.FormattingEnabled = true;
-            age_Combobx.Items.AddRange(new object[] { "Young ", "Adult ", "Senior " });
+            age_Combobx.Items.AddRange(new object[] { "Age", "Young", "Adult", "Senior" });
             age_Combobx.Location = new Point(82, 14);
             age_Combobx.Margin = new Padding(3, 2, 3, 2);
             age_Combobx.Name = "age_Combobx";
@@ -467,7 +469,7 @@
         #endregion
 
         private Panel Main_panel;
-        private Label Adopt_lb;
+        private Label titleLabel;
         private Panel panel1;
         private PictureBox pictureBox2;
         private Panel panel2;

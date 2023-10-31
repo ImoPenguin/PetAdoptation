@@ -50,7 +50,7 @@
             pictureBox8 = new PictureBox();
             txtCity = new TextBox();
             pictureBox7 = new PictureBox();
-            txtUserAddress = new TextBox();
+            txtStreetAddress = new TextBox();
             label4 = new Label();
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
@@ -66,11 +66,9 @@
             emailAddr_Pic = new PictureBox();
             pictureBox6 = new PictureBox();
             panel3 = new Panel();
-            txtFirstName = new TextBox();
-            txtLastName = new TextBox();
+            txtFullName = new TextBox();
             userName_label = new Label();
             userName_Pic = new PictureBox();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             Adopt_lb = new Label();
             backButton = new Button();
@@ -99,7 +97,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)userName_Pic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -282,7 +279,7 @@
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(txtCity);
             panel10.Controls.Add(pictureBox7);
-            panel10.Controls.Add(txtUserAddress);
+            panel10.Controls.Add(txtStreetAddress);
             panel10.Controls.Add(label4);
             panel10.Controls.Add(pictureBox9);
             panel10.Controls.Add(pictureBox10);
@@ -368,19 +365,19 @@
             pictureBox7.TabIndex = 7;
             pictureBox7.TabStop = false;
             // 
-            // txtUserAddress
+            // txtStreetAddress
             // 
-            txtUserAddress.BackColor = Color.FromArgb(253, 252, 245);
-            txtUserAddress.BorderStyle = BorderStyle.None;
-            txtUserAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUserAddress.ForeColor = Color.FromArgb(132, 109, 97);
-            txtUserAddress.Location = new Point(31, 48);
-            txtUserAddress.Margin = new Padding(3, 2, 3, 2);
-            txtUserAddress.Name = "txtUserAddress";
-            txtUserAddress.PlaceholderText = "Street address";
-            txtUserAddress.Size = new Size(436, 25);
-            txtUserAddress.TabIndex = 5;
-            txtUserAddress.TextChanged += txtUserAddress_TextChanged;
+            txtStreetAddress.BackColor = Color.FromArgb(253, 252, 245);
+            txtStreetAddress.BorderStyle = BorderStyle.None;
+            txtStreetAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtStreetAddress.ForeColor = Color.FromArgb(132, 109, 97);
+            txtStreetAddress.Location = new Point(31, 48);
+            txtStreetAddress.Margin = new Padding(3, 2, 3, 2);
+            txtStreetAddress.Name = "txtStreetAddress";
+            txtStreetAddress.PlaceholderText = "Street address";
+            txtStreetAddress.Size = new Size(436, 25);
+            txtStreetAddress.TabIndex = 5;
+            txtStreetAddress.TextChanged += txtUserAddress_TextChanged;
             // 
             // label4
             // 
@@ -546,11 +543,9 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(txtFirstName);
-            panel3.Controls.Add(txtLastName);
+            panel3.Controls.Add(txtFullName);
             panel3.Controls.Add(userName_label);
             panel3.Controls.Add(userName_Pic);
-            panel3.Controls.Add(pictureBox2);
             panel3.Controls.Add(pictureBox1);
             panel3.Location = new Point(8, 10);
             panel3.Margin = new Padding(3, 2, 3, 2);
@@ -558,32 +553,19 @@
             panel3.Size = new Size(493, 100);
             panel3.TabIndex = 1;
             // 
-            // txtFirstName
+            // txtFullName
             // 
-            txtFirstName.BackColor = Color.FromArgb(253, 252, 245);
-            txtFirstName.BorderStyle = BorderStyle.None;
-            txtFirstName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtFirstName.ForeColor = Color.FromArgb(132, 109, 97);
-            txtFirstName.Location = new Point(31, 49);
-            txtFirstName.Margin = new Padding(3, 2, 3, 2);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.PlaceholderText = "First Name";
-            txtFirstName.Size = new Size(193, 25);
-            txtFirstName.TabIndex = 5;
-            txtFirstName.TextChanged += txtFirstName_TextChanged;
-            // 
-            // txtLastName
-            // 
-            txtLastName.BackColor = Color.FromArgb(253, 252, 245);
-            txtLastName.BorderStyle = BorderStyle.None;
-            txtLastName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtLastName.ForeColor = Color.FromArgb(132, 109, 97);
-            txtLastName.Location = new Point(273, 49);
-            txtLastName.Margin = new Padding(3, 2, 3, 2);
-            txtLastName.Name = "txtLastName";
-            txtLastName.PlaceholderText = "Last Name";
-            txtLastName.Size = new Size(193, 25);
-            txtLastName.TabIndex = 4;
+            txtFullName.BackColor = Color.FromArgb(253, 252, 245);
+            txtFullName.BorderStyle = BorderStyle.None;
+            txtFullName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtFullName.ForeColor = Color.FromArgb(132, 109, 97);
+            txtFullName.Location = new Point(31, 48);
+            txtFullName.Margin = new Padding(3, 2, 3, 2);
+            txtFullName.Name = "txtFullName";
+            txtFullName.PlaceholderText = "Full Name";
+            txtFullName.Size = new Size(436, 25);
+            txtFullName.TabIndex = 5;
+            txtFullName.TextChanged += txtFirstName_TextChanged;
             // 
             // userName_label
             // 
@@ -607,26 +589,15 @@
             userName_Pic.TabIndex = 2;
             userName_Pic.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(256, 40);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(223, 42);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(12, 40);
+            pictureBox1.Location = new Point(12, 39);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(223, 42);
-            pictureBox1.TabIndex = 0;
+            pictureBox1.Size = new Size(467, 42);
+            pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
             // Adopt_lb
@@ -725,7 +696,6 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)userName_Pic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -735,13 +705,10 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private PictureBox userName_Pic;
         private Panel panel4;
         private Label userName_label;
-        private TextBox txtLastName;
-        private TextBox txtFirstName;
+        private TextBox txtFullName;
         private Panel panel5;
         private TextBox txtEmail;
         private Label emailAddr_label;
@@ -757,7 +724,7 @@
         private Label label2;
         private PictureBox pictureBox3;
         private Panel panel10;
-        private TextBox txtUserAddress;
+        private TextBox txtStreetAddress;
         private Label label4;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
@@ -778,5 +745,6 @@
         private Button backButton;
         private Label Adopt_lb;
         private Button closeButton;
+        private PictureBox pictureBox1;
     }
 }
