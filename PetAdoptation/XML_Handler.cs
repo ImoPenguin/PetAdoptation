@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace PetAdoptation
 {
@@ -167,7 +168,7 @@ namespace PetAdoptation
         public static void addStaffData(Staff newStaff)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("staff",
@@ -186,6 +187,21 @@ namespace PetAdoptation
             xmlDoc.Save(getUserFilePath());
         }
 
+        
+        public static Staff findStaffByID(string ID)
+        {
+            List<Staff> staffList = readStaffData();
+
+            foreach (Staff staff in staffList)
+            {
+                if (staff.ID == ID)
+                {
+                    return staff;
+                }
+            }
+
+            return null;
+        }
 
         ///////////////////////////////////
         //  HANDLING Manager XML Files  //
@@ -221,7 +237,7 @@ namespace PetAdoptation
         public static void addManagerData(Manager newManager)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("manager",
@@ -237,6 +253,22 @@ namespace PetAdoptation
             //  ADD new Customer to XML File
             xmlDoc.Root.Add(newUser);
             xmlDoc.Save(getUserFilePath());
+        }
+
+
+        public static Manager findManagerByID(string ID)
+        {
+            List<Manager> mngList = readManagerData();
+
+            foreach(Manager m in mngList)
+            {
+                if (m.ID == ID)
+                {
+                    return m;
+                }
+            }
+
+            return null;
         }
 
         public static List<Shelter> readShelterData()
@@ -305,6 +337,23 @@ namespace PetAdoptation
             return petsList;
         }
 
+        public static List<Pet> readAvailablePetData()
+        {
+            List<Pet> pets = readPetData();
+
+            List<Pet> filterList = new List<Pet>();
+
+            foreach(Pet pet in pets)
+            {
+                if (!pet.Adopted)
+                {
+                    filterList.Add(pet);
+                }
+            }
+
+            return filterList;
+        }
+
         public static void addPetData(Pet pet)
         {
             XDocument xmlDoc = XDocument.Load(getPetFilePath());
@@ -349,6 +398,21 @@ namespace PetAdoptation
             return null;
         }
 
+
+        public static void editPetData(Pet newData)
+        {
+            // Load the XML data from a file
+            XDocument xmlDoc = XDocument.Load(getPetFilePath());
+            XElement petElement = xmlDoc.Descendants("pet")
+                                    .FirstOrDefault(p => p.Element("id").Value == newData.ID);
+
+            if(petElement != null)
+            {
+                //  UPDATE new DATA
+                petElement.Element("ownerID").Value = newData.OwnerID;
+                xmlDoc.Save(getPetFilePath());
+            }
+        }
 
         //  FUNCTION to find USERS
         public static Customer findCustomerAccount(string findID, string findPassword)

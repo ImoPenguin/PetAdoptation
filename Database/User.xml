@@ -7,15 +7,34 @@
     <phoneNo>123-723-202</phoneNo>
     <email>john.doe@example.com</email>
     <address>123 Main St;Anytown;NSW;2000</address>
-    <assignedStaff>U1002</assignedStaff>
+    <assignedStaff>U1003</assignedStaff>
   </customer>
   <customer>
     <id>U1002</id>
-    <password>password1</password>
+    <password>password2</password>
     <name>Felixa Ngo</name>
     <phoneNo></phoneNo>
     <email>minhdang.chanel@gmail.com</email>
     <address></address>
     <assignedStaff></assignedStaff>
   </customer>
+  <staff>
+    <id>U1003</id>
+    <password>password3</password>
+    <name>Little Penguin</name>
+    <phoneNo>123-647-875</phoneNo>
+    <email>danielassignment0605@gmail.com</email>
+    <address>532 Sub St;Thistown;NSW;2050</address>
+    <workingStore>S1</workingStore>
+    <managerID>U1004</managerID>
+  </staff>
+  <manager>
+    <id>U1004</id>
+    <password>password4</password>
+    <name>Little Popcorn</name>
+    <phoneNo>546-111-202</phoneNo>
+    <email>random@gmail.com</email>
+    <address>532 Sub St;Thistown;NSW;2050</address>
+    <workingStore>S1</workingStore>
+  </manager>
 </root>
