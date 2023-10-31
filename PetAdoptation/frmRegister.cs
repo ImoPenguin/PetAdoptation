@@ -65,9 +65,65 @@ namespace PetAdoptation
 
         private void createAccount_Btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmStaff staffForm = new frmStaff();
-            staffForm.Show(); 
+            bool validated = false;
+
+            //  VALIDATE user input
+            //  CHECK if All Textboxes are not empty
+            if ((txtUserName.Text != "") && (txtUserEmail.Text != "") && (txtUserPwd.Text != ""))
+            {
+                txtName_Warn.Visible = false;
+                txtEmail_Warn.Visible = false;
+                txtPwd_Warn.Visible = false;
+
+                Task<bool> mailValid = Mail_Handler.Mail_Check(txtUserEmail.Text);
+                if (mailValid.Result)
+                {
+                    txtEmail_Warn.Visible = false;
+
+                    List<Customer> cusList = XML_Handler.readCustomerData();
+                    int cusOrder = 1001 + cusList.Count;
+
+                    string newCus_ID = "U" + cusOrder.ToString();
+
+                    Customer newCus = new Customer(newCus_ID, txtUserPwd.Text, txtUserName.Text, "", txtUserEmail.Text, "", "");
+
+                    XML_Handler.addCustomerData(newCus);
+                }
+                else
+                {
+                    txtEmail_Warn.Visible = true;
+                }
+            }
+            else
+            {
+                if(txtUserName.Text == "")
+                {
+                    txtName_Warn.Visible = true;
+                }
+                else
+                {
+                    txtName_Warn.Visible = false;
+                }
+                
+                if(txtUserEmail.Text == "")
+                {
+                    txtEmail_Warn.Visible = true;
+                }
+                else
+                {
+                    txtEmail_Warn.Visible = false;
+                }
+                
+                if(txtUserPwd.Text == "")
+                {
+                    txtPwd_Warn.Visible = true;
+                }
+                else
+                {
+                    txtPwd_Warn.Visible = false;
+                }
+
+            }
         }
 
         private void txtPwd_TextChanged(object sender, EventArgs e)
@@ -77,12 +133,12 @@ namespace PetAdoptation
 
         private void psw_pic_MouseDown(object sender, MouseEventArgs e)
         {
-            txtPwd.UseSystemPasswordChar = false;
+            txtUserPwd.UseSystemPasswordChar = false;
         }
 
         private void psw_pic_MouseUp(object sender, MouseEventArgs e)
         {
-            txtPwd.UseSystemPasswordChar = true;
+            txtUserPwd.UseSystemPasswordChar = true;
         }
     }
 }
