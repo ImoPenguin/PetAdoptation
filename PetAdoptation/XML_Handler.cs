@@ -441,6 +441,7 @@ namespace PetAdoptation
             if(petElement != null)
             {
                 //  UPDATE new DATA
+                petElement.Element("age").Value = newData.Age;
                 petElement.Element("desexed").Value = newData.Desexed.ToString(); 
                 petElement.Element("microchip").Value = newData.Microchip.ToString();
                 petElement.Element("vaccinated").Value = newData.Vaccinated.ToString();
