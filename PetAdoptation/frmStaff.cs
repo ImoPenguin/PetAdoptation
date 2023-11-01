@@ -144,5 +144,132 @@ namespace PetAdoptation
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void staffButton_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void viewStaffs_tabPage_Paint(object sender, EventArgs e)
+        {
+            ID_lbl.Text = LoginAccount.currentStaff.ID;
+            txtStaffName.Text = LoginAccount.currentStaff.Name;
+            txtStaffPhone.Text = LoginAccount.currentStaff.PhoneNo;
+            txtStaffEmail.Text = LoginAccount.currentStaff.Email;
+            txtStaffAddress.Text = LoginAccount.currentStaff.Address;
+            txtStaffStore.Text = XML_Handler.findShelterByID(LoginAccount.currentStaff.WorkingStoreID).Address;
+            txtStaffManager.Text = XML_Handler.findManagerByID(LoginAccount.currentStaff.ManagerID).Name;
+            txtPwdUp.Text = LoginAccount.currentStaff.Password;
+        }
+
+        private void bEdit_Click_1(object sender, EventArgs e)
+        {
+            if (txtStaffPhone.Enabled)
+            {
+                bEdit.Text = "EDIT";
+                txtStaffName.Enabled = false;
+                txtStaffPhone.Enabled = false;
+                txtStaffEmail.Enabled = false;
+                txtStaffAddress.Enabled = false;
+                txtPwdUp.Enabled = false;
+
+                //  UPDATE Staff DATA
+                LoginAccount.currentStaff.Name = txtStaffName.Text;
+                LoginAccount.currentStaff.PhoneNo = txtStaffPhone.Text;
+                LoginAccount.currentStaff.Email = txtStaffEmail.Text;
+                LoginAccount.currentStaff.Address = txtStaffAddress.Text;
+                LoginAccount.currentStaff.Password = txtPwdUp.Text;
+                XML_Handler.editStaffData(LoginAccount.currentStaff);
+            }
+            else
+            {
+                bEdit.Text = "SAVE";
+                txtStaffName.Enabled = true;
+                txtStaffPhone.Enabled = true;
+                txtStaffEmail.Enabled = true;
+                txtStaffAddress.Enabled = true;
+                txtPwdUp.Enabled = true;
+            }
+        }
+
+        private void submit_Btn_Click(object sender, EventArgs e)
+        {
+            string typeToCheck = checkList_comboBox.Text;
+            string findingID = txtID.Text;
+
+            object findingObject = null;
+
+            //  FIND in User List
+            if (typeToCheck == "Customer")
+            {
+                List<Customer> cusList = XML_Handler.readCustomerData();
+
+                foreach (Customer cus in cusList)
+                {
+                    if (cus.ID == findingID)
+                    {
+                        findingObject = cus;
+                        break;
+                    }
+                }
+            }
+            //  FIND in Staff List
+            else if (typeToCheck == "Staff")
+            {
+                List<Staff> staffList = XML_Handler.readStaffData();
+
+                foreach (Staff staff in staffList)
+                {
+                    if (staff.ID == findingID)
+                    {
+                        findingObject = staff;
+                        break;
+                    }
+                }
+            }
+            //  FIND in Animal List
+            else if (typeToCheck == "Animal")
+            {
+                List<Pet> petList = XML_Handler.readPetData();
+
+                foreach (Pet p in petList)
+                {
+                    if (p.ID == findingID)
+                    {
+                        findingObject = p;
+                        break;
+                    }
+                }
+            }
+            //  FIND in all LISTs
+            else
+            {
+
+            }
+
+            //  CHECK if finding Object is existed
+            if (findingObject != null)
+            {
+
+            }
+
+        }
     }
 }

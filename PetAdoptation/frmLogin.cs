@@ -58,7 +58,7 @@ namespace PetAdoptation
             //  DISPLAY Staff Screen
             else if (LoginAccount.currentStaff != null)
             {
-                frmStaff staffScreen = new frmStaff(); 
+                frmStaff staffScreen = new frmStaff();
                 staffScreen.Show();
                 this.Hide();
             }
