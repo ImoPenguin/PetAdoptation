@@ -57,12 +57,13 @@ namespace PetAdoptation
                 returnedPet.Vaccinated = vaccinated_checkBox.Checked;
                 returnedPet.OwnerID = "";
                 XML_Handler.editPetData(returnedPet);
+
+                //  CLOSE Form
+                frmPetReturnConfirm petReturnConfirmScreen = new frmPetReturnConfirm();
+                petReturnConfirmScreen.Show();
+                this.Close();
             }
 
-            //  CLOSE Form
-            frmPetReturnConfirm petReturnConfirmScreen = new frmPetReturnConfirm();
-            petReturnConfirmScreen.Show();
-            this.Close();
         }
 
         //  SEARCH Button click event
@@ -83,6 +84,9 @@ namespace PetAdoptation
             //  IF Pet found by ID
             if (returnedPet != null)
             {
+                //  ENABLE Submit Button
+                submit_Btn.Enabled = true;
+
                 //  LABEL Data Pulling
                 notFound_Warn.Visible = false;
                 age_Combobx.Text = returnedPet.Age;
@@ -109,6 +113,9 @@ namespace PetAdoptation
             }
             else
             {
+                //  DISABLE Submit Button
+                submit_Btn.Enabled = false;
+
                 //  LABEL Data Pulling
                 notFound_Warn.Visible = true;
                 age_Combobx.Text = "Age";

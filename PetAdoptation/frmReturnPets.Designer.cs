@@ -601,6 +601,7 @@
             // 
             submit_Btn.BackColor = Color.FromArgb(111, 138, 129);
             submit_Btn.Cursor = Cursors.Hand;
+            submit_Btn.Enabled = false;
             submit_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
             submit_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
             submit_Btn.FlatStyle = FlatStyle.Flat;
