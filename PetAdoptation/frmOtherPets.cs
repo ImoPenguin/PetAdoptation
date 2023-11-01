@@ -30,7 +30,7 @@ namespace PetAdoptation
             allPets_Panel.AutoSizeMode = AutoSizeMode.GrowOnly;
 
             //  GET Pet List
-            List<Pet> petList = XML_Handler.readPetData();
+            List<Pet> petList = XML_Handler.readAvailablePetData();
 
             //  GET Cat List
             List<Pet> otherList = petList.Where(pet => pet.Type == "Other").ToList();

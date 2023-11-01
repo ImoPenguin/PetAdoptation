@@ -1,45 +1,52 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization; // Import this namespace for JsonPropertyName
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PetAdoptation
 {
+    public class MailCheckResponse
+    {
+        [JsonPropertyName("format_valid")]
+        public bool FormatValid { get; set; }
+
+        [JsonPropertyName("mx_found")]
+        public bool MxFound { get; set; }
+    }
+
     public static class Mail_Handler
     {
-        public static async Task<bool> Mail_Check(string mail2Check)
+        public static async Task<MailCheckResponse> Mail_Check(string mail2Check)
         {
+            // Construct the API request URL
             string apiKey = "23dfb7cd67e9a249c69cb4e8b25a6cc3";
 
             using (var client = new HttpClient())
             {
-                // Construct the API request URL
                 string apiUrl = $"http://apilayer.net/api/check?access_key={apiKey}&email={mail2Check}&smtp=1&format=1";
 
-                // Send the GET request
-                HttpResponseMessage response = await client.GetAsync(apiUrl);
-
-                //  response List Array
-                string[] responseList = new string[] { };
-                if (response.IsSuccessStatusCode)
+                try
                 {
+                    // Send the GET request
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        Console.WriteLine("API request failed with status code: " + response.StatusCode);
+                        return null; // Return null on failure
+                    }
+
                     // Read and process the API response
                     string jsonResponse = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine(jsonResponse);
+                    Console.WriteLine("API Response: " + jsonResponse);
 
-                    responseList = jsonResponse.Split(',');
+                    return JsonSerializer.Deserialize<MailCheckResponse>(jsonResponse);
                 }
-                else
+                catch (Exception ex)
                 {
-                    Console.WriteLine("API request failed with status code: " + response.StatusCode);
+                    Console.WriteLine("Exception during mail check: " + ex.Message);
+                    return null; // Return null on exception
                 }
-
-                //  BOOL var to check if MAIL FORMAT IS VALID and MAIL DOMAIN EXIST
-                bool formatValid = bool.Parse(responseList[4].Split(':')[1]);
-                bool domainExisted = bool.Parse(responseList[5].Split(':')[1]);
-
-                return (formatValid && domainExisted);
             }
         }
     }

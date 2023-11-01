@@ -63,21 +63,90 @@ namespace PetAdoptation
 
         }
 
-        private void createAccount_Btn_Click(object sender, EventArgs e)
-        {
-            bool validated = false;
-
-            //  VALIDATE user input
-            //  CHECK if All Textboxes are not empty
-            if ((txtUserName.Text != "") && (txtUserEmail.Text != "") && (txtUserPwd.Text != ""))
-            {
-                txtName_Warn.Visible = false;
-                txtEmail_Warn.Visible = false;
-                txtPwd_Warn.Visible = false;
-
-                Task<bool> mailValid = Mail_Handler.Mail_Check(txtUserEmail.Text);
-                if (mailValid.Result)
+        /*        private async void createAccount_Btn_Click(object sender, EventArgs e)
                 {
+                    bool validated = false;
+
+                    //  VALIDATE user input
+                    //  CHECK if All Textboxes are not empty
+                    if ((txtUserName.Text != "") && (txtUserEmail.Text != "") && (txtUserPwd.Text != ""))
+                    {
+                        txtName_Warn.Visible = false;
+                        txtEmail_Warn.Visible = false;
+                        txtPwd_Warn.Visible = false;
+
+                        //Task<bool> mailValid = Mail_Handler.Mail_Check(txtUserEmail.Text);
+                        bool mailValid = await Mail_Handler.Mail_Check(txtUserEmail.Text);
+                        if (mailValid) //mailValid.Result
+                        {
+                            txtEmail_Warn.Visible = false;
+
+                            List<Customer> cusList = XML_Handler.readCustomerData();
+                            int cusOrder = 1001 + cusList.Count;
+
+                            string newCus_ID = "U" + cusOrder.ToString();
+
+                            Customer newCus = new Customer(newCus_ID, txtUserPwd.Text, txtUserName.Text, "", txtUserEmail.Text, "", "");
+
+                            XML_Handler.addCustomerData(newCus);
+                        }
+                        else
+                        {
+                            txtEmail_Warn.Visible = true;
+                        }
+                    }
+                    else
+                    {
+                        if (txtUserName.Text == "")
+                        {
+                            txtName_Warn.Visible = true;
+                        }
+                        else
+                        {
+                            txtName_Warn.Visible = false;
+                        }
+
+                        if (txtUserEmail.Text == "")
+                        {
+                            txtEmail_Warn.Visible = true;
+                        }
+                        else
+                        {
+                            txtEmail_Warn.Visible = false;
+                        }
+
+                        if (txtUserPwd.Text == "")
+                        {
+                            txtPwd_Warn.Visible = true;
+                        }
+                        else
+                        {
+                            txtPwd_Warn.Visible = false;
+                        }
+
+                    }
+                }*/
+
+        private async void createAccount_Btn_Click(object sender, EventArgs e)
+        {
+            //  CHECK if any of the fields are empty and show warnings accordingly
+            txtName_Warn.Visible = string.IsNullOrWhiteSpace(txtUserName.Text);
+            txtEmail_Warn.Visible = string.IsNullOrWhiteSpace(txtUserEmail.Text);
+            txtPwd_Warn.Visible = string.IsNullOrWhiteSpace(txtUserPwd.Text);
+
+            //  If any field is empty, EXIT the method
+            if (txtName_Warn.Visible || txtEmail_Warn.Visible || txtPwd_Warn.Visible)
+            {
+                return;
+            }
+
+            MailCheckResponse mailCheckResponse = await Mail_Handler.Mail_Check(txtUserEmail.Text);
+
+            if (mailCheckResponse != null)
+            {
+                if (mailCheckResponse.FormatValid && mailCheckResponse.MxFound)
+                {
+                    // Both checks passed, proceed with registration
                     txtEmail_Warn.Visible = false;
 
                     List<Customer> cusList = XML_Handler.readCustomerData();
@@ -86,43 +155,21 @@ namespace PetAdoptation
                     string newCus_ID = "U" + cusOrder.ToString();
 
                     Customer newCus = new Customer(newCus_ID, txtUserPwd.Text, txtUserName.Text, "", txtUserEmail.Text, "", "");
-
                     XML_Handler.addCustomerData(newCus);
                 }
                 else
                 {
+                    // Either format_valid or mx_found check failed
+                    txtEmail_Warn.Text = "Invalid email format";
+                    txtEmail_Warn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
                     txtEmail_Warn.Visible = true;
                 }
             }
             else
             {
-                if (txtUserName.Text == "")
-                {
-                    txtName_Warn.Visible = true;
-                }
-                else
-                {
-                    txtName_Warn.Visible = false;
-                }
-
-                if (txtUserEmail.Text == "")
-                {
-                    txtEmail_Warn.Visible = true;
-                }
-                else
-                {
-                    txtEmail_Warn.Visible = false;
-                }
-
-                if (txtUserPwd.Text == "")
-                {
-                    txtPwd_Warn.Visible = true;
-                }
-                else
-                {
-                    txtPwd_Warn.Visible = false;
-                }
-
+                // API call failed or some other error
+                txtEmail_Warn.Text = "Error checking the email. Please try again.";
+                txtEmail_Warn.Visible = true;
             }
         }
 

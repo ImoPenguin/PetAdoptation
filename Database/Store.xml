@@ -1,0 +1,30 @@
+<shelters>
+	<shelter>
+		<id>S1</id>
+		<address>NSW</address>
+	</shelter>
+	<shelter>
+		<id>S2</id>
+		<address>Queensland</address>
+	</shelter>
+	<shelter>
+		<id>S3</id>
+		<address>Canberra</address>
+	</shelter>
+	<shelter>
+		<id>S4</id>
+		<address>Victoria</address>
+	</shelter>
+	<shelter>
+		<id>S5</id>
+		<address>Perth</address>
+	</shelter>
+	<shelter>
+		<id>S6</id>
+		<address>Melbourne</address>
+	</shelter>
+	<shelter>
+		<id>S7</id>
+		<address>Adelaide</address>
+	</shelter>
+</shelters>

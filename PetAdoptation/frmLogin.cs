@@ -53,16 +53,21 @@ namespace PetAdoptation
             {
                 frmMainScreen mainScreen = new frmMainScreen();
                 mainScreen.Show();
+                this.Hide();
             }
             //  DISPLAY Staff Screen
             else if (LoginAccount.currentStaff != null)
             {
-
+                frmStaff staffScreen = new frmStaff();
+                staffScreen.Show();
+                this.Hide();
             }
-            //  DISPLAY Staff Screen
+            //  DISPLAY Manager Screen
             else if (LoginAccount.currentManager != null)
             {
-
+                frmAdmin adminScreen = new frmAdmin(); 
+                adminScreen.Show();
+                this.Hide();
             }
             //  DISPLAY Error Warning
             else

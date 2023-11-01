@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <pet>
     <storeID>S1</storeID>
@@ -9,10 +9,10 @@
     <sex>Male</sex>
     <breed>Ragdoll</breed>
     <size>Medium</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <desexed>true</desexed>
-    <wormed>true</wormed>
+    <vaccinated>True</vaccinated>
+    <microchip>True</microchip>
+    <desexed>True</desexed>
+    <wormed>True</wormed>
     <description>Description for Pet1</description>
     <age>9 Months</age>
     <ownerID></ownerID>
@@ -134,7 +134,7 @@
     <wormed>true</wormed>
     <description>Description for Pet1</description>
     <age>2 Years 9 Months</age>
-    <ownerID></ownerID>
+    <ownerID>U1001</ownerID>
   </pet>
   <pet>
     <storeID>S3</storeID>
@@ -179,10 +179,10 @@
     <sex>Male</sex>
     <breed>Emperor Penguin</breed>
     <size>Medium</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <desexed>true</desexed>
-    <wormed>true</wormed>
+    <vaccinated>True</vaccinated>
+    <microchip>True</microchip>
+    <desexed>True</desexed>
+    <wormed>True</wormed>
     <description>Description for Pet1</description>
     <age>1 Years 8 Months</age>
     <ownerID></ownerID>
@@ -234,7 +234,7 @@
     <microchip>false</microchip>
     <desexed>false</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>2 Years</age>
     <ownerID></ownerID>
   </pet>
@@ -251,9 +251,9 @@
     <microchip>false</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>1 Year 4 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
   <pet>
     <storeID>S6</storeID>
@@ -268,11 +268,10 @@
     <microchip>true</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>2 Years 6 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S6</storeID>
     <id>P117</id>
@@ -288,9 +287,8 @@
     <wormed>true</wormed>
     <description>Description for Pet</description>
     <age>3 Years 2 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S7</storeID>
     <id>P118</id>
@@ -304,11 +302,10 @@
     <microchip>true</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>3 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S7</storeID>
     <id>P119</id>
@@ -318,12 +315,12 @@
     <sex>Male</sex>
     <breed>Koi Carp</breed>
     <size>Medium</size>
-    <vaccinated>false</vaccinated>
-    <microchip>false</microchip>
-    <desexed>false</desexed>
-    <wormed>false</wormed>
-    <description>Description for Pet</description> 
+    <vaccinated>False</vaccinated>
+    <microchip>False</microchip>
+    <desexed>True</desexed>
+    <wormed>False</wormed>
+    <description>Description for Pet</description>
     <age>2 Years</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
 </root>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace PetAdoptation
 {
@@ -55,6 +56,24 @@ namespace PetAdoptation
 
             //  Load XML File
             string filePath = Path.Combine(solutionFolderPath, "Database\\Pet.xml");
+
+            return filePath;
+        }
+
+        public static string getStoreFilePath()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            //  Load XML File
+            string filePath = Path.Combine(solutionFolderPath, "Database\\Store.xml");
 
             return filePath;
         }
@@ -167,7 +186,7 @@ namespace PetAdoptation
         public static void addStaffData(Staff newStaff)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("staff",
@@ -186,6 +205,38 @@ namespace PetAdoptation
             xmlDoc.Save(getUserFilePath());
         }
 
+        public static Staff findStaffByID(string ID)
+        {
+            List<Staff> staffList = readStaffData();
+
+            foreach (Staff staff in staffList)
+            {
+                if (staff.ID == ID)
+                {
+                    return staff;
+                }
+            }
+
+            return null;
+        }
+
+        public static void editStaffData(Staff newData)
+        {
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
+            XElement staffElement = xmlDoc.Descendants("staff")
+                .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
+
+            if (staffElement != null)
+            {
+                //  UPDATE customer new DATA
+                staffElement.Element("name").Value = newData.Name;
+                staffElement.Element("password").Value = newData.Password;
+                staffElement.Element("phoneNo").Value = newData.PhoneNo;
+                staffElement.Element("email").Value = newData.Email;
+                staffElement.Element("address").Value = newData.Address;
+                xmlDoc.Save(getUserFilePath());
+            }
+        }
 
         ///////////////////////////////////
         //  HANDLING Manager XML Files  //
@@ -221,7 +272,7 @@ namespace PetAdoptation
         public static void addManagerData(Manager newManager)
         {
             //  LOAD XML File
-            XDocument xmlDoc = new XDocument(getUserFilePath());
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
 
             //  Create new XML Element
             XElement newUser = new XElement("manager",
@@ -239,10 +290,32 @@ namespace PetAdoptation
             xmlDoc.Save(getUserFilePath());
         }
 
+
+        public static Manager findManagerByID(string ID)
+        {
+            List<Manager> mngList = readManagerData();
+
+            foreach(Manager m in mngList)
+            {
+                if (m.ID == ID)
+                {
+                    return m;
+                }
+            }
+
+            return null;
+        }
+
+
+        ///////////////////////////////////
+        //  HANDLING Shelter XML Files  //
+        /////////////////////////////////
+
         public static List<Shelter> readShelterData()
         {
             //  LOAD XML Data
-            XDocument xmlDoc = XDocument.Load("Shelter.xml");
+            XDocument xmlDoc = XDocument.Load(getStoreFilePath());
+
             List<Shelter> shelterList = new List<Shelter>();
 
             //  GET all USER Data
@@ -262,6 +335,20 @@ namespace PetAdoptation
             return shelterList;
         }
 
+        public static Shelter findShelterByID(string findID)
+        {
+            List<Shelter> shelters = readShelterData();
+
+            foreach(Shelter s in shelters)
+            {
+                if(s.StoreID == findID)
+                {
+                    return s;
+                }
+            }
+
+            return null;
+        }
 
 
         ///////////////////////////////
@@ -303,6 +390,23 @@ namespace PetAdoptation
             }
 
             return petsList;
+        }
+
+        public static List<Pet> readAvailablePetData()
+        {
+            List<Pet> pets = readPetData();
+
+            List<Pet> filterList = new List<Pet>();
+
+            foreach(Pet pet in pets)
+            {
+                if (!pet.Adopted)
+                {
+                    filterList.Add(pet);
+                }
+            }
+
+            return filterList;
         }
 
         public static void addPetData(Pet pet)
@@ -349,6 +453,26 @@ namespace PetAdoptation
             return null;
         }
 
+
+        public static void editPetData(Pet newData)
+        {
+            // Load the XML data from a file
+            XDocument xmlDoc = XDocument.Load(getPetFilePath());
+            XElement petElement = xmlDoc.Descendants("pet")
+                                    .FirstOrDefault(p => p.Element("id").Value == newData.ID);
+
+            if(petElement != null)
+            {
+                //  UPDATE new DATA
+                petElement.Element("age").Value = newData.Age;
+                petElement.Element("desexed").Value = newData.Desexed.ToString(); 
+                petElement.Element("microchip").Value = newData.Microchip.ToString();
+                petElement.Element("vaccinated").Value = newData.Vaccinated.ToString();
+                petElement.Element("wormed").Value = newData.Wormed.ToString();
+                petElement.Element("ownerID").Value = newData.OwnerID;
+                xmlDoc.Save(getPetFilePath());
+            }
+        }
 
         //  FUNCTION to find USERS
         public static Customer findCustomerAccount(string findID, string findPassword)
