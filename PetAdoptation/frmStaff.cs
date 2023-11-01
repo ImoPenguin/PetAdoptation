@@ -214,12 +214,11 @@ namespace PetAdoptation
             string typeToCheck = checkList_comboBox.Text;
             string findingID = txtID.Text;
 
-            object findingObject = null;
-
             //  FIND in User List
             if (typeToCheck == "Customer")
             {
                 List<Customer> cusList = XML_Handler.readCustomerData();
+                Customer findingObject = null;
 
                 foreach (Customer cus in cusList)
                 {
@@ -229,11 +228,44 @@ namespace PetAdoptation
                         break;
                     }
                 }
+
+                if (findingObject != null)
+                {
+                    findStaff_panel.Visible = true;
+
+                    //  CHANGE Tab Name
+                    viewDetails_tabPage.Text = typeToCheck;
+
+                    findCustomer_panel.Visible = true;
+                    findStaff_panel.Visible = false;
+
+                    //  CHANGE Tab Name
+                    viewDetails_tabPage.Text = typeToCheck;
+
+                    //  PULL Data from Object
+                    findCustomerID_lbl.Text = findingObject.ID;
+                    findCustomerName_lbl.Text = findingObject.Name;
+                    findCustomerPhone_lbl.Text = findingObject.PhoneNo;
+                    findCustomerEmail_lbl.Text = findingObject.Email;
+                    findCustomerAddress_lbl.Text = String.Join(", ", findingObject.Address.Split(';'));
+
+                    Staff assignedStaff = XML_Handler.findStaffByID(findingObject.AssignedStaff_ID);
+
+                    if (assignedStaff != null)
+                    {
+                        findCustomerStaff_lbl.Text = assignedStaff.Name;
+                    }
+                    else
+                    {
+                        findCustomerStaff_lbl.Text = "";
+                    }
+                }
             }
             //  FIND in Staff List
             else if (typeToCheck == "Staff")
             {
                 List<Staff> staffList = XML_Handler.readStaffData();
+                Staff findingObject = null;
 
                 foreach (Staff staff in staffList)
                 {
@@ -243,11 +275,31 @@ namespace PetAdoptation
                         break;
                     }
                 }
+
+                //  CHECK if finding Object is existed
+                if (findingObject != null)
+                {
+                    findStaff_panel.Visible = true;
+                    findCustomer_panel.Visible = false;
+
+                    //  CHANGE Tab Name
+                    viewDetails_tabPage.Text = typeToCheck;
+
+                    //  PULL Data from Object
+                    findStaffID_lbl.Text = findingObject.ID;
+                    findStaffName_lbl.Text = findingObject.Name;
+                    findStaffPhone_lbl.Text = findingObject.PhoneNo;
+                    findStaffEmail_lbl.Text = findingObject.Email;
+                    findStaffAddress_lbl.Text = String.Join(", ", findingObject.Address.Split(';'));
+                    findStaffStore_lbl.Text = XML_Handler.findShelterByID(findingObject.WorkingStoreID).Address;
+                    findStaffMng_lbl.Text = XML_Handler.findManagerByID(findingObject.ManagerID).Name;
+                }
             }
             //  FIND in Animal List
             else if (typeToCheck == "Animal")
             {
                 List<Pet> petList = XML_Handler.readPetData();
+                Pet findingObject = null;
 
                 foreach (Pet p in petList)
                 {
@@ -257,6 +309,14 @@ namespace PetAdoptation
                         break;
                     }
                 }
+
+                if (findingObject != null)
+                {
+                    findStaff_panel.Visible = true;
+
+                    //  CHANGE Tab Name
+                    viewDetails_tabPage.Text = typeToCheck;
+                }
             }
             //  FIND in all LISTs
             else
@@ -264,11 +324,10 @@ namespace PetAdoptation
 
             }
 
-            //  CHECK if finding Object is existed
-            if (findingObject != null)
-            {
+        }
 
-            }
+        private void findStaffAddress_lbl_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

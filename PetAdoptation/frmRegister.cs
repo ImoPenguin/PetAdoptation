@@ -129,6 +129,13 @@ namespace PetAdoptation
 
         private async void createAccount_Btn_Click(object sender, EventArgs e)
         {
+            //  CHECK if Policy Checkbox is CHECKED
+            if (!PolicyCheckBox.Checked)
+            {
+                PolicyCheckBox.ForeColor = Color.Red;
+                return;
+            }
+
             //  CHECK if any of the fields are empty and show warnings accordingly
             txtName_Warn.Visible = string.IsNullOrWhiteSpace(txtUserName.Text);
             txtEmail_Warn.Visible = string.IsNullOrWhiteSpace(txtUserEmail.Text);
@@ -137,6 +144,7 @@ namespace PetAdoptation
             //  If any field is empty, EXIT the method
             if (txtName_Warn.Visible || txtEmail_Warn.Visible || txtPwd_Warn.Visible)
             {
+                txtEmail_Warn.Text = "!";
                 return;
             }
 
@@ -150,7 +158,9 @@ namespace PetAdoptation
                     txtEmail_Warn.Visible = false;
 
                     List<Customer> cusList = XML_Handler.readCustomerData();
-                    int cusOrder = 1001 + cusList.Count;
+                    List<Staff> staffList = XML_Handler.readStaffData();
+                    List<Manager> mngrList = XML_Handler.readManagerData();
+                    int cusOrder = 1001 + cusList.Count + staffList.Count + mngrList.Count;
 
                     string newCus_ID = "U" + cusOrder.ToString();
 
