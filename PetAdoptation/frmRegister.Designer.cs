@@ -85,6 +85,9 @@
             PolicyCheckBox.AutoSize = true;
             PolicyCheckBox.BackColor = Color.Transparent;
             PolicyCheckBox.Cursor = Cursors.Hand;
+            PolicyCheckBox.FlatAppearance.BorderColor = Color.IndianRed;
+            PolicyCheckBox.FlatAppearance.CheckedBackColor = SystemColors.Highlight;
+            PolicyCheckBox.FlatStyle = FlatStyle.Flat;
             PolicyCheckBox.Font = new Font("Yu Gothic UI", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
             PolicyCheckBox.ForeColor = Color.Gray;
             PolicyCheckBox.ImageAlign = ContentAlignment.TopCenter;
@@ -92,7 +95,7 @@
             PolicyCheckBox.Margin = new Padding(2, 1, 2, 1);
             PolicyCheckBox.Name = "PolicyCheckBox";
             PolicyCheckBox.Padding = new Padding(5, 0, 3, 0);
-            PolicyCheckBox.Size = new Size(284, 24);
+            PolicyCheckBox.Size = new Size(281, 24);
             PolicyCheckBox.TabIndex = 9;
             PolicyCheckBox.Text = "I have read and agree Privacy Policy";
             PolicyCheckBox.UseVisualStyleBackColor = false;
