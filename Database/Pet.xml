@@ -315,10 +315,10 @@
     <sex>Male</sex>
     <breed>Koi Carp</breed>
     <size>Medium</size>
-    <vaccinated>false</vaccinated>
-    <microchip>false</microchip>
-    <desexed>false</desexed>
-    <wormed>false</wormed>
+    <vaccinated>False</vaccinated>
+    <microchip>False</microchip>
+    <desexed>True</desexed>
+    <wormed>False</wormed>
     <description>Description for Pet</description>
     <age>2 Years</age>
     <ownerID></ownerID>
