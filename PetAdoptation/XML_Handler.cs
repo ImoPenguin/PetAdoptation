@@ -444,7 +444,7 @@ namespace PetAdoptation
                 petElement.Element("desexed").Value = newData.Desexed.ToString(); 
                 petElement.Element("microchip").Value = newData.Microchip.ToString();
                 petElement.Element("vaccinated").Value = newData.Vaccinated.ToString();
-                petElement.Element("wormed").Value = newData.Wormed.ToString(); 
+                petElement.Element("wormed").Value = newData.Wormed.ToString();
                 petElement.Element("ownerID").Value = newData.OwnerID;
                 xmlDoc.Save(getPetFilePath());
             }
