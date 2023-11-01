@@ -26,32 +26,45 @@ namespace PetAdoptation
 
         private void frmSearchResult_Load(object sender, EventArgs e)
         {
-            List<Pet> petList = XML_Handler.readPetData();
+            List<Pet> petList = XML_Handler.readAvailablePetData();
 
             List<Pet> searchResult = new List<Pet>();
 
-            bool vaccinatedSearch = false;
-            if (SearchData.vaccinated == "Yes")
+            if(SearchData.petID != "")
             {
-                vaccinatedSearch = true;
+                foreach(Pet pet in petList)
+                {
+                    if(pet.ID.Contains(SearchData.petID))
+                    {
+                        searchResult.Add(pet);
+                    }
+                }
             }
             else
             {
-                vaccinatedSearch = false;
-            }
-
-            foreach (Pet p in petList)
-            {
-
-
-                if (
-                    ((p.Type == SearchData.animalType) || (SearchData.animalType == String.Empty)) &&
-                    ((p.Age == SearchData.animalAge) || (SearchData.animalAge == String.Empty)) &&
-                    ((p.Sex == SearchData.animalGender) || (SearchData.animalGender == String.Empty)) &&
-                    (vaccinatedSearch || (SearchData.vaccinated == String.Empty))
-                   )
+                bool vaccinatedSearch = false;
+                if (SearchData.vaccinated == "Yes")
                 {
-                    searchResult.Add(p);
+                    vaccinatedSearch = true;
+                }
+                else
+                {
+                    vaccinatedSearch = false;
+                }
+
+                foreach (Pet p in petList)
+                {
+
+
+                    if (
+                        ((p.Type == SearchData.animalType) || (SearchData.animalType == String.Empty)) &&
+                        ((p.Age == SearchData.animalAge) || (SearchData.animalAge == String.Empty)) &&
+                        ((p.Sex == SearchData.animalGender) || (SearchData.animalGender == String.Empty)) &&
+                        (vaccinatedSearch || (SearchData.vaccinated == String.Empty))
+                       )
+                    {
+                        searchResult.Add(p);
+                    }
                 }
             }
 

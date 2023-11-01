@@ -19,14 +19,46 @@ namespace PetAdoptation
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmMainScreen mainScreen = new frmMainScreen();
             mainScreen.Show();
+            this.Close();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void frmAssignedStaff_Load(object sender, EventArgs e)
+        {
+            Staff assignedStaff = XML_Handler.findStaffByID(LoginAccount.currentCustomer.AssignedStaff_ID);
+
+            //  PULL Data to Info Labels in FORMs
+            if (assignedStaff != null)
+            {
+                infoPanel.Visible = true;
+                noStaff_lbl.Visible = false;
+
+                ID_lbl.Text = assignedStaff.ID;
+                txtName.Text = assignedStaff.Name;
+                txtPhone.Text = assignedStaff.PhoneNo;
+                txtEmail.Text = assignedStaff.Email;
+                txtWorkingStore.Text = assignedStaff.WorkingStoreID;
+
+                //  GET Manager of this STAFF
+                Manager m = XML_Handler.findManagerByID(assignedStaff.ManagerID);
+
+                if (m != null)
+                {
+                    managerName_lbl.Text = m.Name;
+                }
+            }
+            else
+            {
+                infoPanel.Visible = false;
+                noStaff_lbl.Visible = true;
+            }
+
         }
     }
 }

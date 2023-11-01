@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <pet>
     <storeID>S1</storeID>
@@ -32,7 +32,7 @@
     <wormed>true</wormed>
     <description>Description for Pet1</description>
     <age>1 Years 8 Months</age>
-    <ownerID></ownerID>
+    <ownerID>U1001</ownerID>
   </pet>
   <pet>
     <storeID>S1</storeID>
@@ -134,7 +134,7 @@
     <wormed>true</wormed>
     <description>Description for Pet1</description>
     <age>2 Years 9 Months</age>
-    <ownerID></ownerID>
+    <ownerID>U1001</ownerID>
   </pet>
   <pet>
     <storeID>S3</storeID>
@@ -234,7 +234,7 @@
     <microchip>false</microchip>
     <desexed>false</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>2 Years</age>
     <ownerID></ownerID>
   </pet>
@@ -251,9 +251,9 @@
     <microchip>false</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>1 Year 4 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
   <pet>
     <storeID>S6</storeID>
@@ -268,11 +268,10 @@
     <microchip>true</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>2 Years 6 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S6</storeID>
     <id>P117</id>
@@ -288,9 +287,8 @@
     <wormed>true</wormed>
     <description>Description for Pet</description>
     <age>3 Years 2 Months</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S7</storeID>
     <id>P118</id>
@@ -304,11 +302,10 @@
     <microchip>true</microchip>
     <desexed>true</desexed>
     <wormed>true</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>3 Months</age>
     <ownerID></ownerID>
   </pet>
-
   <pet>
     <storeID>S7</storeID>
     <id>P119</id>
@@ -322,8 +319,8 @@
     <microchip>false</microchip>
     <desexed>false</desexed>
     <wormed>false</wormed>
-    <description>Description for Pet</description> 
+    <description>Description for Pet</description>
     <age>2 Years</age>
-    <ownerID></ownerID> 
+    <ownerID></ownerID>
   </pet>
 </root>

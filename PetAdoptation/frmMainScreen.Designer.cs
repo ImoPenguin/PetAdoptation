@@ -358,6 +358,7 @@
             // logOut_btn
             // 
             logOut_btn.BackColor = Color.FromArgb(248, 123, 110);
+            logOut_btn.Cursor = Cursors.Hand;
             logOut_btn.FlatAppearance.BorderSize = 0;
             logOut_btn.FlatStyle = FlatStyle.Flat;
             logOut_btn.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
