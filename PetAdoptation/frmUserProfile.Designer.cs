@@ -298,10 +298,10 @@
             txtName.Enabled = false;
             txtName.Font = new Font("Yu Gothic UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
             txtName.ForeColor = Color.FromArgb(81, 60, 41);
-            txtName.Location = new Point(318, 3);
+            txtName.Location = new Point(237, 3);
             txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(435, 43);
+            txtName.Size = new Size(516, 43);
             txtName.TabIndex = 3;
             txtName.Text = "Blah Blah";
             txtName.TextChanged += txtName_TextChanged;

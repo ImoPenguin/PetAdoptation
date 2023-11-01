@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <customer>
     <id>U1001</id>
@@ -22,7 +22,7 @@
     <id>U1003</id>
     <password>password3</password>
     <name>Little Penguin</name>
-    <phoneNo>123-647-875</phoneNo>
+    <phoneNo>123-647-876</phoneNo>
     <email>danielassignment0605@gmail.com</email>
     <address>532 Sub St;Thistown;NSW;2050</address>
     <workingStore>S1</workingStore>

@@ -181,7 +181,7 @@
     <size>Medium</size>
     <vaccinated>True</vaccinated>
     <microchip>True</microchip>
-    <desexed>False</desexed>
+    <desexed>True</desexed>
     <wormed>True</wormed>
     <description>Description for Pet1</description>
     <age>1 Years 8 Months</age>

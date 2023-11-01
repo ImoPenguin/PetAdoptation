@@ -205,7 +205,6 @@ namespace PetAdoptation
             xmlDoc.Save(getUserFilePath());
         }
 
-        
         public static Staff findStaffByID(string ID)
         {
             List<Staff> staffList = readStaffData();
@@ -219,6 +218,24 @@ namespace PetAdoptation
             }
 
             return null;
+        }
+
+        public static void editStaffData(Staff newData)
+        {
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
+            XElement staffElement = xmlDoc.Descendants("staff")
+                .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
+
+            if (staffElement != null)
+            {
+                //  UPDATE customer new DATA
+                staffElement.Element("name").Value = newData.Name;
+                staffElement.Element("password").Value = newData.Password;
+                staffElement.Element("phoneNo").Value = newData.PhoneNo;
+                staffElement.Element("email").Value = newData.Email;
+                staffElement.Element("address").Value = newData.Address;
+                xmlDoc.Save(getUserFilePath());
+            }
         }
 
         ///////////////////////////////////
@@ -289,6 +306,11 @@ namespace PetAdoptation
             return null;
         }
 
+
+        ///////////////////////////////////
+        //  HANDLING Shelter XML Files  //
+        /////////////////////////////////
+
         public static List<Shelter> readShelterData()
         {
             //  LOAD XML Data
@@ -327,6 +349,7 @@ namespace PetAdoptation
 
             return null;
         }
+
 
         ///////////////////////////////
         //  HANDLING Pet XML Files  //
