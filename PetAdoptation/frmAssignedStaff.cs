@@ -43,7 +43,7 @@ namespace PetAdoptation
                 txtName.Text = assignedStaff.Name;
                 txtPhone.Text = assignedStaff.PhoneNo;
                 txtEmail.Text = assignedStaff.Email;
-                txtWorkingStore.Text = assignedStaff.WorkingStoreID;
+                txtWorkingStore.Text = XML_Handler.findShelterByID(assignedStaff.WorkingStoreID).Address;
 
                 //  GET Manager of this STAFF
                 Manager m = XML_Handler.findManagerByID(assignedStaff.ManagerID);
