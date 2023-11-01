@@ -60,6 +60,24 @@ namespace PetAdoptation
             return filePath;
         }
 
+        public static string getStoreFilePath()
+        {
+            //  FIND Solution File Path
+            string assemblyLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string assemblyDirectory = Path.GetDirectoryName(assemblyLocation);
+
+            // Assuming the solution file is in the parent directory of the executable
+            string solutionDirectory = Directory.GetParent(assemblyDirectory).FullName;
+
+            string binDirectory = Directory.GetParent(solutionDirectory).FullName;
+            string solutionFolderPath = Directory.GetParent(Directory.GetParent(binDirectory).FullName).FullName;
+
+            //  Load XML File
+            string filePath = Path.Combine(solutionFolderPath, "Database\\Store.xml");
+
+            return filePath;
+        }
+
         ////////////////////////////////////
         //  HANDLING Customer XML Files  //
         //////////////////////////////////
@@ -274,7 +292,8 @@ namespace PetAdoptation
         public static List<Shelter> readShelterData()
         {
             //  LOAD XML Data
-            XDocument xmlDoc = XDocument.Load("Shelter.xml");
+            XDocument xmlDoc = XDocument.Load(getStoreFilePath());
+
             List<Shelter> shelterList = new List<Shelter>();
 
             //  GET all USER Data
@@ -294,7 +313,20 @@ namespace PetAdoptation
             return shelterList;
         }
 
+        public static Shelter findShelterByID(string findID)
+        {
+            List<Shelter> shelters = readShelterData();
 
+            foreach(Shelter s in shelters)
+            {
+                if(s.StoreID == findID)
+                {
+                    return s;
+                }
+            }
+
+            return null;
+        }
 
         ///////////////////////////////
         //  HANDLING Pet XML Files  //
@@ -409,6 +441,10 @@ namespace PetAdoptation
             if(petElement != null)
             {
                 //  UPDATE new DATA
+                petElement.Element("desexed").Value = newData.Desexed.ToString(); 
+                petElement.Element("microchip").Value = newData.Microchip.ToString();
+                petElement.Element("vaccinated").Value = newData.Vaccinated.ToString();
+                petElement.Element("wormed").Value = newData.Wormed.ToString(); 
                 petElement.Element("ownerID").Value = newData.OwnerID;
                 xmlDoc.Save(getPetFilePath());
             }
