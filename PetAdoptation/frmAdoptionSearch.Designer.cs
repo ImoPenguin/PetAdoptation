@@ -483,7 +483,6 @@
         private Panel SearchPet_Panel;
         private Panel advancedPanel;
         private Panel panel5;
-        private TextBox textBox1;
         private Panel panel7;
         private ComboBox age_Combobx;
         private PictureBox pictureBox4;

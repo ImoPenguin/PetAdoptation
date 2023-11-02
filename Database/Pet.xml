@@ -26,13 +26,13 @@
     <sex>Female</sex>
     <breed>Siamese</breed>
     <size>Medium</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <desexed>true</desexed>
-    <wormed>true</wormed>
+    <vaccinated>True</vaccinated>
+    <microchip>True</microchip>
+    <desexed>True</desexed>
+    <wormed>True</wormed>
     <description>Description for Pet1</description>
     <age>1 Years 8 Months</age>
-    <ownerID></ownerID>
+    <ownerID>U1001</ownerID>
   </pet>
   <pet>
     <storeID>S1</storeID>
