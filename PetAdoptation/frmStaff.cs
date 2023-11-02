@@ -129,7 +129,7 @@ namespace PetAdoptation
 
         private void logOut_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             frmLogin loginForm = new frmLogin();
             loginForm.Show();
         }
@@ -396,7 +396,7 @@ namespace PetAdoptation
             warningLabel.Visible = false;
         }
 
-        private void animal_tabControl_VisibleChanged(object sender, EventArgs e)
+        private void Animal_tabControl_VisibleChanged(object sender, EventArgs e)
         {
             if (animal_tabControl.Visible)
             {
@@ -449,13 +449,28 @@ namespace PetAdoptation
                     }
                 }
             }
+            else
+            {
+                petList_table.Controls.Clear();
+                petList_table.RowCount = 1;
+            }
+        }
+
+        private void PetList_panel_VisibleChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void addPet_btn_Click(object sender, EventArgs e)
         {
+            //  CALCULATE Pet ID
             int ID_num = 101 + XML_Handler.readPetData().Count;
             string ID_No = "P" + ID_num.ToString();
-            Pet newPet = new Pet(LoginAccount.currentStaff.WorkingStoreID,
+
+            if (addPetValidate())
+            {
+                Pet newPet = new Pet(
+                                LoginAccount.currentStaff.WorkingStoreID,
                                 ID_No,
                                 PetType_Combobx.Text,
                                 txtName.Text,
@@ -472,7 +487,31 @@ namespace PetAdoptation
                                 ""
                                 );
 
-            XML_Handler.addPetData(newPet);
+                XML_Handler.addPetData(newPet);
+
+                MessageBox.Show("New Pet added to system", "Successful!", MessageBoxButtons.OK);
+
+                //  RESET Text Boxes
+                PetType_Combobx.Text = "Choose an animal type";
+                txtName.Text = "";
+                txtPetColor.Text = "";
+                sex_Combobx.Text = "Sex";
+                txtBreed.Text = "";
+                size_comboBox.Text = "Size";
+                vaccinated_checkBox.Checked = false;
+                microchipped_checkBox.Checked = false;
+                desexed_checkBox.Checked = false;
+                worming_checkBox.Checked = false;
+                txtDescription.Text = "";
+                age_Combobx.Text = "Age";
+
+                //  JUMP back to View Tab
+                animal_tabControl.SelectedIndex = 0;
+            }
+            else
+            {
+                MessageBox.Show("One or more field is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private bool addPetValidate()
@@ -507,9 +546,159 @@ namespace PetAdoptation
                 return false;
             }
 
+            if (txtBreed.Text == "")
+            {
+                return false;
+            }
+
+            if (txtName.Text == "")
+            {
+                return false;
+            }
 
 
             return true;
+        }
+
+        private void panel2_VisibleChanged(object sender, EventArgs e)
+        {
+            if (panel2.Visible)
+            {
+                //  CALCULATE Pet ID
+                int ID_num = 101 + XML_Handler.readPetData().Count;
+                string ID_No = "P" + ID_num.ToString();
+
+                //  SET Fixed ID of PET
+                txtPetID.Text = ID_No;
+                txtLocation.Text = XML_Handler.findShelterByID(LoginAccount.currentStaff.WorkingStoreID).Address;
+            }
+        }
+
+        private void Animal_tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (animal_tabControl.SelectedIndex == 0)
+            {
+                petList_panel.Visible = true;
+                panel2.Visible = false;
+
+                petList_table.Controls.Clear();
+                petList_table.RowCount = 1;
+
+                List<Pet> petList = XML_Handler.readPetData();
+
+                foreach (Pet p in petList)
+                {
+                    for (int i = 0; i < petList_table.ColumnCount; i++)
+                    {
+                        Label textLabel = new Label();
+                        textLabel.Dock = DockStyle.Fill;
+                        textLabel.Location = new Point(3, 0);
+                        textLabel.Name = "InfoLabel";
+                        textLabel.Size = new Size(136, 32);
+                        textLabel.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+                        textLabel.TabIndex = 0;
+                        textLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+                        switch (i)
+                        {
+                            case 0:
+                                textLabel.Text = p.ID;
+                                break;
+
+                            case 1:
+                                textLabel.Text = p.Name;
+                                break;
+
+                            case 2:
+                                textLabel.Text = p.Sex;
+                                break;
+
+                            case 3:
+                                textLabel.Text = p.Breed;
+                                break;
+
+                            case 4:
+                                textLabel.Text = p.Vaccinated.ToString();
+                                break;
+
+                            case 5:
+                                textLabel.Text = p.Microchip.ToString();
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        petList_table.Controls.Add(textLabel);
+                    }
+                }
+            }
+            else
+            {
+                petList_panel.Visible = false;
+                panel2.Visible = true;
+            }
+        }
+
+        private void Customer_tabControl_VisibleChanged(object sender, EventArgs e)
+        {
+            if (customer_tabControl.Visible)
+            {
+                List<Customer> cusList = XML_Handler.readCustomerData();
+
+                cusList = cusList.FindAll(c => c.AssignedStaff_ID == LoginAccount.currentStaff.ID);
+
+                foreach (Customer c in cusList)
+                {
+                    for (int i = 0; i < petList_table.ColumnCount; i++)
+                    {
+                        TextBox textLabel = new TextBox();
+                        textLabel.Dock = DockStyle.Fill;
+                        textLabel.Multiline = true;
+                        textLabel.Name = "customerInfoLabel";
+                        textLabel.TabIndex = 0;
+                        textLabel.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+                        textLabel.TabIndex = 0;
+                        textLabel.TextAlign = HorizontalAlignment.Center;
+                        textLabel.Enabled = false;
+                        textLabel.BackColor = Color.FromArgb(229, 215, 200);
+                        textLabel.ForeColor = Color.Black;
+
+                        switch (i)
+                        {
+                            case 0:
+                                textLabel.Text = c.ID;
+                                break;
+
+                            case 1:
+                                textLabel.Text = c.Name;
+                                break;
+
+                            case 2:
+                                textLabel.Text = c.PhoneNo;
+                                break;
+
+                            case 3:
+                                textLabel.Text = c.Email;
+                                break;
+
+                            case 4:
+                                string address = String.Join(", ", c.Address.Split(';'));
+                                textLabel.Text = address;
+                                break;
+
+                            case 5:
+                                textLabel.Text = c.AssignedStaff_ID;
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        customerList_table.Controls.Add(textLabel);
+                    }
+                }
+            }
         }
     }
 }
