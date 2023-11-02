@@ -26,13 +26,13 @@
     <sex>Female</sex>
     <breed>Siamese</breed>
     <size>Medium</size>
-    <vaccinated>true</vaccinated>
-    <microchip>true</microchip>
-    <desexed>true</desexed>
-    <wormed>true</wormed>
+    <vaccinated>True</vaccinated>
+    <microchip>True</microchip>
+    <desexed>True</desexed>
+    <wormed>True</wormed>
     <description>Description for Pet1</description>
     <age>1 Years 8 Months</age>
-    <ownerID></ownerID>
+    <ownerID>U1001</ownerID>
   </pet>
   <pet>
     <storeID>S1</storeID>
@@ -321,6 +321,57 @@
     <wormed>False</wormed>
     <description>Description for Pet</description>
     <age>2 Years</age>
+    <ownerID></ownerID>
+  </pet>
+  <pet>
+    <storeID>S1</storeID>
+    <id>P120</id>
+    <type>Dog</type>
+    <name>Mocha</name>
+    <color>Dark Beige</color>
+    <sex>Male</sex>
+    <breed>Phu Quoc island</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>false</microchip>
+    <desexed>false</desexed>
+    <wormed>true</wormed>
+    <description>Cute, Friendly</description>
+    <age>Young</age>
+    <ownerID></ownerID>
+  </pet>
+  <pet>
+    <storeID>S1</storeID>
+    <id>P121</id>
+    <type>Dog</type>
+    <name>Kopi</name>
+    <color>Beige</color>
+    <sex>Male</sex>
+    <breed>Sausage Dog</breed>
+    <size>Medium</size>
+    <vaccinated>true</vaccinated>
+    <microchip>true</microchip>
+    <desexed>true</desexed>
+    <wormed>false</wormed>
+    <description>Cute</description>
+    <age>Young</age>
+    <ownerID></ownerID>
+  </pet>
+  <pet>
+    <storeID>S1</storeID>
+    <id>P122</id>
+    <type>Other</type>
+    <name>Bap</name>
+    <color>Yellow</color>
+    <sex>Female</sex>
+    <breed>Vietnam Corn</breed>
+    <size>Small</size>
+    <vaccinated>true</vaccinated>
+    <microchip>false</microchip>
+    <desexed>false</desexed>
+    <wormed>true</wormed>
+    <description>It is a corn</description>
+    <age>Young</age>
     <ownerID></ownerID>
   </pet>
 </root>
