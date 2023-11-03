@@ -4093,13 +4093,14 @@
             addStaff_Btn.FlatStyle = FlatStyle.Flat;
             addStaff_Btn.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
             addStaff_Btn.ForeColor = Color.FromArgb(255, 246, 229);
-            addStaff_Btn.Location = new Point(0, 350);
+            addStaff_Btn.Location = new Point(0, 356);
             addStaff_Btn.Margin = new Padding(3, 2, 3, 2);
             addStaff_Btn.Name = "addStaff_Btn";
-            addStaff_Btn.Size = new Size(857, 40);
+            addStaff_Btn.Size = new Size(857, 34);
             addStaff_Btn.TabIndex = 6;
             addStaff_Btn.Text = "ADD";
             addStaff_Btn.UseVisualStyleBackColor = false;
+            addStaff_Btn.Click += addStaff_Btn_ClickAsyncStaff; 
             // 
             // panel53
             // 

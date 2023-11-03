@@ -871,7 +871,7 @@ namespace PetAdoptation
             }
         }
 
-        private async void addStaff_Btn_ClickAsyncCust(object sender, EventArgs e)
+        private async void addStaff_Btn_ClickAsyncStaff(object sender, EventArgs e)
         {
             //  CHECK if all fields are not empty
             if (validateNewStaff())
@@ -893,9 +893,12 @@ namespace PetAdoptation
                         string newStaff_ID = "U" + staffOrder.ToString();
 
                         //  ADD new Staff to System
-                        Staff newStaff = new Staff(newStaff_ID, "password", txtStaffName.Text, txtStaffPhoneNum.Text, txtStaffEmail.Text, address, XML_Handler.findShelterByID(LoginAccount.currentManager.WorkingStoreID).Address, LoginAccount.currentManager.ID);
+                        Staff newStaff = new Staff(newStaff_ID, "password", txtStaffName.Text, txtStaffPhoneNum.Text, txtStaffEmail.Text, address, LoginAccount.currentManager.WorkingStoreID, LoginAccount.currentManager.ID);
 
                         XML_Handler.addStaffData(newStaff);
+
+                        MessageBox.Show("New Staff Added Successfully!", "Successful!", MessageBoxButtons.OK);
+                        staff_tabControl.SelectedIndex = 0;
                     }
                     else
                     {
