@@ -61,30 +61,30 @@
             addCustomers_panel = new Panel();
             panel4 = new Panel();
             panel10 = new Panel();
-            txtState = new TextBox();
-            txtPostalCode = new TextBox();
+            txtCustomerState = new TextBox();
+            txtCustomerPostalCode = new TextBox();
             pictureBox11 = new PictureBox();
             pictureBox8 = new PictureBox();
-            txtCity = new TextBox();
+            txtCustomerCity = new TextBox();
             pictureBox3 = new PictureBox();
-            txtUserAddress = new TextBox();
+            txtCustomerAddress = new TextBox();
             label4 = new Label();
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
             add_Btn = new Button();
             panel6 = new Panel();
             panel11 = new Panel();
-            txtPhoneNum = new TextBox();
+            txtCustomerPhoneNum = new TextBox();
             label1 = new Label();
             phoneNum_pic = new PictureBox();
             pictureBox4 = new PictureBox();
             panel12 = new Panel();
-            txtEmail = new TextBox();
+            txtCustomerEmail = new TextBox();
             emailAddr_label = new Label();
             emailAddr_Pic = new PictureBox();
             pictureBox6 = new PictureBox();
             panel13 = new Panel();
-            txtFirstName = new TextBox();
+            txtCustomerName = new TextBox();
             userName_label = new Label();
             userName_Pic = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -690,9 +690,9 @@
             // label34
             // 
             label34.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label34.Location = new Point(621, 53);
+            label34.Location = new Point(582, 53);
             label34.Name = "label34";
-            label34.Size = new Size(155, 28);
+            label34.Size = new Size(194, 28);
             label34.TabIndex = 39;
             label34.Text = "Address";
             label34.TextAlign = ContentAlignment.MiddleCenter;
@@ -700,9 +700,9 @@
             // label33
             // 
             label33.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label33.Location = new Point(441, 55);
+            label33.Location = new Point(379, 54);
             label33.Name = "label33";
-            label33.Size = new Size(174, 28);
+            label33.Size = new Size(197, 28);
             label33.TabIndex = 38;
             label33.Text = "Email";
             label33.TextAlign = ContentAlignment.MiddleCenter;
@@ -710,19 +710,20 @@
             // label32
             // 
             label32.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label32.Location = new Point(269, 54);
+            label32.Location = new Point(258, 56);
             label32.Name = "label32";
-            label32.Size = new Size(166, 28);
+            label32.Size = new Size(115, 28);
             label32.TabIndex = 37;
             label32.Text = "Phone No";
             label32.TextAlign = ContentAlignment.MiddleCenter;
+            label32.Click += label32_Click;
             // 
             // label31
             // 
             label31.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label31.Location = new Point(101, 54);
             label31.Name = "label31";
-            label31.Size = new Size(158, 28);
+            label31.Size = new Size(151, 28);
             label31.TabIndex = 36;
             label31.Text = "Name";
             label31.TextAlign = ContentAlignment.MiddleCenter;
@@ -732,7 +733,7 @@
             label28.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label28.Location = new Point(9, 54);
             label28.Name = "label28";
-            label28.Size = new Size(89, 28);
+            label28.Size = new Size(86, 28);
             label28.TabIndex = 35;
             label28.Text = "ID";
             label28.TextAlign = ContentAlignment.MiddleCenter;
@@ -748,17 +749,19 @@
             // 
             // customerList_table
             // 
+            customerList_table.AutoSize = true;
             customerList_table.ColumnCount = 6;
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.523809F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.0476189F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.8095245F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.8095245F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.523809F));
             customerList_table.Location = new Point(6, 3);
+            customerList_table.MaximumSize = new Size(855, 0);
             customerList_table.Name = "customerList_table";
             customerList_table.RowCount = 1;
-            customerList_table.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            customerList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
             customerList_table.Size = new Size(855, 86);
             customerList_table.TabIndex = 13;
             // 
@@ -811,13 +814,13 @@
             // 
             // panel10
             // 
-            panel10.Controls.Add(txtState);
-            panel10.Controls.Add(txtPostalCode);
+            panel10.Controls.Add(txtCustomerState);
+            panel10.Controls.Add(txtCustomerPostalCode);
             panel10.Controls.Add(pictureBox11);
             panel10.Controls.Add(pictureBox8);
-            panel10.Controls.Add(txtCity);
+            panel10.Controls.Add(txtCustomerCity);
             panel10.Controls.Add(pictureBox3);
-            panel10.Controls.Add(txtUserAddress);
+            panel10.Controls.Add(txtCustomerAddress);
             panel10.Controls.Add(label4);
             panel10.Controls.Add(pictureBox9);
             panel10.Controls.Add(pictureBox10);
@@ -827,33 +830,33 @@
             panel10.Size = new Size(407, 345);
             panel10.TabIndex = 1;
             // 
-            // txtState
+            // txtCustomerState
             // 
-            txtState.BackColor = Color.FromArgb(253, 252, 245);
-            txtState.BorderStyle = BorderStyle.None;
-            txtState.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtState.ForeColor = Color.FromArgb(132, 109, 97);
-            txtState.Location = new Point(244, 293);
-            txtState.Margin = new Padding(3, 2, 3, 2);
-            txtState.Name = "txtState";
-            txtState.PlaceholderText = "State";
-            txtState.Size = new Size(146, 25);
-            txtState.TabIndex = 12;
-            txtState.TextAlign = HorizontalAlignment.Center;
+            txtCustomerState.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerState.BorderStyle = BorderStyle.None;
+            txtCustomerState.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerState.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerState.Location = new Point(244, 293);
+            txtCustomerState.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerState.Name = "txtCustomerState";
+            txtCustomerState.PlaceholderText = "State";
+            txtCustomerState.Size = new Size(146, 25);
+            txtCustomerState.TabIndex = 12;
+            txtCustomerState.TextAlign = HorizontalAlignment.Center;
             // 
-            // txtPostalCode
+            // txtCustomerPostalCode
             // 
-            txtPostalCode.BackColor = Color.FromArgb(253, 252, 245);
-            txtPostalCode.BorderStyle = BorderStyle.None;
-            txtPostalCode.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPostalCode.ForeColor = Color.FromArgb(132, 109, 97);
-            txtPostalCode.Location = new Point(36, 293);
-            txtPostalCode.Margin = new Padding(3, 2, 3, 2);
-            txtPostalCode.Name = "txtPostalCode";
-            txtPostalCode.PlaceholderText = "Postal code";
-            txtPostalCode.Size = new Size(148, 25);
-            txtPostalCode.TabIndex = 11;
-            txtPostalCode.TextAlign = HorizontalAlignment.Center;
+            txtCustomerPostalCode.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerPostalCode.BorderStyle = BorderStyle.None;
+            txtCustomerPostalCode.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerPostalCode.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerPostalCode.Location = new Point(36, 293);
+            txtCustomerPostalCode.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPostalCode.Name = "txtCustomerPostalCode";
+            txtCustomerPostalCode.PlaceholderText = "Postal code";
+            txtCustomerPostalCode.Size = new Size(148, 25);
+            txtCustomerPostalCode.TabIndex = 11;
+            txtCustomerPostalCode.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox11
             // 
@@ -877,18 +880,18 @@
             pictureBox8.TabIndex = 9;
             pictureBox8.TabStop = false;
             // 
-            // txtCity
+            // txtCustomerCity
             // 
-            txtCity.BackColor = Color.FromArgb(253, 252, 245);
-            txtCity.BorderStyle = BorderStyle.None;
-            txtCity.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtCity.ForeColor = Color.FromArgb(132, 109, 97);
-            txtCity.Location = new Point(44, 174);
-            txtCity.Margin = new Padding(3, 2, 3, 2);
-            txtCity.Name = "txtCity";
-            txtCity.PlaceholderText = "City";
-            txtCity.Size = new Size(347, 25);
-            txtCity.TabIndex = 8;
+            txtCustomerCity.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerCity.BorderStyle = BorderStyle.None;
+            txtCustomerCity.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerCity.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerCity.Location = new Point(44, 174);
+            txtCustomerCity.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerCity.Name = "txtCustomerCity";
+            txtCustomerCity.PlaceholderText = "City";
+            txtCustomerCity.Size = new Size(347, 25);
+            txtCustomerCity.TabIndex = 8;
             // 
             // pictureBox3
             // 
@@ -901,18 +904,18 @@
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
             // 
-            // txtUserAddress
+            // txtCustomerAddress
             // 
-            txtUserAddress.BackColor = Color.FromArgb(253, 252, 245);
-            txtUserAddress.BorderStyle = BorderStyle.None;
-            txtUserAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUserAddress.ForeColor = Color.FromArgb(132, 109, 97);
-            txtUserAddress.Location = new Point(44, 58);
-            txtUserAddress.Margin = new Padding(3, 2, 3, 2);
-            txtUserAddress.Name = "txtUserAddress";
-            txtUserAddress.PlaceholderText = "Street address";
-            txtUserAddress.Size = new Size(347, 25);
-            txtUserAddress.TabIndex = 5;
+            txtCustomerAddress.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerAddress.BorderStyle = BorderStyle.None;
+            txtCustomerAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerAddress.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerAddress.Location = new Point(44, 58);
+            txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerAddress.Name = "txtCustomerAddress";
+            txtCustomerAddress.PlaceholderText = "Street address";
+            txtCustomerAddress.Size = new Size(347, 25);
+            txtCustomerAddress.TabIndex = 5;
             // 
             // label4
             // 
@@ -956,13 +959,14 @@
             add_Btn.FlatStyle = FlatStyle.Flat;
             add_Btn.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
             add_Btn.ForeColor = Color.FromArgb(255, 246, 229);
-            add_Btn.Location = new Point(0, 359);
+            add_Btn.Location = new Point(0, 350);
             add_Btn.Margin = new Padding(3, 2, 3, 2);
             add_Btn.Name = "add_Btn";
-            add_Btn.Size = new Size(857, 31);
+            add_Btn.Size = new Size(857, 40);
             add_Btn.TabIndex = 6;
             add_Btn.Text = "ADD";
             add_Btn.UseVisualStyleBackColor = false;
+            add_Btn.Click += add_Btn_ClickAsync;
             // 
             // panel6
             // 
@@ -977,7 +981,7 @@
             // 
             // panel11
             // 
-            panel11.Controls.Add(txtPhoneNum);
+            panel11.Controls.Add(txtCustomerPhoneNum);
             panel11.Controls.Add(label1);
             panel11.Controls.Add(phoneNum_pic);
             panel11.Controls.Add(pictureBox4);
@@ -987,18 +991,18 @@
             panel11.Size = new Size(389, 91);
             panel11.TabIndex = 7;
             // 
-            // txtPhoneNum
+            // txtCustomerPhoneNum
             // 
-            txtPhoneNum.BackColor = Color.FromArgb(253, 252, 245);
-            txtPhoneNum.BorderStyle = BorderStyle.None;
-            txtPhoneNum.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPhoneNum.ForeColor = Color.FromArgb(132, 109, 97);
-            txtPhoneNum.Location = new Point(31, 49);
-            txtPhoneNum.Margin = new Padding(3, 2, 3, 2);
-            txtPhoneNum.Name = "txtPhoneNum";
-            txtPhoneNum.PlaceholderText = "Your phone number";
-            txtPhoneNum.Size = new Size(327, 25);
-            txtPhoneNum.TabIndex = 5;
+            txtCustomerPhoneNum.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerPhoneNum.BorderStyle = BorderStyle.None;
+            txtCustomerPhoneNum.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerPhoneNum.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerPhoneNum.Location = new Point(31, 49);
+            txtCustomerPhoneNum.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPhoneNum.Name = "txtCustomerPhoneNum";
+            txtCustomerPhoneNum.PlaceholderText = "Your phone number";
+            txtCustomerPhoneNum.Size = new Size(327, 25);
+            txtCustomerPhoneNum.TabIndex = 5;
             // 
             // label1
             // 
@@ -1035,7 +1039,7 @@
             // 
             // panel12
             // 
-            panel12.Controls.Add(txtEmail);
+            panel12.Controls.Add(txtCustomerEmail);
             panel12.Controls.Add(emailAddr_label);
             panel12.Controls.Add(emailAddr_Pic);
             panel12.Controls.Add(pictureBox6);
@@ -1045,18 +1049,18 @@
             panel12.Size = new Size(389, 104);
             panel12.TabIndex = 6;
             // 
-            // txtEmail
+            // txtCustomerEmail
             // 
-            txtEmail.BackColor = Color.FromArgb(253, 252, 245);
-            txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtEmail.ForeColor = Color.FromArgb(132, 109, 97);
-            txtEmail.Location = new Point(31, 48);
-            txtEmail.Margin = new Padding(3, 2, 3, 2);
-            txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "Your email";
-            txtEmail.Size = new Size(327, 25);
-            txtEmail.TabIndex = 5;
+            txtCustomerEmail.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerEmail.BorderStyle = BorderStyle.None;
+            txtCustomerEmail.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerEmail.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerEmail.Location = new Point(31, 48);
+            txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerEmail.Name = "txtCustomerEmail";
+            txtCustomerEmail.PlaceholderText = "Your email";
+            txtCustomerEmail.Size = new Size(327, 25);
+            txtCustomerEmail.TabIndex = 5;
             // 
             // emailAddr_label
             // 
@@ -1093,7 +1097,7 @@
             // 
             // panel13
             // 
-            panel13.Controls.Add(txtFirstName);
+            panel13.Controls.Add(txtCustomerName);
             panel13.Controls.Add(userName_label);
             panel13.Controls.Add(userName_Pic);
             panel13.Controls.Add(pictureBox1);
@@ -1103,18 +1107,18 @@
             panel13.Size = new Size(389, 100);
             panel13.TabIndex = 1;
             // 
-            // txtFirstName
+            // txtCustomerName
             // 
-            txtFirstName.BackColor = Color.FromArgb(253, 252, 245);
-            txtFirstName.BorderStyle = BorderStyle.None;
-            txtFirstName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtFirstName.ForeColor = Color.FromArgb(132, 109, 97);
-            txtFirstName.Location = new Point(31, 48);
-            txtFirstName.Margin = new Padding(3, 2, 3, 2);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.PlaceholderText = "First Name";
-            txtFirstName.Size = new Size(327, 25);
-            txtFirstName.TabIndex = 5;
+            txtCustomerName.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerName.BorderStyle = BorderStyle.None;
+            txtCustomerName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerName.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerName.Location = new Point(31, 48);
+            txtCustomerName.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.PlaceholderText = "First Name";
+            txtCustomerName.Size = new Size(327, 25);
+            txtCustomerName.TabIndex = 5;
             // 
             // userName_label
             // 
@@ -3636,10 +3640,10 @@
             ClientSize = new Size(1200, 600);
             Controls.Add(closeButton);
             Controls.Add(panel1);
-            Controls.Add(animal_tabControl);
             Controls.Add(customer_tabControl);
             Controls.Add(staff_tabControl);
             Controls.Add(viewDetails_tabControl);
+            Controls.Add(animal_tabControl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);
@@ -3660,6 +3664,7 @@
             customer_tabControl.ResumeLayout(false);
             viewCustomers_tabPage.ResumeLayout(false);
             customerList_panel.ResumeLayout(false);
+            customerList_panel.PerformLayout();
             addCustomer_tabPage.ResumeLayout(false);
             addCustomers_panel.ResumeLayout(false);
             addCustomers_panel.PerformLayout();
@@ -3839,30 +3844,30 @@
         private Panel addCustomers_panel;
         private Panel panel4;
         private Panel panel10;
-        private TextBox txtState;
-        private TextBox txtPostalCode;
+        private TextBox txtCustomerState;
+        private TextBox txtCustomerPostalCode;
         private PictureBox pictureBox11;
         private PictureBox pictureBox8;
-        private TextBox txtCity;
+        private TextBox txtCustomerCity;
         private PictureBox pictureBox3;
-        private TextBox txtUserAddress;
+        private TextBox txtCustomerAddress;
         private Label label4;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private Button add_Btn;
         private Panel panel6;
         private Panel panel11;
-        private TextBox txtPhoneNum;
+        private TextBox txtCustomerPhoneNum;
         private Label label1;
         private PictureBox phoneNum_pic;
         private PictureBox pictureBox4;
         private Panel panel12;
-        private TextBox txtEmail;
+        private TextBox txtCustomerEmail;
         private Label emailAddr_label;
         private PictureBox emailAddr_Pic;
         private PictureBox pictureBox6;
         private Panel panel13;
-        private TextBox txtFirstName;
+        private TextBox txtCustomerName;
         private Label userName_label;
         private PictureBox userName_Pic;
         private PictureBox pictureBox1;

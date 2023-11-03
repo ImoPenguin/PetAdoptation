@@ -45,7 +45,7 @@ namespace PetAdoptation
                 }
                 catch (Exception ex)
                 {
-                    petPicture.BackgroundImage = new System.Drawing.Bitmap(XML_Handler.getSolutionFolder() + "Image\\Pet Image\\placeholder.jpg");
+                    petPicture.BackgroundImage = new System.Drawing.Bitmap(Path.Combine(XML_Handler.getSolutionFolder(), "Image\\Pet Image\\placeholder.jpg"));
                 }
 
                 //  
