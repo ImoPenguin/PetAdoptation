@@ -45,43 +45,6 @@
             customerLabel = new Label();
             customerIcon = new PictureBox();
             Adopt_lb = new Label();
-            customer_tabControl = new TabControl();
-            viewCustomers_tabPage = new TabPage();
-            label2 = new Label();
-            addCustomer_tabPage = new TabPage();
-            addCustomers_panel = new Panel();
-            panel4 = new Panel();
-            panel10 = new Panel();
-            txtState = new TextBox();
-            txtPostalCode = new TextBox();
-            pictureBox11 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            txtCity = new TextBox();
-            pictureBox3 = new PictureBox();
-            txtUserAddress = new TextBox();
-            label4 = new Label();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            add_Btn = new Button();
-            panel6 = new Panel();
-            panel11 = new Panel();
-            txtPhoneNum = new TextBox();
-            label1 = new Label();
-            phoneNum_pic = new PictureBox();
-            pictureBox4 = new PictureBox();
-            panel12 = new Panel();
-            txtEmail = new TextBox();
-            emailAddr_label = new Label();
-            emailAddr_Pic = new PictureBox();
-            pictureBox6 = new PictureBox();
-            panel13 = new Panel();
-            txtFirstName = new TextBox();
-            txtLastName = new TextBox();
-            userName_label = new Label();
-            userName_Pic = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            addCustomer = new Label();
             admin_tabControl = new TabControl();
             viewAdmin_tabPage = new TabPage();
             bEdit = new Button();
@@ -275,6 +238,49 @@
             age_Combobx = new ComboBox();
             pictureBox19 = new PictureBox();
             addPetLabel = new Label();
+            customer_tabControl = new TabControl();
+            viewCustomers_tabPage = new TabPage();
+            label35 = new Label();
+            label34 = new Label();
+            label33 = new Label();
+            label32 = new Label();
+            label31 = new Label();
+            label28 = new Label();
+            customerList_panel = new Panel();
+            customerList_table = new TableLayoutPanel();
+            label2 = new Label();
+            addCustomer_tabPage = new TabPage();
+            addCustomers_panel = new Panel();
+            panel4 = new Panel();
+            panel10 = new Panel();
+            txtCustomerState = new TextBox();
+            txtCustomerPostalCode = new TextBox();
+            pictureBox11 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            txtCustomerCity = new TextBox();
+            pictureBox3 = new PictureBox();
+            txtCustomerAddress = new TextBox();
+            label4 = new Label();
+            pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            add_Btn = new Button();
+            panel6 = new Panel();
+            panel11 = new Panel();
+            txtCustomerPhoneNum = new TextBox();
+            label1 = new Label();
+            phoneNum_pic = new PictureBox();
+            pictureBox4 = new PictureBox();
+            panel12 = new Panel();
+            txtCustomerEmail = new TextBox();
+            emailAddr_label = new Label();
+            emailAddr_Pic = new PictureBox();
+            pictureBox6 = new PictureBox();
+            panel13 = new Panel();
+            txtCustomerName = new TextBox();
+            userName_label = new Label();
+            userName_Pic = new PictureBox();
+            pictureBox1 = new PictureBox();
+            addCustomer = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             staffButton.SuspendLayout();
@@ -285,28 +291,6 @@
             ((System.ComponentModel.ISupportInitialize)animalIcon).BeginInit();
             customerButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)customerIcon).BeginInit();
-            customer_tabControl.SuspendLayout();
-            viewCustomers_tabPage.SuspendLayout();
-            addCustomer_tabPage.SuspendLayout();
-            addCustomers_panel.SuspendLayout();
-            panel4.SuspendLayout();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            panel6.SuspendLayout();
-            panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)phoneNum_pic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)emailAddr_Pic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)userName_Pic).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             admin_tabControl.SuspendLayout();
             viewAdmin_tabPage.SuspendLayout();
             panel21.SuspendLayout();
@@ -392,6 +376,28 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            customer_tabControl.SuspendLayout();
+            viewCustomers_tabPage.SuspendLayout();
+            customerList_panel.SuspendLayout();
+            addCustomer_tabPage.SuspendLayout();
+            addCustomers_panel.SuspendLayout();
+            panel4.SuspendLayout();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel6.SuspendLayout();
+            panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)phoneNum_pic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)emailAddr_Pic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)userName_Pic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -421,6 +427,7 @@
             // logOut_btn
             // 
             logOut_btn.BackColor = Color.FromArgb(248, 123, 110);
+            logOut_btn.Cursor = Cursors.Hand;
             logOut_btn.FlatAppearance.BorderSize = 0;
             logOut_btn.FlatStyle = FlatStyle.Flat;
             logOut_btn.Font = new Font("Yu Gothic UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
@@ -442,7 +449,7 @@
             staffButton.Location = new Point(46, 284);
             staffButton.Margin = new Padding(3, 2, 3, 2);
             staffButton.Name = "staffButton";
-            staffButton.Size = new Size(288, 74);
+            staffButton.Size = new Size(287, 74);
             staffButton.TabIndex = 11;
             staffButton.Click += staffButton_Click;
             staffButton.MouseLeave += staffButton_MouseLeave;
@@ -485,7 +492,7 @@
             checkIDButton.Location = new Point(46, 209);
             checkIDButton.Margin = new Padding(3, 2, 3, 2);
             checkIDButton.Name = "checkIDButton";
-            checkIDButton.Size = new Size(288, 74);
+            checkIDButton.Size = new Size(287, 74);
             checkIDButton.TabIndex = 10;
             checkIDButton.Click += checkIDButton_Click;
             checkIDButton.MouseLeave += checkIDButton_MouseLeave;
@@ -528,7 +535,7 @@
             animalButton.Location = new Point(46, 135);
             animalButton.Margin = new Padding(3, 2, 3, 2);
             animalButton.Name = "animalButton";
-            animalButton.Size = new Size(288, 74);
+            animalButton.Size = new Size(287, 74);
             animalButton.TabIndex = 9;
             animalButton.Click += animalButton_Click;
             animalButton.MouseLeave += animalButton_MouseLeave;
@@ -571,7 +578,7 @@
             customerButton.Location = new Point(46, 61);
             customerButton.Margin = new Padding(3, 2, 3, 2);
             customerButton.Name = "customerButton";
-            customerButton.Size = new Size(288, 74);
+            customerButton.Size = new Size(287, 74);
             customerButton.TabIndex = 8;
             customerButton.Click += customerButton_Click;
             customerButton.MouseLeave += customerButton_MouseLeave;
@@ -618,454 +625,6 @@
             Adopt_lb.TabIndex = 4;
             Adopt_lb.Text = "Manager Panel";
             Adopt_lb.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // customer_tabControl
-            // 
-            customer_tabControl.Controls.Add(viewCustomers_tabPage);
-            customer_tabControl.Controls.Add(addCustomer_tabPage);
-            customer_tabControl.Location = new Point(299, 110);
-            customer_tabControl.Margin = new Padding(2, 1, 2, 1);
-            customer_tabControl.Name = "customer_tabControl";
-            customer_tabControl.SelectedIndex = 0;
-            customer_tabControl.Size = new Size(894, 485);
-            customer_tabControl.TabIndex = 0;
-            // 
-            // viewCustomers_tabPage
-            // 
-            viewCustomers_tabPage.AutoScroll = true;
-            viewCustomers_tabPage.BackColor = Color.FromArgb(229, 215, 200);
-            viewCustomers_tabPage.Controls.Add(label2);
-            viewCustomers_tabPage.Location = new Point(4, 24);
-            viewCustomers_tabPage.Margin = new Padding(2, 1, 2, 1);
-            viewCustomers_tabPage.Name = "viewCustomers_tabPage";
-            viewCustomers_tabPage.Padding = new Padding(2, 1, 2, 1);
-            viewCustomers_tabPage.Size = new Size(886, 457);
-            viewCustomers_tabPage.TabIndex = 0;
-            viewCustomers_tabPage.Text = "View";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(81, 60, 41);
-            label2.Location = new Point(295, 206);
-            label2.Name = "label2";
-            label2.Size = new Size(309, 51);
-            label2.TabIndex = 3;
-            label2.Text = "View Customers";
-            // 
-            // addCustomer_tabPage
-            // 
-            addCustomer_tabPage.AutoScroll = true;
-            addCustomer_tabPage.BackColor = Color.FromArgb(229, 215, 200);
-            addCustomer_tabPage.Controls.Add(addCustomers_panel);
-            addCustomer_tabPage.Location = new Point(4, 24);
-            addCustomer_tabPage.Margin = new Padding(2, 1, 2, 1);
-            addCustomer_tabPage.Name = "addCustomer_tabPage";
-            addCustomer_tabPage.Padding = new Padding(2, 1, 2, 1);
-            addCustomer_tabPage.Size = new Size(886, 457);
-            addCustomer_tabPage.TabIndex = 1;
-            addCustomer_tabPage.Text = "Add";
-            // 
-            // addCustomers_panel
-            // 
-            addCustomers_panel.BackColor = Color.FromArgb(229, 215, 200);
-            addCustomers_panel.Controls.Add(panel4);
-            addCustomers_panel.Controls.Add(addCustomer);
-            addCustomers_panel.Location = new Point(4, 4);
-            addCustomers_panel.Margin = new Padding(3, 2, 3, 2);
-            addCustomers_panel.Name = "addCustomers_panel";
-            addCustomers_panel.Size = new Size(869, 452);
-            addCustomers_panel.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Transparent;
-            panel4.Controls.Add(panel10);
-            panel4.Controls.Add(add_Btn);
-            panel4.Controls.Add(panel6);
-            panel4.Location = new Point(12, 50);
-            panel4.Margin = new Padding(3, 2, 3, 2);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(857, 397);
-            panel4.TabIndex = 3;
-            // 
-            // panel10
-            // 
-            panel10.Controls.Add(txtState);
-            panel10.Controls.Add(txtPostalCode);
-            panel10.Controls.Add(pictureBox11);
-            panel10.Controls.Add(pictureBox8);
-            panel10.Controls.Add(txtCity);
-            panel10.Controls.Add(pictureBox3);
-            panel10.Controls.Add(txtUserAddress);
-            panel10.Controls.Add(label4);
-            panel10.Controls.Add(pictureBox9);
-            panel10.Controls.Add(pictureBox10);
-            panel10.Location = new Point(440, 9);
-            panel10.Margin = new Padding(3, 2, 3, 2);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(407, 345);
-            panel10.TabIndex = 1;
-            // 
-            // txtState
-            // 
-            txtState.BackColor = Color.FromArgb(253, 252, 245);
-            txtState.BorderStyle = BorderStyle.None;
-            txtState.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtState.ForeColor = Color.FromArgb(132, 109, 97);
-            txtState.Location = new Point(244, 293);
-            txtState.Margin = new Padding(3, 2, 3, 2);
-            txtState.Name = "txtState";
-            txtState.PlaceholderText = "State";
-            txtState.Size = new Size(146, 25);
-            txtState.TabIndex = 12;
-            txtState.TextAlign = HorizontalAlignment.Center;
-            // 
-            // txtPostalCode
-            // 
-            txtPostalCode.BackColor = Color.FromArgb(253, 252, 245);
-            txtPostalCode.BorderStyle = BorderStyle.None;
-            txtPostalCode.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPostalCode.ForeColor = Color.FromArgb(132, 109, 97);
-            txtPostalCode.Location = new Point(36, 293);
-            txtPostalCode.Margin = new Padding(3, 2, 3, 2);
-            txtPostalCode.Name = "txtPostalCode";
-            txtPostalCode.PlaceholderText = "Postal code";
-            txtPostalCode.Size = new Size(148, 25);
-            txtPostalCode.TabIndex = 11;
-            txtPostalCode.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackgroundImage = (Image)resources.GetObject("pictureBox11.BackgroundImage");
-            pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox11.Location = new Point(233, 284);
-            pictureBox11.Margin = new Padding(3, 2, 3, 2);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(169, 42);
-            pictureBox11.TabIndex = 10;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
-            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(25, 284);
-            pictureBox8.Margin = new Padding(3, 2, 3, 2);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(169, 42);
-            pictureBox8.TabIndex = 9;
-            pictureBox8.TabStop = false;
-            // 
-            // txtCity
-            // 
-            txtCity.BackColor = Color.FromArgb(253, 252, 245);
-            txtCity.BorderStyle = BorderStyle.None;
-            txtCity.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtCity.ForeColor = Color.FromArgb(132, 109, 97);
-            txtCity.Location = new Point(44, 174);
-            txtCity.Margin = new Padding(3, 2, 3, 2);
-            txtCity.Name = "txtCity";
-            txtCity.PlaceholderText = "City";
-            txtCity.Size = new Size(347, 25);
-            txtCity.TabIndex = 8;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(25, 166);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(376, 42);
-            pictureBox3.TabIndex = 7;
-            pictureBox3.TabStop = false;
-            // 
-            // txtUserAddress
-            // 
-            txtUserAddress.BackColor = Color.FromArgb(253, 252, 245);
-            txtUserAddress.BorderStyle = BorderStyle.None;
-            txtUserAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtUserAddress.ForeColor = Color.FromArgb(132, 109, 97);
-            txtUserAddress.Location = new Point(44, 58);
-            txtUserAddress.Margin = new Padding(3, 2, 3, 2);
-            txtUserAddress.Name = "txtUserAddress";
-            txtUserAddress.PlaceholderText = "Street address";
-            txtUserAddress.Size = new Size(347, 25);
-            txtUserAddress.TabIndex = 5;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(91, 66, 18);
-            label4.Location = new Point(61, 19);
-            label4.Name = "label4";
-            label4.Size = new Size(128, 25);
-            label4.TabIndex = 2;
-            label4.Text = "Address Line*";
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
-            pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox9.Location = new Point(36, 18);
-            pictureBox9.Margin = new Padding(3, 2, 3, 2);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(19, 24);
-            pictureBox9.TabIndex = 2;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
-            pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox10.Location = new Point(25, 50);
-            pictureBox10.Margin = new Padding(3, 2, 3, 2);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(376, 42);
-            pictureBox10.TabIndex = 6;
-            pictureBox10.TabStop = false;
-            // 
-            // add_Btn
-            // 
-            add_Btn.BackColor = Color.FromArgb(111, 138, 129);
-            add_Btn.Cursor = Cursors.Hand;
-            add_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
-            add_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
-            add_Btn.FlatStyle = FlatStyle.Flat;
-            add_Btn.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            add_Btn.ForeColor = Color.FromArgb(255, 246, 229);
-            add_Btn.Location = new Point(0, 359);
-            add_Btn.Margin = new Padding(3, 2, 3, 2);
-            add_Btn.Name = "add_Btn";
-            add_Btn.Size = new Size(857, 31);
-            add_Btn.TabIndex = 6;
-            add_Btn.Text = "ADD";
-            add_Btn.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(panel11);
-            panel6.Controls.Add(panel12);
-            panel6.Controls.Add(panel13);
-            panel6.Location = new Point(11, 9);
-            panel6.Margin = new Padding(3, 2, 3, 2);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(413, 345);
-            panel6.TabIndex = 2;
-            // 
-            // panel11
-            // 
-            panel11.Controls.Add(txtPhoneNum);
-            panel11.Controls.Add(label1);
-            panel11.Controls.Add(phoneNum_pic);
-            panel11.Controls.Add(pictureBox4);
-            panel11.Location = new Point(8, 244);
-            panel11.Margin = new Padding(3, 2, 3, 2);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(389, 91);
-            panel11.TabIndex = 7;
-            // 
-            // txtPhoneNum
-            // 
-            txtPhoneNum.BackColor = Color.FromArgb(253, 252, 245);
-            txtPhoneNum.BorderStyle = BorderStyle.None;
-            txtPhoneNum.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtPhoneNum.ForeColor = Color.FromArgb(132, 109, 97);
-            txtPhoneNum.Location = new Point(31, 49);
-            txtPhoneNum.Margin = new Padding(3, 2, 3, 2);
-            txtPhoneNum.Name = "txtPhoneNum";
-            txtPhoneNum.PlaceholderText = "Your phone number";
-            txtPhoneNum.Size = new Size(327, 25);
-            txtPhoneNum.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(91, 66, 18);
-            label1.Location = new Point(60, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(150, 25);
-            label1.TabIndex = 2;
-            label1.Text = "Phone Number*";
-            // 
-            // phoneNum_pic
-            // 
-            phoneNum_pic.BackgroundImage = (Image)resources.GetObject("phoneNum_pic.BackgroundImage");
-            phoneNum_pic.BackgroundImageLayout = ImageLayout.Stretch;
-            phoneNum_pic.Location = new Point(31, 11);
-            phoneNum_pic.Margin = new Padding(3, 2, 3, 2);
-            phoneNum_pic.Name = "phoneNum_pic";
-            phoneNum_pic.Size = new Size(25, 21);
-            phoneNum_pic.TabIndex = 2;
-            phoneNum_pic.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(12, 40);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(356, 42);
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
-            // 
-            // panel12
-            // 
-            panel12.Controls.Add(txtEmail);
-            panel12.Controls.Add(emailAddr_label);
-            panel12.Controls.Add(emailAddr_Pic);
-            panel12.Controls.Add(pictureBox6);
-            panel12.Location = new Point(8, 126);
-            panel12.Margin = new Padding(3, 2, 3, 2);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(389, 104);
-            panel12.TabIndex = 6;
-            // 
-            // txtEmail
-            // 
-            txtEmail.BackColor = Color.FromArgb(253, 252, 245);
-            txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtEmail.ForeColor = Color.FromArgb(132, 109, 97);
-            txtEmail.Location = new Point(31, 48);
-            txtEmail.Margin = new Padding(3, 2, 3, 2);
-            txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "Your email";
-            txtEmail.Size = new Size(327, 25);
-            txtEmail.TabIndex = 5;
-            // 
-            // emailAddr_label
-            // 
-            emailAddr_label.AutoSize = true;
-            emailAddr_label.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            emailAddr_label.ForeColor = Color.FromArgb(91, 66, 18);
-            emailAddr_label.Location = new Point(60, 8);
-            emailAddr_label.Name = "emailAddr_label";
-            emailAddr_label.Size = new Size(140, 25);
-            emailAddr_label.TabIndex = 2;
-            emailAddr_label.Text = "Email Address*";
-            // 
-            // emailAddr_Pic
-            // 
-            emailAddr_Pic.BackgroundImage = (Image)resources.GetObject("emailAddr_Pic.BackgroundImage");
-            emailAddr_Pic.BackgroundImageLayout = ImageLayout.Stretch;
-            emailAddr_Pic.Location = new Point(31, 13);
-            emailAddr_Pic.Margin = new Padding(3, 2, 3, 2);
-            emailAddr_Pic.Name = "emailAddr_Pic";
-            emailAddr_Pic.Size = new Size(25, 16);
-            emailAddr_Pic.TabIndex = 2;
-            emailAddr_Pic.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
-            pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox6.Location = new Point(12, 40);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(356, 42);
-            pictureBox6.TabIndex = 0;
-            pictureBox6.TabStop = false;
-            // 
-            // panel13
-            // 
-            panel13.Controls.Add(txtFirstName);
-            panel13.Controls.Add(txtLastName);
-            panel13.Controls.Add(userName_label);
-            panel13.Controls.Add(userName_Pic);
-            panel13.Controls.Add(pictureBox2);
-            panel13.Controls.Add(pictureBox1);
-            panel13.Location = new Point(8, 10);
-            panel13.Margin = new Padding(3, 2, 3, 2);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(389, 100);
-            panel13.TabIndex = 1;
-            // 
-            // txtFirstName
-            // 
-            txtFirstName.BackColor = Color.FromArgb(253, 252, 245);
-            txtFirstName.BorderStyle = BorderStyle.None;
-            txtFirstName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtFirstName.ForeColor = Color.FromArgb(132, 109, 97);
-            txtFirstName.Location = new Point(31, 49);
-            txtFirstName.Margin = new Padding(3, 2, 3, 2);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.PlaceholderText = "First Name";
-            txtFirstName.Size = new Size(136, 25);
-            txtFirstName.TabIndex = 5;
-            // 
-            // txtLastName
-            // 
-            txtLastName.BackColor = Color.FromArgb(253, 252, 245);
-            txtLastName.BorderStyle = BorderStyle.None;
-            txtLastName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtLastName.ForeColor = Color.FromArgb(132, 109, 97);
-            txtLastName.Location = new Point(212, 49);
-            txtLastName.Margin = new Padding(3, 2, 3, 2);
-            txtLastName.Name = "txtLastName";
-            txtLastName.PlaceholderText = "Last Name";
-            txtLastName.Size = new Size(147, 25);
-            txtLastName.TabIndex = 4;
-            // 
-            // userName_label
-            // 
-            userName_label.AutoSize = true;
-            userName_label.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            userName_label.ForeColor = Color.FromArgb(91, 66, 18);
-            userName_label.Location = new Point(58, 10);
-            userName_label.Name = "userName_label";
-            userName_label.Size = new Size(64, 25);
-            userName_label.TabIndex = 2;
-            userName_label.Text = "Name";
-            // 
-            // userName_Pic
-            // 
-            userName_Pic.BackgroundImage = (Image)resources.GetObject("userName_Pic.BackgroundImage");
-            userName_Pic.BackgroundImageLayout = ImageLayout.Stretch;
-            userName_Pic.Location = new Point(28, 11);
-            userName_Pic.Margin = new Padding(3, 2, 3, 2);
-            userName_Pic.Name = "userName_Pic";
-            userName_Pic.Size = new Size(25, 24);
-            userName_Pic.TabIndex = 2;
-            userName_Pic.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(202, 40);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(166, 42);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(12, 40);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(165, 42);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // addCustomer
-            // 
-            addCustomer.AutoSize = true;
-            addCustomer.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
-            addCustomer.ForeColor = Color.FromArgb(81, 60, 41);
-            addCustomer.Location = new Point(298, 5);
-            addCustomer.Name = "addCustomer";
-            addCustomer.Size = new Size(286, 51);
-            addCustomer.TabIndex = 2;
-            addCustomer.Text = "New Customer";
             // 
             // admin_tabControl
             // 
@@ -3587,6 +3146,525 @@
             addPetLabel.Text = "Add Pet";
             addPetLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // customer_tabControl
+            // 
+            customer_tabControl.Controls.Add(viewCustomers_tabPage);
+            customer_tabControl.Controls.Add(addCustomer_tabPage);
+            customer_tabControl.Location = new Point(299, 110);
+            customer_tabControl.Margin = new Padding(2, 1, 2, 1);
+            customer_tabControl.Name = "customer_tabControl";
+            customer_tabControl.SelectedIndex = 0;
+            customer_tabControl.Size = new Size(894, 485);
+            customer_tabControl.TabIndex = 36;
+            customer_tabControl.SelectedIndexChanged += Customer_tabControl_SelectedIndexChanged;
+            customer_tabControl.VisibleChanged += Customer_tabControl_VisibleChanged;
+            // 
+            // viewCustomers_tabPage
+            // 
+            viewCustomers_tabPage.AutoScroll = true;
+            viewCustomers_tabPage.BackColor = Color.FromArgb(229, 215, 200);
+            viewCustomers_tabPage.Controls.Add(label35);
+            viewCustomers_tabPage.Controls.Add(label34);
+            viewCustomers_tabPage.Controls.Add(label33);
+            viewCustomers_tabPage.Controls.Add(label32);
+            viewCustomers_tabPage.Controls.Add(label31);
+            viewCustomers_tabPage.Controls.Add(label28);
+            viewCustomers_tabPage.Controls.Add(customerList_panel);
+            viewCustomers_tabPage.Controls.Add(label2);
+            viewCustomers_tabPage.Location = new Point(4, 24);
+            viewCustomers_tabPage.Margin = new Padding(2, 1, 2, 1);
+            viewCustomers_tabPage.Name = "viewCustomers_tabPage";
+            viewCustomers_tabPage.Padding = new Padding(2, 1, 2, 1);
+            viewCustomers_tabPage.Size = new Size(886, 457);
+            viewCustomers_tabPage.TabIndex = 0;
+            viewCustomers_tabPage.Text = "View";
+            // 
+            // label35
+            // 
+            label35.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label35.Location = new Point(782, 52);
+            label35.Name = "label35";
+            label35.Size = new Size(78, 28);
+            label35.TabIndex = 40;
+            label35.Text = "Staff";
+            label35.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            label34.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label34.Location = new Point(582, 53);
+            label34.Name = "label34";
+            label34.Size = new Size(194, 28);
+            label34.TabIndex = 39;
+            label34.Text = "Address";
+            label34.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            label33.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label33.Location = new Point(379, 54);
+            label33.Name = "label33";
+            label33.Size = new Size(197, 28);
+            label33.TabIndex = 38;
+            label33.Text = "Email";
+            label33.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            label32.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label32.Location = new Point(258, 56);
+            label32.Name = "label32";
+            label32.Size = new Size(115, 28);
+            label32.TabIndex = 37;
+            label32.Text = "Phone No";
+            label32.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            label31.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label31.Location = new Point(101, 54);
+            label31.Name = "label31";
+            label31.Size = new Size(151, 28);
+            label31.TabIndex = 36;
+            label31.Text = "Name";
+            label31.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            label28.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label28.Location = new Point(9, 54);
+            label28.Name = "label28";
+            label28.Size = new Size(86, 28);
+            label28.TabIndex = 35;
+            label28.Text = "ID";
+            label28.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // customerList_panel
+            // 
+            customerList_panel.AutoScroll = true;
+            customerList_panel.Controls.Add(customerList_table);
+            customerList_panel.Location = new Point(5, 88);
+            customerList_panel.Name = "customerList_panel";
+            customerList_panel.Size = new Size(875, 366);
+            customerList_panel.TabIndex = 5;
+            // 
+            // customerList_table
+            // 
+            customerList_table.AutoSize = true;
+            customerList_table.ColumnCount = 6;
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.523809F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.0476189F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857141F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.8095245F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.8095245F));
+            customerList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.523809F));
+            customerList_table.Location = new Point(6, 3);
+            customerList_table.MaximumSize = new Size(855, 0);
+            customerList_table.Name = "customerList_table";
+            customerList_table.RowCount = 1;
+            customerList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
+            customerList_table.Size = new Size(855, 86);
+            customerList_table.TabIndex = 13;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(81, 60, 41);
+            label2.Location = new Point(5, 3);
+            label2.Name = "label2";
+            label2.Size = new Size(875, 51);
+            label2.TabIndex = 3;
+            label2.Text = "View Customers";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // addCustomer_tabPage
+            // 
+            addCustomer_tabPage.AutoScroll = true;
+            addCustomer_tabPage.BackColor = Color.FromArgb(229, 215, 200);
+            addCustomer_tabPage.Controls.Add(addCustomers_panel);
+            addCustomer_tabPage.Location = new Point(4, 24);
+            addCustomer_tabPage.Margin = new Padding(2, 1, 2, 1);
+            addCustomer_tabPage.Name = "addCustomer_tabPage";
+            addCustomer_tabPage.Padding = new Padding(2, 1, 2, 1);
+            addCustomer_tabPage.Size = new Size(886, 457);
+            addCustomer_tabPage.TabIndex = 1;
+            addCustomer_tabPage.Text = "Add";
+            // 
+            // addCustomers_panel
+            // 
+            addCustomers_panel.BackColor = Color.FromArgb(229, 215, 200);
+            addCustomers_panel.Controls.Add(panel4);
+            addCustomers_panel.Controls.Add(addCustomer);
+            addCustomers_panel.Location = new Point(4, 4);
+            addCustomers_panel.Margin = new Padding(3, 2, 3, 2);
+            addCustomers_panel.Name = "addCustomers_panel";
+            addCustomers_panel.Size = new Size(869, 452);
+            addCustomers_panel.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(panel10);
+            panel4.Controls.Add(add_Btn);
+            panel4.Controls.Add(panel6);
+            panel4.Location = new Point(12, 50);
+            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(857, 397);
+            panel4.TabIndex = 3;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(txtCustomerState);
+            panel10.Controls.Add(txtCustomerPostalCode);
+            panel10.Controls.Add(pictureBox11);
+            panel10.Controls.Add(pictureBox8);
+            panel10.Controls.Add(txtCustomerCity);
+            panel10.Controls.Add(pictureBox3);
+            panel10.Controls.Add(txtCustomerAddress);
+            panel10.Controls.Add(label4);
+            panel10.Controls.Add(pictureBox9);
+            panel10.Controls.Add(pictureBox10);
+            panel10.Location = new Point(440, 9);
+            panel10.Margin = new Padding(3, 2, 3, 2);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(407, 345);
+            panel10.TabIndex = 1;
+            // 
+            // txtCustomerState
+            // 
+            txtCustomerState.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerState.BorderStyle = BorderStyle.None;
+            txtCustomerState.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerState.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerState.Location = new Point(244, 293);
+            txtCustomerState.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerState.Name = "txtCustomerState";
+            txtCustomerState.PlaceholderText = "State";
+            txtCustomerState.Size = new Size(146, 25);
+            txtCustomerState.TabIndex = 12;
+            txtCustomerState.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtCustomerPostalCode
+            // 
+            txtCustomerPostalCode.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerPostalCode.BorderStyle = BorderStyle.None;
+            txtCustomerPostalCode.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerPostalCode.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerPostalCode.Location = new Point(36, 293);
+            txtCustomerPostalCode.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPostalCode.Name = "txtCustomerPostalCode";
+            txtCustomerPostalCode.PlaceholderText = "Postal code";
+            txtCustomerPostalCode.Size = new Size(148, 25);
+            txtCustomerPostalCode.TabIndex = 11;
+            txtCustomerPostalCode.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BackgroundImage = (Image)resources.GetObject("pictureBox11.BackgroundImage");
+            pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox11.Location = new Point(233, 284);
+            pictureBox11.Margin = new Padding(3, 2, 3, 2);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(169, 42);
+            pictureBox11.TabIndex = 10;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
+            pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox8.Location = new Point(25, 284);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(169, 42);
+            pictureBox8.TabIndex = 9;
+            pictureBox8.TabStop = false;
+            // 
+            // txtCustomerCity
+            // 
+            txtCustomerCity.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerCity.BorderStyle = BorderStyle.None;
+            txtCustomerCity.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerCity.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerCity.Location = new Point(44, 174);
+            txtCustomerCity.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerCity.Name = "txtCustomerCity";
+            txtCustomerCity.PlaceholderText = "City";
+            txtCustomerCity.Size = new Size(347, 25);
+            txtCustomerCity.TabIndex = 8;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(25, 166);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(376, 42);
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
+            // 
+            // txtCustomerAddress
+            // 
+            txtCustomerAddress.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerAddress.BorderStyle = BorderStyle.None;
+            txtCustomerAddress.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerAddress.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerAddress.Location = new Point(44, 58);
+            txtCustomerAddress.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerAddress.Name = "txtCustomerAddress";
+            txtCustomerAddress.PlaceholderText = "Street address";
+            txtCustomerAddress.Size = new Size(347, 25);
+            txtCustomerAddress.TabIndex = 5;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(91, 66, 18);
+            label4.Location = new Point(61, 19);
+            label4.Name = "label4";
+            label4.Size = new Size(128, 25);
+            label4.TabIndex = 2;
+            label4.Text = "Address Line*";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
+            pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox9.Location = new Point(36, 18);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(19, 24);
+            pictureBox9.TabIndex = 2;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
+            pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox10.Location = new Point(25, 50);
+            pictureBox10.Margin = new Padding(3, 2, 3, 2);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(376, 42);
+            pictureBox10.TabIndex = 6;
+            pictureBox10.TabStop = false;
+            // 
+            // add_Btn
+            // 
+            add_Btn.BackColor = Color.FromArgb(111, 138, 129);
+            add_Btn.Cursor = Cursors.Hand;
+            add_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
+            add_Btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            add_Btn.FlatStyle = FlatStyle.Flat;
+            add_Btn.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            add_Btn.ForeColor = Color.FromArgb(255, 246, 229);
+            add_Btn.Location = new Point(0, 350);
+            add_Btn.Margin = new Padding(3, 2, 3, 2);
+            add_Btn.Name = "add_Btn";
+            add_Btn.Size = new Size(857, 40);
+            add_Btn.TabIndex = 6;
+            add_Btn.Text = "ADD";
+            add_Btn.UseVisualStyleBackColor = false;
+            add_Btn.Click += add_Btn_ClickAsync;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(panel11);
+            panel6.Controls.Add(panel12);
+            panel6.Controls.Add(panel13);
+            panel6.Location = new Point(11, 9);
+            panel6.Margin = new Padding(3, 2, 3, 2);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(413, 345);
+            panel6.TabIndex = 2;
+            // 
+            // panel11
+            // 
+            panel11.Controls.Add(txtCustomerPhoneNum);
+            panel11.Controls.Add(label1);
+            panel11.Controls.Add(phoneNum_pic);
+            panel11.Controls.Add(pictureBox4);
+            panel11.Location = new Point(8, 244);
+            panel11.Margin = new Padding(3, 2, 3, 2);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(389, 91);
+            panel11.TabIndex = 7;
+            // 
+            // txtCustomerPhoneNum
+            // 
+            txtCustomerPhoneNum.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerPhoneNum.BorderStyle = BorderStyle.None;
+            txtCustomerPhoneNum.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerPhoneNum.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerPhoneNum.Location = new Point(31, 49);
+            txtCustomerPhoneNum.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerPhoneNum.Name = "txtCustomerPhoneNum";
+            txtCustomerPhoneNum.PlaceholderText = "Your phone number";
+            txtCustomerPhoneNum.Size = new Size(327, 25);
+            txtCustomerPhoneNum.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(91, 66, 18);
+            label1.Location = new Point(60, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(150, 25);
+            label1.TabIndex = 2;
+            label1.Text = "Phone Number*";
+            // 
+            // phoneNum_pic
+            // 
+            phoneNum_pic.BackgroundImage = (Image)resources.GetObject("phoneNum_pic.BackgroundImage");
+            phoneNum_pic.BackgroundImageLayout = ImageLayout.Stretch;
+            phoneNum_pic.Location = new Point(31, 11);
+            phoneNum_pic.Margin = new Padding(3, 2, 3, 2);
+            phoneNum_pic.Name = "phoneNum_pic";
+            phoneNum_pic.Size = new Size(25, 21);
+            phoneNum_pic.TabIndex = 2;
+            phoneNum_pic.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(12, 40);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(356, 42);
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.Controls.Add(txtCustomerEmail);
+            panel12.Controls.Add(emailAddr_label);
+            panel12.Controls.Add(emailAddr_Pic);
+            panel12.Controls.Add(pictureBox6);
+            panel12.Location = new Point(8, 126);
+            panel12.Margin = new Padding(3, 2, 3, 2);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(389, 104);
+            panel12.TabIndex = 6;
+            // 
+            // txtCustomerEmail
+            // 
+            txtCustomerEmail.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerEmail.BorderStyle = BorderStyle.None;
+            txtCustomerEmail.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerEmail.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerEmail.Location = new Point(31, 48);
+            txtCustomerEmail.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerEmail.Name = "txtCustomerEmail";
+            txtCustomerEmail.PlaceholderText = "Your email";
+            txtCustomerEmail.Size = new Size(327, 25);
+            txtCustomerEmail.TabIndex = 5;
+            // 
+            // emailAddr_label
+            // 
+            emailAddr_label.AutoSize = true;
+            emailAddr_label.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            emailAddr_label.ForeColor = Color.FromArgb(91, 66, 18);
+            emailAddr_label.Location = new Point(60, 8);
+            emailAddr_label.Name = "emailAddr_label";
+            emailAddr_label.Size = new Size(140, 25);
+            emailAddr_label.TabIndex = 2;
+            emailAddr_label.Text = "Email Address*";
+            // 
+            // emailAddr_Pic
+            // 
+            emailAddr_Pic.BackgroundImage = (Image)resources.GetObject("emailAddr_Pic.BackgroundImage");
+            emailAddr_Pic.BackgroundImageLayout = ImageLayout.Stretch;
+            emailAddr_Pic.Location = new Point(31, 13);
+            emailAddr_Pic.Margin = new Padding(3, 2, 3, 2);
+            emailAddr_Pic.Name = "emailAddr_Pic";
+            emailAddr_Pic.Size = new Size(25, 16);
+            emailAddr_Pic.TabIndex = 2;
+            emailAddr_Pic.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
+            pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox6.Location = new Point(12, 40);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(356, 42);
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // panel13
+            // 
+            panel13.Controls.Add(txtCustomerName);
+            panel13.Controls.Add(userName_label);
+            panel13.Controls.Add(userName_Pic);
+            panel13.Controls.Add(pictureBox1);
+            panel13.Location = new Point(8, 10);
+            panel13.Margin = new Padding(3, 2, 3, 2);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(389, 100);
+            panel13.TabIndex = 1;
+            // 
+            // txtCustomerName
+            // 
+            txtCustomerName.BackColor = Color.FromArgb(253, 252, 245);
+            txtCustomerName.BorderStyle = BorderStyle.None;
+            txtCustomerName.Font = new Font("Yu Gothic UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCustomerName.ForeColor = Color.FromArgb(132, 109, 97);
+            txtCustomerName.Location = new Point(31, 48);
+            txtCustomerName.Margin = new Padding(3, 2, 3, 2);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.PlaceholderText = "First Name";
+            txtCustomerName.Size = new Size(327, 25);
+            txtCustomerName.TabIndex = 5;
+            // 
+            // userName_label
+            // 
+            userName_label.AutoSize = true;
+            userName_label.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            userName_label.ForeColor = Color.FromArgb(91, 66, 18);
+            userName_label.Location = new Point(58, 10);
+            userName_label.Name = "userName_label";
+            userName_label.Size = new Size(64, 25);
+            userName_label.TabIndex = 2;
+            userName_label.Text = "Name";
+            // 
+            // userName_Pic
+            // 
+            userName_Pic.BackgroundImage = (Image)resources.GetObject("userName_Pic.BackgroundImage");
+            userName_Pic.BackgroundImageLayout = ImageLayout.Stretch;
+            userName_Pic.Location = new Point(28, 11);
+            userName_Pic.Margin = new Padding(3, 2, 3, 2);
+            userName_Pic.Name = "userName_Pic";
+            userName_Pic.Size = new Size(25, 24);
+            userName_Pic.TabIndex = 2;
+            userName_Pic.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(12, 40);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(356, 42);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // addCustomer
+            // 
+            addCustomer.AutoSize = true;
+            addCustomer.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
+            addCustomer.ForeColor = Color.FromArgb(81, 60, 41);
+            addCustomer.Location = new Point(298, 5);
+            addCustomer.Name = "addCustomer";
+            addCustomer.Size = new Size(286, 51);
+            addCustomer.TabIndex = 2;
+            addCustomer.Text = "New Customer";
+            // 
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3594,12 +3672,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1200, 600);
-            Controls.Add(animal_tabControl);
+            Controls.Add(customer_tabControl);
             Controls.Add(closeButton);
             Controls.Add(panel1);
-            Controls.Add(customer_tabControl);
             Controls.Add(admin_tabControl);
             Controls.Add(viewDetails_tabControl);
+            Controls.Add(animal_tabControl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);
@@ -3617,34 +3695,6 @@
             ((System.ComponentModel.ISupportInitialize)animalIcon).EndInit();
             customerButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)customerIcon).EndInit();
-            customer_tabControl.ResumeLayout(false);
-            viewCustomers_tabPage.ResumeLayout(false);
-            viewCustomers_tabPage.PerformLayout();
-            addCustomer_tabPage.ResumeLayout(false);
-            addCustomers_panel.ResumeLayout(false);
-            addCustomers_panel.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            panel6.ResumeLayout(false);
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)phoneNum_pic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)emailAddr_Pic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)userName_Pic).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             admin_tabControl.ResumeLayout(false);
             viewAdmin_tabPage.ResumeLayout(false);
             viewAdmin_tabPage.PerformLayout();
@@ -3767,6 +3817,34 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             panel20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            customer_tabControl.ResumeLayout(false);
+            viewCustomers_tabPage.ResumeLayout(false);
+            customerList_panel.ResumeLayout(false);
+            customerList_panel.PerformLayout();
+            addCustomer_tabPage.ResumeLayout(false);
+            addCustomers_panel.ResumeLayout(false);
+            addCustomers_panel.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel6.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)phoneNum_pic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)emailAddr_Pic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)userName_Pic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -3794,43 +3872,6 @@
         private Label adminLabel;
         private PictureBox staffIcon;
         private TabPage tabPage3;
-        private TabPage viewCustomers_tabPage;
-        private TabControl customer_tabControl;
-        private TabPage addCustomer_tabPage;
-        private Panel addCustomers_panel;
-        private Button add_Btn;
-        private Panel panel4;
-        private Panel panel10;
-        private TextBox txtState;
-        private TextBox txtPostalCode;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox8;
-        private TextBox txtUserAddress;
-        private Label label4;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
-        private Panel panel6;
-        private Panel panel11;
-        private TextBox txtPhoneNum;
-        private Label label1;
-        private PictureBox phoneNum_pic;
-        private PictureBox pictureBox4;
-        private Panel panel12;
-        private TextBox txtEmail;
-        private Label emailAddr_label;
-        private PictureBox emailAddr_Pic;
-        private PictureBox pictureBox6;
-        private Panel panel13;
-        private TextBox txtFirstName;
-        private TextBox txtLastName;
-        private Label userName_label;
-        private PictureBox userName_Pic;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Label addCustomer;
-        private TextBox txtCity;
-        private PictureBox pictureBox3;
-        private Label label2;
         private TabControl admin_tabControl;
         private Button closeButton;
         private TabPage viewAdmin_tabPage;
@@ -4024,5 +4065,48 @@
         private CheckBox checkBox8;
         private CheckBox checkBox9;
         private CheckBox checkBox10;
+        private TabControl customer_tabControl;
+        private TabPage viewCustomers_tabPage;
+        private Label label35;
+        private Label label34;
+        private Label label33;
+        private Label label32;
+        private Label label31;
+        private Label label28;
+        private Panel customerList_panel;
+        private TableLayoutPanel customerList_table;
+        private Label label2;
+        private TabPage addCustomer_tabPage;
+        private Panel addCustomers_panel;
+        private Panel panel4;
+        private Panel panel10;
+        private TextBox txtCustomerState;
+        private TextBox txtCustomerPostalCode;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox8;
+        private TextBox txtCustomerCity;
+        private PictureBox pictureBox3;
+        private TextBox txtCustomerAddress;
+        private Label label4;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox10;
+        private Button add_Btn;
+        private Panel panel6;
+        private Panel panel11;
+        private TextBox txtCustomerPhoneNum;
+        private Label label1;
+        private PictureBox phoneNum_pic;
+        private PictureBox pictureBox4;
+        private Panel panel12;
+        private TextBox txtCustomerEmail;
+        private Label emailAddr_label;
+        private PictureBox emailAddr_Pic;
+        private PictureBox pictureBox6;
+        private Panel panel13;
+        private TextBox txtCustomerName;
+        private Label userName_label;
+        private PictureBox userName_Pic;
+        private PictureBox pictureBox1;
+        private Label addCustomer;
     }
 }

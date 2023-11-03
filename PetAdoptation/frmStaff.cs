@@ -438,7 +438,7 @@ namespace PetAdoptation
                                 break;
 
                             case 5:
-                                textLabel.Text = p.Microchip.ToString();
+                                textLabel.Text = p.Type.ToString();
                                 break;
 
                             default:

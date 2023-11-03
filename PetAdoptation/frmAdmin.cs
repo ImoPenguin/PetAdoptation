@@ -594,5 +594,166 @@ namespace PetAdoptation
                 addPet_panel.Visible = true;
             }
         }
+
+        private void Customer_tabControl_VisibleChanged(object sender, EventArgs e)
+        {
+            if (customer_tabControl.Visible)
+            {
+                List<Customer> cusList = XML_Handler.readCustomerData();
+
+
+                foreach (Customer c in cusList)
+                {
+                    customerList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
+
+                    for (int i = 0; i < petList_table.ColumnCount; i++)
+                    {
+                        Label textLabel = new Label();
+                        textLabel.Dock = DockStyle.Fill;
+                        textLabel.Name = "customerInfoLabel";
+                        textLabel.TabIndex = 0;
+                        textLabel.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+                        textLabel.TabIndex = 0;
+                        textLabel.TextAlign = ContentAlignment.MiddleCenter;
+                        textLabel.BackColor = Color.FromArgb(229, 215, 200);
+                        textLabel.ForeColor = Color.Black;
+                        textLabel.BorderStyle = BorderStyle.None;
+
+                        switch (i)
+                        {
+                            case 0:
+                                textLabel.Text = c.ID;
+                                break;
+
+                            case 1:
+                                textLabel.Text = c.Name;
+                                break;
+
+                            case 2:
+                                textLabel.Text = c.PhoneNo;
+                                break;
+
+                            case 3:
+                                textLabel.Text = c.Email;
+                                break;
+
+                            case 4:
+                                string address = String.Join(", ", c.Address.Split(';'));
+                                textLabel.Text = address;
+                                break;
+
+                            case 5:
+                                textLabel.Text = c.AssignedStaff_ID;
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        customerList_table.Controls.Add(textLabel);
+
+                    }
+                }
+            }
+            else
+            {
+                customerList_table.Controls.Clear();
+            }
+
+        }
+
+        private void Customer_tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (customer_tabControl.SelectedIndex == 0)
+            {
+                Customer_tabControl_VisibleChanged(sender, e);
+            }
+            else
+            {
+                customerList_table.Controls.Clear();
+            }
+        }
+
+        private async void add_Btn_ClickAsync(object sender, EventArgs e)
+        {
+            //  CHECK if all fields are not empty
+            if (validateNewCustomer())
+            {
+                //  Validate Mail
+                MailCheckResponse validEmail = await Mail_Handler.Mail_Check(txtCustomerEmail.Text);
+
+                if (validEmail != null)
+                {
+                    if (validEmail.FormatValid && validEmail.MxFound)
+                    {
+                        string address = String.Join(';', new[] { txtCustomerAddress.Text, txtCustomerCity.Text, txtCustomerState.Text, txtCustomerPostalCode.Text });
+
+                        //  CALCULATE ID
+                        List<Customer> cusList = XML_Handler.readCustomerData();
+                        List<Staff> staffList = XML_Handler.readStaffData();
+                        List<Manager> mngrList = XML_Handler.readManagerData();
+                        int cusOrder = 1001 + cusList.Count + staffList.Count + mngrList.Count;
+                        string newCus_ID = "U" + cusOrder.ToString();
+
+                        //  ADD new Cutomer to System
+                        Customer newCus = new Customer(newCus_ID, "password", txtCustomerName.Text, txtCustomerPhoneNum.Text, txtCustomerEmail.Text, address, LoginAccount.currentStaff.ID);
+
+                        XML_Handler.addCustomerData(newCus);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Email is invalid!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email is invalid!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("One or more field is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool validateNewCustomer()
+        {
+            if (txtCustomerName.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerEmail.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerPhoneNum.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerAddress.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerCity.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerPostalCode.Text == "")
+            {
+                return false;
+            }
+
+            if (txtCustomerState.Text == "")
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
