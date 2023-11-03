@@ -704,9 +704,22 @@ namespace PetAdoptation
             }
             else
             {
-
+                customerList_table.Controls.Clear();
             }
 
+        }
+
+
+        private void Customer_tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (customer_tabControl.SelectedIndex == 0)
+            {
+                Customer_tabControl_VisibleChanged(sender, e);
+            }
+            else
+            {
+                customerList_table.Controls.Clear();
+            }
         }
 
         private void label32_Click(object sender, EventArgs e)

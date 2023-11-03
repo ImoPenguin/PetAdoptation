@@ -764,6 +764,7 @@
             customerList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
             customerList_table.Size = new Size(855, 86);
             customerList_table.TabIndex = 13;
+            customer_tabControl.SelectedIndexChanged += Customer_tabControl_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -3815,6 +3816,7 @@
             panel44.PerformLayout();
             ResumeLayout(false);
         }
+
 
 
 
