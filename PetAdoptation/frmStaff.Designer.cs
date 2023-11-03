@@ -2355,7 +2355,7 @@
             // pictureBox24
             // 
             pictureBox24.BackColor = Color.Transparent;
-            pictureBox24.BackgroundImage = Properties.Resources.User;
+            pictureBox24.BackgroundImage = (Image)resources.GetObject("pictureBox24.BackgroundImage");
             pictureBox24.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox24.Location = new Point(20, 124);
             pictureBox24.Margin = new Padding(3, 2, 3, 2);
@@ -3636,10 +3636,10 @@
             ClientSize = new Size(1200, 600);
             Controls.Add(closeButton);
             Controls.Add(panel1);
-            Controls.Add(customer_tabControl);
             Controls.Add(staff_tabControl);
             Controls.Add(viewDetails_tabControl);
             Controls.Add(animal_tabControl);
+            Controls.Add(customer_tabControl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);

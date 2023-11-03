@@ -65,7 +65,7 @@ namespace PetAdoptation
             //  DISPLAY Manager Screen
             else if (LoginAccount.currentManager != null)
             {
-                frmAdmin adminScreen = new frmAdmin(); 
+                frmAdmin adminScreen = new frmAdmin();
                 adminScreen.Show();
                 this.Hide();
             }
