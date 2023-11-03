@@ -113,7 +113,7 @@ namespace PetAdoptation
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
             admin_tabControl.Visible = true;
-            admin_tabControl.SelectedTab = admin_tabPage;
+            admin_tabControl.SelectedTab = viewAdmin_tabPage;
         }
         private void staffLabel_Click(Object sender, EventArgs e)
         {
@@ -121,7 +121,7 @@ namespace PetAdoptation
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
             admin_tabControl.Visible = true;
-            admin_tabControl.SelectedTab = admin_tabPage;
+            admin_tabControl.SelectedTab = viewAdmin_tabPage;
         }
 
         private void logOut_btn_Click(object sender, EventArgs e)
@@ -134,6 +134,17 @@ namespace PetAdoptation
         private void closeButton_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void viewAdmin_tabPage_Paint(object sender, EventArgs e)
+        {
+            ID_lbl.Text = LoginAccount.currentManager.ID;
+            txtAdminName.Text = LoginAccount.currentManager.Name;
+            txtAdminPhone.Text = LoginAccount.currentManager.PhoneNo;
+            txtAdminEmail.Text = LoginAccount.currentManager.Email;
+            txtAdminAddress.Text = LoginAccount.currentManager.Address;
+            txtAdminStore.Text = XML_Handler.findShelterByID(LoginAccount.currentManager.WorkingStoreID).Address;
+            txtPwdUp.Text = LoginAccount.currentManager.Password;
         }
 
         private void bEdit_Click(object sender, EventArgs e)
@@ -154,7 +165,7 @@ namespace PetAdoptation
                 LoginAccount.currentManager.Email = txtAdminEmail.Text;
                 LoginAccount.currentManager.Address = txtAdminAddress.Text;
                 LoginAccount.currentManager.Password = txtPwdUp.Text;
-                XML_Handler.editStaffData(LoginAccount.currentManager);
+                XML_Handler.editManagerData(LoginAccount.currentManager);
             }
             else
             {
@@ -163,7 +174,7 @@ namespace PetAdoptation
                 txtAdminPhone.Enabled = true;
                 txtAdminEmail.Enabled = true;
                 txtAdminAddress.Enabled = true;
-                txtAdminStore.Enabled = true; 
+                txtAdminStore.Enabled = true;
                 txtPwdUp.Enabled = true;
             }
         }

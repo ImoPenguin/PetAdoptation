@@ -306,6 +306,25 @@ namespace PetAdoptation
             return null;
         }
 
+        public static void editManagerData(Staff newData)
+        {
+            XDocument xmlDoc = XDocument.Load(getUserFilePath());
+            XElement managerElement = xmlDoc.Descendants("manager")
+                .FirstOrDefault(cus => cus.Element("id")?.Value == newData.ID);
+
+            if (managerElement != null)
+            {
+                //  UPDATE customer new DATA
+                managerElement.Element("name").Value = newData.Name;
+                managerElement.Element("password").Value = newData.Password;
+                managerElement.Element("phoneNo").Value = newData.PhoneNo;
+                managerElement.Element("email").Value = newData.Email;
+                managerElement.Element("address").Value = newData.Address;
+                managerElement.Element("workingStore").Value = newData.WorkingStoreID; 
+                xmlDoc.Save(getUserFilePath());
+            }
+        }
+
 
         ///////////////////////////////////
         //  HANDLING Shelter XML Files  //
