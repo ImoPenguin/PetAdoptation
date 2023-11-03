@@ -374,4 +374,21 @@
     <age>Young</age>
     <ownerID></ownerID>
   </pet>
+  <pet>
+    <storeID>S1</storeID>
+    <id>P123</id>
+    <type>Dog</type>
+    <name>Sharkie</name>
+    <color>Green </color>
+    <sex>Male</sex>
+    <breed>Deep Ocean </breed>
+    <size>Large</size>
+    <vaccinated>false</vaccinated>
+    <microchip>false</microchip>
+    <desexed>false</desexed>
+    <wormed>false</wormed>
+    <description>Meow Meow </description>
+    <age>Adult</age>
+    <ownerID></ownerID>
+  </pet>
 </root>
