@@ -2677,6 +2677,7 @@
             animal_tabControl.Size = new Size(894, 485);
             animal_tabControl.TabIndex = 35;
             animal_tabControl.Visible = false;
+            animal_tabControl.SelectedIndexChanged += Animal_tabControl_SelectedIndexChanged;
             animal_tabControl.VisibleChanged += Animal_tabControl_VisibleChanged;
             // 
             // viewAnimals_tabPage

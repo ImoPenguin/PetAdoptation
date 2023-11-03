@@ -421,7 +421,7 @@
             panel5.Location = new Point(46, 430);
             panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(288, 68);
+            panel5.Size = new Size(287, 74);
             panel5.TabIndex = 11;
             // 
             // logOut_btn
@@ -449,7 +449,7 @@
             staffButton.Location = new Point(46, 283);
             staffButton.Margin = new Padding(3, 2, 3, 2);
             staffButton.Name = "staffButton";
-            staffButton.Size = new Size(288, 74);
+            staffButton.Size = new Size(287, 74);
             staffButton.TabIndex = 11;
             staffButton.Click += staffButton_Click;
             staffButton.Paint += staffButton_Paint_1;
@@ -493,7 +493,7 @@
             checkIDButton.Location = new Point(46, 209);
             checkIDButton.Margin = new Padding(3, 2, 3, 2);
             checkIDButton.Name = "checkIDButton";
-            checkIDButton.Size = new Size(288, 74);
+            checkIDButton.Size = new Size(287, 74);
             checkIDButton.TabIndex = 10;
             checkIDButton.Click += checkIDButton_Click;
             checkIDButton.MouseLeave += checkIDButton_MouseLeave;
@@ -536,7 +536,7 @@
             animalButton.Location = new Point(46, 135);
             animalButton.Margin = new Padding(3, 2, 3, 2);
             animalButton.Name = "animalButton";
-            animalButton.Size = new Size(288, 74);
+            animalButton.Size = new Size(287, 74);
             animalButton.TabIndex = 9;
             animalButton.Click += animalButton_Click;
             animalButton.MouseLeave += animalButton_MouseLeave;
@@ -579,7 +579,7 @@
             customerButton.Location = new Point(46, 61);
             customerButton.Margin = new Padding(3, 2, 3, 2);
             customerButton.Name = "customerButton";
-            customerButton.Size = new Size(288, 74);
+            customerButton.Size = new Size(287, 74);
             customerButton.TabIndex = 8;
             customerButton.Click += customerButton_Click;
             customerButton.MouseLeave += customerButton_MouseLeave;
