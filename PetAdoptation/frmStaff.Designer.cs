@@ -101,7 +101,7 @@
             petName_title = new Label();
             petGender_title = new Label();
             addAnimals_tabPage = new TabPage();
-            panel2 = new Panel();
+            addPet_panel = new Panel();
             panel7 = new Panel();
             addPet_btn = new Button();
             panel8 = new Panel();
@@ -316,7 +316,7 @@
             viewAnimals_tabPage.SuspendLayout();
             petList_panel.SuspendLayout();
             addAnimals_tabPage.SuspendLayout();
-            panel2.SuspendLayout();
+            addPet_panel.SuspendLayout();
             panel7.SuspendLayout();
             panel8.SuspendLayout();
             panel3.SuspendLayout();
@@ -421,7 +421,7 @@
             panel5.Location = new Point(46, 430);
             panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(288, 68);
+            panel5.Size = new Size(287, 74);
             panel5.TabIndex = 11;
             // 
             // logOut_btn
@@ -449,7 +449,7 @@
             staffButton.Location = new Point(46, 283);
             staffButton.Margin = new Padding(3, 2, 3, 2);
             staffButton.Name = "staffButton";
-            staffButton.Size = new Size(288, 74);
+            staffButton.Size = new Size(287, 74);
             staffButton.TabIndex = 11;
             staffButton.Click += staffButton_Click;
             staffButton.Paint += staffButton_Paint_1;
@@ -493,7 +493,7 @@
             checkIDButton.Location = new Point(46, 209);
             checkIDButton.Margin = new Padding(3, 2, 3, 2);
             checkIDButton.Name = "checkIDButton";
-            checkIDButton.Size = new Size(288, 74);
+            checkIDButton.Size = new Size(287, 74);
             checkIDButton.TabIndex = 10;
             checkIDButton.Click += checkIDButton_Click;
             checkIDButton.MouseLeave += checkIDButton_MouseLeave;
@@ -536,7 +536,7 @@
             animalButton.Location = new Point(46, 135);
             animalButton.Margin = new Padding(3, 2, 3, 2);
             animalButton.Name = "animalButton";
-            animalButton.Size = new Size(288, 74);
+            animalButton.Size = new Size(287, 74);
             animalButton.TabIndex = 9;
             animalButton.Click += animalButton_Click;
             animalButton.MouseLeave += animalButton_MouseLeave;
@@ -579,7 +579,7 @@
             customerButton.Location = new Point(46, 61);
             customerButton.Margin = new Padding(3, 2, 3, 2);
             customerButton.Name = "customerButton";
-            customerButton.Size = new Size(288, 74);
+            customerButton.Size = new Size(287, 74);
             customerButton.TabIndex = 8;
             customerButton.Click += customerButton_Click;
             customerButton.MouseLeave += customerButton_MouseLeave;
@@ -1303,7 +1303,7 @@
             // 
             addAnimals_tabPage.AutoScroll = true;
             addAnimals_tabPage.BackColor = Color.FromArgb(229, 215, 200);
-            addAnimals_tabPage.Controls.Add(panel2);
+            addAnimals_tabPage.Controls.Add(addPet_panel);
             addAnimals_tabPage.Location = new Point(4, 24);
             addAnimals_tabPage.Margin = new Padding(2, 1, 2, 1);
             addAnimals_tabPage.Name = "addAnimals_tabPage";
@@ -1312,17 +1312,17 @@
             addAnimals_tabPage.TabIndex = 1;
             addAnimals_tabPage.Text = "Add";
             // 
-            // panel2
+            // addPet_panel
             // 
-            panel2.BackColor = Color.FromArgb(229, 215, 200);
-            panel2.Controls.Add(panel7);
-            panel2.Controls.Add(addPetLabel);
-            panel2.Location = new Point(4, 4);
-            panel2.Margin = new Padding(3, 2, 3, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(877, 452);
-            panel2.TabIndex = 1;
-            panel2.VisibleChanged += panel2_VisibleChanged;
+            addPet_panel.BackColor = Color.FromArgb(229, 215, 200);
+            addPet_panel.Controls.Add(panel7);
+            addPet_panel.Controls.Add(addPetLabel);
+            addPet_panel.Location = new Point(4, 4);
+            addPet_panel.Margin = new Padding(3, 2, 3, 2);
+            addPet_panel.Name = "addPet_panel";
+            addPet_panel.Size = new Size(877, 452);
+            addPet_panel.TabIndex = 1;
+            addPet_panel.VisibleChanged += addPet_VisibleChanged;
             // 
             // panel7
             // 
@@ -3695,7 +3695,7 @@
             petList_panel.ResumeLayout(false);
             petList_panel.PerformLayout();
             addAnimals_tabPage.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            addPet_panel.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
@@ -3878,7 +3878,7 @@
         private TabPage viewAnimals_tabPage;
         private Label label3;
         private TabPage addAnimals_tabPage;
-        private Panel panel2;
+        private Panel addPet_panel;
         private Panel panel7;
         private Panel panel3;
         private TextBox txtName;
