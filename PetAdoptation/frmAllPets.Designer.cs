@@ -105,7 +105,6 @@
         }
 
         #endregion
-        private Panel panel8;
         private PictureBox pictureBox8;
         private RichTextBox richTextBox1;
         private BindingSource bindingSource1;

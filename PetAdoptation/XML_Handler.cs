@@ -417,6 +417,7 @@ namespace PetAdoptation
             XElement newPet = new XElement("pet",
                 new XElement("storeID", pet.StoreID),
                 new XElement("id", pet.ID),
+                new XElement("type", pet.Type),
                 new XElement("name", pet.Name),
                 new XElement("color", pet.Color),
                 new XElement("sex", pet.Sex),
@@ -428,7 +429,6 @@ namespace PetAdoptation
                 new XElement("wormed", pet.Wormed),
                 new XElement("description", pet.Description),
                 new XElement("age", pet.Age),
-                new XElement("adopted", pet.Adopted),
                 new XElement("ownerID", pet.OwnerID)
             );
 

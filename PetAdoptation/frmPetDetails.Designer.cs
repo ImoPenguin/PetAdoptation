@@ -630,11 +630,12 @@
             Name_label.AutoSize = true;
             Name_label.Font = new Font("Yu Gothic UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
             Name_label.ForeColor = Color.FromArgb(81, 60, 41);
-            Name_label.Location = new Point(15, 7);
+            Name_label.Location = new Point(15, 6);
             Name_label.Name = "Name_label";
             Name_label.Size = new Size(133, 45);
             Name_label.TabIndex = 0;
             Name_label.Text = "Name : ";
+            Name_label.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox3
             // 
