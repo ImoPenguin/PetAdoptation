@@ -560,9 +560,9 @@ namespace PetAdoptation
             return true;
         }
 
-        private void panel2_VisibleChanged(object sender, EventArgs e)
+        private void addPet_VisibleChanged(object sender, EventArgs e)
         {
-            if (panel2.Visible)
+            if (addPet_panel.Visible)
             {
                 //  CALCULATE Pet ID
                 int ID_num = 101 + XML_Handler.readPetData().Count;
@@ -574,12 +574,13 @@ namespace PetAdoptation
             }
         }
 
+        //UPDATE PETLIST after ADD new pet
         private void Animal_tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (animal_tabControl.SelectedIndex == 0)
             {
                 petList_panel.Visible = true;
-                panel2.Visible = false;
+                addPet_panel.Visible = false;
 
                 petList_table.Controls.Clear();
                 petList_table.RowCount = 1;
@@ -636,7 +637,7 @@ namespace PetAdoptation
             else
             {
                 petList_panel.Visible = false;
-                panel2.Visible = true;
+                addPet_panel.Visible = true;
             }
         }
 

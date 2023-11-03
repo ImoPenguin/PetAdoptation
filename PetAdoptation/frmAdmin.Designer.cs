@@ -82,52 +82,6 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             addCustomer = new Label();
-            animal_tabControl = new TabControl();
-            viewAnimals_tabPage = new TabPage();
-            label3 = new Label();
-            addAnimals_tabPage = new TabPage();
-            panel2 = new Panel();
-            panel7 = new Panel();
-            panel3 = new Panel();
-            txtName = new TextBox();
-            pictureBox5 = new PictureBox();
-            pictureBox21 = new PictureBox();
-            button1 = new Button();
-            panel8 = new Panel();
-            checkBox3 = new CheckBox();
-            panel9 = new Panel();
-            textBox1 = new TextBox();
-            pictureBox20 = new PictureBox();
-            Location_panel = new Panel();
-            txtLocation = new TextBox();
-            pictureBox7 = new PictureBox();
-            panel15 = new Panel();
-            vaccinated_Combobx = new ComboBox();
-            pictureBox14 = new PictureBox();
-            panel14 = new Panel();
-            txtBreed = new TextBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            panel16 = new Panel();
-            checkBox6 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
-            panel17 = new Panel();
-            txtDescription = new TextBox();
-            pictureBox15 = new PictureBox();
-            pictureBox16 = new PictureBox();
-            panel18 = new Panel();
-            sex_Combobx = new ComboBox();
-            pictureBox17 = new PictureBox();
-            panel19 = new Panel();
-            PetType_Combobx = new ComboBox();
-            pictureBox18 = new PictureBox();
-            panel20 = new Panel();
-            age_Combobx = new ComboBox();
-            pictureBox19 = new PictureBox();
-            addPetLabel = new Label();
             admin_tabControl = new TabControl();
             viewAdmin_tabPage = new TabPage();
             bEdit = new Button();
@@ -255,6 +209,72 @@
             panel44 = new Panel();
             findAnimalGender_lbl = new TextBox();
             sex_Label = new Label();
+            animal_tabControl = new TabControl();
+            viewAnimals_tabPage = new TabPage();
+            petList_panel = new Panel();
+            petList_table = new TableLayoutPanel();
+            petType_title = new Label();
+            label3 = new Label();
+            petVax_title = new Label();
+            petID_title = new Label();
+            petBreed_title = new Label();
+            petName_title = new Label();
+            petGender_title = new Label();
+            addAnimals_tabPage = new TabPage();
+            addPet_panel = new Panel();
+            panel7 = new Panel();
+            addPet_btn = new Button();
+            panel8 = new Panel();
+            checkBox10 = new CheckBox();
+            checkBox9 = new CheckBox();
+            checkBox8 = new CheckBox();
+            checkBox7 = new CheckBox();
+            vaccinated_checkBox = new CheckBox();
+            worming_checkBox = new CheckBox();
+            microchipped_checkBox = new CheckBox();
+            desexed_checkBox = new CheckBox();
+            panel3 = new Panel();
+            txtName = new TextBox();
+            pictureBox5 = new PictureBox();
+            pictureBox21 = new PictureBox();
+            checkBox3 = new CheckBox();
+            Location_panel = new Panel();
+            txtLocation = new TextBox();
+            pictureBox7 = new PictureBox();
+            panel14 = new Panel();
+            txtBreed = new TextBox();
+            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            panel16 = new Panel();
+            panel50 = new Panel();
+            size_comboBox = new ComboBox();
+            pictureBox36 = new PictureBox();
+            panel15 = new Panel();
+            txtPetColor = new TextBox();
+            pictureBox14 = new PictureBox();
+            pictureBox35 = new PictureBox();
+            checkBox6 = new CheckBox();
+            panel9 = new Panel();
+            txtPetID = new TextBox();
+            pictureBox20 = new PictureBox();
+            checkBox5 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
+            panel17 = new Panel();
+            txtDescription = new TextBox();
+            pictureBox15 = new PictureBox();
+            pictureBox16 = new PictureBox();
+            panel18 = new Panel();
+            sex_Combobx = new ComboBox();
+            pictureBox17 = new PictureBox();
+            panel19 = new Panel();
+            PetType_Combobx = new ComboBox();
+            pictureBox18 = new PictureBox();
+            panel20 = new Panel();
+            age_Combobx = new ComboBox();
+            pictureBox19 = new PictureBox();
+            addPetLabel = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             staffButton.SuspendLayout();
@@ -287,34 +307,6 @@
             ((System.ComponentModel.ISupportInitialize)userName_Pic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            animal_tabControl.SuspendLayout();
-            viewAnimals_tabPage.SuspendLayout();
-            addAnimals_tabPage.SuspendLayout();
-            panel2.SuspendLayout();
-            panel7.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
-            panel8.SuspendLayout();
-            panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            Location_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            panel16.SuspendLayout();
-            panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
-            panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             admin_tabControl.SuspendLayout();
             viewAdmin_tabPage.SuspendLayout();
             panel21.SuspendLayout();
@@ -368,6 +360,38 @@
             panel42.SuspendLayout();
             panel43.SuspendLayout();
             panel44.SuspendLayout();
+            animal_tabControl.SuspendLayout();
+            viewAnimals_tabPage.SuspendLayout();
+            petList_panel.SuspendLayout();
+            addAnimals_tabPage.SuspendLayout();
+            addPet_panel.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            Location_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel16.SuspendLayout();
+            panel50.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox36).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox35).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -1043,614 +1067,6 @@
             addCustomer.TabIndex = 2;
             addCustomer.Text = "New Customer";
             // 
-            // animal_tabControl
-            // 
-            animal_tabControl.Controls.Add(viewAnimals_tabPage);
-            animal_tabControl.Controls.Add(addAnimals_tabPage);
-            animal_tabControl.Location = new Point(299, 110);
-            animal_tabControl.Margin = new Padding(2, 1, 2, 1);
-            animal_tabControl.Name = "animal_tabControl";
-            animal_tabControl.SelectedIndex = 0;
-            animal_tabControl.Size = new Size(894, 485);
-            animal_tabControl.TabIndex = 1;
-            animal_tabControl.Visible = false;
-            // 
-            // viewAnimals_tabPage
-            // 
-            viewAnimals_tabPage.AutoScroll = true;
-            viewAnimals_tabPage.BackColor = Color.FromArgb(229, 215, 200);
-            viewAnimals_tabPage.Controls.Add(label3);
-            viewAnimals_tabPage.Location = new Point(4, 24);
-            viewAnimals_tabPage.Margin = new Padding(2, 1, 2, 1);
-            viewAnimals_tabPage.Name = "viewAnimals_tabPage";
-            viewAnimals_tabPage.Padding = new Padding(2, 1, 2, 1);
-            viewAnimals_tabPage.Size = new Size(886, 457);
-            viewAnimals_tabPage.TabIndex = 0;
-            viewAnimals_tabPage.Text = "View";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(81, 60, 41);
-            label3.Location = new Point(376, 207);
-            label3.Name = "label3";
-            label3.Size = new Size(194, 51);
-            label3.TabIndex = 3;
-            label3.Text = "View Pets";
-            // 
-            // addAnimals_tabPage
-            // 
-            addAnimals_tabPage.AutoScroll = true;
-            addAnimals_tabPage.BackColor = Color.FromArgb(229, 215, 200);
-            addAnimals_tabPage.Controls.Add(panel2);
-            addAnimals_tabPage.Location = new Point(4, 24);
-            addAnimals_tabPage.Margin = new Padding(2, 1, 2, 1);
-            addAnimals_tabPage.Name = "addAnimals_tabPage";
-            addAnimals_tabPage.Padding = new Padding(2, 1, 2, 1);
-            addAnimals_tabPage.Size = new Size(886, 457);
-            addAnimals_tabPage.TabIndex = 1;
-            addAnimals_tabPage.Text = "Add";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(229, 215, 200);
-            panel2.Controls.Add(panel7);
-            panel2.Controls.Add(addPetLabel);
-            panel2.Location = new Point(4, 4);
-            panel2.Margin = new Padding(3, 2, 3, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(877, 452);
-            panel2.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(panel3);
-            panel7.Controls.Add(button1);
-            panel7.Controls.Add(panel8);
-            panel7.Controls.Add(panel16);
-            panel7.Location = new Point(3, 45);
-            panel7.Margin = new Padding(3, 2, 3, 2);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(871, 396);
-            panel7.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(txtName);
-            panel3.Controls.Add(pictureBox5);
-            panel3.Controls.Add(pictureBox21);
-            panel3.Location = new Point(469, 222);
-            panel3.Margin = new Padding(2, 1, 2, 1);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(390, 75);
-            panel3.TabIndex = 8;
-            // 
-            // txtName
-            // 
-            txtName.BackColor = Color.FromArgb(253, 252, 245);
-            txtName.BorderStyle = BorderStyle.None;
-            txtName.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            txtName.ForeColor = Color.FromArgb(203, 199, 183);
-            txtName.Location = new Point(83, 22);
-            txtName.Margin = new Padding(3, 2, 3, 2);
-            txtName.Multiline = true;
-            txtName.Name = "txtName";
-            txtName.PlaceholderText = "Name";
-            txtName.RightToLeft = RightToLeft.No;
-            txtName.Size = new Size(275, 34);
-            txtName.TabIndex = 4;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.FromArgb(253, 252, 245);
-            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
-            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(29, 22);
-            pictureBox5.Margin = new Padding(2, 1, 2, 1);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(41, 34);
-            pictureBox5.TabIndex = 7;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.BackgroundImage = (Image)resources.GetObject("pictureBox21.BackgroundImage");
-            pictureBox21.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox21.Location = new Point(12, 16);
-            pictureBox21.Margin = new Padding(3, 2, 3, 2);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(361, 46);
-            pictureBox21.TabIndex = 6;
-            pictureBox21.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(111, 138, 129);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
-            button1.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(255, 246, 229);
-            button1.Location = new Point(3, 357);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(857, 31);
-            button1.TabIndex = 6;
-            button1.Text = "ADD";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.Transparent;
-            panel8.Controls.Add(checkBox3);
-            panel8.Controls.Add(panel9);
-            panel8.Controls.Add(Location_panel);
-            panel8.Controls.Add(panel15);
-            panel8.Controls.Add(panel14);
-            panel8.Location = new Point(469, 9);
-            panel8.Margin = new Padding(2, 1, 2, 1);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(390, 340);
-            panel8.TabIndex = 7;
-            // 
-            // checkBox3
-            // 
-            checkBox3.Anchor = AnchorStyles.Right;
-            checkBox3.AutoSize = true;
-            checkBox3.BackColor = Color.Transparent;
-            checkBox3.Cursor = Cursors.Hand;
-            checkBox3.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox3.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox3.ImageAlign = ContentAlignment.TopCenter;
-            checkBox3.Location = new Point(301, 373);
-            checkBox3.Margin = new Padding(1);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Padding = new Padding(5, 0, 3, 0);
-            checkBox3.Size = new Size(132, 34);
-            checkBox3.TabIndex = 9;
-            checkBox3.Text = "Worming";
-            checkBox3.UseVisualStyleBackColor = false;
-            // 
-            // panel9
-            // 
-            panel9.Controls.Add(textBox1);
-            panel9.Controls.Add(pictureBox20);
-            panel9.Location = new Point(240, 75);
-            panel9.Margin = new Padding(3, 2, 3, 2);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(151, 65);
-            panel9.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(253, 252, 245);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(203, 199, 183);
-            textBox1.Location = new Point(15, 17);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Pet ID";
-            textBox1.RightToLeft = RightToLeft.No;
-            textBox1.Size = new Size(111, 27);
-            textBox1.TabIndex = 4;
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.BackgroundImage = (Image)resources.GetObject("pictureBox20.BackgroundImage");
-            pictureBox20.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox20.Location = new Point(8, 7);
-            pictureBox20.Margin = new Padding(3, 2, 3, 2);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(126, 50);
-            pictureBox20.TabIndex = 2;
-            pictureBox20.TabStop = false;
-            // 
-            // Location_panel
-            // 
-            Location_panel.Controls.Add(txtLocation);
-            Location_panel.Controls.Add(pictureBox7);
-            Location_panel.Location = new Point(0, 0);
-            Location_panel.Margin = new Padding(3, 2, 3, 2);
-            Location_panel.Name = "Location_panel";
-            Location_panel.Size = new Size(390, 75);
-            Location_panel.TabIndex = 4;
-            // 
-            // txtLocation
-            // 
-            txtLocation.BackColor = Color.FromArgb(253, 252, 245);
-            txtLocation.BorderStyle = BorderStyle.None;
-            txtLocation.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            txtLocation.ForeColor = Color.FromArgb(203, 199, 183);
-            txtLocation.Location = new Point(76, 20);
-            txtLocation.Margin = new Padding(3, 2, 3, 2);
-            txtLocation.Multiline = true;
-            txtLocation.Name = "txtLocation";
-            txtLocation.PlaceholderText = "Location";
-            txtLocation.RightToLeft = RightToLeft.No;
-            txtLocation.Size = new Size(160, 34);
-            txtLocation.TabIndex = 3;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(12, 8);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(361, 52);
-            pictureBox7.TabIndex = 2;
-            pictureBox7.TabStop = false;
-            // 
-            // panel15
-            // 
-            panel15.Controls.Add(vaccinated_Combobx);
-            panel15.Controls.Add(pictureBox14);
-            panel15.Location = new Point(0, 75);
-            panel15.Margin = new Padding(3, 2, 3, 2);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(242, 65);
-            panel15.TabIndex = 5;
-            // 
-            // vaccinated_Combobx
-            // 
-            vaccinated_Combobx.BackColor = Color.FromArgb(253, 252, 245);
-            vaccinated_Combobx.FlatStyle = FlatStyle.Flat;
-            vaccinated_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            vaccinated_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
-            vaccinated_Combobx.FormattingEnabled = true;
-            vaccinated_Combobx.Items.AddRange(new object[] { "Yes", "No" });
-            vaccinated_Combobx.Location = new Point(76, 16);
-            vaccinated_Combobx.Margin = new Padding(3, 2, 3, 2);
-            vaccinated_Combobx.Name = "vaccinated_Combobx";
-            vaccinated_Combobx.RightToLeft = RightToLeft.No;
-            vaccinated_Combobx.Size = new Size(144, 38);
-            vaccinated_Combobx.TabIndex = 3;
-            vaccinated_Combobx.Text = "Vaccinated";
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.BackgroundImage = (Image)resources.GetObject("pictureBox14.BackgroundImage");
-            pictureBox14.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox14.Location = new Point(16, 7);
-            pictureBox14.Margin = new Padding(3, 2, 3, 2);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(219, 50);
-            pictureBox14.TabIndex = 2;
-            pictureBox14.TabStop = false;
-            // 
-            // panel14
-            // 
-            panel14.Controls.Add(txtBreed);
-            panel14.Controls.Add(pictureBox12);
-            panel14.Controls.Add(pictureBox13);
-            panel14.Location = new Point(0, 139);
-            panel14.Margin = new Padding(2, 1, 2, 1);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(390, 75);
-            panel14.TabIndex = 6;
-            // 
-            // txtBreed
-            // 
-            txtBreed.BackColor = Color.FromArgb(253, 252, 245);
-            txtBreed.BorderStyle = BorderStyle.None;
-            txtBreed.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            txtBreed.ForeColor = Color.FromArgb(203, 199, 183);
-            txtBreed.Location = new Point(83, 22);
-            txtBreed.Margin = new Padding(3, 2, 3, 2);
-            txtBreed.Multiline = true;
-            txtBreed.Name = "txtBreed";
-            txtBreed.PlaceholderText = "Breed";
-            txtBreed.RightToLeft = RightToLeft.No;
-            txtBreed.Size = new Size(275, 34);
-            txtBreed.TabIndex = 4;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.FromArgb(253, 252, 245);
-            pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
-            pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox12.Location = new Point(29, 21);
-            pictureBox12.Margin = new Padding(2, 1, 2, 1);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 36);
-            pictureBox12.TabIndex = 7;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackgroundImage = (Image)resources.GetObject("pictureBox13.BackgroundImage");
-            pictureBox13.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox13.Location = new Point(12, 16);
-            pictureBox13.Margin = new Padding(3, 2, 3, 2);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(361, 45);
-            pictureBox13.TabIndex = 6;
-            pictureBox13.TabStop = false;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.Transparent;
-            panel16.Controls.Add(checkBox6);
-            panel16.Controls.Add(checkBox5);
-            panel16.Controls.Add(checkBox4);
-            panel16.Controls.Add(checkBox2);
-            panel16.Controls.Add(checkBox1);
-            panel16.Controls.Add(panel17);
-            panel16.Controls.Add(panel18);
-            panel16.Controls.Add(panel19);
-            panel16.Controls.Add(panel20);
-            panel16.Location = new Point(9, 9);
-            panel16.Margin = new Padding(2, 1, 2, 1);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(453, 340);
-            panel16.TabIndex = 6;
-            // 
-            // checkBox6
-            // 
-            checkBox6.Anchor = AnchorStyles.Right;
-            checkBox6.AutoSize = true;
-            checkBox6.BackColor = Color.Transparent;
-            checkBox6.Cursor = Cursors.Hand;
-            checkBox6.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox6.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox6.ImageAlign = ContentAlignment.TopCenter;
-            checkBox6.Location = new Point(18, 303);
-            checkBox6.Margin = new Padding(1);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Padding = new Padding(5, 0, 3, 0);
-            checkBox6.Size = new Size(132, 34);
-            checkBox6.TabIndex = 11;
-            checkBox6.Text = "Worming";
-            checkBox6.UseVisualStyleBackColor = false;
-            // 
-            // checkBox5
-            // 
-            checkBox5.Anchor = AnchorStyles.Right;
-            checkBox5.AutoSize = true;
-            checkBox5.BackColor = Color.Transparent;
-            checkBox5.Cursor = Cursors.Hand;
-            checkBox5.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox5.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox5.ImageAlign = ContentAlignment.TopCenter;
-            checkBox5.Location = new Point(19, 263);
-            checkBox5.Margin = new Padding(1);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Padding = new Padding(5, 0, 3, 0);
-            checkBox5.Size = new Size(177, 34);
-            checkBox5.TabIndex = 10;
-            checkBox5.Text = "Microchipped";
-            checkBox5.UseVisualStyleBackColor = false;
-            // 
-            // checkBox4
-            // 
-            checkBox4.Anchor = AnchorStyles.Right;
-            checkBox4.AutoSize = true;
-            checkBox4.BackColor = Color.Transparent;
-            checkBox4.Cursor = Cursors.Hand;
-            checkBox4.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox4.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox4.ImageAlign = ContentAlignment.TopCenter;
-            checkBox4.Location = new Point(17, 223);
-            checkBox4.Margin = new Padding(1);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Padding = new Padding(5, 0, 3, 0);
-            checkBox4.Size = new Size(132, 34);
-            checkBox4.TabIndex = 9;
-            checkBox4.Text = "Desexing";
-            checkBox4.UseVisualStyleBackColor = false;
-            // 
-            // checkBox2
-            // 
-            checkBox2.Anchor = AnchorStyles.Right;
-            checkBox2.AutoSize = true;
-            checkBox2.BackColor = Color.Transparent;
-            checkBox2.Cursor = Cursors.Hand;
-            checkBox2.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox2.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox2.ImageAlign = ContentAlignment.TopCenter;
-            checkBox2.Location = new Point(623, 373);
-            checkBox2.Margin = new Padding(1);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Padding = new Padding(5, 0, 3, 0);
-            checkBox2.Size = new Size(177, 34);
-            checkBox2.TabIndex = 8;
-            checkBox2.Text = "Microchipped";
-            checkBox2.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            checkBox1.Anchor = AnchorStyles.Right;
-            checkBox1.AutoSize = true;
-            checkBox1.BackColor = Color.Transparent;
-            checkBox1.Cursor = Cursors.Hand;
-            checkBox1.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
-            checkBox1.ForeColor = Color.FromArgb(132, 109, 97);
-            checkBox1.ImageAlign = ContentAlignment.TopCenter;
-            checkBox1.Location = new Point(361, 373);
-            checkBox1.Margin = new Padding(1);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Padding = new Padding(5, 0, 3, 0);
-            checkBox1.Size = new Size(132, 34);
-            checkBox1.TabIndex = 7;
-            checkBox1.Text = "Desexing";
-            checkBox1.UseVisualStyleBackColor = false;
-            // 
-            // panel17
-            // 
-            panel17.Controls.Add(txtDescription);
-            panel17.Controls.Add(pictureBox15);
-            panel17.Controls.Add(pictureBox16);
-            panel17.Location = new Point(0, 139);
-            panel17.Margin = new Padding(2, 1, 2, 1);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(443, 75);
-            panel17.TabIndex = 6;
-            // 
-            // txtDescription
-            // 
-            txtDescription.BackColor = Color.FromArgb(253, 252, 245);
-            txtDescription.BorderStyle = BorderStyle.None;
-            txtDescription.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            txtDescription.ForeColor = Color.FromArgb(203, 199, 183);
-            txtDescription.Location = new Point(73, 22);
-            txtDescription.Margin = new Padding(3, 2, 3, 2);
-            txtDescription.Multiline = true;
-            txtDescription.Name = "txtDescription";
-            txtDescription.PlaceholderText = "Description";
-            txtDescription.RightToLeft = RightToLeft.No;
-            txtDescription.Size = new Size(336, 34);
-            txtDescription.TabIndex = 4;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.BackColor = Color.FromArgb(253, 252, 245);
-            pictureBox15.BackgroundImage = Properties.Resources.Reason_to_return_3;
-            pictureBox15.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox15.Location = new Point(32, 22);
-            pictureBox15.Margin = new Padding(2, 1, 2, 1);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(36, 34);
-            pictureBox15.TabIndex = 7;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.BackgroundImage = (Image)resources.GetObject("pictureBox16.BackgroundImage");
-            pictureBox16.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox16.Location = new Point(12, 16);
-            pictureBox16.Margin = new Padding(3, 2, 3, 2);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(415, 45);
-            pictureBox16.TabIndex = 6;
-            pictureBox16.TabStop = false;
-            // 
-            // panel18
-            // 
-            panel18.Controls.Add(sex_Combobx);
-            panel18.Controls.Add(pictureBox17);
-            panel18.Location = new Point(227, 75);
-            panel18.Margin = new Padding(3, 2, 3, 2);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(215, 65);
-            panel18.TabIndex = 4;
-            // 
-            // sex_Combobx
-            // 
-            sex_Combobx.BackColor = Color.FromArgb(253, 252, 245);
-            sex_Combobx.FlatStyle = FlatStyle.Flat;
-            sex_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            sex_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
-            sex_Combobx.FormattingEnabled = true;
-            sex_Combobx.Items.AddRange(new object[] { "Male ", "Female " });
-            sex_Combobx.Location = new Point(87, 14);
-            sex_Combobx.Margin = new Padding(3, 2, 3, 2);
-            sex_Combobx.Name = "sex_Combobx";
-            sex_Combobx.RightToLeft = RightToLeft.No;
-            sex_Combobx.Size = new Size(100, 38);
-            sex_Combobx.TabIndex = 3;
-            sex_Combobx.Text = "Sex";
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.BackgroundImage = (Image)resources.GetObject("pictureBox17.BackgroundImage");
-            pictureBox17.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox17.Location = new Point(15, 7);
-            pictureBox17.Margin = new Padding(3, 2, 3, 2);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(185, 47);
-            pictureBox17.TabIndex = 2;
-            pictureBox17.TabStop = false;
-            // 
-            // panel19
-            // 
-            panel19.BackColor = Color.Transparent;
-            panel19.Controls.Add(PetType_Combobx);
-            panel19.Controls.Add(pictureBox18);
-            panel19.Location = new Point(0, 0);
-            panel19.Margin = new Padding(2, 1, 2, 1);
-            panel19.Name = "panel19";
-            panel19.Size = new Size(443, 75);
-            panel19.TabIndex = 5;
-            // 
-            // PetType_Combobx
-            // 
-            PetType_Combobx.BackColor = Color.FromArgb(253, 252, 245);
-            PetType_Combobx.FlatStyle = FlatStyle.Flat;
-            PetType_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            PetType_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
-            PetType_Combobx.FormattingEnabled = true;
-            PetType_Combobx.Items.AddRange(new object[] { "Cat ", "Dog ", "Other " });
-            PetType_Combobx.Location = new Point(82, 19);
-            PetType_Combobx.Margin = new Padding(3, 2, 3, 2);
-            PetType_Combobx.Name = "PetType_Combobx";
-            PetType_Combobx.Size = new Size(332, 38);
-            PetType_Combobx.TabIndex = 5;
-            PetType_Combobx.Text = "Choose an animal type ";
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.BackgroundImage = (Image)resources.GetObject("pictureBox18.BackgroundImage");
-            pictureBox18.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox18.Location = new Point(12, 8);
-            pictureBox18.Margin = new Padding(3, 2, 3, 2);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(415, 52);
-            pictureBox18.TabIndex = 4;
-            pictureBox18.TabStop = false;
-            // 
-            // panel20
-            // 
-            panel20.Controls.Add(age_Combobx);
-            panel20.Controls.Add(pictureBox19);
-            panel20.Location = new Point(0, 75);
-            panel20.Margin = new Padding(3, 2, 3, 2);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(228, 65);
-            panel20.TabIndex = 3;
-            // 
-            // age_Combobx
-            // 
-            age_Combobx.BackColor = Color.FromArgb(253, 252, 245);
-            age_Combobx.FlatStyle = FlatStyle.Flat;
-            age_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            age_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
-            age_Combobx.FormattingEnabled = true;
-            age_Combobx.Items.AddRange(new object[] { "Young ", "Adult ", "Senior " });
-            age_Combobx.Location = new Point(82, 13);
-            age_Combobx.Margin = new Padding(3, 2, 3, 2);
-            age_Combobx.Name = "age_Combobx";
-            age_Combobx.RightToLeft = RightToLeft.No;
-            age_Combobx.Size = new Size(107, 38);
-            age_Combobx.TabIndex = 3;
-            age_Combobx.Text = "Age";
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
-            pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox19.Location = new Point(12, 7);
-            pictureBox19.Margin = new Padding(3, 2, 3, 2);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(191, 47);
-            pictureBox19.TabIndex = 2;
-            pictureBox19.TabStop = false;
-            // 
-            // addPetLabel
-            // 
-            addPetLabel.AutoSize = true;
-            addPetLabel.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
-            addPetLabel.ForeColor = Color.FromArgb(81, 60, 41);
-            addPetLabel.Location = new Point(389, 0);
-            addPetLabel.Name = "addPetLabel";
-            addPetLabel.Size = new Size(165, 51);
-            addPetLabel.TabIndex = 2;
-            addPetLabel.Text = "Add Pet";
-            // 
             // admin_tabControl
             // 
             admin_tabControl.Controls.Add(viewAdmin_tabPage);
@@ -1683,8 +1099,7 @@
             viewAdmin_tabPage.Size = new Size(886, 457);
             viewAdmin_tabPage.TabIndex = 1;
             viewAdmin_tabPage.Text = "View";
-            viewAdmin_tabPage.Paint += viewAdmin_tabPage_Paint; 
-
+            viewAdmin_tabPage.Paint += viewAdmin_tabPage_Paint;
             // 
             // bEdit
             // 
@@ -1714,7 +1129,7 @@
             panel21.Location = new Point(269, 112);
             panel21.Margin = new Padding(3, 2, 3, 2);
             panel21.Name = "panel21";
-            panel21.Size = new Size(595, 330);
+            panel21.Size = new Size(595, 300);
             panel21.TabIndex = 11;
             // 
             // panel27
@@ -1776,7 +1191,7 @@
             txtPwdUp.Name = "txtPwdUp";
             txtPwdUp.Size = new Size(396, 29);
             txtPwdUp.TabIndex = 4;
-            txtPwdUp.Text = "AntartiCas Pengu";
+            txtPwdUp.Text = "AntartiCas ";
             // 
             // label11
             // 
@@ -2027,6 +1442,7 @@
             viewDetails_tabControl.Size = new Size(894, 485);
             viewDetails_tabControl.TabIndex = 34;
             viewDetails_tabControl.Visible = false;
+            viewDetails_tabControl.SelectedIndexChanged += ViewDetails_tabControl_SelectedIndexChanged;
             // 
             // checkID_tabPage
             // 
@@ -2077,6 +1493,7 @@
             submit_Btn.TabIndex = 10;
             submit_Btn.Text = "FIND";
             submit_Btn.UseVisualStyleBackColor = false;
+            submit_Btn.Click += submit_Btn_Click;
             // 
             // txtID
             // 
@@ -2458,7 +1875,7 @@
             // pictureBox28
             // 
             pictureBox28.BackColor = Color.Transparent;
-            pictureBox28.BackgroundImage = Properties.Resources.User;
+            pictureBox28.BackgroundImage = (Image)resources.GetObject("pictureBox28.BackgroundImage");
             pictureBox28.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox28.Location = new Point(30, 128);
             pictureBox28.Margin = new Padding(3, 2, 3, 2);
@@ -2972,7 +2389,7 @@
             // petPicture
             // 
             petPicture.BackColor = Color.Transparent;
-            petPicture.BackgroundImage = Properties.Resources.SiameseCat;
+            petPicture.BackgroundImage = (Image)resources.GetObject("petPicture.BackgroundImage");
             petPicture.BackgroundImageLayout = ImageLayout.Stretch;
             petPicture.Location = new Point(31, 93);
             petPicture.Margin = new Padding(3, 2, 3, 2);
@@ -3249,6 +2666,927 @@
             sex_Label.TabIndex = 0;
             sex_Label.Text = "Sex : ";
             // 
+            // animal_tabControl
+            // 
+            animal_tabControl.Controls.Add(viewAnimals_tabPage);
+            animal_tabControl.Controls.Add(addAnimals_tabPage);
+            animal_tabControl.Location = new Point(299, 110);
+            animal_tabControl.Margin = new Padding(2, 1, 2, 1);
+            animal_tabControl.Name = "animal_tabControl";
+            animal_tabControl.SelectedIndex = 0;
+            animal_tabControl.Size = new Size(894, 485);
+            animal_tabControl.TabIndex = 35;
+            animal_tabControl.Visible = false;
+            animal_tabControl.SelectedIndexChanged += Animal_tabControl_SelectedIndexChanged;
+            animal_tabControl.VisibleChanged += Animal_tabControl_VisibleChanged;
+            // 
+            // viewAnimals_tabPage
+            // 
+            viewAnimals_tabPage.AutoScroll = true;
+            viewAnimals_tabPage.BackColor = Color.FromArgb(229, 215, 200);
+            viewAnimals_tabPage.Controls.Add(petList_panel);
+            viewAnimals_tabPage.Controls.Add(petType_title);
+            viewAnimals_tabPage.Controls.Add(label3);
+            viewAnimals_tabPage.Controls.Add(petVax_title);
+            viewAnimals_tabPage.Controls.Add(petID_title);
+            viewAnimals_tabPage.Controls.Add(petBreed_title);
+            viewAnimals_tabPage.Controls.Add(petName_title);
+            viewAnimals_tabPage.Controls.Add(petGender_title);
+            viewAnimals_tabPage.Location = new Point(4, 24);
+            viewAnimals_tabPage.Margin = new Padding(2, 1, 2, 1);
+            viewAnimals_tabPage.Name = "viewAnimals_tabPage";
+            viewAnimals_tabPage.Padding = new Padding(2, 1, 2, 1);
+            viewAnimals_tabPage.Size = new Size(886, 457);
+            viewAnimals_tabPage.TabIndex = 0;
+            viewAnimals_tabPage.Text = "View";
+            // 
+            // petList_panel
+            // 
+            petList_panel.AutoScroll = true;
+            petList_panel.Controls.Add(petList_table);
+            petList_panel.Location = new Point(6, 87);
+            petList_panel.Name = "petList_panel";
+            petList_panel.Size = new Size(875, 366);
+            petList_panel.TabIndex = 4;
+            // 
+            // petList_table
+            // 
+            petList_table.AutoSize = true;
+            petList_table.ColumnCount = 6;
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666718F));
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
+            petList_table.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
+            petList_table.Location = new Point(3, 3);
+            petList_table.Name = "petList_table";
+            petList_table.RowCount = 1;
+            petList_table.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            petList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            petList_table.Size = new Size(852, 32);
+            petList_table.TabIndex = 11;
+            // 
+            // petType_title
+            // 
+            petType_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petType_title.Location = new Point(726, 52);
+            petType_title.Name = "petType_title";
+            petType_title.Size = new Size(135, 30);
+            petType_title.TabIndex = 10;
+            petType_title.Text = "Type";
+            petType_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.Dock = DockStyle.Top;
+            label3.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(81, 60, 41);
+            label3.Location = new Point(2, 1);
+            label3.Name = "label3";
+            label3.Size = new Size(882, 51);
+            label3.TabIndex = 3;
+            label3.Text = "View Pets";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // petVax_title
+            // 
+            petVax_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petVax_title.Location = new Point(582, 54);
+            petVax_title.Name = "petVax_title";
+            petVax_title.Size = new Size(138, 30);
+            petVax_title.TabIndex = 9;
+            petVax_title.Text = "Vaccinated";
+            petVax_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // petID_title
+            // 
+            petID_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petID_title.Location = new Point(9, 54);
+            petID_title.Name = "petID_title";
+            petID_title.Size = new Size(138, 30);
+            petID_title.TabIndex = 5;
+            petID_title.Text = "ID";
+            petID_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // petBreed_title
+            // 
+            petBreed_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petBreed_title.Location = new Point(441, 52);
+            petBreed_title.Name = "petBreed_title";
+            petBreed_title.Size = new Size(135, 30);
+            petBreed_title.TabIndex = 8;
+            petBreed_title.Text = "Breed";
+            petBreed_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // petName_title
+            // 
+            petName_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petName_title.Location = new Point(153, 52);
+            petName_title.Name = "petName_title";
+            petName_title.Size = new Size(138, 30);
+            petName_title.TabIndex = 6;
+            petName_title.Text = "Name";
+            petName_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // petGender_title
+            // 
+            petGender_title.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            petGender_title.Location = new Point(297, 52);
+            petGender_title.Name = "petGender_title";
+            petGender_title.Size = new Size(138, 30);
+            petGender_title.TabIndex = 7;
+            petGender_title.Text = "Sex";
+            petGender_title.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // addAnimals_tabPage
+            // 
+            addAnimals_tabPage.AutoScroll = true;
+            addAnimals_tabPage.BackColor = Color.FromArgb(229, 215, 200);
+            addAnimals_tabPage.Controls.Add(addPet_panel);
+            addAnimals_tabPage.Location = new Point(4, 24);
+            addAnimals_tabPage.Margin = new Padding(2, 1, 2, 1);
+            addAnimals_tabPage.Name = "addAnimals_tabPage";
+            addAnimals_tabPage.Padding = new Padding(2, 1, 2, 1);
+            addAnimals_tabPage.Size = new Size(886, 457);
+            addAnimals_tabPage.TabIndex = 1;
+            addAnimals_tabPage.Text = "Add";
+            // 
+            // addPet_panel
+            // 
+            addPet_panel.BackColor = Color.FromArgb(229, 215, 200);
+            addPet_panel.Controls.Add(panel7);
+            addPet_panel.Controls.Add(addPetLabel);
+            addPet_panel.Location = new Point(4, 4);
+            addPet_panel.Margin = new Padding(3, 2, 3, 2);
+            addPet_panel.Name = "addPet_panel";
+            addPet_panel.Size = new Size(877, 452);
+            addPet_panel.TabIndex = 1;
+            addPet_panel.VisibleChanged += addPet_VisibleChanged;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(addPet_btn);
+            panel7.Controls.Add(panel8);
+            panel7.Controls.Add(panel16);
+            panel7.Location = new Point(3, 45);
+            panel7.Margin = new Padding(3, 2, 3, 2);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(871, 405);
+            panel7.TabIndex = 4;
+            // 
+            // addPet_btn
+            // 
+            addPet_btn.BackColor = Color.FromArgb(111, 138, 129);
+            addPet_btn.Cursor = Cursors.Hand;
+            addPet_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(111, 138, 129);
+            addPet_btn.FlatAppearance.MouseOverBackColor = Color.DarkSeaGreen;
+            addPet_btn.FlatStyle = FlatStyle.Flat;
+            addPet_btn.Font = new Font("Yu Gothic UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            addPet_btn.ForeColor = Color.FromArgb(255, 246, 229);
+            addPet_btn.Location = new Point(9, 361);
+            addPet_btn.Margin = new Padding(3, 2, 3, 2);
+            addPet_btn.Name = "addPet_btn";
+            addPet_btn.Size = new Size(851, 39);
+            addPet_btn.TabIndex = 6;
+            addPet_btn.Text = "ADD";
+            addPet_btn.UseVisualStyleBackColor = false;
+            addPet_btn.Click += addPet_btn_Click;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.Transparent;
+            panel8.Controls.Add(checkBox10);
+            panel8.Controls.Add(checkBox9);
+            panel8.Controls.Add(checkBox8);
+            panel8.Controls.Add(checkBox7);
+            panel8.Controls.Add(vaccinated_checkBox);
+            panel8.Controls.Add(worming_checkBox);
+            panel8.Controls.Add(microchipped_checkBox);
+            panel8.Controls.Add(desexed_checkBox);
+            panel8.Controls.Add(panel3);
+            panel8.Controls.Add(checkBox3);
+            panel8.Controls.Add(Location_panel);
+            panel8.Controls.Add(panel14);
+            panel8.Location = new Point(469, 9);
+            panel8.Margin = new Padding(2, 1, 2, 1);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(390, 363);
+            panel8.TabIndex = 7;
+            // 
+            // checkBox10
+            // 
+            checkBox10.Anchor = AnchorStyles.Right;
+            checkBox10.AutoSize = true;
+            checkBox10.BackColor = Color.Transparent;
+            checkBox10.Cursor = Cursors.Hand;
+            checkBox10.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox10.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox10.ImageAlign = ContentAlignment.TopCenter;
+            checkBox10.Location = new Point(198, 292);
+            checkBox10.Margin = new Padding(1);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Padding = new Padding(5, 0, 3, 0);
+            checkBox10.Size = new Size(147, 34);
+            checkBox10.TabIndex = 36;
+            checkBox10.Text = "Vaccinated";
+            checkBox10.TextAlign = ContentAlignment.MiddleCenter;
+            checkBox10.UseVisualStyleBackColor = false;
+            // 
+            // checkBox9
+            // 
+            checkBox9.Anchor = AnchorStyles.Right;
+            checkBox9.AutoSize = true;
+            checkBox9.BackColor = Color.Transparent;
+            checkBox9.Cursor = Cursors.Hand;
+            checkBox9.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox9.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox9.ImageAlign = ContentAlignment.TopCenter;
+            checkBox9.Location = new Point(13, 293);
+            checkBox9.Margin = new Padding(1);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Padding = new Padding(5, 0, 3, 0);
+            checkBox9.Size = new Size(132, 34);
+            checkBox9.TabIndex = 36;
+            checkBox9.Text = "Worming";
+            checkBox9.TextAlign = ContentAlignment.MiddleCenter;
+            checkBox9.UseVisualStyleBackColor = false;
+            // 
+            // checkBox8
+            // 
+            checkBox8.Anchor = AnchorStyles.Right;
+            checkBox8.AutoSize = true;
+            checkBox8.BackColor = Color.Transparent;
+            checkBox8.Cursor = Cursors.Hand;
+            checkBox8.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox8.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox8.ImageAlign = ContentAlignment.TopCenter;
+            checkBox8.Location = new Point(198, 226);
+            checkBox8.Margin = new Padding(1);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Padding = new Padding(5, 0, 3, 0);
+            checkBox8.Size = new Size(177, 34);
+            checkBox8.TabIndex = 36;
+            checkBox8.Text = "Microchipped";
+            checkBox8.TextAlign = ContentAlignment.MiddleCenter;
+            checkBox8.UseVisualStyleBackColor = false;
+            // 
+            // checkBox7
+            // 
+            checkBox7.Anchor = AnchorStyles.Right;
+            checkBox7.AutoSize = true;
+            checkBox7.BackColor = Color.Transparent;
+            checkBox7.Cursor = Cursors.Hand;
+            checkBox7.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox7.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox7.ImageAlign = ContentAlignment.TopCenter;
+            checkBox7.Location = new Point(13, 226);
+            checkBox7.Margin = new Padding(1);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Padding = new Padding(5, 0, 3, 0);
+            checkBox7.Size = new Size(132, 34);
+            checkBox7.TabIndex = 36;
+            checkBox7.Text = "Desexing";
+            checkBox7.TextAlign = ContentAlignment.MiddleCenter;
+            checkBox7.UseVisualStyleBackColor = false;
+            // 
+            // vaccinated_checkBox
+            // 
+            vaccinated_checkBox.Anchor = AnchorStyles.Right;
+            vaccinated_checkBox.AutoSize = true;
+            vaccinated_checkBox.BackColor = Color.Transparent;
+            vaccinated_checkBox.Cursor = Cursors.Hand;
+            vaccinated_checkBox.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            vaccinated_checkBox.ForeColor = Color.FromArgb(132, 109, 97);
+            vaccinated_checkBox.ImageAlign = ContentAlignment.TopCenter;
+            vaccinated_checkBox.Location = new Point(388, 423);
+            vaccinated_checkBox.Margin = new Padding(1);
+            vaccinated_checkBox.Name = "vaccinated_checkBox";
+            vaccinated_checkBox.Padding = new Padding(5, 0, 3, 0);
+            vaccinated_checkBox.Size = new Size(147, 34);
+            vaccinated_checkBox.TabIndex = 13;
+            vaccinated_checkBox.Text = "Vaccinated";
+            vaccinated_checkBox.TextAlign = ContentAlignment.MiddleCenter;
+            vaccinated_checkBox.UseVisualStyleBackColor = false;
+            // 
+            // worming_checkBox
+            // 
+            worming_checkBox.Anchor = AnchorStyles.Right;
+            worming_checkBox.AutoSize = true;
+            worming_checkBox.BackColor = Color.Transparent;
+            worming_checkBox.Cursor = Cursors.Hand;
+            worming_checkBox.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            worming_checkBox.ForeColor = Color.FromArgb(132, 109, 97);
+            worming_checkBox.ImageAlign = ContentAlignment.TopCenter;
+            worming_checkBox.Location = new Point(203, 424);
+            worming_checkBox.Margin = new Padding(1);
+            worming_checkBox.Name = "worming_checkBox";
+            worming_checkBox.Padding = new Padding(5, 0, 3, 0);
+            worming_checkBox.Size = new Size(132, 34);
+            worming_checkBox.TabIndex = 12;
+            worming_checkBox.Text = "Worming";
+            worming_checkBox.TextAlign = ContentAlignment.MiddleCenter;
+            worming_checkBox.UseVisualStyleBackColor = false;
+            // 
+            // microchipped_checkBox
+            // 
+            microchipped_checkBox.Anchor = AnchorStyles.Right;
+            microchipped_checkBox.AutoSize = true;
+            microchipped_checkBox.BackColor = Color.Transparent;
+            microchipped_checkBox.Cursor = Cursors.Hand;
+            microchipped_checkBox.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            microchipped_checkBox.ForeColor = Color.FromArgb(132, 109, 97);
+            microchipped_checkBox.ImageAlign = ContentAlignment.TopCenter;
+            microchipped_checkBox.Location = new Point(388, 357);
+            microchipped_checkBox.Margin = new Padding(1);
+            microchipped_checkBox.Name = "microchipped_checkBox";
+            microchipped_checkBox.Padding = new Padding(5, 0, 3, 0);
+            microchipped_checkBox.Size = new Size(177, 34);
+            microchipped_checkBox.TabIndex = 11;
+            microchipped_checkBox.Text = "Microchipped";
+            microchipped_checkBox.TextAlign = ContentAlignment.MiddleCenter;
+            microchipped_checkBox.UseVisualStyleBackColor = false;
+            // 
+            // desexed_checkBox
+            // 
+            desexed_checkBox.Anchor = AnchorStyles.Right;
+            desexed_checkBox.AutoSize = true;
+            desexed_checkBox.BackColor = Color.Transparent;
+            desexed_checkBox.Cursor = Cursors.Hand;
+            desexed_checkBox.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            desexed_checkBox.ForeColor = Color.FromArgb(132, 109, 97);
+            desexed_checkBox.ImageAlign = ContentAlignment.TopCenter;
+            desexed_checkBox.Location = new Point(203, 357);
+            desexed_checkBox.Margin = new Padding(1);
+            desexed_checkBox.Name = "desexed_checkBox";
+            desexed_checkBox.Padding = new Padding(5, 0, 3, 0);
+            desexed_checkBox.Size = new Size(132, 34);
+            desexed_checkBox.TabIndex = 10;
+            desexed_checkBox.Text = "Desexing";
+            desexed_checkBox.TextAlign = ContentAlignment.MiddleCenter;
+            desexed_checkBox.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(txtName);
+            panel3.Controls.Add(pictureBox5);
+            panel3.Controls.Add(pictureBox21);
+            panel3.Location = new Point(1, 142);
+            panel3.Margin = new Padding(2, 1, 2, 1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(387, 75);
+            panel3.TabIndex = 8;
+            // 
+            // txtName
+            // 
+            txtName.BackColor = Color.FromArgb(253, 252, 245);
+            txtName.BorderStyle = BorderStyle.None;
+            txtName.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.ForeColor = Color.FromArgb(203, 199, 183);
+            txtName.Location = new Point(83, 17);
+            txtName.Margin = new Padding(3, 2, 3, 2);
+            txtName.Multiline = true;
+            txtName.Name = "txtName";
+            txtName.PlaceholderText = "Name";
+            txtName.RightToLeft = RightToLeft.No;
+            txtName.Size = new Size(274, 34);
+            txtName.TabIndex = 4;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.FromArgb(253, 252, 245);
+            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
+            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Location = new Point(29, 17);
+            pictureBox5.Margin = new Padding(2, 1, 2, 1);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(41, 34);
+            pictureBox5.TabIndex = 7;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            pictureBox21.BackgroundImage = (Image)resources.GetObject("pictureBox21.BackgroundImage");
+            pictureBox21.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox21.Location = new Point(12, 11);
+            pictureBox21.Margin = new Padding(3, 2, 3, 2);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(361, 46);
+            pictureBox21.TabIndex = 6;
+            pictureBox21.TabStop = false;
+            // 
+            // checkBox3
+            // 
+            checkBox3.Anchor = AnchorStyles.Right;
+            checkBox3.AutoSize = true;
+            checkBox3.BackColor = Color.Transparent;
+            checkBox3.Cursor = Cursors.Hand;
+            checkBox3.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox3.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox3.ImageAlign = ContentAlignment.TopCenter;
+            checkBox3.Location = new Point(773, 661);
+            checkBox3.Margin = new Padding(1);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Padding = new Padding(5, 0, 3, 0);
+            checkBox3.Size = new Size(132, 34);
+            checkBox3.TabIndex = 9;
+            checkBox3.Text = "Worming";
+            checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // Location_panel
+            // 
+            Location_panel.Controls.Add(txtLocation);
+            Location_panel.Controls.Add(pictureBox7);
+            Location_panel.Location = new Point(0, 0);
+            Location_panel.Margin = new Padding(3, 2, 3, 2);
+            Location_panel.Name = "Location_panel";
+            Location_panel.Size = new Size(390, 75);
+            Location_panel.TabIndex = 4;
+            // 
+            // txtLocation
+            // 
+            txtLocation.BackColor = Color.FromArgb(253, 252, 245);
+            txtLocation.BorderStyle = BorderStyle.None;
+            txtLocation.Enabled = false;
+            txtLocation.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtLocation.ForeColor = Color.FromArgb(203, 199, 183);
+            txtLocation.Location = new Point(76, 18);
+            txtLocation.Margin = new Padding(3, 2, 3, 2);
+            txtLocation.Multiline = true;
+            txtLocation.Name = "txtLocation";
+            txtLocation.PlaceholderText = "Store";
+            txtLocation.RightToLeft = RightToLeft.No;
+            txtLocation.Size = new Size(282, 34);
+            txtLocation.TabIndex = 3;
+            txtLocation.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
+            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Location = new Point(12, 8);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(361, 52);
+            pictureBox7.TabIndex = 2;
+            pictureBox7.TabStop = false;
+            // 
+            // panel14
+            // 
+            panel14.Controls.Add(txtBreed);
+            panel14.Controls.Add(pictureBox12);
+            panel14.Controls.Add(pictureBox13);
+            panel14.Location = new Point(0, 75);
+            panel14.Margin = new Padding(2, 1, 2, 1);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(390, 65);
+            panel14.TabIndex = 6;
+            // 
+            // txtBreed
+            // 
+            txtBreed.BackColor = Color.FromArgb(253, 252, 245);
+            txtBreed.BorderStyle = BorderStyle.None;
+            txtBreed.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtBreed.ForeColor = Color.FromArgb(203, 199, 183);
+            txtBreed.Location = new Point(83, 15);
+            txtBreed.Margin = new Padding(3, 2, 3, 2);
+            txtBreed.Multiline = true;
+            txtBreed.Name = "txtBreed";
+            txtBreed.PlaceholderText = "Breed";
+            txtBreed.RightToLeft = RightToLeft.No;
+            txtBreed.Size = new Size(275, 34);
+            txtBreed.TabIndex = 4;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.FromArgb(253, 252, 245);
+            pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
+            pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox12.Location = new Point(29, 14);
+            pictureBox12.Margin = new Padding(2, 1, 2, 1);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(50, 36);
+            pictureBox12.TabIndex = 7;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackgroundImage = (Image)resources.GetObject("pictureBox13.BackgroundImage");
+            pictureBox13.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox13.Location = new Point(12, 9);
+            pictureBox13.Margin = new Padding(3, 2, 3, 2);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(361, 45);
+            pictureBox13.TabIndex = 6;
+            pictureBox13.TabStop = false;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.Transparent;
+            panel16.Controls.Add(panel50);
+            panel16.Controls.Add(panel15);
+            panel16.Controls.Add(checkBox6);
+            panel16.Controls.Add(panel9);
+            panel16.Controls.Add(checkBox5);
+            panel16.Controls.Add(checkBox4);
+            panel16.Controls.Add(checkBox2);
+            panel16.Controls.Add(checkBox1);
+            panel16.Controls.Add(panel17);
+            panel16.Controls.Add(panel18);
+            panel16.Controls.Add(panel19);
+            panel16.Controls.Add(panel20);
+            panel16.Location = new Point(9, 9);
+            panel16.Margin = new Padding(2, 1, 2, 1);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(453, 362);
+            panel16.TabIndex = 6;
+            // 
+            // panel50
+            // 
+            panel50.Controls.Add(size_comboBox);
+            panel50.Controls.Add(pictureBox36);
+            panel50.Location = new Point(0, 282);
+            panel50.Margin = new Padding(3, 2, 3, 2);
+            panel50.Name = "panel50";
+            panel50.Size = new Size(286, 70);
+            panel50.TabIndex = 7;
+            // 
+            // size_comboBox
+            // 
+            size_comboBox.BackColor = Color.FromArgb(253, 252, 245);
+            size_comboBox.FlatStyle = FlatStyle.Flat;
+            size_comboBox.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            size_comboBox.ForeColor = Color.FromArgb(132, 109, 97);
+            size_comboBox.FormattingEnabled = true;
+            size_comboBox.Items.AddRange(new object[] { "Small", "Medium", "Large" });
+            size_comboBox.Location = new Point(33, 16);
+            size_comboBox.Margin = new Padding(3, 2, 3, 2);
+            size_comboBox.Name = "size_comboBox";
+            size_comboBox.RightToLeft = RightToLeft.No;
+            size_comboBox.Size = new Size(238, 38);
+            size_comboBox.TabIndex = 4;
+            size_comboBox.Text = "Size";
+            // 
+            // pictureBox36
+            // 
+            pictureBox36.BackgroundImage = (Image)resources.GetObject("pictureBox36.BackgroundImage");
+            pictureBox36.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox36.Location = new Point(8, 10);
+            pictureBox36.Margin = new Padding(3, 2, 3, 2);
+            pictureBox36.Name = "pictureBox36";
+            pictureBox36.Size = new Size(278, 50);
+            pictureBox36.TabIndex = 2;
+            pictureBox36.TabStop = false;
+            // 
+            // panel15
+            // 
+            panel15.Controls.Add(txtPetColor);
+            panel15.Controls.Add(pictureBox14);
+            panel15.Controls.Add(pictureBox35);
+            panel15.Location = new Point(0, 214);
+            panel15.Margin = new Padding(2, 1, 2, 1);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(286, 64);
+            panel15.TabIndex = 12;
+            // 
+            // txtPetColor
+            // 
+            txtPetColor.BackColor = Color.FromArgb(253, 252, 245);
+            txtPetColor.BorderStyle = BorderStyle.None;
+            txtPetColor.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPetColor.ForeColor = Color.FromArgb(203, 199, 183);
+            txtPetColor.Location = new Point(73, 18);
+            txtPetColor.Margin = new Padding(3, 2, 3, 2);
+            txtPetColor.Multiline = true;
+            txtPetColor.Name = "txtPetColor";
+            txtPetColor.PlaceholderText = "Color";
+            txtPetColor.RightToLeft = RightToLeft.No;
+            txtPetColor.Size = new Size(188, 34);
+            txtPetColor.TabIndex = 4;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.FromArgb(253, 252, 245);
+            pictureBox14.BackgroundImage = Properties.Resources.Reason_to_return_3;
+            pictureBox14.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox14.Location = new Point(32, 18);
+            pictureBox14.Margin = new Padding(2, 1, 2, 1);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(36, 34);
+            pictureBox14.TabIndex = 7;
+            pictureBox14.TabStop = false;
+            // 
+            // pictureBox35
+            // 
+            pictureBox35.BackgroundImage = (Image)resources.GetObject("pictureBox35.BackgroundImage");
+            pictureBox35.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox35.Location = new Point(15, 12);
+            pictureBox35.Margin = new Padding(3, 2, 3, 2);
+            pictureBox35.Name = "pictureBox35";
+            pictureBox35.Size = new Size(271, 45);
+            pictureBox35.TabIndex = 6;
+            pictureBox35.TabStop = false;
+            // 
+            // checkBox6
+            // 
+            checkBox6.Anchor = AnchorStyles.Right;
+            checkBox6.AutoSize = true;
+            checkBox6.BackColor = Color.Transparent;
+            checkBox6.Cursor = Cursors.Hand;
+            checkBox6.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox6.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox6.ImageAlign = ContentAlignment.TopCenter;
+            checkBox6.Location = new Point(616, 592);
+            checkBox6.Margin = new Padding(1);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Padding = new Padding(5, 0, 3, 0);
+            checkBox6.Size = new Size(132, 34);
+            checkBox6.TabIndex = 11;
+            checkBox6.Text = "Worming";
+            checkBox6.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(txtPetID);
+            panel9.Controls.Add(pictureBox20);
+            panel9.Location = new Point(291, 214);
+            panel9.Margin = new Padding(3, 2, 3, 2);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(151, 64);
+            panel9.TabIndex = 6;
+            // 
+            // txtPetID
+            // 
+            txtPetID.BackColor = Color.FromArgb(253, 252, 245);
+            txtPetID.BorderStyle = BorderStyle.None;
+            txtPetID.Enabled = false;
+            txtPetID.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtPetID.ForeColor = Color.FromArgb(203, 199, 183);
+            txtPetID.Location = new Point(22, 17);
+            txtPetID.Margin = new Padding(3, 2, 3, 2);
+            txtPetID.Multiline = true;
+            txtPetID.Name = "txtPetID";
+            txtPetID.PlaceholderText = "Pet ID";
+            txtPetID.RightToLeft = RightToLeft.No;
+            txtPetID.Size = new Size(111, 35);
+            txtPetID.TabIndex = 4;
+            txtPetID.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.BackgroundImage = (Image)resources.GetObject("pictureBox20.BackgroundImage");
+            pictureBox20.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox20.Location = new Point(8, 12);
+            pictureBox20.Margin = new Padding(3, 2, 3, 2);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(140, 45);
+            pictureBox20.TabIndex = 2;
+            pictureBox20.TabStop = false;
+            // 
+            // checkBox5
+            // 
+            checkBox5.Anchor = AnchorStyles.Right;
+            checkBox5.AutoSize = true;
+            checkBox5.BackColor = Color.Transparent;
+            checkBox5.Cursor = Cursors.Hand;
+            checkBox5.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox5.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox5.ImageAlign = ContentAlignment.TopCenter;
+            checkBox5.Location = new Point(618, 552);
+            checkBox5.Margin = new Padding(1);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Padding = new Padding(5, 0, 3, 0);
+            checkBox5.Size = new Size(177, 34);
+            checkBox5.TabIndex = 10;
+            checkBox5.Text = "Microchipped";
+            checkBox5.UseVisualStyleBackColor = false;
+            // 
+            // checkBox4
+            // 
+            checkBox4.Anchor = AnchorStyles.Right;
+            checkBox4.AutoSize = true;
+            checkBox4.BackColor = Color.Transparent;
+            checkBox4.Cursor = Cursors.Hand;
+            checkBox4.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox4.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox4.ImageAlign = ContentAlignment.TopCenter;
+            checkBox4.Location = new Point(615, 511);
+            checkBox4.Margin = new Padding(1);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Padding = new Padding(5, 0, 3, 0);
+            checkBox4.Size = new Size(132, 34);
+            checkBox4.TabIndex = 9;
+            checkBox4.Text = "Desexing";
+            checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // checkBox2
+            // 
+            checkBox2.Anchor = AnchorStyles.Right;
+            checkBox2.AutoSize = true;
+            checkBox2.BackColor = Color.Transparent;
+            checkBox2.Cursor = Cursors.Hand;
+            checkBox2.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox2.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox2.ImageAlign = ContentAlignment.TopCenter;
+            checkBox2.Location = new Point(1221, 661);
+            checkBox2.Margin = new Padding(1);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Padding = new Padding(5, 0, 3, 0);
+            checkBox2.Size = new Size(177, 34);
+            checkBox2.TabIndex = 8;
+            checkBox2.Text = "Microchipped";
+            checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            checkBox1.Anchor = AnchorStyles.Right;
+            checkBox1.AutoSize = true;
+            checkBox1.BackColor = Color.Transparent;
+            checkBox1.Cursor = Cursors.Hand;
+            checkBox1.Font = new Font("Yu Gothic UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBox1.ForeColor = Color.FromArgb(132, 109, 97);
+            checkBox1.ImageAlign = ContentAlignment.TopCenter;
+            checkBox1.Location = new Point(960, 661);
+            checkBox1.Margin = new Padding(1);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Padding = new Padding(5, 0, 3, 0);
+            checkBox1.Size = new Size(132, 34);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "Desexing";
+            checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // panel17
+            // 
+            panel17.Controls.Add(txtDescription);
+            panel17.Controls.Add(pictureBox15);
+            panel17.Controls.Add(pictureBox16);
+            panel17.Location = new Point(0, 139);
+            panel17.Margin = new Padding(2, 1, 2, 1);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(443, 75);
+            panel17.TabIndex = 6;
+            // 
+            // txtDescription
+            // 
+            txtDescription.BackColor = Color.FromArgb(253, 252, 245);
+            txtDescription.BorderStyle = BorderStyle.None;
+            txtDescription.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtDescription.ForeColor = Color.FromArgb(203, 199, 183);
+            txtDescription.Location = new Point(73, 22);
+            txtDescription.Margin = new Padding(3, 2, 3, 2);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.PlaceholderText = "Description";
+            txtDescription.RightToLeft = RightToLeft.No;
+            txtDescription.Size = new Size(336, 34);
+            txtDescription.TabIndex = 4;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.BackColor = Color.FromArgb(253, 252, 245);
+            pictureBox15.BackgroundImage = Properties.Resources.Reason_to_return_3;
+            pictureBox15.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox15.Location = new Point(32, 22);
+            pictureBox15.Margin = new Padding(2, 1, 2, 1);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(36, 34);
+            pictureBox15.TabIndex = 7;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.BackgroundImage = (Image)resources.GetObject("pictureBox16.BackgroundImage");
+            pictureBox16.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox16.Location = new Point(12, 16);
+            pictureBox16.Margin = new Padding(3, 2, 3, 2);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(415, 45);
+            pictureBox16.TabIndex = 6;
+            pictureBox16.TabStop = false;
+            // 
+            // panel18
+            // 
+            panel18.Controls.Add(sex_Combobx);
+            panel18.Controls.Add(pictureBox17);
+            panel18.Location = new Point(227, 75);
+            panel18.Margin = new Padding(3, 2, 3, 2);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(215, 65);
+            panel18.TabIndex = 4;
+            // 
+            // sex_Combobx
+            // 
+            sex_Combobx.BackColor = Color.FromArgb(253, 252, 245);
+            sex_Combobx.FlatStyle = FlatStyle.Flat;
+            sex_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            sex_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
+            sex_Combobx.FormattingEnabled = true;
+            sex_Combobx.Items.AddRange(new object[] { "Male", "Female" });
+            sex_Combobx.Location = new Point(87, 12);
+            sex_Combobx.Margin = new Padding(3, 2, 3, 2);
+            sex_Combobx.Name = "sex_Combobx";
+            sex_Combobx.RightToLeft = RightToLeft.No;
+            sex_Combobx.Size = new Size(95, 38);
+            sex_Combobx.TabIndex = 3;
+            sex_Combobx.Text = "Sex";
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.BackgroundImage = (Image)resources.GetObject("pictureBox17.BackgroundImage");
+            pictureBox17.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox17.Location = new Point(15, 7);
+            pictureBox17.Margin = new Padding(3, 2, 3, 2);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(185, 47);
+            pictureBox17.TabIndex = 2;
+            pictureBox17.TabStop = false;
+            // 
+            // panel19
+            // 
+            panel19.BackColor = Color.Transparent;
+            panel19.Controls.Add(PetType_Combobx);
+            panel19.Controls.Add(pictureBox18);
+            panel19.Location = new Point(0, 0);
+            panel19.Margin = new Padding(2, 1, 2, 1);
+            panel19.Name = "panel19";
+            panel19.Size = new Size(443, 75);
+            panel19.TabIndex = 5;
+            // 
+            // PetType_Combobx
+            // 
+            PetType_Combobx.BackColor = Color.FromArgb(253, 252, 245);
+            PetType_Combobx.FlatStyle = FlatStyle.Flat;
+            PetType_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            PetType_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
+            PetType_Combobx.FormattingEnabled = true;
+            PetType_Combobx.Items.AddRange(new object[] { "Cat", "Dog", "Other" });
+            PetType_Combobx.Location = new Point(82, 16);
+            PetType_Combobx.Margin = new Padding(3, 2, 3, 2);
+            PetType_Combobx.Name = "PetType_Combobx";
+            PetType_Combobx.Size = new Size(327, 38);
+            PetType_Combobx.TabIndex = 5;
+            PetType_Combobx.Text = "Choose an animal type ";
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.BackgroundImage = (Image)resources.GetObject("pictureBox18.BackgroundImage");
+            pictureBox18.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox18.Location = new Point(12, 8);
+            pictureBox18.Margin = new Padding(3, 2, 3, 2);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(415, 52);
+            pictureBox18.TabIndex = 4;
+            pictureBox18.TabStop = false;
+            // 
+            // panel20
+            // 
+            panel20.Controls.Add(age_Combobx);
+            panel20.Controls.Add(pictureBox19);
+            panel20.Location = new Point(0, 75);
+            panel20.Margin = new Padding(3, 2, 3, 2);
+            panel20.Name = "panel20";
+            panel20.Size = new Size(228, 65);
+            panel20.TabIndex = 3;
+            // 
+            // age_Combobx
+            // 
+            age_Combobx.BackColor = Color.FromArgb(253, 252, 245);
+            age_Combobx.FlatStyle = FlatStyle.Flat;
+            age_Combobx.Font = new Font("Yu Gothic UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            age_Combobx.ForeColor = Color.FromArgb(132, 109, 97);
+            age_Combobx.FormattingEnabled = true;
+            age_Combobx.Items.AddRange(new object[] { "Young", "Adult", "Senior" });
+            age_Combobx.Location = new Point(82, 11);
+            age_Combobx.Margin = new Padding(3, 2, 3, 2);
+            age_Combobx.Name = "age_Combobx";
+            age_Combobx.RightToLeft = RightToLeft.No;
+            age_Combobx.Size = new Size(107, 38);
+            age_Combobx.TabIndex = 3;
+            age_Combobx.Text = "Age";
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
+            pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox19.Location = new Point(12, 7);
+            pictureBox19.Margin = new Padding(3, 2, 3, 2);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(191, 47);
+            pictureBox19.TabIndex = 2;
+            pictureBox19.TabStop = false;
+            // 
+            // addPetLabel
+            // 
+            addPetLabel.Dock = DockStyle.Top;
+            addPetLabel.Font = new Font("Segoe UI", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
+            addPetLabel.ForeColor = Color.FromArgb(81, 60, 41);
+            addPetLabel.Location = new Point(0, 0);
+            addPetLabel.Name = "addPetLabel";
+            addPetLabel.Size = new Size(877, 51);
+            addPetLabel.TabIndex = 2;
+            addPetLabel.Text = "Add Pet";
+            addPetLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // frmAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3256,12 +3594,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1200, 600);
+            Controls.Add(animal_tabControl);
             Controls.Add(closeButton);
             Controls.Add(panel1);
+            Controls.Add(customer_tabControl);
             Controls.Add(admin_tabControl);
             Controls.Add(viewDetails_tabControl);
-            Controls.Add(animal_tabControl);
-            Controls.Add(customer_tabControl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);
@@ -3307,43 +3645,6 @@
             ((System.ComponentModel.ISupportInitialize)userName_Pic).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            animal_tabControl.ResumeLayout(false);
-            viewAnimals_tabPage.ResumeLayout(false);
-            viewAnimals_tabPage.PerformLayout();
-            addAnimals_tabPage.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            Location_panel.ResumeLayout(false);
-            Location_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            panel16.ResumeLayout(false);
-            panel16.PerformLayout();
-            panel17.ResumeLayout(false);
-            panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            panel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
-            panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             admin_tabControl.ResumeLayout(false);
             viewAdmin_tabPage.ResumeLayout(false);
             viewAdmin_tabPage.PerformLayout();
@@ -3425,6 +3726,47 @@
             panel43.PerformLayout();
             panel44.ResumeLayout(false);
             panel44.PerformLayout();
+            animal_tabControl.ResumeLayout(false);
+            viewAnimals_tabPage.ResumeLayout(false);
+            petList_panel.ResumeLayout(false);
+            petList_panel.PerformLayout();
+            addAnimals_tabPage.ResumeLayout(false);
+            addPet_panel.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            Location_panel.ResumeLayout(false);
+            Location_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            panel16.ResumeLayout(false);
+            panel16.PerformLayout();
+            panel50.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox36).EndInit();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox35).EndInit();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            panel17.ResumeLayout(false);
+            panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            panel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ResumeLayout(false);
         }
 
@@ -3489,52 +3831,6 @@
         private TextBox txtCity;
         private PictureBox pictureBox3;
         private Label label2;
-        private TabControl animal_tabControl;
-        private TabPage viewAnimals_tabPage;
-        private Label label3;
-        private TabPage addAnimals_tabPage;
-        private Panel panel2;
-        private Label addPetLabel;
-        private Panel panel7;
-        private Button button1;
-        private Panel panel8;
-        private CheckBox checkBox3;
-        private Panel panel9;
-        private Panel Location_panel;
-        private TextBox txtLocation;
-        private PictureBox pictureBox7;
-        private Panel panel14;
-        private TextBox txtBreed;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private Panel panel15;
-        private ComboBox vaccinated_Combobx;
-        private PictureBox pictureBox14;
-        private Panel panel16;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private Panel panel17;
-        private TextBox txtDescription;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox16;
-        private Panel panel18;
-        private ComboBox sex_Combobx;
-        private PictureBox pictureBox17;
-        private Panel panel19;
-        private ComboBox PetType_Combobx;
-        private PictureBox pictureBox18;
-        private Panel panel20;
-        private ComboBox age_Combobx;
-        private PictureBox pictureBox19;
-        private TextBox textBox1;
-        private PictureBox pictureBox20;
-        private Panel panel3;
-        private TextBox txtName;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox21;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
         private TabControl admin_tabControl;
         private Button closeButton;
         private TabPage viewAdmin_tabPage;
@@ -3662,5 +3958,71 @@
         private Panel panel44;
         private TextBox findAnimalGender_lbl;
         private Label sex_Label;
+        private TabControl animal_tabControl;
+        private TabPage viewAnimals_tabPage;
+        private Panel petList_panel;
+        private TableLayoutPanel petList_table;
+        private Label petType_title;
+        private Label label3;
+        private Label petVax_title;
+        private Label petID_title;
+        private Label petBreed_title;
+        private Label petName_title;
+        private Label petGender_title;
+        private TabPage addAnimals_tabPage;
+        private Panel addPet_panel;
+        private Panel panel7;
+        private Button addPet_btn;
+        private Panel panel8;
+        private CheckBox vaccinated_checkBox;
+        private CheckBox worming_checkBox;
+        private CheckBox microchipped_checkBox;
+        private CheckBox desexed_checkBox;
+        private Panel panel3;
+        private TextBox txtName;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox21;
+        private CheckBox checkBox3;
+        private Panel Location_panel;
+        private TextBox txtLocation;
+        private PictureBox pictureBox7;
+        private Panel panel14;
+        private TextBox txtBreed;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox13;
+        private Panel panel16;
+        private Panel panel50;
+        private ComboBox size_comboBox;
+        private PictureBox pictureBox36;
+        private Panel panel15;
+        private TextBox txtPetColor;
+        private PictureBox pictureBox14;
+        private PictureBox pictureBox35;
+        private CheckBox checkBox6;
+        private Panel panel9;
+        private TextBox txtPetID;
+        private PictureBox pictureBox20;
+        private CheckBox checkBox5;
+        private CheckBox checkBox4;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
+        private Panel panel17;
+        private TextBox txtDescription;
+        private PictureBox pictureBox15;
+        private PictureBox pictureBox16;
+        private Panel panel18;
+        private ComboBox sex_Combobx;
+        private PictureBox pictureBox17;
+        private Panel panel19;
+        private ComboBox PetType_Combobx;
+        private PictureBox pictureBox18;
+        private Panel panel20;
+        private ComboBox age_Combobx;
+        private PictureBox pictureBox19;
+        private Label addPetLabel;
+        private CheckBox checkBox7;
+        private CheckBox checkBox8;
+        private CheckBox checkBox9;
+        private CheckBox checkBox10;
     }
 }
