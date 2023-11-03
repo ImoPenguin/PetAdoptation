@@ -3641,10 +3641,10 @@
             ClientSize = new Size(1200, 600);
             Controls.Add(closeButton);
             Controls.Add(panel1);
-            Controls.Add(animal_tabControl);
             Controls.Add(customer_tabControl);
             Controls.Add(staff_tabControl);
             Controls.Add(viewDetails_tabControl);
+            Controls.Add(animal_tabControl);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 1, 2, 1);

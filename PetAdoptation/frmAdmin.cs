@@ -61,6 +61,7 @@ namespace PetAdoptation
             animal_tabControl.Visible = true;
             viewDetails_tabControl.Visible = false;
             admin_tabControl.Visible = false;
+            staff_tabControl.Visible = false;
             animal_tabControl.SelectedTab = viewAnimals_tabPage;
         }
 
@@ -70,6 +71,7 @@ namespace PetAdoptation
             animal_tabControl.Visible = true;
             viewDetails_tabControl.Visible = false;
             admin_tabControl.Visible = false;
+            staff_tabControl.Visible = false;
             animal_tabControl.SelectedTab = viewAnimals_tabPage;
         }
 
@@ -88,6 +90,7 @@ namespace PetAdoptation
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = true;
             admin_tabControl.Visible = false;
+            staff_tabControl.Visible = false;
             viewDetails_tabControl.SelectedTab = checkID_tabPage;
         }
 
@@ -97,8 +100,36 @@ namespace PetAdoptation
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = true;
             admin_tabControl.Visible = false;
+            staff_tabControl.Visible = false;
             viewDetails_tabControl.SelectedTab = checkID_tabPage;
         }
+        private void adminButton_MouseHover(object sender, EventArgs e)
+        {
+            profileButton.BackColor = Color.FromArgb(255, 246, 229);
+        }
+        private void adminButton_MouseLeave(Object sender, EventArgs e)
+        {
+            profileButton.BackColor = Color.FromArgb(229, 215, 200);
+        }
+        private void adminButton_Click(Object sender, EventArgs e)
+        {
+            customer_tabControl.Visible = false;
+            animal_tabControl.Visible = false;
+            viewDetails_tabControl.Visible = false;
+            admin_tabControl.Visible = true;
+            staff_tabControl.Visible = false;
+            admin_tabControl.SelectedTab = viewAdmin_tabPage;
+        }
+        private void adminLabel_Click(Object sender, EventArgs e)
+        {
+            customer_tabControl.Visible = false;
+            animal_tabControl.Visible = false;
+            viewDetails_tabControl.Visible = false;
+            admin_tabControl.Visible = true;
+            staff_tabControl.Visible = false;
+            admin_tabControl.SelectedTab = viewAdmin_tabPage;
+        }
+
         private void staffButton_MouseHover(object sender, EventArgs e)
         {
             staffButton.BackColor = Color.FromArgb(255, 246, 229);
@@ -112,16 +143,18 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            admin_tabControl.Visible = true;
-            admin_tabControl.SelectedTab = viewAdmin_tabPage;
+            admin_tabControl.Visible = false;
+            staff_tabControl.Visible = true;
+            staff_tabControl.SelectedTab = viewStaff_tabPage;
         }
         private void staffLabel_Click(Object sender, EventArgs e)
         {
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            admin_tabControl.Visible = true;
-            admin_tabControl.SelectedTab = viewAdmin_tabPage;
+            admin_tabControl.Visible = false;
+            staff_tabControl.Visible = true;
+            staff_tabControl.SelectedTab = viewStaff_tabPage;
         }
 
         private void logOut_btn_Click(object sender, EventArgs e)
@@ -528,7 +561,7 @@ namespace PetAdoptation
             }
         }
 
-        //UPDATE PETLIST after ADD new pet
+        //  UPDATE PETLIST after ADD new pet
         private void Animal_tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (animal_tabControl.SelectedIndex == 0)
@@ -595,6 +628,7 @@ namespace PetAdoptation
             }
         }
 
+        //  LIST all Customers 
         private void Customer_tabControl_VisibleChanged(object sender, EventArgs e)
         {
             if (customer_tabControl.Visible)
@@ -674,7 +708,7 @@ namespace PetAdoptation
             }
         }
 
-        private async void add_Btn_ClickAsync(object sender, EventArgs e)
+        private async void add_Btn_ClickAsyncCust(object sender, EventArgs e)
         {
             //  CHECK if all fields are not empty
             if (validateNewCustomer())
@@ -749,6 +783,169 @@ namespace PetAdoptation
             }
 
             if (txtCustomerState.Text == "")
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private void Staff_tabControl_VisibleChanged(object sender, EventArgs e)
+        {
+            if (staff_tabControl.Visible)
+            {
+                List<Staff> staffList = XML_Handler.readStaffData();
+
+                staffList = staffList.FindAll(s => s.ManagerID == LoginAccount.currentManager.ID);
+
+
+                foreach (Staff s in staffList)
+                {
+                    staffList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
+
+                    for (int i = 0; i < petList_table.ColumnCount; i++)
+                    {
+                        Label textLabel = new Label();
+                        textLabel.Dock = DockStyle.Fill;
+                        textLabel.Name = "customerInfoLabel";
+                        textLabel.TabIndex = 0;
+                        textLabel.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+                        textLabel.TabIndex = 0;
+                        textLabel.TextAlign = ContentAlignment.MiddleCenter;
+                        textLabel.BackColor = Color.FromArgb(229, 215, 200);
+                        textLabel.ForeColor = Color.Black;
+                        textLabel.BorderStyle = BorderStyle.None;
+
+                        switch (i)
+                        {
+                            case 0:
+                                textLabel.Text = s.ID;
+                                break;
+
+                            case 1:
+                                textLabel.Text = s.Name;
+                                break;
+
+                            case 2:
+                                textLabel.Text = s.PhoneNo;
+                                break;
+
+                            case 3:
+                                textLabel.Text = s.Email;
+                                break;
+
+                            case 4:
+                                string address = String.Join(", ", s.Address.Split(';'));
+                                textLabel.Text = address;
+                                break;
+
+                            case 5:
+                                textLabel.Text = s.ManagerID; //AssignedManager_ID
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        staffList_table.Controls.Add(textLabel);
+                    }
+                }
+            }
+            else
+            {
+                staffList_table.Controls.Clear();
+            }
+
+        }
+
+
+        private void Staff_tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (staff_tabControl.SelectedIndex == 0)
+            {
+                Staff_tabControl_VisibleChanged(sender, e);
+            }
+            else
+            {
+                staffList_table.Controls.Clear();
+            }
+        }
+
+        private async void addStaff_Btn_ClickAsyncCust(object sender, EventArgs e)
+        {
+            //  CHECK if all fields are not empty
+            if (validateNewStaff())
+            {
+                //  Validate Mail
+                MailCheckResponse validEmail = await Mail_Handler.Mail_Check(txtStaffEmail.Text);
+
+                if (validEmail != null)
+                {
+                    if (validEmail.FormatValid && validEmail.MxFound)
+                    {
+                        string address = String.Join(';', new[] { txtStaffAddress.Text, txtStaffCity.Text, txtStaffState.Text, txtStaffPostalCode.Text });
+
+                        //  CALCULATE ID
+                        List<Customer> cusList = XML_Handler.readCustomerData();
+                        List<Staff> staffList = XML_Handler.readStaffData();
+                        List<Manager> mngrList = XML_Handler.readManagerData();
+                        int staffOrder = 1001 + cusList.Count + staffList.Count + mngrList.Count;
+                        string newStaff_ID = "U" + staffOrder.ToString();
+
+                        //  ADD new Staff to System
+                        Staff newStaff = new Staff(newStaff_ID, "password", txtStaffName.Text, txtStaffPhoneNum.Text, txtStaffEmail.Text, address, XML_Handler.findShelterByID(LoginAccount.currentManager.WorkingStoreID).Address, LoginAccount.currentManager.ID);
+
+                        XML_Handler.addStaffData(newStaff);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Email is invalid!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email is invalid!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("One or more field is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool validateNewStaff()
+        {
+            if (txtStaffName.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffEmail.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffPhoneNum.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffAddress.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffCity.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffPostalCode.Text == "")
+            {
+                return false;
+            }
+
+            if (txtStaffState.Text == "")
             {
                 return false;
             }
