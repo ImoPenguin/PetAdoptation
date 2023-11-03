@@ -32,7 +32,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = true;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             customer_tabControl.SelectedTab = viewCustomers_tabPage;
         }
 
@@ -41,7 +41,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = true;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             customer_tabControl.SelectedTab = viewCustomers_tabPage;
         }
 
@@ -60,7 +60,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = true;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             animal_tabControl.SelectedTab = viewAnimals_tabPage;
         }
 
@@ -69,7 +69,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = true;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             animal_tabControl.SelectedTab = viewAnimals_tabPage;
         }
 
@@ -87,7 +87,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = true;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             viewDetails_tabControl.SelectedTab = checkID_tabPage;
         }
 
@@ -96,7 +96,7 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = true;
-            staff_tabControl.Visible = false;
+            admin_tabControl.Visible = false;
             viewDetails_tabControl.SelectedTab = checkID_tabPage;
         }
         private void staffButton_MouseHover(object sender, EventArgs e)
@@ -112,16 +112,16 @@ namespace PetAdoptation
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = true;
-            staff_tabControl.SelectedTab = viewStaffs_tabPage;
+            admin_tabControl.Visible = true;
+            admin_tabControl.SelectedTab = admin_tabPage;
         }
         private void staffLabel_Click(Object sender, EventArgs e)
         {
             customer_tabControl.Visible = false;
             animal_tabControl.Visible = false;
             viewDetails_tabControl.Visible = false;
-            staff_tabControl.Visible = true;
-            staff_tabControl.SelectedTab = viewStaffs_tabPage;
+            admin_tabControl.Visible = true;
+            admin_tabControl.SelectedTab = admin_tabPage;
         }
 
         private void logOut_btn_Click(object sender, EventArgs e)
@@ -136,5 +136,36 @@ namespace PetAdoptation
             System.Windows.Forms.Application.Exit();
         }
 
+        private void bEdit_Click(object sender, EventArgs e)
+        {
+            if (txtAdminPhone.Enabled)
+            {
+                bEdit.Text = "EDIT";
+                txtAdminName.Enabled = false;
+                txtAdminPhone.Enabled = false;
+                txtAdminEmail.Enabled = false;
+                txtAdminAddress.Enabled = false;
+                txtAdminStore.Enabled = false;
+                txtPwdUp.Enabled = false;
+
+                //  UPDATE Staff DATA
+                LoginAccount.currentManager.Name = txtAdminName.Text;
+                LoginAccount.currentManager.PhoneNo = txtAdminPhone.Text;
+                LoginAccount.currentManager.Email = txtAdminEmail.Text;
+                LoginAccount.currentManager.Address = txtAdminAddress.Text;
+                LoginAccount.currentManager.Password = txtPwdUp.Text;
+                XML_Handler.editStaffData(LoginAccount.currentManager);
+            }
+            else
+            {
+                bEdit.Text = "SAVE";
+                txtAdminName.Enabled = true;
+                txtAdminPhone.Enabled = true;
+                txtAdminEmail.Enabled = true;
+                txtAdminAddress.Enabled = true;
+                txtAdminStore.Enabled = true; 
+                txtPwdUp.Enabled = true;
+            }
+        }
     }
 }
