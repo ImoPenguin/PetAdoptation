@@ -174,7 +174,7 @@ namespace PetAdoptation
                 txtAdminPhone.Enabled = true;
                 txtAdminEmail.Enabled = true;
                 txtAdminAddress.Enabled = true;
-                txtAdminStore.Enabled = true;
+                txtAdminStore.Enabled = false;
                 txtPwdUp.Enabled = true;
             }
         }

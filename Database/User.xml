@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <customer>
     <id>U1001</id>
@@ -34,7 +34,7 @@
     <name>Muoi van cau hoi vi sao</name>
     <phoneNo>0456-9608-998</phoneNo>
     <email>HaveaSip@gmail.com</email>
-    <address>NSW</address>
+    <address>Pressing toi chet </address>
     <workingStore>S1</workingStore>
   </manager>
 </root>
