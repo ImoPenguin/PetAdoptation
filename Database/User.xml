@@ -37,4 +37,13 @@
     <address>Pressing toi chet </address>
     <workingStore>S1</workingStore>
   </manager>
+  <customer>
+    <id>U1005</id>
+    <password>password</password>
+    <name>HAHAHA</name>
+    <phoneNo>123456789</phoneNo>
+    <email>hoho@gmail.com</email>
+    <address>Big St;Sit Li;NSW;666</address>
+    <assignedStaff>U1003</assignedStaff>
+  </customer>
 </root>
