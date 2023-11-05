@@ -655,6 +655,7 @@
             customer_tabControl.SelectedIndex = 0;
             customer_tabControl.Size = new Size(894, 485);
             customer_tabControl.TabIndex = 31;
+            customer_tabControl.SelectedIndexChanged += Customer_tabControl_SelectedIndexChanged;
             customer_tabControl.VisibleChanged += Customer_tabControl_VisibleChanged;
             // 
             // viewCustomers_tabPage
@@ -764,7 +765,6 @@
             customerList_table.RowStyles.Add(new RowStyle(SizeType.Absolute, 86F));
             customerList_table.Size = new Size(855, 86);
             customerList_table.TabIndex = 13;
-            customer_tabControl.SelectedIndexChanged += Customer_tabControl_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -1234,7 +1234,7 @@
             petChipped_title.Name = "petChipped_title";
             petChipped_title.Size = new Size(135, 30);
             petChipped_title.TabIndex = 10;
-            petChipped_title.Text = "Chipped";
+            petChipped_title.Text = "Type";
             petChipped_title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3

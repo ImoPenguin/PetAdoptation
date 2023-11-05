@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <customer>
     <id>U1001</id>
@@ -37,13 +37,14 @@
     <address>Pressing toi chet </address>
     <workingStore>S1</workingStore>
   </manager>
-  <customer>
+  <staff>
     <id>U1005</id>
     <password>password</password>
-    <name>HAHAHA</name>
-    <phoneNo>123456789</phoneNo>
-    <email>hoho@gmail.com</email>
-    <address>Big St;Sit Li;NSW;666</address>
-    <assignedStaff>U1003</assignedStaff>
-  </customer>
+    <name>Meow Vu</name>
+    <phoneNo>045-899-068</phoneNo>
+    <email>LoiTraiDat@gmail.com</email>
+    <address>Disney;Sydney;NSW;2345</address>
+    <workingStore>S1</workingStore>
+    <managerID>U1004</managerID>
+  </staff>
 </root>
